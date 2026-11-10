@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:2248065f8afb9099b6f59e7066f7944afc928b26b0456d60fe14a3150a1d8a6f",
+  "pageVersion": "sha256:9ded1c6d7691de845c4ff61fb89ae911c7a95a8c6a03743ef7243bd07b54bca7",
   "claims": [
     {
       "id": "claim_392d90125511426da15f81e99869f72c",
@@ -205,10 +205,140 @@
           "version": "repo-lines-v1:sha256:76fac2ff9ba2050ca8bb4474528c755e72ba0104ff4c1181e94ce6b0a6a25748:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhNjcwNjk4OTg2M2EwOGVlMjM5MzE4NTQ5ZmI4YzU0YmQ5MmRlNjc1NjZjYTBmMTFmZDQ0ZjY4MjlkMGRhNzZhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlYTg2NDU3NDczNTYzN2ZkZTdhMjA0MTQyYWI0M2U3Y2Y2Y2ViYjY4NTJkZDhiYTZkYmJhZTUzYTc3NzRmYTBiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxNzBhMWJmYzRmZDdkNGYwMWMyN2VlN2UxNWZhZGQwYzM0MjE2MTk2ZDk3M2Q4MTQyYTJhNTMyMGY3YThhY2NkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
         }
       ]
+    },
+    {
+      "id": "claim_90fe433379284f919e0268e2b4251e4d",
+      "statement": "The ETF case study owns the macro availability contract in `config/setup.yaml`—including the initial-release source and policy, one-day availability lag, backward as-of alignment, regime threshold, and session-count z-score window—and both the research and live feature implementations read their relevant values from that setup rather than maintaining an independent deployment policy.",
+      "evidence": [
+        {
+          "resource": "repo://25_live_trading/_etfs_features.py#L26-L44",
+          "version": "repo-lines-v1:sha256:69cd832917b4004503311a434d14f4c7584865e970d2b401669e7c5bf8ff94ab:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlMDhhZWY2Nzg4YWIwNzFmYWFkMGVkZmFkNDZlYzg1YmQwMTQ3YzE1OGUyOTNlMWM3NDY5NWQ5MzAyMDhhNTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk4M2ExNTQ3YTY5YTRkNWI2YmU2MWVjMWJmYWU1NDlkNzY4M2RjM2ViNjFhOTE5YTY5Mzc2OTJlMWFkYTIwOGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImExM2UwMjRmMjRjYTdhZWFhMjA2YjAyMGFmMWRjMTE5ZjIyMzAxMzQ4ZThlNTYwMzc5MWEwZWJhOWFhYzZmMzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY4ZWI2NTE2M2IwMmJhZmJjNWM3ZWMwOWYzZWEwMDAyNDA0MDdhOGM4ZDFlMGFiZjJlZWE2NjU3MzVkYzkyOTYifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/03_financial_features.py#L83-L91",
+          "version": "repo-lines-v1:sha256:fde4ab8af546b3d1815398cf752c6fcdb6a011e61090174433de2d9232cb4ec4:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTVjYTY2OThkMDc0NjA1MWMzZDQxYTBmMzNlODY3NjA5ZGRkM2I1N2M3YzMzNWQwYzQ5Y2I2MGM5ZGY1OTRmMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzUyYzI1NGFjZGE5M2JlMDVkZmUxMTcwOTIyOTNlMjI5OGZhNWY5ZTRkYTQzOGFhMDU3YTk2ZTk4NjYxZWRkYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzFhZjRjYzY4NzJlYjI4MjUwZTgyNzA0Y2ZmOWZiOGNlNWFiNGI0YWNlZDExZjU1MTJmZGY2MDVlOTAyNTY4OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2M0MzZlOGQ5NGUxYzY4ZDM5YTA5MDk0ZjRhMzU0MmIwZTE1MGI5MDNkMjA5YTZjZDkwMmM0NmYyM2NmZjY4NiJ9"
+        },
+        {
+          "resource": "repo://case_studies/etfs/config/setup.yaml#L287-L317",
+          "version": "repo-lines-v1:sha256:86d65c1c4daa227b3f1ba0da0ada7face4e7741aabfd244b5f733c1353d123a4:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1NWMwNzIwZmJjNTQ1NmM1MGVlYmY3MTFmOWI0MTkwNjhmN2UxYzcwMThiMTgxNTM0MzUxMzJmMzUxZGNmYWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5NmRkNmM4N2M1MjE1ZTZjZGEwZTIyYmRhOWI3MGMxOTMwMDEzYWJiMmNlZjY3ODRhNzYxZmJlNzM3YTU2YTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlYzcxNDE4MWJmMWMzMGEyODI0YzhlZmMxZDdmMWQzMWY2YjMzYjY0ZTAyMzAyYzE5NjQ4NWJmNjNiYWZjNDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZlMjBhOGYxZWNlODg0NzJhZjMyYmViZGIxNWM2N2MzYTU2NDI1MjQ3OTRmNGIyNmEyN2FmNjFjZWU5OGQyZTIifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/config/setup.yaml#L369-L392",
+          "version": "repo-lines-v1:sha256:c4b38b71f517dc97d494c605bf5c6442c9c572824cf69223841f376b58cbf6ce:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxMzA4MGQ5NzRlMzYyOTIwODM5NmNmZjAwNTk5MDc3N2U4YTIzZGVkZTczMjBmMDg0MjM0MWRhMjM0OTA1NDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiNzdhZmJkNmQ1NDc3NzNkNGZjOTJmZTYwNjQzNTcyODI3MTkwZjE3YmQ4MWNmMmY5YWFkOTAwNjA5MmRkYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjViZGRkMDllNGJiYjNmYmM3NzJlMDM3OWU0NTc1NGM5NGRlMGFkOTJjNThkOTg4YzIzNzdmY2MxM2NmMzg3MjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2MzEzNTVhNDA4N2M4ZDU2ODA4ZGE3NDM1MDdlZDQ1MmQyMWVjN2UwNmIzNDIwOWZjYzQ4MzFkZTM4ZmIwNzAifQ"
+        },
+        {
+          "resource": "repo://tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py#L89-L100",
+          "version": "repo-lines-v1:sha256:27148a313d5e7a93d8b8167abe7fb502cdd1d73a58e55f18e30b0c820d3fc84d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNlZmFjYjYxMjQ3ZDhhY2YwNjdhNDVkMWJmNjZlZmVhMTY3YjYyZTFmY2MyYzMzMWUzYWM2MjM4MWQ0MWQ2YjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_03e344b7c04d49efb3e2b45a5019136e",
+      "statement": "ETF yield-curve regime features are aligned by availability time: observations are shifted by the configured lag, backward as-of joined to the sorted unique trading-session axis, and only then used for the session-based rolling z-score, preventing observation timestamps and calendar-day rows from being treated as decision-time knowledge.",
+      "evidence": [
+        {
+          "resource": "repo://25_live_trading/_etfs_features.py#L268-L302",
+          "version": "repo-lines-v1:sha256:2cb84d2686e66ee7d11666a8a844c549b6a8a2df0e806324092a0d2fb402dd67:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjliNjg1ODAzOTViYTY3YmZmNzIyNWUxMjg0MTlmMWI3NGI2Zjg5ZWVhYTIxY2QwYTIyOGYzZTZmYzc1MmExZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0NmY2YTdiYmM5MTJhMjllZjg0MmM0NzY3NmZlNjhmMWE2NzE5N2M3ZDYyZjdiZTllZGU4ZTUyMDU2YmZiYmQifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/03_financial_features.py#L430-L486",
+          "version": "repo-lines-v1:sha256:bec9d17a8d213926a13753e4900188ef6e020475f9c8971957c8a23c6ecbad41:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ5ZGZmZTgyZjkyNDFhNTgxM2MwZTRiNDY2NzhhNzkwZjRiZjFhOGQ3NGI5NDViZTYzMjc1MDRhMDFmYjZhM2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYxYWIzMjZjMjBkMjdmNDc0YzZiMjhkODQyOTc2NjQ4YzlhZGI0N2IxOTdjYzNhNTFhMWZmYWEzMzRjODMwNjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNkOTU4ODcyZjM4YzY5M2M5NmQyMzRlMTdhNDFlYTdhM2FjNmIwZWVkZWNhNzg1YjZlYTk0MmU5MDFhYzQ4OWMifQ"
+        },
+        {
+          "resource": "repo://tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py#L1-L100",
+          "version": "repo-lines-v1:sha256:9198c603573195b6e2f86d2a0d5ab94938a7fba64f71e59150f24bd70c0209a6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3MGM0ZGNmM2ZiMmI1MmI2ZTFiOTZlNzkxNzBhYmE5NzdkNDBjYzlmYTNhMDUxYjAzYWMwNGQ5M2VkZThhNDQzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_ac2ea08413a3421b88ff9d077d2b9096",
+      "statement": "Chapter 13's supervised ordinary and patched multi-asset sequence builders use `lookback` rows ending on the target-dated decision row, so the first sample ends at `lookback - 1` and an entity with exactly `lookback` rows yields one sample.",
+      "evidence": [
+        {
+          "resource": "repo://13_dl_time_series/dl_sequences.py#L137-L226",
+          "version": "repo-lines-v1:sha256:72117f8350bcaf836137edeca5a56ef02b9b343a2c93bdc2e8032c103c0322b4:eyJzZWxlY3RlZExpbmVDb3VudCI6OTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFlZjU3ZTk2MjYxYjRjNTUyMGEzZmFiYzAyOTFjZjJhZDJhN2ZmODZjNWE1MTFjODk1ZTk5MTg0NGY5YTA2NWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIzZmI0NDliYTNjYWFmNGFhMTBlY2Y2NWE5ZWU4M2NlOWM3NmRkZjlkNGY0NDgxOGE0OGNjN2E2NmUwNzE2MDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVlZmVkMjE4NDlhYjM0Mjg0OTVmMGM3MmRhYjU5MTQ0ODUyY2I5Yzg0MmFiZjJlZDgzYzdmNGEyZjliNDAwOGEifQ"
+        },
+        {
+          "resource": "repo://13_dl_time_series/dl_sequences.py#L228-L296",
+          "version": "repo-lines-v1:sha256:83c544d191220c40ab2e136a7508649874843b633b5de7b8a2c49466eb181cee:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3NDkwYjBkM2M2NWNjMjdjYjg3ZTA5ZWRiODk3M2EzZWY4ODQ2NDM3ZjZlODA3YTkyM2Y4NTU3OTQ2MmMwN2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1ZGEyM2JlMGYyZDhlZGNhY2IzNDI3NjY5N2ZmNWU0ZTQ4OGQ0YzJlMDEzZjA1MDFlYzYxZDNjNjRhMmZiNDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2NmM4OWM5N2E1NDFmZmFlZGEzYzBjOGI0Mzk1NjQ3YWEzM2NlYTlkZWFkMTg5NmM2YjIxMTU3YjJhMTlhMzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5ZmUyMGYzNjhlMDQ3MTg0YzZjOTE2MzQxOGYxZWRhMTFhOGMwMTNiNGQwOWY0NjA3MjFkNmE2MzZjMDYzMDMifQ"
+        },
+        {
+          "resource": "repo://tests/test_chapter_sequence_windows.py#L58-L162",
+          "version": "repo-lines-v1:sha256:fa82866e3ef0bfdc4a70f4c587d38ed45fef77061178b3bd69c23ea6a769ac6e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4Zjk0YjViZjNiYTU2NzQxZmQzOWU0NTJkYjNlOWM2NDc5NTYzMWJmNDU1YWY0Y2QwYjVhMDQ5ZThhZDQ0Yjg4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmNzI5YjMyOWY0MmY1NDIwZWY4MTBlYTc3ZGJiNjc2NzIwYmVmZjRlMjAzMTZmNTE0ODE3ODRlNDc0YmMxZDNmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3MDZhOWJkNmQ0MGQ1MTFjZjI4ZTZiZWJhNTE0YWYzZmQxOWFhMjNmM2JmMmU5ZmUxNzA2YTc1NmIxODVlMTFjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_06eb36a8f6e54fdbb2e7e437cb8f8fbb",
+      "statement": "The foundation-model context builder intentionally stops at `i - 1` and pairs that history with the target at `i`, because its forecast path begins at `i`; this is a forecasting context and therefore has a different boundary from a supervised feature window whose decision-row features are already available.",
+      "evidence": [
+        {
+          "resource": "repo://13_dl_time_series/09_foundation_models.py#L151-L209",
+          "version": "repo-lines-v1:sha256:93f28d58e70265116a761629ef761b0e6321349102ba4f918883ef4be5d16f7f:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwMDEyOTk2MjMzYTA2MGQzYjIyNDg2NzFkYzU4Mjk2MWRhYmRlMTNlMmI5MmU2YzI5MjNlOGY0MTA2YmM1NGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0NjhlMTA3OTA4ODM0NDExYThhZDRkNDdiZjkyOGIzMjEyNjJjMjg4NTBiYjJhN2Y1Zjc5NmIxMzQwM2U5ZjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0ODlhNWViZThlZmRlNTA4NTA4OGNhNDU1YmNlMTRiZTk4NDEyOWFjYTdkMjc5YWIyMzY2ODRhNTRmMTkzYjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkifQ"
+        },
+        {
+          "resource": "repo://tests/test_chapter_sequence_windows.py#L1-L24",
+          "version": "repo-lines-v1:sha256:36d3066dece007c78c43093555952f7534621a90bfc9f71bdeb0cf62ceac325e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1OTAyNjRmNjQxOGJmZmFkYTExNTkwMWNjNDM1YWQ3N2JmMjE5ZTk0OGY3OGY4OTQ2MDU4NjdmNjY0YWI1MDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIxYTcxZDZlNTBiYjVkZWMyN2M1YjI3M2NmNmQxYjVlODg5ZTM2YjIxNjE2MzdhMTkzODUyNmVlOTZlMmI1MDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f4fd3e5ae4fd445a92a88e1933894cde",
+      "statement": "The simplified vectorized backtest refuses any period with `gross_ret < -1.0` before risk overlays and metrics: `sum(weight * y_true)` has no broker, margin enforcement, liquidation fill, or intra-period position state, so clipping such a loss to -100% would invent a liquidation rather than produce admissible evidence.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2419-L2453",
+          "version": "repo-lines-v1:sha256:53a9196199e4694df3ddcfa328a48651662b475311a64ea916922c3f36b23a90:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzZWI0YmVlYzM1MmZiN2IxMDc5MDUzYzU1ZTBhMjQyZmY4YjFlZDgwMmM3ZjFlYjNmZGE3ODgwZjhkMzgwM2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MjY3NmM4ODhjMWE0ZDlmYTc3MmZjZGMzMDJmNzczYmM3MjkwZWViZmY5ZGEzNmEzOWY0NGMzMjExOTgzODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU4NDYwZDEzMGE5NDQyZmM3NDdmNzBhNGE1YzEzMmJhZDYxNjkzNDVmMjVkMWY5YTZiOTJkNzMwMDMzNWMyNmUifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2621-L2666",
+          "version": "repo-lines-v1:sha256:0e717d13f2fd9c52a35fa42ef563107ed3d273e40defdabf98f0cc9de4f5d99a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NGZiYjdkNDA0Njk2Nzg0ZjM3YTc4ZGY3MmJmY2Q4ZWFjMDhhNDc1MTY2N2VjM2JlODgxYmY2Nzg2Zjc0MzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4NzVhN2I2ZDQwODc0YzI0NjM2MTE5YjI1NDQ0YjAwZjE1YzgwNWNiNTgzZjc0N2JlY2JmMGIyNzkyNzYzZjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFmNDdjZTZhMTY1OTAyZWM1YTgwMjcwMzkzOGYzODI2NmJjMWUxMDIyM2E1MDExN2VlMGIyMWMzZWE4MDAxMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBiZmEwYmYxMTM4OTdhN2U3NjdkMWFhYmU3Mzc3Nzg2NDcwYjc3YWMyMjM3MGQ5NjQzYjUyMTZmNWNlMDMyNjgifQ"
+        },
+        {
+          "resource": "repo://tests/test_backtest_runner_helpers.py#L599-L662",
+          "version": "repo-lines-v1:sha256:15d5a48cab0f07f21f9916d1e1ff0e6cbfb22119e76d12e0cf4c8a15601fc846:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4Y2E2YTQ0ZTEzZTNlNzg4MTIxOWZmOWUzY2U2ZmNjN2E5ZjM5ZjJlMDNkODNhZGMyYTllODkyMzFhYmI3MTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ZGYyMjY3NmIyNzMwYWU0M2Q2NDZmMjBkZWVjOTRkYmM5M2JjYzM1MDZlN2NkYjNkOTFlZTRlNGJlYjdjYWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5MjgxOTZkZTk2MzY3Yzk3M2FhNDc2YmQ3MTgzYjliYThlMDg5Mjc2MTFlNzYyMGM3ZjhlYmQ5NmU2MGEyOWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0eeda9b5e3c447d69dd23eab46921cde",
+      "statement": "The vectorized path also refuses nonzero-weight positions without usable outcomes, funding cashflows, explicit state transitions, position-level stops, and `daily_loss` limits when the simplified close-to-close representation lacks the state needed to execute those semantics honestly.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L1680-L1760",
+          "version": "repo-lines-v1:sha256:b51dfb04919f8984e2faad5b36094a3c5a9caeb33b2730232ac65a35d3d60175:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzZWMxMzgwZmZlYmI4ZWEyM2Q0MDUyZjYxNzMzZjcyNjZkNDI1M2I2YzA0NDY3NTQzZmZhZWE4NTU0NDBlZjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiMzQwNjliYTU1ZTJlNzE5ZDI0MDQ0YzkxODI3NGU2ZjUwZDIwY2RiZGIwNWNjYTBhZGZjMzkxMDY0NzJlYzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlNjFiMjc1YmM0NTk0YTM3MThjMjNjNDMyM2FkZDYxYTAzOWQ3YzNjY2U1NTU1ZjQxYmM3MzAzZTIwYWZmMjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1MmE4ODc4N2FhM2RiOTVjN2M3MTY3YWM3MTk1ZGQ1MWVjY2YyZGYzYWEyYjc3YTQzYWEwMWI0YzIwNWUyYTEifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2471-L2515",
+          "version": "repo-lines-v1:sha256:e802602f100ed1dcaee4a031449040756bdca83f64ea4b5243e425ca511fbd9a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyODM0ZTg0ZmZkMjNiY2Y4Y2ExMjIyOGE3NmY1YmNmNWM2YjMyYmVjYzU4ODU2NmUxMzk2YjdiNTg5MzNjZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0M2RkMzQ4NTdlNGNiNjEzZDZmZjA5OGFiZjEyNTFlZjg3MTU3MTkxOTNkMTk3OWY3NDY4MDI1N2VkY2ExZTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwYTE5ZTJmYTRiOWJkOGEwNjEzM2M1ZGMyOTcwMzM4NjhhMjU5ZGE5ODUwNDNhMmU4NjE1ZGU1NGQyY2FlNjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4ZGMzNDNmYTIxNTAyZmUyMWEyYWZjYjc3N2FhY2Y5NjQ1YzAwNzQ4MTZjMDFiMWI3OTc1YzU3M2QxZDVlNjQifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2731-L2774",
+          "version": "repo-lines-v1:sha256:dd3db6f95561c53b7ab44f60c4c81330ee8b416a56d72564322b1107b3cc2746:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkZmM4YmMxZmQwNzU3M2UxNzlhNTg0YWIwNDA2ZjkzYzZhYzBmMDQzZWQyYzIzMjMyODk3MTE3YWRlYmIyM2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1MTFjYjlhMDVhNGFlMjRkNmZlMWNkZmIzMjA2YWE2NDc4OTMwMTM4ZjQ1NjAwYzQ5N2IzNWU3ZDMyOTU3NjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVlMTViNDI4NDJkNmMzYjI3MmE5MjZiZDJmOGRjMzczMjNiMjg1MWRmOTdhYjJkZDg3NjM4N2U4N2E3MjdlZjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA4MWRlNDUxOTI2NzNjMjk1ZDVjM2NhOTNlY2EwNDZmYWFkNWI0YTIwZWJlOTVhM2VkZDAwNjM1YTAxYTMzZjcifQ"
+        },
+        {
+          "resource": "repo://tests/test_backtest_runner_helpers.py#L542-L597",
+          "version": "repo-lines-v1:sha256:c53b4ede7aefbaae06ca912cfe881776d3f6176ba38ef5479b8e6cb8ddb8a34f:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhZWM2MWE1ZmNhYmE0ODVjNTFkMDRlNTg5YmMxYWZkN2JmNWRlMDFjMGZiYzBkNWFkYTI0NjUyYjdiNTc0ODEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxMzUxZTJiZTAxNDRkYWEyYzVjZjc0YzcxYTRiMjRmMmU0ODVlYmE1MTEwNmY0OTI3YTUwMmU5NDM5ZmFiYWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJjZDVhYzQ5ZjhkYmE5ZDM2MDEzZmEzNjBmZTlmYzk5NWJkM2QzZjg0ZGFkYWMwMTM1YTRlOTAyNmI0YTIyNjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3afbc1ecfb4f488ba83b12f7584ba04a",
+      "statement": "Ruin-stop handling is distinct from the impossible-vectorized-period refusal: for otherwise representable return paths it floors the ruin period at -100%, zeros later returns, and makes risk-adjusted metrics unrankable, but `_run_vectorized` rejects a below-100% gross period before it can be treated as ruin.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L241-L360",
+          "version": "repo-lines-v1:sha256:ee967929d422190a6a07732c6b744fd55a1bb97dac092125ae6e2cdabc4de265:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkOTRlMzNlOTIwYmQyMmRlODQ4Y2RhZDVjOTNkNTJjODBmNDZjNDQ0OTQzMmVjZjE5MjY1ZjlmNWNiMTk4NzM1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4ZDY2Mzc1ZmJjZTlmNDYwMGUyMzg1YzE3YmIzY2E4ZWMxYmFiMzY1ZTAwOGE5YTI3N2YyMGI1YjRmMWU5MDk2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjYWMzOWQ1NWIxYzQwOWFlZTdjMzE4YWU4ZmVlNGYxMjllZTgzNTllYjI3MzY1NzViZWJiODA3MTdhNTM5NjlkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI3YjcwMGI1N2FmN2U1N2M4ZGZmMmEyZDhjYWMwNGZhOGI2YzE1ZTFmYzlmNWY5M2UwNmY4YmU2ZTA3NDU3YThlIn0"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2621-L2666",
+          "version": "repo-lines-v1:sha256:0e717d13f2fd9c52a35fa42ef563107ed3d273e40defdabf98f0cc9de4f5d99a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5NGZiYjdkNDA0Njk2Nzg0ZjM3YTc4ZGY3MmJmY2Q4ZWFjMDhhNDc1MTY2N2VjM2JlODgxYmY2Nzg2Zjc0MzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4NzVhN2I2ZDQwODc0YzI0NjM2MTE5YjI1NDQ0YjAwZjE1YzgwNWNiNTgzZjc0N2JlY2JmMGIyNzkyNzYzZjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFmNDdjZTZhMTY1OTAyZWM1YTgwMjcwMzkzOGYzODI2NmJjMWUxMDIyM2E1MDExN2VlMGIyMWMzZWE4MDAxMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBiZmEwYmYxMTM4OTdhN2U3NjdkMWFhYmU3Mzc3Nzg2NDcwYjc3YWMyMjM3MGQ5NjQzYjUyMTZmNWNlMDMyNjgifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.9.0",
-    "at": "2026-11-10T03:38:57.275Z"
+    "at": "2026-11-10T04:21:32.609Z"
   }
 }

@@ -1,11 +1,11 @@
 ---
 type: operational workflow
 title: Change and Run a Case Study Safely
-description: End-to-end workflow for changing case-study configuration, models, backtests, costs, risk overlays, and analysis without crossing artifact, identity, or holdout evidence boundaries.
+description: End-to-end workflow for changing case-study configuration, models, and backtests while preserving artifact identity, execution feasibility, and holdout evidence boundaries.
 tags: [case-studies, experiments, reproducibility, backtesting, research-integrity]
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-10T03:38:57.275Z
+    at: 2026-11-10T04:21:32.609Z
 sources:
   - id: openwiki-source-4b5580938a76566f73700cf2
     resource: repo://case_studies/etfs/06_linear.py
@@ -19,15 +19,21 @@ sources:
     resource: repo://case_studies/etfs/config/training/fwd_ret_21d.yaml
   - id: openwiki-source-cb2bbfd35b072105cdc87c22
     resource: repo://case_studies/README.md
+  - id: openwiki-source-4adfd1d2868669232fc45ecf
+    resource: repo://case_studies/utils/backtest_loaders.py
+  - id: openwiki-source-5d56c3427fd0ee42a6d560b7
+    resource: repo://case_studies/utils/backtest_runner.py
   - id: openwiki-source-d0b13d17c20ac4458b12ac59
     resource: repo://docs/running-notebooks.md
   - id: openwiki-source-7c680522e437d889ca0317c9
     resource: repo://scripts/create_experiment.py
   - id: openwiki-source-dba0ec581c0361aeb3e08dc7
     resource: repo://scripts/pre_run_gate.py
+  - id: openwiki-source-40b1eae867fb4b8a7532167f
+    resource: repo://tests/test_backtest_runner_helpers.py
   - id: openwiki-source-b8731fc6567118941540e0a3
     resource: repo://tests/test_create_experiment.py
-generated: { by: "openwiki/0.9.0", at: "2026-11-10T03:38:57.275Z" }
+generated: { by: "openwiki/0.9.0", at: "2026-11-10T04:21:32.609Z" }
 ---
 
 # Change and Run a Case Study Safely
@@ -55,7 +61,9 @@ flowchart TD
     J --> K["Registry training rows and prediction sets"]
     K --> L["Model analysis on validation evidence"]
     L --> M["Validation signal backtests"]
-    M --> N["Allocation cost and risk sweeps"]
+    M --> M1{"Execution path can represent the strategy"}
+    M1 -- No --> STOP5["Stop and diagnose model and path mismatch"]
+    M1 -- Yes --> N["Allocation cost and risk sweeps"]
     N --> O{"Selection fixed before holdout"}
     O -- No --> STOP3["Stop and settle validation selection"]
     O -- Yes --> P["Refit selected model before holdout window"]
@@ -65,7 +73,7 @@ flowchart TD
     R --> S["Strategy synthesis and assessment"]
 ```
 
-*The handoffs are generated files and registry identities; each stop prevents a missing prerequisite, mixed registry, or invalid second look from becoming evidence.*
+*The handoffs are generated files and registry identities; each stop prevents a missing prerequisite, mixed registry, unrepresentable execution result, or invalid second look from becoming evidence.*
 
 The common phase order is feasibility → labels → financial and model-based features → feature evaluation → linear baseline → available model families → cross-family analysis → validation backtest → allocation/cost/risk sweeps → holdout refit and backtest → synthesis. Some studies omit or add model families, and stage numbers differ. In ETFs, for example, stages `11a`–`11e` produce latent-factor runs while `11_latent_factors` only summarizes them; the full concrete sequence and outputs are in the [ETF README](../../case_studies/etfs/README.md).
 
@@ -189,6 +197,34 @@ A resolved specification determines the training hash. A changed resolved config
 
 A new hash is a cache-key change, not proof that the model consumed the intended value. Conversely, an undispatched menu entry produces no hash. Inspect the resolved plan and recorded specification before interpreting results.
 
+### Diagnose a vectorized account-loss refusal
+
+Do not generalize this failure to every case study. `run_backtest` dispatches from the resolved rebalance mode: most studies use the engine, while `VECTORIZED_CASE_STUDIES` currently contains `us_firm_characteristics` and `sp500_options`; the latter also has a dedicated daily mark-to-market branch for its `ret_to_expiry` strategy. The simple vectorized branch computes each period's gross return as `sum(weight * y_true)` and has no broker, margin, or intra-period position state.
+
+That distinction matters for a long/short monthly portfolio. A short weight multiplied by an extreme positive forward return can produce a gross period return below `-1.0`, even though the resolved account forbids leverage and declares short maintenance margin. The vectorized path cannot infer where the position would have been liquidated, so it raises `ValueError` rather than cap the result at `-100%`. The exception reports the number of affected periods, the worst gross return, and the largest symbol/date contributions. Treat those diagnostics as evidence of a **strategy/model versus execution-path mismatch**, not as a cache failure.
+
+```mermaid
+flowchart TD
+    A["Run representative backtest"] --> B{"Resolved mode is vectorized"}
+    B -- No --> C["Validate engine fills positions and costs"]
+    B -- Yes --> D["Compute selected weights and outcomes"]
+    D --> E{"Any gross period below negative one"}
+    E -- No --> F["Build returns metrics and optional registration"]
+    E -- Yes --> G["Raise refusal with worst contributors"]
+    G --> H{"Research intent"}
+    H -- "Hold positions with margin" --> I["Use an engine-capable price path"]
+    H -- "Keep aggregate approximation" --> J["Bound the short leg before weights are computed"]
+```
+
+*The vectorized branch either produces a feasible aggregate return path or refuses before daily-return construction and registration.*
+
+Choose one of two honest remedies:
+
+1. **Use the engine path** when the research question requires holding short positions, maintenance margin, liquidation, or intra-period execution. Supply a price panel and strategy specification that let the engine price those positions, then validate fills, costs, and both ordinary and stressed short outcomes. Changing only the mode string is not validation; the consuming run must demonstrate that the new path implements the intended trading contract.
+2. **Bound the strategy before execution** when an aggregate vectorized approximation is intentional. Remove the short leg or impose an a priori short-exposure bound that guarantees the selected weights stay within the approximation's loss domain. Record that bound in the strategy identity. Do not post-hoc clip `gross_ret`, drop the offending period, or remove the extreme name after seeing its outcome; each would manufacture a result or introduce outcome-dependent selection.
+
+`FORCE_REBACKTEST` and deletion or manipulation of cached artifacts do not make an impossible vectorized result valid. Forcing only bypasses reuse and reaches the same feasibility check. The check runs inside `_run_vectorized` before `daily_returns`, metrics, and the `register_backtest_run` call are built, so a refused computation does not persist a new invalid return path. If auditing a registry created before this guard, work in a copied experiment, force a representative re-execution to expose affected configurations, and handle existing rows through the registry lifecycle rather than editing SQLite or artifact files by hand.
+
 ## 5. Run downstream in evidence order
 
 Use the case study README's exact files, but preserve these boundaries:
@@ -196,7 +232,7 @@ Use the case study README's exact files, but preserve these boundaries:
 1. **Feasibility, labels, and features:** regenerate from the first affected upstream stage. A label/window/universe change can require all downstream state to be rebuilt.
 2. **Model families:** run the declared populations. Linear is the baseline; run only families that apply to the market.
 3. **Model analysis:** compare live, published validation prediction sets and fold/checkpoint behavior. Do not select on holdout.
-4. **Validation backtest:** backtest live population members on `split='validation'`. The ETF stage filters retired population generations and stops if no current published prediction exists. It first runs a random-signal plumbing falsification and stops on implausible Sharpe.
+4. **Validation backtest:** backtest live population members on `split='validation'`. The ETF stage filters retired population generations and stops if no current published prediction exists. It first runs a random-signal plumbing falsification and stops on implausible Sharpe. On a vectorized consumer, also treat an account-loss refusal as a blocked configuration: diagnose the contributors and select an engine-capable path or a predeclared bounded strategy before any allocation, cost, or risk sweep advances it.
 5. **Allocation, costs, and risk:** advance only the configured top-N from the prior stage and sweep declared allocators/cost grids/overlays. These stages are still validation selection, not holdout evidence. ETF `setup.yaml` centralizes the advancement counts, concentration grid, allocator list, cost regimes, and position overlays ([setup](../../case_studies/etfs/config/setup.yaml)).
 6. **Holdout prediction:** resolve the validation-selected carrier, preserve its checkpoint, refit on history ending before holdout with the label buffer, and register a holdout prediction.
 7. **Holdout backtest:** trade that prediction with sizing, costs, and overlay already settled.
@@ -222,8 +258,8 @@ Re-running the **same** deterministic holdout generation is idempotent and may r
 - **Experiment/path changes:** `uv run pytest tests/test_create_experiment.py -v`; also exercise routing tests when changing `ML4T_OUTPUT_DIR` behavior.
 - **Notebook parameters:** run the notebook-specific Papermill test or ETF subset. `tests/overrides.yaml` supplies reduced parameters, while helper tests reject unknown or overwritten override names.
 - **Config or identity changes:** inspect the resolved model plan, run `pre_run_gate.py`, and verify the new registry row's spec and artifact paths—not just its hash.
-- **Backtest/runtime changes:** run the plumbing falsification, a reduced preview sweep, and focused registry/hash tests before a canonical sweep.
-- **Shared runner changes:** test at least two representative case studies or families plus resume/cache behavior; the extension boundary is shared by design.
+- **Backtest/runtime changes:** run the plumbing falsification, a reduced preview sweep, and focused registry/hash tests before a canonical sweep. For the account-loss guard, run `uv run pytest tests/test_backtest_runner_helpers.py -v`; its representative fixtures assert that an extreme short contribution is refused while a fully invested long book containing the panel's worst observed outcome remains above `-1.0` and completes.
+- **Shared runner changes:** exercise representative consumers rather than assuming they all use one path. Include a bounded vectorized long case, a stressed vectorized short case that must refuse, and an engine-backed long/short case when engine behavior changed; also verify resume/cache behavior and that a refusal creates no new return artifact or registry result. Use reduced preview workspaces, not the canonical registry.
 - **Holdout or synthesis changes:** use an isolated copied registry and assert refusal paths for different-generation, unattributable, and validation-fitted holdout rows. Never use the real unseen period as a debugging loop.
 
 ## Failure checklist
@@ -239,5 +275,7 @@ Stop rather than improvise when any of these occurs:
 - the gate reports mismatched identities, stale supersession, missing runtime evidence, or uncosted work;
 - no current published prediction population remains for backtesting;
 - random-signal plumbing falsification fails;
+- a vectorized gross period return is below `-1.0`, indicating the aggregate path cannot represent the declared account and short exposure;
+- the proposed response is `FORCE_REBACKTEST`, cache deletion, post-hoc clipping, or registering the impossible result rather than changing the execution path or bounding the strategy;
 - validation selection is not fixed before holdout; or
 - a different configuration has already been evaluated on the declared holdout window.

@@ -1,16 +1,30 @@
 ---
 type: validation architecture
 title: Test System and Validation Strategy
-description: Layered validation for utilities, research contracts, reduced-data fixtures, Papermill notebook execution, environment-specific CI lanes, and release gates.
+description: Layered validation for focused regressions, utilities, research contracts, reduced-data fixtures, Papermill notebook execution, environment-specific CI lanes, and release gates.
 tags: [testing, validation, notebooks, papermill, fixtures, ci]
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-10T03:38:57.275Z
+    at: 2026-11-10T04:21:32.609Z
 sources:
+  - id: openwiki-source-7f0d23498165af972e19701e
+    resource: repo://.github/ci/prose-numerals.txt
+  - id: openwiki-source-ab33debc090631d91bf4cf57
+    resource: repo://.github/ci/unit-test-quarantine.txt
+  - id: openwiki-source-25d98ec4ab50900f2553fec7
+    resource: repo://.github/scripts/check_prose_numerals.py
   - id: openwiki-source-8cb5f212f3dad4676eb93d50
     resource: repo://.github/workflows/full-test.yml
   - id: openwiki-source-4f2678f93d3fd3835f9f2909
     resource: repo://.github/workflows/test.yml
+  - id: openwiki-source-6a8c91b0d91b182f7c9253e3
+    resource: repo://13_dl_time_series/dl_sequences.py
+  - id: openwiki-source-9088962bf46b12f8ff3c1aee
+    resource: repo://25_live_trading/_etfs_features.py
+  - id: openwiki-source-32aea03b7a7f7d2486d65b92
+    resource: repo://case_studies/etfs/config/setup.yaml
+  - id: openwiki-source-5d56c3427fd0ee42a6d560b7
+    resource: repo://case_studies/utils/backtest_runner.py
   - id: openwiki-source-f0a6e7dc03522b2682f88655
     resource: repo://tests/conftest.py
   - id: openwiki-source-2e3c23e4b97bb8ab89b3d626
@@ -25,10 +39,14 @@ sources:
     resource: repo://tests/sample_registry_for_tests.py
   - id: openwiki-source-1cde9a5cdcd05b2ecb0dd195
     resource: repo://tests/skip_blockers.py
+  - id: openwiki-source-40b1eae867fb4b8a7532167f
+    resource: repo://tests/test_backtest_runner_helpers.py
   - id: openwiki-source-c3ab014213c91debfb5d7cdc
     resource: repo://tests/test_case_studies.py
   - id: openwiki-source-969755044e4bb630e211fabd
     resource: repo://tests/test_chapter_notebooks.py
+  - id: openwiki-source-d4ece3d35467d149b6948b42
+    resource: repo://tests/test_chapter_sequence_windows.py
   - id: openwiki-source-9ee46d568b276d1b26542d53
     resource: repo://tests/test_every_fixture_file_has_a_producer.py
   - id: openwiki-source-7e8edf5412e23186428fd51a
@@ -39,20 +57,22 @@ sources:
     resource: repo://tests/test_one_producer_per_fixture_file.py
   - id: openwiki-source-3e01760cdc71fa320232d2a3
     resource: repo://tests/test_pm_helpers.py
-generated: { by: "openwiki/0.9.0", at: "2026-11-10T03:38:57.275Z" }
+  - id: openwiki-source-6ff29db61f66c255c777d152
+    resource: repo://tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py
+generated: { by: "openwiki/0.9.0", at: "2026-11-10T04:21:32.609Z" }
 ---
 
 # Test System and Validation Strategy
 
 The test system has two complementary jobs. Conventional pytest tests pin small, important contracts such as artifact identity, registry behavior, loaders, fixture generation, and notebook-pair hygiene. Notebook tests then execute reader-facing `.py` notebooks through Jupytext and Papermill against a reduced but structurally representative data and artifact set. The latter are integration tests, not a replacement for focused tests: they are slower, environment-sensitive, and deliberately avoid rebuilding every upstream stage.
 
-For artifact ownership and operational CI details, also see [Artifact Registry](../architecture/artifact-registry.md) and [Environments and CI](../operations/environments-and-ci.md). For author workflows, see [Change and Run Case Studies](../workflows/change-and-run-case-studies.md) and [Edit Notebooks](../workflows/edit-notebooks.md).
+For artifact ownership and operational CI details, also see [Artifact Registry](../architecture/artifact-registry.md) and [Environments and CI](../operations/environments-and-ci.md). [Research Integrity](../concepts/research-integrity.md) explains why temporal availability and honest failure semantics are research contracts rather than cosmetic checks. For author workflows, see [Change and Run Case Studies](../workflows/change-and-run-case-studies.md) and [Edit Notebooks](../workflows/edit-notebooks.md).
 
 ## Validation layers
 
 | Layer | What it establishes | Representative entry points |
 |---|---|---|
-| Static and reader-facing guards | Formatting, import/provenance rules, paired `.py`/`.ipynb` consistency, safe paths, and notebook metadata hygiene | CI `lint` and `guards`; focused `tests/test_notebook_*` files |
+| Static and reader-facing guards | Formatting, import/provenance rules, paired `.py`/`.ipynb` consistency, safe paths, notebook metadata hygiene, and ratcheted checks for result numerals in Jupytext markdown | CI `lint` and `guards`; `.github/scripts/check_prose_numerals.py`; focused `tests/test_notebook_*` files |
 | Unit tests | Pure transformations, loaders, download dispatch, path routing, environment helpers, fixture builders, and failure cases | `pytest tests/test_<area>.py` |
 | Contract tests | Registry identity, immutable artifacts, supersession, research planning, retry behavior, and workspace-versus-release boundaries | [`test_research_contract_execution.py`](../../tests/test_research_contract_execution.py) and the focused registry/identity suites |
 | Fixture integrity | Reduced data matches builder declarations; every fixture file has an owner; registries describe artifacts actually shipped | fixture manifest, producer, registry, and sampling tests |
@@ -61,6 +81,37 @@ For artifact ownership and operational CI details, also see [Artifact Registry](
 | Release sweep | All selected chapters and all case-study matrix lanes are run manually, with an aggregate failing summary | [`full-test.yml`](../../.github/workflows/full-test.yml) |
 
 The fast `test-unit` CI job installs a deliberately bounded dependency surface and then runs named high-value suites plus an “every other test file” sweep. The latter excludes only the explicitly justified entries in `.github/ci/unit-test-quarantine.txt`; this makes a newly added test run by default instead of depending on somebody remembering to add its filename to the workflow. Data-backed fixture checks live in `test-unit-data`, because a test that skips for missing fixture data is not evidence that the property passed.
+
+## Post-baseline regression gates
+
+These gates extend the existing layers; they do not move ownership out of production code or turn notebook execution into a substitute for a focused assertion. All three focused pytest files are ordinary, data-free tests covered by the `test-unit` subtraction sweep because they are not quarantined. The related notebook lane remains responsible for end-to-end imports, parameters, fixture wiring, and execution in the reader image.
+
+### Chapter 13 sequence alignment
+
+[`test_chapter_sequence_windows.py`](../../tests/test_chapter_sequence_windows.py) imports the canonical builders from [`dl_sequences.py`](../../13_dl_time_series/dl_sequences.py) and uses row-identifying synthetic features to prove that an ordinary sequence and its patched reshape end on the same row as their forward-return target. For a lookback of `L`, the first valid window is rows `0..L-1`, dated at row `L-1`; each symbol therefore contributes `n - (L - 1)` samples. A symbol with exactly `L` rows must contribute one sample rather than being discarded. The suite also proves that plain and patched builders cover identical rows, targets, and flattened feature values.
+
+This is specifically the contract for feature design matrices consumed by the RNN, Transformer, and CNN-style builders. It does not impose that alignment on the foundation-model context builder described by the test: a context that is extrapolated forward from the decision date intentionally stops before the forecast path begins. The production owner is `create_sequences_multi_asset` and `create_patched_sequences_multi_asset`; chapter notebook execution owns only their integration with a complete notebook.
+
+### Live ETF macro availability
+
+[`test_the_live_etf_regime_features_respect_the_macro_availability_lag.py`](../../tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py) states the contract in information-availability terms. At several mature probe sessions, it computes `regime`, `yield_curve_slope`, and `yield_curve_zscore` once from the full calendar-day curve and once from a curve truncated to values visible by the previous day. The results must match and must be non-null. This catches a same-session as-of join that would let deployment consume a Treasury observation unavailable at that close.
+
+The implementation owner is `_add_regime_indicators` in [`_etfs_features.py`](../../25_live_trading/_etfs_features.py). It first re-stamps macro observations by `MACRO_LAG_DAYS`, then backward-as-of joins them to the distinct trading-session calendar, and only then computes the configured rolling z-score. The module reads the lag, threshold, and z-score window from the ETF case-study configuration rather than maintaining live-only copies; the focused suite pins the lag and threshold relationship. The Chapter 25 notebook test still owns data loading, model selection, and deployment-loop integration.
+
+### Vectorized backtest insolvency
+
+The vectorized path computes a period’s gross portfolio return as the sum of `weight * y_true`; it has no broker, margin updates, liquidation fill, or intraperiod position state. [`test_backtest_runner_helpers.py`](../../tests/test_backtest_runner_helpers.py) therefore distinguishes two cases around the account boundary:
+
+- a fully invested long book using the panel’s bounded worst forward return is allowed to run, even though its loss is large, because the gross period return remains above `-1.0`;
+- a short exposed to a sufficiently large positive asset return is refused when the aggregate gross period return falls below `-1.0`, because silently clipping it would invent a liquidation price and accepting it would register an unbrokered loss greater than the account.
+
+The guard belongs in `_run_vectorized` in [`backtest_runner.py`](../../case_studies/utils/backtest_runner.py), after canonical-window slicing and before portfolio risk overlays and metric computation. Its diagnostic names the worst contributing positions and directs the caller to bound the short leg or use the engine path. This boundary is deliberately narrower than the shared ruin semantics: broker-backed or otherwise valid return paths may be stopped at zero equity for reporting, while the vectorized path must reject a gross return that its stateless approximation cannot honestly produce.
+
+### Static notebook-prose ratchet
+
+The always-on `guards` job runs [`check_prose_numerals.py`](../../.github/scripts/check_prose_numerals.py) twice: first with `--selftest`, then over the repository. The scanner considers only Jupytext `.py` sources that have a committed sibling `.ipynb` (unless a file is explicitly passed), and only untagged percent-format markdown cells. A markdown cell tagged `results` is exempt; the self-test checks both the tagged exemption and the same sentence in an untagged cell, in addition to positive and negative numeral cases.
+
+This is a deliberately narrow lexical guard, not semantic prose analysis. It detects decimals and percentages after masking code, math, links, URLs, headings, and recognized cross-references; it does not decide whether number-free narration such as “the ensemble does better” has gone stale. [`prose-numerals.txt`](../../.github/ci/prose-numerals.txt) records existing `(path, numeral, count)` sites. A new or increased site fails, and a whole-repository run also fails when a listed count has fallen without the ratchet being reduced. Existing debt can therefore only stay level or shrink; touching and re-executing a listed notebook is the point to move computed values into figures, tables, or `results` cells and lower or remove its entry.
 
 ## Notebook execution flow
 
@@ -173,6 +224,10 @@ Use the narrow tests for fast diagnosis, then the affected integration lane. CI�
 | Shared utility under `utils/` or `case_studies/utils/` | Its focused unit tests plus relevant contract tests; for research/registry utilities include `tests/test_research_contract_execution.py` and identity-specific suites | Run one representative consuming stage, then affected case-study and chapter lanes; CI treats these paths as shared and fans out the notebook matrix |
 | Registry schema, hashes, identity, supersession, or workspace routing | Registry schema/identity/lineage tests, artifact digest/sidecar tests, and `tests/test_research_contract_execution.py` | Run producer and consumer stages against an isolated seeded output; regenerate/reconcile fixture registries if stored rows or artifacts changed |
 | One case-study stage | The stage helper’s unit tests, override reachability checks, and any declared registry-write contract | `pytest tests/test_case_studies.py -v -k "<case-study> and <stage>"`; include prerequisite stages or run the whole case study when `requires_stage` applies |
+| Chapter 13 sequence-window construction | `pytest tests/test_chapter_sequence_windows.py -q`; preserve target-row inclusion, earliest full windows, exact-length symbols, and plain/patched equivalence | Run the affected Chapter 13 notebook in the `ch13` lane; do not apply the feature-window rule to forecast contexts that intentionally end before their forecast path |
+| Live ETF regime or macro alignment | `pytest tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py -q`; test full versus availability-truncated macro inputs and configuration ownership | Run `25_live_trading/02_etfs_deployment_loop` in the Chapter 25 lane with its reduced-data override; use a live-data smoke separately when changing the upstream FRED acquisition path |
+| Vectorized return aggregation, shorting, or risk ordering | `pytest tests/test_backtest_runner_helpers.py -q`; retain the allowed bounded-long and refused unbrokered-short boundary | Run a representative vectorized case-study stage; also run an engine-mode long/short consumer when changing shared ruin or metric semantics |
+| Notebook markdown containing computed numerals | `python .github/scripts/check_prose_numerals.py --selftest`, then run it on the edited paired `.py`; move values to a figure, table, or `results` cell rather than expanding the ratchet | Run the full repository checker and the normal pair/provenance guards; re-execute the notebook if changing a code cell or committed render |
 | Teaching notebook | `tests/test_pm_helpers.py`, override-schema checks, import/provenance and notebook hygiene tests | `pytest tests/test_chapter_notebooks.py -v -k "<notebook>"` in its assigned image/service lane |
 | Data loader or download path | Focused loader/download tests, path/data-root contracts, and synthetic edge cases | Fixture manifest/producer tests and the dependent dataset-card/chapter/case-study notebooks; regenerate reduced raw data when schema or owned paths change |
 | Dockerfile, Compose mounts/ports, or dependency lock | `tests/test_compose_mounts.py`, `tests/test_compose_ports.py`, environment-lock and image-trigger tests, plus docs/compose consistency where applicable | Build the candidate image, verify it matches `uv.lock`, then run at least one notebook in each affected environment/service combination |
@@ -183,6 +238,11 @@ Useful focused commands are:
 ```bash
 uv run pytest tests/test_pm_helpers.py -v --tb=short
 uv run pytest tests/test_research_contract_execution.py -q --tb=short
+uv run pytest tests/test_chapter_sequence_windows.py -q --tb=short
+uv run pytest tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py -q --tb=short
+uv run pytest tests/test_backtest_runner_helpers.py -q --tb=short
+python .github/scripts/check_prose_numerals.py --selftest
+python .github/scripts/check_prose_numerals.py
 uv run pytest tests/test_chapter_notebooks.py -v -k "<notebook>"
 uv run pytest tests/test_case_studies.py -v -k "<case-study> and <stage>"
 ```

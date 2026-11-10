@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:cb3907f9ca24b31fe489f21313954dcf43c960c9a862aa95d80d99495c99a55a",
+  "pageVersion": "sha256:8c486c9f879571428fbea2158e30d6b995f2a6ddd6faa3c067219fd676ff17a0",
   "claims": [
     {
       "id": "claim_28a1da7f8c984599b437caf37d19b502",
@@ -327,10 +327,110 @@
           "version": "repo-lines-v1:sha256:05731cae45df0d2eca8195eb68842d5ae5b89fca90a02803d2b3ec5953850222:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmNTRiZmM4YTUzYjY5YzUwMDQ2MTcxOTM0NmEwMTc0OTYyYzYwOGY4MzNjYjkyNmVkNTY4YjYzM2UyYTMyNGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmY2M2NjU3NTgzMGI3NjdhYWI3MTI2OTczZTcyMzUxNjMzNzRjYzhlNWZmZjVlMTBlZTc4ZjQzNmFjYmYzZjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg3ZTE4MDM2MDNlMWQxMTYzNGY5NGQ0Y2VmNjYyZmQxMDNjM2JiYTk0ZDNjODA3NGFkNGZlNThjM2NjODM3ZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxN2IyZTk3MjFjM2U3YTk1Yjg3Y2I1ZTkyNWJiYWE4NTIwZjc5MjhkOWNiNTFkOWI2MjRhYWE2Nzg3YTE2NDAifQ"
         }
       ]
+    },
+    {
+      "id": "claim_abff20a5d1244429ae14a66118f1f034",
+      "statement": "The prose-numeral rule is an always-on, non-Docker guard that runs its self-test before a repository-wide scan; the checker is standard-library-only and does not import or execute notebook code.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L1-L40",
+          "version": "repo-lines-v1:sha256:97f27c684fcaa082ae9e8c7956ae78157cfb0820a36bee2b3c24a008e503209c:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ODJjYmRiNGM4YjA3NTE4YmY0ODZjNTg5OTBmYzM5MTc4M2FhMjBhOTE2YmZiMjdhZDIxMWViMWQ1YzM2NDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDNlY2RkNGE0ZDEwZjE5YzczZmQ0MmZkMTI0MzdmZDMzNTRhODI2ODE2MDVkYTUyNTVhOTdhMzkwNjhkYmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU1YjZlODcwNmI0MzA0N2YyYTZkYjY3ZjEzMjYzODU5NTYwNGU2N2YzNjk2Njg3NmNlMDE1OGYwMDUzZTZiZDEifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L441-L479",
+          "version": "repo-lines-v1:sha256:0bde4160acdc827cb5d0a1d2fb64ac6d36d36d33423ce345bd5e0ef33ecead0c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NGNhOTI5NjIzNzc5ZjY3MDM1ODExZjMzNDVjOTJmOTI1ZDVmOTI3MTZjMTNjNDk0NjkxMDEzODZjYTFiNzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY4ZGU0MWNiOWVlNWFhNWNjOThhMmUxYTk4ZGMxMzE1ZjRkOWMyNDhlZGMwMmU5YTMwZjY0NTk5ZGI1OWVkMmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYxMmM3YjMxOTllNTdhZDhjMmI2NTIxZWRjYWI3NTk1ZDY5MmIyZTQ1MGZkMjc0NzliYTExNmQwYWFiM2M0MTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhZjcxNWRjMjUwZTViYWViYjZmOTdhMTE1MTYxNjY1NGIyY2FhZDI4ODVlNzZjNzFhMjdiYmVlNjYwODc1NDcifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L557-L570",
+          "version": "repo-lines-v1:sha256:cf0746a1b3e085481d025c8232798bcf8791c3fcc1dc405d20372a90d38e94ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0MDVmZDY5ZGNiNmJkMzg3ZDMzZmVhYjQ5ZjMxYWIxNmM0OTQwN2UwNzE3Y2E1YjYxY2FhOTdlOTk3MWMxZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzZGI5OGI3OGQ4NzM5MjQwYmQwNjJlOTExMzMyYmI0ZGViNDJkODgwNjA0ZWNhNGUyMTRjN2UxNmQ2NzgxMmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUzNGZiZGZhZmQyZThjNGM4OWE0ZTllN2QyZjAzOWNlMWNjZWVlYzg5ODY5NGUwMzJmYmJjZDlmYzFiNDc4NDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2NGI2YWY5YjFmZjA3NDVmODliYzdjODUxMWYwOWFkMmExZjIyZWQ4MzdhMTc0MDA2ZDc3ZWE4NDdkYjIxMGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_36a45c359b1a4df0b4d79dad3bed762d",
+      "statement": "The prose-numeral checker scans percent-format Jupytext Python sources paired with notebooks and counts decimals or percentages in untagged Markdown cells, while exempting results-tagged cells and masking or skipping literals such as code, math, links, URLs, headings, and recognized cross-references.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L146-L166",
+          "version": "repo-lines-v1:sha256:fff5b2f0a64ccfe7ac5b55e023c486eff045288c4b3681ce1821b32214e1b5a3:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4NTliOWI4NjYzZjQyZTRmNjU4ZDZhZDYwNjFlYzM2ZTM3ODg1NzM2N2M0NDI0ODBmNjcyYzgzOTU0NDFjMWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2YWQwNTJjNDRiOTUzZjBkODMyODZhMmRkZGVjMjE4NWU3ZjE4OWRiMGU0ZjUwMmM2ZjA2ZjM0NzU4NDU0YTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2MGY2ZGU5YzQyYzE2YzczYTI4MGQyZWJkNjY0ZTNmNzMzOGFlMjFmNzZiMmYzNGFkMTZhYWUyYTgyMWRmNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ5ZmYzYjRmMjZiYzZkNWMyOWYxYzkyODhjYTIyZjJlYWI0NWUzNzI2NDRlOGI1N2VhZTNjNzI2YTUxOTRjZGYifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L43-L143",
+          "version": "repo-lines-v1:sha256:9551ef06e652372a5eed38686d7cb2a50baf27d09a575c2be0a3897fcd7b6311:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiNGY1MTVmMjg3ZTI5NGQ3OTA5NWNhOWJiZTk2Y2JlNWMwYzk2ZDYzNTRkZmQwMjkyZWRhODg2OTcxMjBiNWZmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxYWFmNzYzN2NiNmU3ZTVkYjg1ZDYzNDI3NDYwMTRkZjA0MWNjZDU1OGE5MjBiMjllYjZhYzcxOWQ3YmFmNWMyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlZGVkYTQzNmJkZWNiMThiYTlkMzM5NzczMjM3ZTA1MmM0MTVjMWUyZWQzYzIwYzIyNDg2ZDViMWJlOWY3ZTE0In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_dad7f80d6f6b41a9b92c9a8a4a6003b2",
+      "statement": "The prose-numeral allowlist is a shrinking per-path, per-token count budget: counts above the budget fail, and on a whole-repository run counts below the recorded budget also fail so obsolete entries must be lowered or deleted.",
+      "evidence": [
+        {
+          "resource": "repo://.github/ci/prose-numerals.txt#L1-L20",
+          "version": "repo-lines-v1:sha256:66a13ed5a042983b982cee3bf3f7a7c0b698b1ad284014aae36a4ed10539e7c7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZiYjU3MGFlYjdiNjZlZTNmYjgzOTZlOWQ4N2Y4NmYyMjg2ZTZiYzUwZTFkYTZjMzhlYjc1MGVmZGExNzZhNjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlY2IyOGQ4OTY5M2JjN2I5MmFkYzVjOGU0ZjdkYTk1ODYzNzg1MzIzOTllYjc4YWJlZTg0N2VlZDhlODVlMWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI1YjY2ZTdiYWFiMDhlYmY0YTc5YzE5MDQ3MDM5NzllMGU5YzI5NGM3MGRhZjFkY2VhODRkZDJmNzI4Nzk3ZDgifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L168-L184",
+          "version": "repo-lines-v1:sha256:ef48d242a599ecc3fdcb939ab62be00a78ca2dc8dc8b091c6a9383647ad1a903:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmZmJhMTU4MWVlN2EwYjlmMTk1ZTliYjY2MTJlMDIwNTA1ZTkxODIzMWI3Y2E5YzFiOTM4NWExMTgzYjllYzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1NmY1ZjUxNWU1ODM3OTIzOGI4MjdkODVmNmUxYTcwYmRmYzE5ZDI4ZmVhNDE5MGRjYWFjYjk1M2RmM2Y2NzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2YmI0YzJmZjA0N2UwOTI0NjdjZDkwYmFkZDI5ZjUxODY0NjAzMjJmMzA1ODM5NmU0MzRlODVjMDlhNmJiMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjZWJjZGVjNzQwYTUwYTIyOGM2NmM5OWU4NzQ3NGM5ODU3MjBjNzNhNDAxZDUwNzQ0YzdhOGQ5MmY4ZGEzN2YifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L220-L271",
+          "version": "repo-lines-v1:sha256:8909f8e64857bacba78d49e5a08272b331152f33fc2c69236de102c1b72f4818:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzMDg2NmUxYmNjNWFiNzZlM2VmNTkwMTJkMGFkMzlhNjg3YWJlMDAyM2I0MzhhY2IxMTMwYTE4ODI1ZTgxOTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVjOWI5NTkyOThjZjE1NWU4NTExYmYzNGI0NWQ5ZDU4YWUyMTdhOWVmZWUwMjRlMzU3Y2Y2MjQwMTM1ZTcxMjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1NzIyYjhjNGYyODMxYTA4YTZmZjE2OGQxNjUxMTRiNmZkYmFjZjk4NDIxNTM2NjI3NzY5M2JkY2IzYmQwMjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ca64ad8f21ee4aa7b58919ace9cc97f8",
+      "statement": "The OpenWiki update workflow runs daily at 08:00 UTC or by manual dispatch with repository-content and pull-request write permissions, and uses a full-history checkout so incremental update can diff against the commit last documented.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/openwiki-update.yml#L1-L24",
+          "version": "repo-lines-v1:sha256:871ba25bf747137088225d9acc49e50ec99aacf94ecd15f566a0e9dc183d81d8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2MDI3ODdhZjZkY2MwODM0ZGUxMjFjYmIxY2I5NWY5NDU5YjcyMWVhYjAzNDlmMTA1MDFiOTk2YzFjNzdmZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2ZDcxMGExNzYyODk1Y2Q0YzkzYzZhMmEyOWU2MjkyNGQ2ZjczMGQ5NWUyYWQxNzdjYTUwNDhlYjU2OWM5YWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkxN2EwNGE3MjdjYzY4MDNhYjVlMjc2N2I1NjUwM2RlNGQ4ZGRiMTRlNmIxMGVjZTdjNTYwNmNmOGJhMmU3ZTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2c13df812c574a1eba8d5e01ddbfa5d6",
+      "statement": "The OpenWiki workflow installs Node.js 22, pinned OpenWiki, Mermaid, and jsdom packages, then executes `openwiki code --update --print` with high-fidelity Mermaid validation dependencies available.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/openwiki-update.yml#L25-L38",
+          "version": "repo-lines-v1:sha256:c1dcf881ee7c80d0ed294ec66a6c68930614bdb3afaba2b2e4e9e8bee65cc12b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1MmEwMjA4NWE3ZTFlNmJmYTZiMTBjZTRmOTQxZTEwNjcxNzFiZjE2ZTkwM2M1NDNlYWM4NzFlMmNkY2FiN2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2MTllNGQ0NGY1ZTEzYTBlNTIwNWYwM2I3NDFkMTU4MzUxMTBhYWQ4YWI5YzY4Y2Q2MGEyNjNjMDE3YjVjZjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYyNWEzODdiYzJmN2MxZWI5ZGM2MDNmZThhNjIzNTYzNGIwMGY3N2Y5NGM1NTMyYzhkZWU4MGNiNTYzNjczNWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5NjE5ZmVjN2VjMTVhYjczNWE5YWM0YjkyMjEwMjhjOGMyNDBkMjM4MmU1NDU5MDAwZjUxNjU3YTc0MDk1MWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_46a5e69870244610bae9e4f0564f4f31",
+      "statement": "The OpenWiki command is allowed to fail temporarily so that every non-cancelled run can remove `openwiki/.run.json`, prepare publication paths, and create an update pull request before a final step propagates the OpenWiki failure.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/openwiki-update.yml#L34-L89",
+          "version": "repo-lines-v1:sha256:48567bef556d7a4253eb813d8dc4126afe82a09561663036c530924d7fb63e57:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3ZGZjMjAyNTY4YmExODk0Y2I5NjNlNjU1NTQyMjhmNGY5ZjEwN2I0NmE2ZjQ5NTM0ZjBlYjI5ZjVkYTE1NjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2NzE4ZjA2N2I1ZTVjMWYwOTkxYTZlNzQ3MjZmZTJhMjNkMjY0MzQ1ZTA4ZTRlYWQwNGZhZjczYzI3ZWQ0NDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBhZWY5NzAzNzYzMjZlM2QxZDE1Yjc1ZDVmOTJkYWFiMzlhMTA1NTdiZTdlMzkwYzRhYjM4MzY1OGZmZTkzZTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_35fce51bc7d94e44a0f5f819fd751c9c",
+      "statement": "OpenWiki publication stages `openwiki`, `AGENTS.md`, and the update workflow, conditionally adds `CLAUDE.md` when it exists, and publishes on `openwiki/update`; a failure-outcome pull request intentionally preserves completed pages so merging them establishes progress for the next scheduled run.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/openwiki-update.yml#L55-L80",
+          "version": "repo-lines-v1:sha256:391a499587912b7d710479f4341ae5d1590e1e91846f4ba06d2f1bfcc77c6ccd:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0NTViYjdjMWRlN2UzZTA1MmVlYmI5MDkwOTYwZjk2YzAyZDI3ZTc5YzBlYTZhOTcyMzI5MWFlNGYyZmIxZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4OThkOThiODc5OTQ5MTYyYWY0YmE4MWMwN2RjNjA1NjYxY2Q0ZjFkNWE5NjBmYzE4MWVkMmJjOWMzMzIwNjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmZTVjYTdmYmJkMTk5YTZhZDgyZGU1MmY0ZWE2NDMxODVmNjM1MGE4MGJhNTJkNWFkN2VlYTMyNTY3NzUwYzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNlYTE0ZDczMDc5YzgzZDlmZWQ3MTJjYTk3MTE1YWQ0ZTcxMjI4YjY2NjE3ZjQxY2FjZTZkZDJmZjI3M2YwMmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8df8f545a4e3472da8c63cabd7179e15",
+      "statement": "OpenWiki connector and tracing credentials are injected from GitHub repository secrets without embedding their values, while provider, model, tracing project, and tracing enablement are workflow configuration; the YAML explicitly warns that browser-login authentication needs an operator-supplied unattended CI alternative.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/openwiki-update.yml#L38-L52",
+          "version": "repo-lines-v1:sha256:01f31c66ea0da721cee51534a73dc27c69cad8f928041b454a3ccd38e4ea02f6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2MTllNGQ0NGY1ZTEzYTBlNTIwNWYwM2I3NDFkMTU4MzUxMTBhYWQ4YWI5YzY4Y2Q2MGEyNjNjMDE3YjVjZjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwNzI0MGVhOGNkYTIyODAyZDBmNmRhZGU2ZjYxMTU0YWMzMGY2N2VjZWRhZDI5ZWViMGQ1OTg1MGQ1OGFiMDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFkMmY1ODUzMGYxYmJmYTcxYjE1MDQzYjdjMWIxZTU3YTMzNTMxM2E1OTVjY2U4MjA3MWY5MGJmMTg2Y2IxNGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2MTQ3YTkzYWIxMzA1ZDEzN2E0MjdjZTNjNzM4MWZlM2NhY2VmYzkyYzFkOGJmNmVhZWVlOThiMDc5Y2U5MTcifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.9.0",
-    "at": "2026-11-10T03:38:57.275Z"
+    "at": "2026-11-10T04:21:32.609Z"
   }
 }

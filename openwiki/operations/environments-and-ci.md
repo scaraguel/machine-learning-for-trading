@@ -1,18 +1,24 @@
 ---
 type: operations guide
 title: Environments, Dependencies, and CI Operations
-description: Supported local and container runtimes, dependency and lock invariants, installation diagnostics, and the CI and image-release surfaces affected by system changes.
-tags: [environments, dependencies, docker, uv, ci, release]
+description: Supported runtimes, dependency invariants, CI gates, and the scheduled or manual OpenWiki update-and-publication lifecycle.
+tags: [environments, dependencies, docker, uv, ci, openwiki, release]
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-10T03:38:57.275Z
+    at: 2026-11-10T04:21:32.609Z
 sources:
+  - id: openwiki-source-7f0d23498165af972e19701e
+    resource: repo://.github/ci/prose-numerals.txt
+  - id: openwiki-source-25d98ec4ab50900f2553fec7
+    resource: repo://.github/scripts/check_prose_numerals.py
   - id: openwiki-source-c774973b0743d62a0b1cf7d2
     resource: repo://.github/workflows/container-smoke.yml
   - id: openwiki-source-f4927fdbd3f1f0d083362c6d
     resource: repo://.github/workflows/docker-publish.yml
   - id: openwiki-source-8cb5f212f3dad4676eb93d50
     resource: repo://.github/workflows/full-test.yml
+  - id: openwiki-source-6d4b4e707b8d60b6ccfa3425
+    resource: repo://.github/workflows/openwiki-update.yml
   - id: openwiki-source-8bf36041302b5e7b830d862b
     resource: repo://.github/workflows/reader-install.yml
   - id: openwiki-source-4f2678f93d3fd3835f9f2909
@@ -43,14 +49,14 @@ sources:
     resource: repo://tests/test_env_matches_lock.py
   - id: openwiki-source-3d13bc59ee9edbc5c1eb9de1
     resource: repo://tests/test_toolchain_pins.py
-generated: { by: "openwiki/0.9.0", at: "2026-11-10T03:38:57.275Z" }
+generated: { by: "openwiki/0.9.0", at: "2026-11-10T04:21:32.609Z" }
 ---
 
 # Environments, Dependencies, and CI Operations
 
 The repository deliberately has several execution environments rather than one universal image. The default local path and main image target Python 3.14; incompatible or specialized workloads are routed to Python 3.12, database, RAPIDS, GPU, or Neo4j-backed environments. A dependency or runtime change is therefore complete only when the manifest, lock, images, Compose services, tests, and reader-facing documentation still describe the same system.
 
-For initial commands, see the [Quickstart](../quickstart.md). For path and mount behavior, see [Data and Path Runtime](../architecture/data-and-path-runtime.md); for notebook source/output constraints, see [Edit Notebooks](../workflows/edit-notebooks.md); and for harness internals, see [Test System](../testing/test-system.md).
+For initial commands, see the [Quickstart](../quickstart.md). For repository and generated-wiki boundaries, see [Repository System](../architecture/repository-system.md); for path and mount behavior, see [Data and Path Runtime](../architecture/data-and-path-runtime.md); for notebook source/output constraints, see [Edit Notebooks](../workflows/edit-notebooks.md); and for harness internals, see [Test System](../testing/test-system.md).
 
 ## Runtime map
 
@@ -142,10 +148,57 @@ pre-commit run --all-files
 |---|---|---|
 | [`reader-install.yml`](../../.github/workflows/reader-install.yml) | Weekly Monday 05:00 UTC, manual, and PR changes to installation/dependency/data/setup surfaces | Walks documented first install on clean Linux x86_64, Apple Silicon macOS, and native Windows: install `uv`, `uv sync`, verify stable data-root/startup-hook behavior, copy `.env`, run installation verification, download free data, execute the first notebook, and fit LightGBM. A separate Intel macOS job asserts that sync still fails specifically because `torch` has no distribution, keeping Docker-only documentation honest. |
 | [`container-smoke.yml`](../../.github/workflows/container-smoke.yml) | Weekly Monday 06:00 UTC, manual, and PR changes to Compose or `envs/**` | Runs the reader's actual `docker compose run` download into a workspace-backed data mount, rejects the read-only filesystem signature, and proves the expected Parquet file appears on the host. Weekly failures open or update an issue. |
-| [`test.yml`](../../.github/workflows/test.yml) | PRs, every push to `main`, weekly Monday 06:00 UTC, completion of Docker Publish, and manual dispatch | PRs use path-filtered chapter/case matrices; `main`, schedule, post-publish, or `run_all` executes the full shipped matrix. Always-on lint, notebook guards, and fast native unit tests precede Docker notebook tests. Main chapter/case jobs use the image declared by the commit—building a candidate when image inputs change—and check it against the lock. Dedicated jobs route compatibility notebooks to py312 and graph notebooks to a healthy Neo4j service. The benchmark job is currently disabled because QuestDB health is unreliable in CI. Fork PRs without the private test-data deploy key visibly skip data-dependent notebook execution rather than claiming it ran. |
+| [`test.yml`](../../.github/workflows/test.yml) | PRs, every push to `main`, weekly Monday 06:00 UTC, completion of Docker Publish, and manual dispatch | PRs use path-filtered chapter/case matrices; `main`, schedule, post-publish, or `run_all` executes the full shipped matrix. Always-on lint, static notebook guards, and fast native unit tests are separate from Docker notebook execution. The guards include the stdlib prose-numeral ratchet described below. Main chapter/case jobs use the image declared by the commit—building a candidate when image inputs change—and check it against the lock. Dedicated jobs route compatibility notebooks to py312 and graph notebooks to a healthy Neo4j service. The benchmark job is currently disabled because QuestDB health is unreliable in CI. Fork PRs without the private test-data deploy key visibly skip data-dependent notebook execution rather than claiming it ran. |
+| [`openwiki-update.yml`](../../.github/workflows/openwiki-update.yml) | Daily at 08:00 UTC and manual dispatch | Runs an incremental OpenWiki update from full Git history, removes transient run state, and publishes completed documentation changes through a dedicated pull-request branch. A failed OpenWiki command can still publish pages completed before interruption, after which the job reports failure. |
 | [`full-test.yml`](../../.github/workflows/full-test.yml) | Manual release gate, selectable as all, chapters-only, or case-studies-only | Runs all chapter notebooks and a nine-case-study matrix in the published main image; the all scope also runs the py312 set. It uses the private CI fixture checkout and seeded intermediates. This is the explicit broad pre-release run, not the incremental PR workflow. |
 | [`weekly-external.yml`](../../.github/workflows/weekly-external.yml) | Monday full run; Wednesday/Friday Hugging Face cache touches; manual full/touch mode | Enables `ML4T_TEST_TIER=weekly`, runs weekly-marked notebooks with only free-provider credentials, prefetches pinned model revisions, and runs tiny live pulls from free external data sources. JUnit-driven automation opens, reopens, and closes per-notebook/source issues. Skips are not passes. Midweek jobs restore the stable model cache so GitHub's seven-day inactivity eviction does not discard it. |
 | [`docker-publish.yml`](../../.github/workflows/docker-publish.yml) | `v3.*` tags, relevant pushes to `main` selected inside the workflow, and manual image choice | Publishes main and benchmark as native amd64/arm64 manifests and py312 as amd64. Root manifest or lock changes stale all three; image-specific manifests/Dockerfiles select individual rebuilds. Main images are pushed first by digest, verified on each architecture with the same reader installation script, and only then merged into movable tags. Post-merge import, reader-gate, and computation smoke tests verify manifest resolution. RAPIDS is outside this publishing flow. |
+
+### Fast prose-numeral ratchet
+
+The `guards` job runs [`check_prose_numerals.py`](../../.github/scripts/check_prose_numerals.py) twice: first with `--selftest`, then across the repository. The checker itself uses only the Python standard library, imports no project or notebook code, and does not execute notebooks. It scans Jupytext percent-format `.py` sources that have a paired `.ipynb`, looking only in untagged markdown cells. This keeps the gate in the always-on, non-Docker guard path rather than conflating a static prose invariant with notebook execution and its data, image, or service requirements.
+
+The deliberately narrow token rule catches decimals and percentages, including signs, but not bare integers. It masks inline code, math, Markdown links, and URLs; skips numbered headings and recognized cross-references; and exempts cells tagged `results`. This is not a semantic review of all result narration: a qualitative sentence can still go stale without containing a machine-detectable numeral.
+
+[`.github/ci/prose-numerals.txt`](../../.github/ci/prose-numerals.txt) is a baseline of existing `(path, numeral, count)` violations, not a permanent exemption list. On a full-repository run the comparison fails in both directions:
+
+- A new numeral, a new path/token pair, or a count above the listed budget fails the source file.
+- A listed count that is now lower also fails the allowlist, requiring the count to be reduced or its row removed in the same change.
+
+Consequently the baseline can only shrink. When re-execution or an intentional edit removes a typed result, update the allowlist; when adding result reporting, compute it into a figure, table, or `results` cell rather than increasing the budget. A targeted file invocation checks that file against existing budgets, while the stale-entry half of the ratchet runs only for the whole repository so unrelated allowlist rows are not reported absent.
+
+### OpenWiki update and pull-request lifecycle
+
+[`openwiki-update.yml`](../../.github/workflows/openwiki-update.yml) has one `update` job, invoked either by the daily schedule or `workflow_dispatch`; it declares only the `contents: write` and `pull-requests: write` permissions needed for publication. Checkout uses `fetch-depth: 0` because `openwiki code --update` must be able to compare `HEAD` with the commit it last documented. Node.js 22 is installed, followed by globally pinned `openwiki@0.9.0`. The workflow also installs pinned Mermaid and jsdom packages: they are optional OpenWiki dependencies, but this workflow includes them to validate Mermaid diagrams with higher fidelity.
+
+The central command is:
+
+```bash
+openwiki code --update --print
+```
+
+It is deliberately marked `continue-on-error: true`. That setting does **not** turn a failed update green; it lets cleanup and pull-request publication run before a final step propagates the OpenWiki outcome. Unless the run was cancelled, the workflow removes `openwiki/.run.json`, computes the publication path list, and invokes `peter-evans/create-pull-request` on `openwiki/update`. The staged path set is `openwiki`, `AGENTS.md`, and `.github/workflows/openwiki-update.yml`, plus `CLAUDE.md` only when that file exists; the existence check avoids making `git add` fail and stage nothing.
+
+```mermaid
+flowchart TD
+    START["Daily schedule or manual dispatch"] --> CHECKOUT["Check out full Git history"]
+    CHECKOUT --> SETUP["Set up Node.js and pinned OpenWiki"]
+    SETUP --> RUN["Run incremental OpenWiki update"]
+    RUN --> OUTCOME{"Run cancelled"}
+    OUTCOME -->|yes| STOP["Skip cleanup and publication"]
+    OUTCOME -->|no| CLEAN["Remove transient run state"]
+    CLEAN --> PATHS["Build publication path list"]
+    PATHS --> PR["Create update pull request"]
+    PR --> RESULT{"OpenWiki outcome"}
+    RESULT -->|success| DONE["Job succeeds"]
+    RESULT -->|failure| FAIL["Propagate failure"]
+```
+
+*The OpenWiki command may fail without discarding completed pages: non-cancelled runs clean transient state, publish the staged progress, and only then propagate failure.*
+
+The pull request records `${{ steps.openwiki.outcome }}` in its body. When that outcome is `failure`, the PR intentionally contains only pages completed before interruption; merging it establishes that partial progress as the next update's baseline. If a PR URL is produced, the workflow emits it as a job notice. Errors in setup, cleanup, path preparation, or PR creation are not covered by the OpenWiki step's `continue-on-error` and therefore remain ordinary workflow failures.
+
+Authentication is operational configuration, not repository content. The workflow selects the `openai-chatgpt` provider and model, injects the LangSmith connector API key from a repository secret, and optionally injects a separate LangSmith tracing key while enabling the `openwiki` tracing project. Secret values must remain in GitHub secret storage and logs must not print them. The YAML notes that browser-login authentication has no unattended equivalent, so operators must provision an appropriate CI authentication mechanism rather than attempting an interactive login in the runner.
 
 A useful model for CI is:
 
@@ -179,3 +232,5 @@ When changing dependencies, Python/runtime assumptions, image build steps, mount
 6. Update the path filters in `test.yml` and `docker-publish.yml` when an image starts reading a new build input. Otherwise a commit can change the declared image without building or testing that image.
 7. Update `envs/README.md`, installation/README guidance, and relevant commands whenever support or routing changes. Documentation is executable policy: reader-install and Compose smoke intentionally follow the documented route.
 8. Run the narrow specialized path—`py312`, Neo4j producer/consumer order, benchmark services, or RAPIDS GPU—as applicable. For a release, manually run the full suite; use weekly external results to distinguish repository regressions from provider drift.
+9. For notebook prose edits or re-execution, run `python .github/scripts/check_prose_numerals.py --selftest` and then the repository-wide check. Remove or lower obsolete allowlist entries; never raise the baseline to admit newly typed results.
+10. For OpenWiki automation changes, preserve full-history checkout, post-run removal of `openwiki/.run.json`, the conditional path list, interrupted-progress publication, and final failure propagation. Keep credentials in repository secrets and review the generated pull request before merging it as the next baseline.

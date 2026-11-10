@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:9ea28c0001b26a80b4db878a799fb4b4d93916b1a62224b3380b23e67f1e7b4c",
+  "pageVersion": "sha256:a05db246a041d1d0e3dedcc7a9f1f48275be978404bbd6215db3c4916833a442",
   "claims": [
     {
       "id": "claim_c5aa20360d1449a8868c45d815276296",
@@ -321,10 +321,126 @@
           "version": "repo-lines-v1:sha256:7a06f2d699085614acf036b4a107d90b9a0bea1bb1c8ccbae789f3b297fec36c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4ZmRjNzE5OGViMDEzNjI3NzkwZDliZmYwMDNhOGNhNzZmNzAwNmZjNThiZWE0YjY3ODUxNTBhM2U0NTFmOWEyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmNDZiMTdiYWFmYzI3YjVhZjBhNDk5NTUyOTU5NzdkYmM4YjY4YTI0MmNhM2Q3NmJkMTQ3YzJjZTdkNDYwY2FhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjY2UyZGUyNjM3ZjgxMjRiMzFjYTI0Y2ViMjQ4MTE5MzgwZWI4NGExM2E4Zjc2ZmUyNTExZWQ1OTAxYThkZDQwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0ZGE2NzU2Yjc4NGUzZTcwZjkyYjhmNjcyNTNmMTE5ODliMWQ2ODA2MzJmYjNjODM1NGYyNGU5N2Y1OTY3ZGUwIn0"
         }
       ]
+    },
+    {
+      "id": "claim_6d11cfe8357247579ebe4c0de66bec9b",
+      "statement": "The required `test-unit` job runs `pytest tests/` by subtraction against `.github/ci/unit-test-quarantine.txt`, so the Chapter 13 sequence-window, live ETF macro-availability, and backtest-runner helper regressions run in the fast gate without separate workflow enumeration because none is quarantined.",
+      "evidence": [
+        {
+          "resource": "repo://.github/ci/unit-test-quarantine.txt#L1-L16",
+          "version": "repo-lines-v1:sha256:48d7b01bdc8168a610e63ab5a54311598cedcad3ce4f628eeac9f4f11002115f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0NTQzMjgyZGFmZGE4NjBlNmNjYjQ5MjZlYTk4Mzk4OWFmNGRhYzQxNTQ3NDhjYTc5MWJkNTMyYmJjNmExZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUxNjE3MzBmOTgxNmIwYjExZmZjNzlkZjAzMDU4N2NlZTM5MTcwZmQ2YzEzMGJhZDI0NGNiMDZjMDUyMzg3NDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZmZTAzNjAyMzYxNzQzN2YxYzM2NDMwNjExODlkOWQ4MGE4OTBhY2YwN2ZkNDY5ZTc2NjJiYTY2ZDEwNGY5MGYifQ"
+        },
+        {
+          "resource": "repo://.github/ci/unit-test-quarantine.txt#L90-L253",
+          "version": "repo-lines-v1:sha256:f3aa09dfd746ef0cad0eb28790534334b17cb2ccf43f3690238b1dc019512b1e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTY0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhMjU4NTBhN2RhMmYyNzFjZTk0M2VmMzhhNjk2YTI0MzI2YzMyYmI0YzdjZTQyNGQ0ZTA3OGRhYjFjMmUwYjMxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI3YThhYjA0ZDYzNmZmNmJhYjYyYTdmMjkyZTdmOWQ3ZDkxNGMwZDkzNzRjNjk5MjJkNGM2YjViOWE0YTA5Yjg2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1NjNjNTljZjI2M2NjNzQ1NmJmY2Q3NWI1YTg4ZmFmMzE5MGY0OTg2Nzk3NWE1ZGJlMjYxZGM2OGFmMjY1YjI5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L995-L1042",
+          "version": "repo-lines-v1:sha256:d6f33c29c88ed813b8901bd5dac134eacba5a84048f0209cef521b68101cb4e8:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0MTU3Y2Q0NTE2ZjAyYThiNjliOTM1MTY5M2QyNTE2MWNiMzY4YjdlYzc2YTAwY2U3YmM2ZTBmOTdmOGRhYmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0YWI0Y2VmMGNmZTViYmNjYzE1NGM5OWRhYzc0Nzg4NWY3YmIyYWVjMjY0NTA5MTgxZmZjZjc2MTg4YjVkNWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY1NzEyMDhkNmYyZDcyMDhiNjc2MmFiMTU1MzJlNzYxYzk2MzE0NTFjODY1MTAyNmM2N2Y2MTE1MzI3ODEyYmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0YWI5YTA2NmUxMmEwZWViMmMxMzhkNzBiYTRiODdmOTIxMmNmNjQ1MjYxMjVlYzlhNjMyYzZiMGI5NzYwYjEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b917bfbb21e54ba79255f158f619b3e7",
+      "statement": "Chapter 13's canonical plain and patched sequence builders include the target-dated decision row as the final row of each feature window, retain the earliest full window and an exact-lookback symbol as one sample, and are regression-tested to cover equivalent rows and targets; this contract does not apply to forecast contexts intentionally ending before their forecast path.",
+      "evidence": [
+        {
+          "resource": "repo://13_dl_time_series/dl_sequences.py#L142-L266",
+          "version": "repo-lines-v1:sha256:3c1b0bf3ae0733054c94bf972e54c152f870ade69732564769172b17420a43a3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1NjBiY2RmMzAxODhkOTkxYmZiNzhiNjc1NGI5NjY2YjMyZTRiMmMyMmI1ODM2NWQzMzQxNjRmNjkxNzNhOGMxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MDNhMDU2YjBmNjg4YTZmZWJkNzE2ODNiNzkwNzkzMjY0NDgwNGM2NjEzZGNmNmUwMWU0NzM2YjE4NmJmNzgyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjMTRlZDYwNWJiZjAyMGU5ZjBiZWRhMGZjNWJkMTMyZDJjMzQ3NGMyYzM5ZmMyN2JkODVhM2E1MTE1Y2NhYmE5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4Yzc5NjkxMWNhODQ5ODEyMGI1MjIyMDE2Yjg2YmY2NWFlNGZjYTIxZmFlYTgwODVjZTZlMDFiNDZjNmVlZDFjIn0"
+        },
+        {
+          "resource": "repo://tests/test_chapter_sequence_windows.py#L1-L22",
+          "version": "repo-lines-v1:sha256:5143b20ba819464d146a355b213b400582b6877a8546f194b7c59084f3f84907:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1OTAyNjRmNjQxOGJmZmFkYTExNTkwMWNjNDM1YWQ3N2JmMjE5ZTk0OGY3OGY4OTQ2MDU4NjdmNjY0YWI1MDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwYzRiZmIwZTFlYzNjZTk2ODgwY2M0ZDhmNmEzZjMyNzJiMGRmYzBiN2Q3ZGE0MzViODJjNGQyNDU0ZmY2YTYifQ"
+        },
+        {
+          "resource": "repo://tests/test_chapter_sequence_windows.py#L72-L162",
+          "version": "repo-lines-v1:sha256:68d55b54afa9ad31fb7a03cf5c30869794b78b1d04caa179e5ce94ae7ac27c04:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY3MjliMzI5ZjQyZjU0MjBlZjgxMGVhNzdkYmI2NzY3MjBiZWZmNGUyMDMxNmY1MTQ4MTc4NGU0NzRiYzFkM2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlhZGE1MjZhNjJhZTQ3ZDJjMWQ1NmRjNDdmNDIzM2RmMWVmMDVmZDUxMjVlNWY5ZTE2N2M2ZDk2ZDdjZTNjMzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a6cd2e866c344bbba9ad0379ce89e1f0",
+      "statement": "The live ETF regime feature path shifts yield-curve timestamps by the case-study's configured availability lag before a backward as-of join to trading sessions, then computes the configured session-based z-score; its regression test proves full-data results equal results from macro inputs truncated to what was available by the previous day and pins the live lag and threshold to the case-study configuration.",
+      "evidence": [
+        {
+          "resource": "repo://25_live_trading/_etfs_features.py#L251-L289",
+          "version": "repo-lines-v1:sha256:1bd4391ea2139097b28956a40e494577ebc771da567047b1d616c8ae71825dd1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlZDYzZjg0MzI3NmQ4Y2E4ZDA5YzFmZDhmYWZkOTgyODU1YzY4NWViMjIzNmYwODM4ZDhhZjk4OGM3MTdmOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyYTU0ZTlmZWNiZTU4YWYzMzI5MGRjYjNjY2U3OTY0N2I2N2IxOGU1NjhkYzdmMTRmYzNmYmM0ZGIzMDhlNzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxOTVkOWMwNDE2ZTYwZjE0YWM3MmY4NGM5MGQzOTM5YWY2ZWM5NzFjZmZjMWI4ZGZmMWUyNDRlY2FmZGJjMTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA4MWJmMTVhMDZjODgzZDBmNjYxM2FiMmNiOTZjODYyZjU1YTk2ZGI2YzAzOTIwMjQ1ZWJmYmNlODRlMjJmMDcifQ"
+        },
+        {
+          "resource": "repo://25_live_trading/_etfs_features.py#L31-L45",
+          "version": "repo-lines-v1:sha256:8391b43b704b85f191f1621c42b7b98d94bf04fd46fbe56eb1cc50c2bbba29b6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0OTY3OWVhZjM5MTQ4ZWU1MWZmOTJkM2ZhMjUwZmZlN2U4MDIzMzU4MTdhYmU5NmYxODA5NzIwY2Y0ZDA0OTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwODBlYWY4OWI2NzAxZjQzZjQxYjY0MGVkMDNmYTc2NWMwMTIyMzYxNmU2NTY4ODU1ODlmYWMyMjc5NTA1YjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI5ODc4OWQ2OGNmNDU0ZjM3NWI5ZmNjM2Y4MjZmYTYxOGUyM2Q1YWEwYTY1OTQyMTFkZTRlMzc0OGE5Nzc3MTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhlYjIzZDJjYzM2ZTAxNDVmMTRjMTZiYmE4MzFjZTIyOTdlOWRkNDFmNGUyODI1NDJmNjI0ZWVjMzdhNzdkNWEifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/config/setup.yaml#L300-L318",
+          "version": "repo-lines-v1:sha256:970b1bfb32037d0ee8dcdc1108355ba07425af77bb6f0b223862b4fb26c0481b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZiYmQyYWEzYjJjMmViYTQ4ZjEzMzM1ZjlmYTg5Njg1YmFjNjI1YTZkYWRlOGE1OWViZWEyYTI2MzgwN2MzYzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0MDc2OTU0NjE5ZDhiYTI4ODNhODdkMjk1NTI4NDEyMjI0N2JmYWFhNTQxZDE4OWM5MGU5NzBiYWM0ZjgyNTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVhNjM1MjYwMDdhYWEyYzA4Yzg5Yjk4ZWQwY2E5NTc5ZmMyMTMxNGU4MDA0OWE0OTIxYzkzZmVjZDMyMmFhMTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFkMTNhZmUyYmY1NTMxOTI1MGI0ZmYzN2I5NTgzYmUyZjBmYWZiYTJjZjZkZjRjNTFkYWFmOGNjZThjOThkMDMifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/config/setup.yaml#L357-L392",
+          "version": "repo-lines-v1:sha256:3e05824f8834bc70eec5f9a7df3834474e38b593efaaabde22effa4c2af7eb4a:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4NWVlYjY1ZDMyZGQyNzBlNjM4OGQ1ZDVjM2RkMjAzOGE2ZmMxOTM3OWU0ZmMxMmFhM2ZiODFkZDRmNDYyOTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiNzdhZmJkNmQ1NDc3NzNkNGZjOTJmZTYwNjQzNTcyODI3MTkwZjE3YmQ4MWNmMmY5YWFkOTAwNjA5MmRkYzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk2OTdmZmQzYTljN2FmZDk5NmIzZmM2OGI4N2Y3ZDcyYTIzMzc4MDg3MzE5YjI0OThhYTdiN2RiNDRlOGZlZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2MzEzNTVhNDA4N2M4ZDU2ODA4ZGE3NDM1MDdlZDQ1MmQyMWVjN2UwNmIzNDIwOWZjYzQ4MzFkZTM4ZmIwNzAifQ"
+        },
+        {
+          "resource": "repo://tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py#L1-L100",
+          "version": "repo-lines-v1:sha256:9198c603573195b6e2f86d2a0d5ab94938a7fba64f71e59150f24bd70c0209a6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3MGM0ZGNmM2ZiMmI1MmI2ZTFiOTZlNzkxNzBhYmE5NzdkNDBjYzlmYTNhMDUxYjAzYWMwNGQ5M2VkZThhNDQzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_84ef8174541046e1b7a9dd53053287b5",
+      "statement": "The vectorized backtest path refuses an aggregate gross period return below -100% before risk overlays because `sum(weight * y_true)` has no broker or intraperiod liquidation state, while regression coverage confirms a bounded, fully invested long loss above -100% remains allowed and an unbrokered short loss below -100% raises with contributing-position diagnostics.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2609-L2685",
+          "version": "repo-lines-v1:sha256:313fcfbc85a5142d27d01eea5db155ccf5de52908d7fbd845eac4022ea2083de:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlMTA3N2RhYWI3ODZhNDZhMzAyNDA3NWJkMGNiM2Y3MmZhMDM1YzIwYjhjZDNkYzAxMjhkZTQ2NTA2YzM5NjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0MTY1NWE0OGIyMDgxODY2NTM5ODBhNzA2MGNjOWY5NmRkYWJkZGJiOWE3MTQ1MDIxM2UwODBhMDJhMTdhNmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI5MzliNGEwZTcxMTQxNmEyY2Q3ZWMzNmM2ZGQ5YmYyODc3YzAzODQxNzZjOTQ5MWZjMGIyNTcxZjMzZjUwOTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1OGI0MTE1YjFlNDkyZDk4ZDgxNmRmODU2OTQ4ZGNlN2IwNWQ3MjU5NzFiMmJhN2U5ZjA1NTdkZGJlYTk2ZDIifQ"
+        },
+        {
+          "resource": "repo://tests/test_backtest_runner_helpers.py#L574-L662",
+          "version": "repo-lines-v1:sha256:63fbc3fbc383cfcbf7d1c693a4bc3e199221d008430cf07f5ad72ded68953aa6:eyJzZWxlY3RlZExpbmVDb3VudCI6ODksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmODMxMjcyNzM4ZjZiNDAyNzRmZTQ3M2ZhM2M4ZWExNDRhZWE2OTA5OTA3ZGMwNWFkN2M1Y2I4YTU0MmYyNGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ZGYyMjY3NmIyNzMwYWU0M2Q2NDZmMjBkZWVjOTRkYmM5M2JjYzM1MDZlN2NkYjNkOTFlZTRlNGJlYjdjYWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ1NTdlNjcxMDQ3Mzc0NmQ0ZTg3MmZkOGU1ODBiYWUxNTY0ODdkZjU3YzhlNzgyMmYxNGJlYTg2NTFlZGEzODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6fe3f0475c304f0ca3c0938eff073c19",
+      "statement": "The prose-numeral guard scans paired percent-format Jupytext Python sources, ignores markdown cells tagged `results`, and runs a self-test that proves both the exemption and the corresponding untagged failure before CI scans the repository.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L107-L151",
+          "version": "repo-lines-v1:sha256:3961602f30edf49dffe32ec25e9c834332108fc6cb2828ca0081737ddc78e79e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyM2QwYzdhNGFjYzNhNzNlMjhkZTFhMzE0ODJlMGFkMjQxNjIxMGQwZDliOTBhZGIwNTAyNGJiMzFiN2QwMTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3NGMyNmQxMjU2NmYwMjRlNWEzNTJiYTc5ZTdkYTc0YTQwYjBkNDUwZTc4MTNlYWQyYjJiMmM3MDc2ODBkOGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxZGQzZjA0NDUyNDNkNzhlNTliMmYzNTdmYjMzZjU4NmRkYTE2MWJhZjEyODllNjNiOTZlMTZmZWI3YjVkNWEifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L177-L220",
+          "version": "repo-lines-v1:sha256:c48aab898b4ccb167f45d6ae60240f8464470b62e9e60f8d6da2b1a0c81e66fd:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc1MjUyY2FlZWY0NmRhN2EyYmQ5NGEyYWIxNGVkZjE5ZjlhNzQ3ZGQ3YWY3NzJlOGIyYjU5YWYzNWFjNTQ5MzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjNzI4YjhhMDNkOTkxMmViZDYzNTFiNDg2YThiNmI3OTJkNDgwZTNlZDZkNWQ5YjYyOGUwNDhjMWE0Y2QyYjUifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L552-L570",
+          "version": "repo-lines-v1:sha256:6c7178d4fe061fb26ca41ce8c086edf63d2de5aa3095772fbe89cef9ec118545:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0Zjk3NDEyZWRjZWZhZTlkMjg2ODFjMTZjMmFlZTlhODM4ZWYxMmYyNzhhZjEyNTM5MmViNzg1ODUzNGUxYTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzZGI5OGI3OGQ4NzM5MjQwYmQwNjJlOTExMzMyYmI0ZGViNDJkODgwNjA0ZWNhNGUyMTRjN2UxNmQ2NzgxMmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1NjgzMDkyOGY3NjhmNTkwNDAwODFiODIzYzU2ODIxOTVlMzEzZjg3ZGY1ZDI4ZDY0ZmQxMzExNGQ2MDgyMTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2NGI2YWY5YjFmZjA3NDVmODliYzdjODUxMWYwOWFkMmExZjIyZWQ4MzdhMTc0MDA2ZDc3ZWE4NDdkYjIxMGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_99159a2a4fd2472dba6c384c3f4c3c70",
+      "statement": "The prose-numeral guard is a lexical ratchet rather than semantic prose analysis: it detects a deliberately narrow set of decimals and percentages while masking other literal contexts, rejects new or increased sites, and requires stale allowlist counts to be reduced on whole-repository runs.",
+      "evidence": [
+        {
+          "resource": "repo://.github/ci/prose-numerals.txt#L1-L21",
+          "version": "repo-lines-v1:sha256:c77bff1395fa417e01351f9b5a963328b7e18d1a9531ee7fef64a6fdf01c48bf:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZiYjU3MGFlYjdiNjZlZTNmYjgzOTZlOWQ4N2Y4NmYyMjg2ZTZiYzUwZTFkYTZjMzhlYjc1MGVmZGExNzZhNjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyYzQ4NThlMjJjYzJjOTY3YjQyMTUwZmE1NTA1NjJhMmM4MzljMmNlYmNhYWI5MWNhYmRmNmY0ZGEwMjAwMjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM4ODkyODlkNWU0ZjU5NmI2NzZlY2UwODFjYjIyOGYwNTJhNWNkZGEzNDEzYjI2NWYxOWNiM2M2MDRmMDRjNmIifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L223-L271",
+          "version": "repo-lines-v1:sha256:41071b9e0c0ceb0dfae18094678fcfe624678530351a92dd263414bef3dd67ef:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY4ZTk2MWU5NTRkYzVlNDU1YzcwMGY2ZDgyMWY0YmI2ODhkNWI2ZTI4Nzg1NjhlNjAwMWFmMDkwNjY3ZTNkZTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzMDg2NmUxYmNjNWFiNzZlM2VmNTkwMTJkMGFkMzlhNjg3YWJlMDAyM2I0MzhhY2IxMTMwYTE4ODI1ZTgxOTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU0OGQ3NDgzZDA2MGYxNzIyZTI0NTM2ODg4MzM0MjU2YjU0OTBlOGJiZTg2OTgyMDY3NmNhOWVhZjM1MDljYzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1NzIyYjhjNGYyODMxYTA4YTZmZjE2OGQxNjUxMTRiNmZkYmFjZjk4NDIxNTM2NjI3NzY5M2JkY2IzYmQwMjAifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L25-L41",
+          "version": "repo-lines-v1:sha256:23be52c990e3a364d150ed580767ba23f5c701e98f6ca5f88bdf0f9729cbd315:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNkMzI5ODA5MDM5N2ZhMzk1NWMxMmYxZDQyNzY0NzZlYzc2MmFmNGQ2NGVmMDNhM2QyNjg4NzdlYjVhYzkxZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4Njc4OGRjOTUzMWE3ZjkxOGVkOWYxZDY3ODY5NGFhYTNmZWYzN2UxNjE2MDdiYTQxOWUzZThkMWEwNmJjNzgifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L56-L106",
+          "version": "repo-lines-v1:sha256:0d0f977079d2866602ff37e5ca93117718ee095620fbb1f2c59cb5641db5c53b:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMxNDY0YzhjZDFlZDdlZWQ3OGRlMTljNzA0ZmRkZTRlZjczNDhkNzkyNWIwNmIzM2U0MjM3MmFlMzExMzg1YTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwM2RhODE4YWI5OGFkYWY5Y2M5YTEwYjc1ZTMxZjczZGIwN2I2YjQ0M2ZmYWNlZjJkNmYzNDMwYThlODhjNzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY0MDk0YmU3N2VlN2QxZjc1MjczZDA3MTY5ZjBlOWUwMThhNmRmZmQyMmIyNmExMzRlM2Y1OTQyMTJmNjFlOTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM0YWQzODU3MjA2NzVlYmRiYzdmYTJiMGYyOTUwYWVhNzBjMjc2ZTVjMDg4YmE2OTYxMTEwY2JmNDc5YTA4OTYifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.9.0",
-    "at": "2026-11-10T03:38:57.275Z"
+    "at": "2026-11-10T04:21:32.609Z"
   }
 }

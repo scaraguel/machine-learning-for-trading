@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:24550631db18f27bdf6b4fd7bc328e6a56655bb82d7e1d4438c3d8b9c5ea4c21",
+  "pageVersion": "sha256:a17f466c07f95bf4bbe9a57071f8091bd91e8a579b5e59aefdcf20d1ba23f398",
   "claims": [
     {
       "id": "claim_df5dd6f4c3c84c9d8c08905d2735ad2a",
@@ -159,10 +159,80 @@
           "version": "repo-lines-v1:sha256:e8529f4f149fec3ce76f43a092c7844190bb4d882087af91235af71854a352c3:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1OGYzODA2ZTg4ODI2ZDVlYjBiMTA5NjhlMzQzNjJhYzNhYjc4ZjFkYWY5YzNkZGIyODNjZTdjNjNkYmY0MGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI1ODUyZmJhMzliNmJmOWMxNDhiZmY2ZmFkNDhjYWQwNGQ1YzM1N2FmOTgzY2NmMzFjNWY4NDY2MmU2MzRhNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA3MWQ3NGU2YmY5YzYxMjQ0NzAxMGI4Y2NlNzc1MzJlYzZmYWQ0ZmQ2ZmJkYTgwYzFlZTE0N2ZiZWU2MTE3NWYifQ"
         }
       ]
+    },
+    {
+      "id": "claim_0bbf001d6dd24923bd30ce64371a1f96",
+      "statement": "Backtest execution dispatches from the resolved rebalance mode; the vectorized case-study set currently contains `us_firm_characteristics` and `sp500_options`, and `sp500_options` with label `ret_to_expiry` uses a dedicated daily mark-to-market branch rather than the simple weight-times-outcome implementation.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/backtest_loaders.py#L71-L83",
+          "version": "repo-lines-v1:sha256:5020d504bafedf59270ca94363e6ae5e7ab90e1920ef5269c133c2f339b6e3ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1YmMzMTEyZTNmMjU5ODIzNDc0ZjA4MWFhY2Y3NGYzMDVhNGYzZDVlMjg0NmNjNjY3ZTMwZmI4YzRlMGU3YjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU5YWYzMGIzMWViODdjZjMzODdmNjZlYzUzYzg1MTFhZmM2ZTlkYWUyNTNhNmU4NzhlYTc4NzM2YTk2ODM0MTAifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L1694-L1749",
+          "version": "repo-lines-v1:sha256:57a8b5f256f9232b3239d82afa9a04750dc9821e0af89717be194cc418a0c23a:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkNzViOTFkYjNjMGQwMDc0MGJmZDIxZDlmMTEwYzFhOWI5ZjZkODkwYTNmZDMxZGQ2NTJkMTg0MWJlYzJlY2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjViYWE2OTJlZGMyNjllZjcxNDIxMjExMmYwY2JkOTNkYTk3MmI2MTY4ZWY4YWJmNzkzYmQ2N2MxNmYwYjRkYjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4ZDljZDk1MTY4ODhjMmYxNzJlNmY1MTMxN2VkZGZjMGZiMWE1MDAwMjMxMjlhMjMzODNhOWM3NDVmMDk3MmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c931f17b9c1a43ca996aec9a9e03e054",
+      "statement": "The simple vectorized path computes gross period return as the sum of each selected weight times its forward outcome and refuses any period whose gross return is below -1.0, because this path has no broker or intra-period position state with which to model short-margin liquidation; the refusal reports affected periods, the worst period, and leading contributions.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2479-L2538",
+          "version": "repo-lines-v1:sha256:735580f95d0d89d7348af8befaf2291fffc65f053908669f8538f90a87a76fe4:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5N2JmNGYxMGMwZDkwOTAxODFlNjhhYzA0Y2UwZWRhMDUxZmM1NWI0YjJlZTlmNjFhZWFmZTJlNzJjYjhhZjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZDY2OTM1MWVmYWUwM2Q0NDE0MzUzZTRmZTY1ZjZlOTI3MTAwYjBlOTkyNTZjMDM3NjAxMjkxNjZkMDU4ZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ0OWY2YzQ5MjBkMjg0YjcxNmQzZDEzOWVkZDcxZjNmM2RkZWEyMGFlYmRmZmZmZWZlNGJjZTc1NmQwY2UwMTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM5OWIzNTYyODM0Yjg5MGRiNzM4YzUyOTdiYWRiYWZmOTdkZDc0ZGRhZTQyMjk0ZDhiNTZhODMzZDc4M2ZhMGUifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2614-L2665",
+          "version": "repo-lines-v1:sha256:4518dcdff72910ac37a590ba72861aca8e89fced4585aae7170c39992f9746e6:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5NGQyYTgzNzM3ZmE3ODM2YmYwNGJjNmZmOGQyYTU3NDM4ZTUzNzFjYzc1NWE1NWJkZDY5MWRmMzE2OWRiNWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyMWFmNGM0ZWM4NDNjNmJiZTk2N2U5ODYyNzA3ODQ5NTQyN2ZmMzVmMTkwZTVjYTRiM2E4OTUxZTI2NTkxYzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVkYjExZDFiM2I3Zjc5ZWU5MDFhYmViZTMxODg5NzY5NjE2YWJiYzc1MzEwZDFiOWQwYmUzMzIwYTFmMjE5NmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e46e0363bc4945d091bba3a5d8d663ed",
+      "statement": "The vectorized account-loss refusal occurs before `daily_returns` and metrics are constructed and before `run_backtest` reaches `register_backtest_run`, so a refused execution does not persist a new invalid return path.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L1774-L1804",
+          "version": "repo-lines-v1:sha256:44308fab27cd97e5bb331ec91c143f8383022748a9d49813a7628143234f2231:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2OGVhOWVlZmUzNmFmZGIzY2VlYjVhMDk2NzRiOTE3NmNjNjMwZWFhNTQ5MDZkZDNiZGJiMjRkYWZjNGQ2NTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhmMTZhZDRhNzdlMzc5NjljZDFlMWI2Yjk4NjhmZjljODk5YWU3OGUzMDBlMDUxYjE0OTYzMmY0OGU1ZjYyYmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkzMGRlMjhhYjQ3YWU0YmU3MGUxN2E0MGYwMzMwYzVhMjMxMGE1NWMxNGNmMjdmMDA4MGZiZTllNjhiZjU4MzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzZDFiNDkxMWU5OGY3MjI3MDMwZTAxOGE2Y2NkMTAxZWM0Njc4NjAwYjdiMTZlZTE3N2I5ZDZkN2JjMzgwOTIifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2614-L2692",
+          "version": "repo-lines-v1:sha256:cd1e28a38d677bf94165eed77d27abcc3a8e02bcbaf8fcd11a016a3463eecea6:eyJzZWxlY3RlZExpbmVDb3VudCI6NzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5NGQyYTgzNzM3ZmE3ODM2YmYwNGJjNmZmOGQyYTU3NDM4ZTUzNzFjYzc1NWE1NWJkZDY5MWRmMzE2OWRiNWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyMWFmNGM0ZWM4NDNjNmJiZTk2N2U5ODYyNzA3ODQ5NTQyN2ZmMzVmMTkwZTVjYTRiM2E4OTUxZTI2NTkxYzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViMzUyZDY2MGZjMGJiOGY1MmJiOTMyMzY3MDc4N2FlNmViOWU5OWFhMjYyYzg0YTgyNDM4MWZkZWFkNGY3NGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6289235eed5e4e4797f8e3b7727b7a87",
+      "statement": "`force_rebacktest` only bypasses reuse of a complete cached backtest; it does not change vectorized return computation, so forcing or deleting cache state cannot make a gross period loss below -1.0 representable.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L1572-L1600",
+          "version": "repo-lines-v1:sha256:44b7b81782454c662a7da87fb1ca3c37c8ee4b44dbb3abdbb616deefc0ef006b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkOGU0M2Q3MjI5NDdjYzQyYjA5ZjA0MDRiYjM1YTc0NzE3NTVlNWQzNWEyNzgxZWM2ZDU3Zjg5YTUxYmUyYTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkNmQ2NGM3MDYzN2YxNTQ0MTYzYTYxYzFmNjBjOGE3ZjhiM2NkZmU4MmYxYzhjNzk4MGYyMDRlYjUzNDhhY2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3MmEzZTI3NTQ5YzkxYWMzZTMwODFhNGExNTJmNTZlY2YzMmVhZjNhNTA3YTI5ZDllNTU2YjUxMmNkMjgyMGMifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L1694-L1754",
+          "version": "repo-lines-v1:sha256:063d22ab7c384533ed46cc89dc4d1d4a1c8f79b5577fcb934cf6574f0881f347:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5YzcxNDk3Y2ZjODJlNmZlMGZmZmYwYjA2MjM2NWVmNDk3MTUzODhhNjU0N2I5N2ExMzAwZjdlZWEyOGYwMmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjViYWE2OTJlZGMyNjllZjcxNDIxMjExMmYwY2JkOTNkYTk3MmI2MTY4ZWY4YWJmNzkzYmQ2N2MxNmYwYjRkYjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlMTkwYjQ5ZDVjZTRlYWU1YTIwMWQ3MTMxOTRhNTdmOGU1ZmI4YzhhOTJlODRmODk3YTJlNjJmNjZkNjFmZmEifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/backtest_runner.py#L2614-L2665",
+          "version": "repo-lines-v1:sha256:4518dcdff72910ac37a590ba72861aca8e89fced4585aae7170c39992f9746e6:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5NGQyYTgzNzM3ZmE3ODM2YmYwNGJjNmZmOGQyYTU3NDM4ZTUzNzFjYzc1NWE1NWJkZDY5MWRmMzE2OWRiNWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyMWFmNGM0ZWM4NDNjNmJiZTk2N2U5ODYyNzA3ODQ5NTQyN2ZmMzVmMTkwZTVjYTRiM2E4OTUxZTI2NTkxYzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVkYjExZDFiM2I3Zjc5ZWU5MDFhYmViZTMxODg5NzY5NjE2YWJiYzc1MzEwZDFiOWQwYmUzMzIwYTFmMjE5NmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_98f419905fd941909576e8eb810751f2",
+      "statement": "Focused helper tests cover both sides of the vectorized feasibility boundary: an extreme positive outcome on a short position must raise the account-loss refusal, while a fully invested long book containing the panel's worst observed forward outcome remains above -1.0 and completes.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_backtest_runner_helpers.py#L592-L662",
+          "version": "repo-lines-v1:sha256:fb4a64d26652465a47a59d0205cdc968953e1727958db76a81225d7768e9d80f:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMmQ0YjgxZmM2NThjYTNiMjYyYTkxYWMzYzFhNTA1YWQ3MWNkYjg5N2E1Y2I2MGY3NjNkZmEzYzc1MTIzM2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ZGYyMjY3NmIyNzMwYWU0M2Q2NDZmMjBkZWVjOTRkYmM5M2JjYzM1MDZlN2NkYjNkOTFlZTRlNGJlYjdjYWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZkOGFhZTY4ODU1ZmFhNGJjZDljZTU5OGMyMDAyYTNhNWIyZjU3YTM5ZDhkYzhkYTQxYTg5YjFlZWY2NjBhY2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.9.0",
-    "at": "2026-11-10T03:38:57.275Z"
+    "at": "2026-11-10T04:21:32.609Z"
   }
 }

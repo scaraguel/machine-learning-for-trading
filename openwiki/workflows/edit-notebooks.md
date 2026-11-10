@@ -1,18 +1,26 @@
 ---
 type: contribution workflow
 title: Edit, Execute, and Synchronize Notebooks
-description: Safe lifecycle for changing Jupytext percent sources and their rendered notebooks, including parameters, output-preserving synchronization, execution hygiene, and provenance validation.
-tags: [notebooks, jupytext, papermill, provenance, contribution-workflow]
+description: Safe lifecycle for authoring computed results, changing Jupytext percent sources, and synchronizing truthful rendered notebooks with provenance and focused validation.
+tags: [notebooks, jupytext, papermill, provenance, result-numerals, contribution-workflow]
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-10T03:38:57.275Z
+    at: 2026-11-10T04:21:32.609Z
 sources:
+  - id: openwiki-source-7f0d23498165af972e19701e
+    resource: repo://.github/ci/prose-numerals.txt
+  - id: openwiki-source-25d98ec4ab50900f2553fec7
+    resource: repo://.github/scripts/check_prose_numerals.py
   - id: openwiki-source-90938d782e86beeaeb35accb
     resource: repo://.github/scripts/notebook_provenance.py
   - id: openwiki-source-9d7ca6e1e61f415fc90aff44
     resource: repo://.github/scripts/sanitize_notebook_paths.py
   - id: openwiki-source-bf629d17b9d09f56f84384b1
     resource: repo://.github/scripts/strip_empty_cell_tags.py
+  - id: openwiki-source-4f2678f93d3fd3835f9f2909
+    resource: repo://.github/workflows/test.yml
+  - id: openwiki-source-fb40adaf5a26885014c8b999
+    resource: repo://13_dl_time_series/04_transformers.py
   - id: openwiki-source-f317ee207e1653d2033c81a4
     resource: repo://CONTRIBUTING.md
   - id: openwiki-source-d0b13d17c20ac4458b12ac59
@@ -31,7 +39,7 @@ sources:
     resource: repo://tests/test_notebook_sync.py
   - id: openwiki-source-118eb60184eeb86594d0b935
     resource: repo://tests/test_sync_notebooks_prose_drift.py
-generated: { by: "openwiki/0.9.0", at: "2026-11-10T03:38:57.275Z" }
+generated: { by: "openwiki/0.9.0", at: "2026-11-10T04:21:32.609Z" }
 ---
 
 # Edit, Execute, and Synchronize Notebooks
@@ -65,6 +73,30 @@ flowchart TD
 
 The key decision is not whether a diff looks small. It is whether the committed outputs are still exactly the results of the current executable source.
 
+## Author computed result numerals under N1/N2
+
+A computed value belongs in a figure, a table, or a cell tagged `results`, not as a decimal or percentage typed into ordinary markdown prose. Prefer producing the number from code—for example, as a table value, a figure annotation, or code output such as `display(Markdown(f"..."))`—so re-execution updates the narrative value together with the calculation. A genuine results markdown cell uses the normal Jupytext marker metadata:
+
+```python
+# %% [markdown] tags=["results"]
+# Results interpretation belongs here.
+```
+
+Do not add `results` merely to silence a failure: the tag identifies result-bearing content and does not make a hand-typed value recompute. When editing a legacy notebook, correct affected result numerals in the content you touch. If that removes or reduces an entry in `.github/ci/prose-numerals.txt`, delete the row or lower its count in the same change; the allowlist is a migration budget and may only shrink.
+
+Run both the checker's own contract test and the repository scan:
+
+```bash
+uv run python .github/scripts/check_prose_numerals.py --selftest
+uv run python .github/scripts/check_prose_numerals.py
+```
+
+The gate scans Jupytext markdown cells in paired notebook `.py` sources and compares decimal and percentage tokens in **untagged** markdown with `.github/ci/prose-numerals.txt`. New tokens or counts above the listed budget fail. On a whole-repository scan, a listed token whose current count is lower also fails, forcing the list to shrink; a targeted file scan is useful while editing but cannot prove that unrelated allowlist rows remain current.
+
+Its scope is intentionally narrow. It excludes bare integers, numbered-heading prefixes, cross-references (including supported runs and ranges), inline code, math, Markdown link destinations, and URLs; it also skips markdown cells tagged `results`. This is not a general stale-results detector. In particular, it cannot recognize qualitative prose such as “the ensemble does better” that becomes false after a run, and it does not prove that a tagged or displayed value was honestly regenerated.
+
+Therefore a green numeral check never changes the lifecycle decision above. If a calculation changed, regenerate truthful outputs in the canonical environment and synchronize/stamp them, or clear outputs and provenance when replacement outputs cannot be committed. Review nearby qualitative interpretation manually. Old output under changed code remains stale even when no decimal or percentage appears in prose.
+
 ## Author cells and runtime parameter cells
 
 Every notebook has a tagged parameter cell containing **production defaults**:
@@ -94,7 +126,7 @@ Papermill's notebook-level `metadata.papermill.parameters` is not authoritative 
 
 ### Prose-only changes
 
-For markdown wording, markdown-cell insertion/deletion/merging, or markdown retagging, edit the `.py` and run:
+For markdown wording, markdown-cell insertion/deletion/merging, or markdown retagging, edit the `.py`. Keep new computed decimals and percentages out of ordinary prose, correct affected legacy sites in the text you touch, and shrink `.github/ci/prose-numerals.txt` when its recorded count falls. Then run:
 
 ```bash
 uv run python .github/scripts/notebook_provenance.py sync-prose <notebook>.py
@@ -137,7 +169,7 @@ It compares code and prose cells, ignores Papermill-injected code cells, and rep
 
 ### Changes that require new committed outputs
 
-If the correction changes a calculation, displayed value, emitted table, figure, or other executed result, re-execute the synchronized notebook against production data and defaults in the canonical environment. A local reduced Papermill run proves that code can run; it does not establish publishable output provenance. Contributors should not commit a notebook re-executed on an arbitrary workstation.
+If the correction changes a calculation, displayed value, emitted table, figure, computed results narrative, or other executed result, re-execute the synchronized notebook against production data and defaults in the canonical environment. While touching the result presentation, move affected decimal and percentage results out of untagged prose and shrink the legacy allowlist. A local reduced Papermill run proves that code can run; it does not establish publishable output provenance. Contributors should not commit a notebook re-executed on an arbitrary workstation. Passing `check_prose_numerals.py` is necessary but not evidence that the outputs or qualitative interpretation match the new calculation.
 
 The execution/restamping path is conceptually:
 
@@ -173,7 +205,14 @@ Execution creates more than numeric outputs. Before committing an executed artif
 
 ## Narrow validation recipes
 
-Run commands from the repository root. Replace `<notebook>` with the path without an extension where convenient.
+Run commands from the repository root. Replace `<notebook>` with the path without an extension where convenient. For every notebook-authoring path, run the N1/N2 self-test and full scan in addition to the change-specific recipe:
+
+```bash
+uv run python .github/scripts/check_prose_numerals.py --selftest
+uv run python .github/scripts/check_prose_numerals.py
+```
+
+Use `uv run python .github/scripts/check_prose_numerals.py <notebook>.py` for fast iteration, but finish with the full scan whenever the allowlist changed: only the full scan reports stale or over-budget entries repository-wide. These checks augment rather than replace pair synchronization, provenance checks, canonical execution, or focused tests.
 
 ### Prose-only or supported alt-text change
 
@@ -226,6 +265,8 @@ For a changed number, record the old value, new value, and how each was produced
 
 | Symptom | Meaning and response |
 |---|---|
+| `is typed into prose` | An untagged markdown decimal or percentage exceeds its legacy budget. Move the result into a figure, table, computed output, or legitimate `results` cell; then execute or clear if code changed. Do not expand the allowlist. |
+| `no longer types ... into prose` | A whole-repository scan found that a legacy count fell. Lower or delete the matching `.github/ci/prose-numerals.txt` row and rerun the full checker. |
 | `STALE` | The `.py` no longer hashes to the stamped source. Use the appropriate surgical sync only for a recognized non-computational edit; otherwise execute/restamp or clear. |
 | `OUTPUTS CHANGED` | The notebook's outputs no longer match the stamp. Restore them, use the exact supported generated-output sync, or restamp a real execution. |
 | `TEST-MODE` | Reduced parameters produced the committed artifact. Re-run with production defaults or production-safe declared parameters. |

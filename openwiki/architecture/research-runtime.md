@@ -1,11 +1,11 @@
 ---
 type: runtime architecture
 title: Case-Study Research Runtime
-description: Architecture of the shared case-study runtime that resolves declared model and strategy configurations, plans identities, dispatches adapters, isolates canonical and preview storage, and exposes verified results to notebooks.
+description: Architecture of the shared case-study runtime that resolves declared model and strategy configurations, plans identities, dispatches adapters, isolates canonical and preview storage, and exposes verified results to notebooks. Covers the vectorized backtest path's pre-write insolvency refusal and its boundary with broker-aware engine execution.
 tags: [research-runtime, case-studies, model-planning, backtesting, workspaces, artifact-integrity]
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-10T03:38:57.275Z
+    at: 2026-11-10T04:21:32.609Z
 sources:
   - id: openwiki-source-db81b3575cd61f67f5b2ecfa
     resource: repo://case_studies/research/__init__.py
@@ -25,13 +25,17 @@ sources:
     resource: repo://case_studies/research/strategy.py
   - id: openwiki-source-7106b9d2d0f65d967d1abe2a
     resource: repo://case_studies/research/workspace.py
+  - id: openwiki-source-5d56c3427fd0ee42a6d560b7
+    resource: repo://case_studies/utils/backtest_runner.py
   - id: openwiki-source-0e9ef955e212e69488010152
     resource: repo://case_studies/utils/notebook_contracts.py
+  - id: openwiki-source-40b1eae867fb4b8a7532167f
+    resource: repo://tests/test_backtest_runner_helpers.py
   - id: openwiki-source-fff25fdc8602d06b7b9138e0
     resource: repo://tests/test_research_workspace.py
   - id: openwiki-source-5f060307b441bcc36193ed19
     resource: repo://utils/modeling.py
-generated: { by: "openwiki/0.9.0", at: "2026-11-10T03:38:57.275Z" }
+generated: { by: "openwiki/0.9.0", at: "2026-11-10T04:21:32.609Z" }
 ---
 
 # Case-Study Research Runtime
@@ -52,6 +56,7 @@ This architecture supports the integrity rules described in [Research Integrity]
 | Population planning | `model_planning.py` | Resolves identities and checkpoint membership without fitting; groups work by family and preserves request order. |
 | Execution orchestration | `execution.py` | Runs models and backtests, declares official populations, verifies produced identities, and reports computed versus reused work. |
 | Strategy resolution | `strategy.py` | Turns a complete prediction plus signal, allocation, risk, cost, and price inputs into an identity-bearing backtest specification. |
+| Backtest mechanics | `case_studies/utils/backtest_runner.py` | Converts resolved strategy inputs to weights, dispatches vectorized or broker-aware execution, computes return metrics, and registers successful runs. |
 | Result access | `results.py` | Resolves hashes across workspace and release registries and exposes registry records, specs, artifacts, lineage, protocol, and completeness. |
 | Notebook-level admissibility | `case_studies/utils/notebook_contracts.py` | Applies reporting and selection safeguards such as excluding degenerate or incomplete prediction sets. |
 
@@ -128,6 +133,43 @@ Backtesting starts from authoritative Polars rows selected from `study.predictio
 `Strategy` requires a complete prediction from the same study and a validation or holdout split. Its resolved specification includes signal, allocation, risk, costs, input-price identity, execution tier, and case-specific behavior. Holdout strategies must load canonical holdout prices rather than accept reader-supplied prices.
 
 `run_backtests()` requires a writable study and validates the entire selection before executing. Canonical backtests create an official population before writes; preview or exploratory ancestry cannot do so. Each member is reused if `Result.open()` finds a complete result with the planned hash, otherwise the strategy runs. A returned hash that differs from the plan is fatal, and an official population must be complete at the end. `BacktestExecution.diagnostics`, `n_computed`, `n_reused`, and `disclosure()` make warm-registry reuse explicit rather than presenting a cached sweep as newly computed work.
+
+### Vectorized refusal versus broker-aware execution
+
+`Strategy.run()` loads the prediction and price frames, resolves any decision or state-transition weights, and calls the shared `run_backtest()` boundary. The canonical strategy specification's `strategy.rebalance.mode` then chooses the ordinary vectorized or engine path; the specialized options hold-to-expiry path is a separate dispatch and should not be inferred from the rules below.
+
+The ordinary vectorized path is deliberately an arithmetic return path, not a broker simulation. It thins predictions to rebalance dates, joins target weights to realized forward outcomes, computes each period's `gross_ret` as `sum(weight * y_true)`, calculates turnover and costs, and only later applies supported portfolio-level risk overlays. Because it has no intra-period position, broker, margin, or fill state, a short leg can make that product less than `-1.0` even when the account configuration forbids leverage and declares short maintenance margin.
+
+After the canonical-window slice, `_run_vectorized()` now refuses every period whose **gross** return is strictly below `-1.0`. It raises `ValueError` before vectorized risk overlays, daily-return construction, metric calculation, and `run_backtest()`'s registry/artifact write block. The message is part of the operational diagnosis: it reports the case study and label, affected-period count and total period count, worst gross return, and up to three largest negative symbol/timestamp contributions with their weight and `y_true`. Callers should preserve that complete exception rather than replacing it with a generic failed-member count.
+
+This guard is not a liquidation, maintenance-margin, or loss-capping model. It does not choose an intra-period liquidation price, rewrite the period to `-100%`, or continue the vectorized run. It is also narrower than cumulative ruin handling: the predicate is `gross_ret < -1.0` for one period. If a valid return path reaches zero through other losses, shared post-execution ruin semantics stop the persisted return series at `-100%`, set later returns to zero, and make ranking ratios unrankable.
+
+The engine branch instead builds a `DataFeed`, broker-backed strategy, target-weight executor, configured position rules, and portfolio risk manager. It advances over price bars, holds positions between rebalances, and can return trade, fill, equity, and portfolio-state records. Extracted engine returns still pass through the same ruin-stop and metric layer, but the vectorized insolvency refusal is not applied to engine output.
+
+```mermaid
+flowchart TD
+    A["Strategy.run resolves inputs and weights"] --> B["run_backtest dispatches by rebalance mode"]
+    B -->|vectorized| C["Join weights to forward outcomes"]
+    C --> D["Compute gross return and costs"]
+    D --> E{"Any gross return below -1.0"}
+    E -->|yes| F["Raise diagnostic ValueError"]
+    E -->|no| G["Apply supported vectorized risk overlays"]
+    B -->|engine| H["Run broker over price bars"]
+    H --> I["Extract returns and execution records"]
+    G --> J["Apply shared ruin stop and metrics"]
+    I --> J
+    J --> K["Register result and artifacts"]
+```
+
+*Backtest execution diverges at the resolved mode: the vectorized path refuses an impossible one-period gross loss before registration, while the engine path obtains returns from broker-aware position execution.*
+
+#### Failure propagation and remediation
+
+The refusal escapes `Strategy.run()` and `run_backtests()`; the sweep does not return a `BacktestExecution`, and no per-member `diagnostics` entry is appended for the failed member. In a canonical run, the official population was already declared before member execution, so it remains incomplete rather than being silently redefined around the successful members. Any earlier members that completed remain identity-addressed and can be reused on a retry.
+
+Treat the exception's named contributions as evidence about the strategy/data combination. The supported remedies are to bound or remove the short exposure before weights are computed, or change the strategy to the engine path so positions are priced through broker state. Do not catch the error and clamp the return, inject a synthetic liquidation, drop the offending outcome, or renormalize only the survivors: those changes would manufacture behavior the vectorized path cannot observe. Because a signal or execution-mode correction changes the strategy specification and backtest identities, replacing a canonical population under the same name must follow the normal `supersedes` lineage rule.
+
+Focused helper tests use observed extrema from the `us_firm_characteristics` monthly-return panel. A `-0.5` short against the observed maximum forward return must raise with the insolvency diagnosis, while a fully invested long fixture at the panel's observed minimum remains above `-1.0` and completes. These tests pin both the refusal and its scope; they do not assert a vectorized margin or liquidation implementation. Broader population-before-write, retry-reuse, and completeness behavior remains covered by the research execution tests described below and in [Test System](../testing/test-system.md).
 
 ## Workspace and tier lifecycle
 

@@ -1,12 +1,22 @@
 ---
 type: research governance concept
 title: Research Integrity and Evidence Boundaries
-description: Temporal and governance invariants that keep case-study validation, selection, and holdout results auditable. Covers walk-forward geometry, leakage seals, coverage, declared populations, candidate-set lifecycle, and the one-time holdout boundary.
-tags: [research-integrity, walk-forward-validation, holdout, selection, coverage, governance]
+description: Decision-time alignment and evidence-governance invariants that keep features, sequence windows, backtests, selection, and holdout results auditable. Covers information availability, walk-forward geometry, economic feasibility, coverage, candidate lifecycle, and the one-time holdout boundary.
+tags: [research-integrity, temporal-alignment, walk-forward-validation, holdout, selection, coverage, governance]
 verified:
   - by: openwiki/0.9.0
-    at: 2026-11-10T03:38:57.275Z
+    at: 2026-11-10T04:21:32.609Z
 sources:
+  - id: openwiki-source-6a46902e3d4da387bcb40361
+    resource: repo://13_dl_time_series/09_foundation_models.py
+  - id: openwiki-source-6a8c91b0d91b182f7c9253e3
+    resource: repo://13_dl_time_series/dl_sequences.py
+  - id: openwiki-source-9088962bf46b12f8ff3c1aee
+    resource: repo://25_live_trading/_etfs_features.py
+  - id: openwiki-source-fd0df28fff6ca1736ed0233b
+    resource: repo://case_studies/etfs/03_financial_features.py
+  - id: openwiki-source-32aea03b7a7f7d2486d65b92
+    resource: repo://case_studies/etfs/config/setup.yaml
   - id: openwiki-source-24486799f0ecbedf3af2abd7
     resource: repo://case_studies/research/comparison.py
   - id: openwiki-source-6dfb4d0e505283670818863e
@@ -21,21 +31,29 @@ sources:
     resource: repo://case_studies/research/population.py
   - id: openwiki-source-212033e664bfc9a9ff3f4cf7
     resource: repo://case_studies/research/selection_field.py
+  - id: openwiki-source-5d56c3427fd0ee42a6d560b7
+    resource: repo://case_studies/utils/backtest_runner.py
   - id: openwiki-source-25a7530a3fd9ae26155df353
     resource: repo://case_studies/utils/coverage.py
   - id: openwiki-source-01698c26ec608e878fb90f30
     resource: repo://case_studies/utils/registry/specs.py
   - id: openwiki-source-fe61e6b8bf78f3f70364e116
     resource: repo://case_studies/utils/strategy_analysis.py
+  - id: openwiki-source-40b1eae867fb4b8a7532167f
+    resource: repo://tests/test_backtest_runner_helpers.py
+  - id: openwiki-source-d4ece3d35467d149b6948b42
+    resource: repo://tests/test_chapter_sequence_windows.py
   - id: openwiki-source-f1e100b800dbe401504e0eb5
     resource: repo://tests/test_holdout_boundary.py
   - id: openwiki-source-b44400c97ce10b5f8fe447b7
     resource: repo://tests/test_holdout_second_look_refusal.py
   - id: openwiki-source-fe39cea477d84df5c150239d
     resource: repo://tests/test_leakage_detectors.py
+  - id: openwiki-source-6ff29db61f66c255c777d152
+    resource: repo://tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py
   - id: openwiki-source-857c04e47472d3d31f1c02c6
     resource: repo://utils/cv_splits.py
-generated: { by: "openwiki/0.9.0", at: "2026-11-10T03:38:57.275Z" }
+generated: { by: "openwiki/0.9.0", at: "2026-11-10T04:21:32.609Z" }
 ---
 
 # Research Integrity and Evidence Boundaries
@@ -76,6 +94,31 @@ The important boundary is between **selection** and **estimation**:
 Every feature available at decision time must depend only on information available by that time. This includes less obvious transformations: backward fill, centered windows, globally decoded or smoothed regime probabilities, and randomized time-series splits can all import future information. The leakage detector suite treats new executable occurrences as violations unless they are reviewed, justified, and allowlisted; known but unaudited occurrences remain backlog rather than approval. Development notebooks must apply the configured holdout boundary before their first selection statistic, and forward labels must be purged by the **label endpoint**, not merely by the signal timestamp.
 
 A practical rule is: timestamping a value at *t* does not prove that it was knowable at *t*. The producer must preserve publication lags, entity boundaries, fitting windows, and any other information-time semantics.
+
+### Availability time governs macro features
+
+The ETF yield-curve feature makes this distinction executable. Its Treasury spread row is an **observation about a date**, but the feature pipeline treats it as knowable only after the configured publication/availability delay. The ETF case study owns that contract in `config/setup.yaml`: the macro context declares its source, `alfred_initial_release_close_lagged` policy, one-day `availability_lag_days`, and `backward_asof` alignment. Both the research notebook and the live feature module read the lag from that configuration; the live module also reads the regime threshold and curve z-score window there instead of maintaining deployment-only copies.
+
+Ordering is part of the contract:
+
+1. Re-stamp each curve observation to the date on which it becomes available.
+2. Sort that availability-dated series.
+3. Build the sorted, unique ETF session axis.
+4. Backward as-of join so each session receives only the latest value available by that session.
+5. Compute the rolling curve z-score on the resulting **session** series, not on the source's calendar-day rows, and then broadcast the three regime columns back to the ETF panel.
+
+Moving the lag after the join is too late: the session has already read unavailable information. Computing the rolling window before reducing to sessions is also a semantic change because weekend and holiday rows would count toward a window configured in trading sessions. The live regression test expresses knowability directly: for a probe session *t*, regime features computed from the complete curve must equal those computed after truncating publications to the configured visible-through time. This is stronger and clearer than checking only that two implementations happen to emit the same values.
+
+### A target date does not imply one universal window boundary
+
+For the Chapter 13 supervised sequence builders, labels are forward returns **dated on the decision row**. `create_sequences_multi_asset` and `create_patched_sequences_multi_asset` therefore create each `lookback`-row design window from `i - lookback + 1` through `i`, pair it with `targets[i]`, and stamp the sample with row `i`'s timestamp and symbol. The first valid sample ends at `lookback - 1`; an entity with exactly `lookback` rows contributes one sample. Including row `i` aligns these models with tabular design rows and other baselines that may use features known at that decision.
+
+That rule is contextual, not “all windows include the target-dated value.” [`prepare_univariate_contexts`](../../13_dl_time_series/09_foundation_models.py) intentionally uses `[i - context_length:i]`: it gives a forecaster history ending at `i - 1`, then asks it to forecast from `i` onward. A safe review asks what the model consumes and what is being forecast:
+
+- **Feature window:** when the target is a forward outcome dated at the decision row, include that row's already-available features.
+- **Forecast context:** when the value at `i` begins the forecast path, stop at `i - 1`; including `i` would reveal the first value being forecast.
+
+The alignment tests pin both ordinary and patched feature windows, their earliest admissible sample, exact-history entities, and equivalent row coverage. An apparently harmless one-index shift changes the information set and the sample population, so it belongs to the evidence contract rather than model plumbing.
 
 ### Walk-forward geometry is an identity
 
@@ -166,6 +209,16 @@ Predictions are not yet trading decisions. `DecisionArtifact.publish` validates 
 
 Canonical promotion is stricter than exploratory publication: it requires current complete canonical prediction lineage, an importable source identity, exact declared prediction inputs, deterministic or seeded execution, and a clean-replay digest equal to the published artifact. Decision state is therefore explicit and auditable rather than hidden in notebook control flow.
 
+## Economic feasibility is an evidence boundary
+
+The simplified vectorized backtest computes period gross return as `sum(weight * y_true)`. It has rebalance-date weights and forward outcomes, but no broker, maintenance-margin enforcement, liquidation fill, or position state inside the holding period. That simplification is acceptable only while the resulting period remains economically representable by the path.
+
+For a short position, `weight * y_true` is unbounded below when the underlying rises. If aggregation produces `gross_ret < -1.0`, `_run_vectorized` refuses the run with the worst period and largest position contributions rather than registering the result. This is a **hard evidence boundary**, not simulated liquidation. Clipping the period to -100% would invent a liquidation price and timing that this path does not possess; continuing to compound through zero would no longer describe an account return. The corrective choices are to bound the short leg before this calculation or use the engine path, which holds and prices positions through time.
+
+This refusal is deliberately checked on `gross_ret`, before post-hoc risk overlays and metric computation. A vectorized risk rule cannot repair evidence that the underlying return construction could not produce. The same boundary-oriented design appears in adjacent refusals: selected nonzero-weight positions must have usable outcomes, position-level stops and `daily_loss` cannot silently run on a close-to-close vectorized series, and funding or explicit state transitions require richer execution state.
+
+The ordinary ruin-stop semantics elsewhere in the runner serve a different purpose for representable paths: they stop compounding once an account is exhausted and make risk-adjusted metrics unrankable. They must not be read as authorization to transform an impossible vectorized period into a simulated liquidation.
+
 ## Holdout lock and second looks
 
 [`build_holdout_cv`](../../case_studies/research/holdout.py) derives exactly one fold from the selected validation specification and the case study's configured holdout window. Training begins at the earliest validation training start unless fold-scoped features impose a later availability floor; it ends before the holdout by the widest buffer. [`build_holdout_training_spec`](../../case_studies/research/holdout.py) replaces the CV and dispatches to the model family to recompute eligibility, effective per-fold parameters, and other fold-derived fields. A family without that hook cannot run a holdout fit. This is a refit of the selected configuration, not an opportunity to alter its mechanics.
@@ -189,18 +242,20 @@ Consequently, do not use “the hash changed” as the sole runtime attestation.
 
 Before changing evaluation, selection, or holdout code, verify:
 
-1. Inputs remain point-in-time and label endpoints—not signal dates—define the leakage seal.
-2. Fold generation still uses unique panel timestamps, declared cadence/calendar semantics, chronological IDs, and the correct label buffer unit.
-3. Shared temporal artifacts use geometry safe for the widest label buffer and cover holdout training plus the full evaluation endpoint.
-4. Coverage is checked against declarations and cannot turn missing evidence into a pass.
-5. Every declared label and planned stage is complete; the latest generation-specific attempt is attested.
-6. The selection field contains only complete, rankable, protocol-compatible validation results from published populations.
-7. Population and candidate-set changes use explicit supersession rather than deletion, recency, or silent filtering.
-8. The winner's own label and immutable candidate set flow into the holdout refit.
-9. Holdout-derived fields are re-keyed to one holdout fold, and no selection decision reads holdout results.
-10. A spent window is refused unless the exact prior generation is deliberately named and disclosed.
-11. Decision artifacts declare fold/gap state transitions, and canonical promotion carries deterministic replay evidence.
-12. Runtime behavior is independently attested; configuration hashes are not treated as proof of override delivery.
+1. Inputs remain point-in-time; macro data is ordered by configured publication/availability time rather than assumed knowable from its observation timestamp, and label endpoints—not signal dates—define the leakage seal.
+2. A supervised feature window includes the target-dated decision row when its features are then available, while a forecasting context stops before the first value it is meant to forecast.
+3. Fold generation still uses unique panel timestamps, declared cadence/calendar semantics, chronological IDs, and the correct label buffer unit.
+4. Shared temporal artifacts use geometry safe for the widest label buffer and cover holdout training plus the full evaluation endpoint.
+5. Coverage is checked against declarations and cannot turn missing evidence into a pass.
+6. Every declared label and planned stage is complete; the latest generation-specific attempt is attested.
+7. The selection field contains only complete, rankable, protocol-compatible validation results from published populations.
+8. Population and candidate-set changes use explicit supersession rather than deletion, recency, or silent filtering.
+9. The winner's own label and immutable candidate set flow into the holdout refit.
+10. Holdout-derived fields are re-keyed to one holdout fold, and no selection decision reads holdout results.
+11. A spent window is refused unless the exact prior generation is deliberately named and disclosed.
+12. Decision artifacts declare fold/gap state transitions, and canonical promotion carries deterministic replay evidence.
+13. A vectorized period loss below -100% is refused rather than clipped or compounded; configurations needing liquidation, funding, stops, or intra-period state move to the engine path.
+14. Runtime behavior is independently attested; configuration hashes are not treated as proof of override delivery.
 
 ## Focused regression gates
 
@@ -211,3 +266,6 @@ The most relevant executable specifications are:
 - [`tests/test_coverage_gate.py`](../../tests/test_coverage_gate.py): absolute session/fold coverage and failures when coverage cannot be evaluated.
 - [`tests/test_population_supersedes.py`](../../tests/test_population_supersedes.py): current-generation resolution and explicit population lineage.
 - [`tests/test_holdout_second_look_refusal.py`](../../tests/test_holdout_second_look_refusal.py): default refusal, exact per-generation override, and non-overridable unattributable/non-out-of-sample rows.
+- [`tests/test_chapter_sequence_windows.py`](../../tests/test_chapter_sequence_windows.py): decision-row inclusion for ordinary and patched supervised windows, earliest complete windows, and exact-history entities.
+- [`tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py`](../../tests/test_the_live_etf_regime_features_respect_the_macro_availability_lag.py): live macro features agree with an availability-truncated source, and deployment reads the case study's lag and threshold.
+- [`tests/test_backtest_runner_helpers.py`](../../tests/test_backtest_runner_helpers.py): vectorized runs refuse missing outcomes and short-driven period losses below -100%, while a bounded long-only fixture remains admissible.

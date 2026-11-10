@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:231d698e685be0443b1acf4167a881a55299c247e49f460b400db3567e251f78",
+  "pageVersion": "sha256:80bfd417480b6e1773b9f8bdb6e2ac1bc7f0ce2bd409745510b077382d467509",
   "claims": [
     {
       "id": "claim_c808bd7739644cfcbefb5f43afddce7e",
@@ -185,10 +185,84 @@
           "version": "repo-lines-v1:sha256:926dd593e1b6a9c70e2d02ee80d95d92585c1e68c13a309cd044ceb7e477e842:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzc0NWZhYjg2YjEyMWRjODViNGY3ODY3MzM5YTEzZmVlODA0YzhhMDJmNDcxMDY1NzJmMmJmMDY2NGQ1OTUxZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjMwNzU1NTk5NDIwYTM4YTk5YjM1MmFiYTIxYTg2YWU4Yzc3NzRlMWQ3Njk2YjQyZTg4NDUxNGNjNWM3NzE4ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGMyOTA5OGI0MWE1NzQxMTQxNTk5NmY0ZWVmY2YyZjA3ZjllNjNjODE2NTdjMjYzNmQ5NzkzNmFlZDQ3YjY3MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzA1YjNjOGMyZTMxMGJkOTgxZDg5OWU5OWNjZTVhM2M5YTBiMWUxYjc1NDAzMDAzNTAzMjhjOTBmMzgzMjA3NiJ9"
         }
       ]
+    },
+    {
+      "id": "claim_6bda9a5545bd43b6bdf8c5b2c87e67ad",
+      "statement": "Notebook authoring rule N1/N2 keeps computed result values out of ordinary prose: decimals and percentages belong in figures, tables, computed output, or explicitly results-tagged cells so values can move with re-execution rather than silently disagree with adjacent output.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L2-L17",
+          "version": "repo-lines-v1:sha256:5600e669b1b0d2ade3143280127af711a7975c360f8e8d0fd0a670b776710857:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlOTQyN2ZlMjYyMWU3YjBmZDY5MDhjYWQ4ZGMzZjE3YTM5ZTk1OTllNTIwMWRiZmIyMTdjMTIyMTY2NGUyODYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmMjFmODc2MmJiYzA0NTAyYjBjYTY4YjljYmQ2ODJhYjlkMmQ3MDZlN2JhYTg3NDdlZDA3ODc3OTY0MTNhMmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoxLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2ODJjYmRiNGM4YjA3NTE4YmY0ODZjNTg5OTBmYzM5MTc4M2FhMjBhOTE2YmZiMjdhZDIxMWViMWQ1YzM2NDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkNmI4ZDA2NDQ3ODFhMjczNjg5ZGM5NWNlYmE0OTAyMjI2Y2UxNmFkMDllZDIwMzkzZjhkMjg1ZDliMDRkMzkifQ"
+        },
+        {
+          "resource": "repo://13_dl_time_series/04_transformers.py#L534-L610",
+          "version": "repo-lines-v1:sha256:e6986af2b9bd2fedc32f9612b472de9e3071a5cf147dd523afd108f50f301fb1:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzOGQ5NDQwNzU0NDY5Mjg1ZjQzNWU0YmM1NThmN2ZhYjE1ZjViZDM0Njc0ZTI3Yjc3ZjJjMWUwMDBjMjMxMWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzNWYzYTBhMmQ2OTU4ZDUxMWJhZDZmMTBkMjIxMDczNTZmMTFhOGUwMWQyNTU3MmNlMDlhNzQxYWE4NTM2NjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ0MzhkYmI0MDI5NWY5MTg5OWVlODZiYmE4ODRkZTQyN2MzNmQ3MzMyNTM3ZjI2ZDNiOWUwMWE1N2RjOGI0YjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2ODMxOGJhMzY5MmU0N2JhNzlkNDc4NjI4OTA4ZTkzYTk2YzYyYmZmMzBmN2E0MzFmZTY2YjYzYTg5NjViNDUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0413fdded60e407e998e3a077d1f94fa",
+      "statement": "The prose-numeral gate scans untagged Jupytext markdown cells for decimal and percentage tokens, while intentionally excluding bare integers, numbered heading prefixes, supported cross-references, inline code, math, Markdown links, and URLs; it does not detect qualitative stale-result prose.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L111-L139",
+          "version": "repo-lines-v1:sha256:0907caee36f06249c7cf1aff840cc8d5ec7d10780503bd55c864567688052b46:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjYmZkYmRhMjRiYzc5OGNjNWRlNmIyNzIwNmE3NGQ4MmVlYzhhMDhhOWM0ZWVjN2Q0N2RkODQ0YmMxZTRjM2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkYjIzNzIyNDc3NGY3MDk1OGFlODA1OWVhZjZjZDA4NmQwYWVjZDNiY2Y2OTBlODY2NjdiY2IzNjIyOTg1NzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNmMWNlYzBlNTBmNjFlNWQwNGQ3ZWM0MzNhMTc5ODM5NDVlNjE5OTEwNjJjOWM5OGUxZjNkYTRkYjZiZjE3NjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhNmUxZTgzODZlNDJmYzQxMDQzYjUxMDBkMTRjYzdjZDY0OTczNWRiZmJjMjUwM2Y4Y2RmNDg1N2Q4NDA5MzEifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L23-L40",
+          "version": "repo-lines-v1:sha256:540805d54a7bfaea476202261eda93865d801c5d67d8f3a555438b356ef024e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0YTE2ZjYzNzg5ZjE5Mjg3N2RhNzYxOGI3YTQ2YTAxNzM1MzdhMWQ2NzE4Yjg2NWY5MDc5NzgwOGM1ZDkzMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDNlY2RkNGE0ZDEwZjE5YzczZmQ0MmZkMTI0MzdmZDMzNTRhODI2ODE2MDVkYTUyNTVhOTdhMzkwNjhkYmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNlMGVkNDQxNzNlYmQxODgyYTYzZDFjOTViYmEwMzIxMGVjOGE0OTE0N2RlODVjNjJhYjg0Nzk1ZDI1NWNmNjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU1YjZlODcwNmI0MzA0N2YyYTZkYjY3ZjEzMjYzODU5NTYwNGU2N2YzNjk2Njg3NmNlMDE1OGYwMDUzZTZiZDEifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L66-L90",
+          "version": "repo-lines-v1:sha256:4ab53ef89f47bcfe77429da8dc3de8237b16f3fb28b749970d554c11ddc0fc10:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkMjdjOWE1YWFkNjUwZDZhOGJmZTM5MjBlMjcwMzA5MmUwNzBkODg1OGZlZmE5NzI4Njc1ZDc4NDIyM2Q0OTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1YmM0NzExZWNjYTA0NTBhZmM4MzI3NzlhODg2NzZhN2M2OTYwZmEzZGE1YWY0MTBlZTAyZDFlMDE1MTU5MWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQxNzc0YzZiZWI3MWEzMTA5ZjUzMjdmNzBhMDUyZjg0MjliMTU0YmExM2I4NmJlN2RjMTFlODAwMTAzOGEwNTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1Nzk1OTE1NTNkMDQzMWFlNDkxNGIyNzlhZDdiNDgyZTA4Y2QwZTI4MTM4ODI2ZGVlNTE4M2MwNGY0Yjc1M2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bcf74432e3c4457aad23887ce651a0b5",
+      "statement": "The legacy prose-numeral allowlist is a shrinking migration budget keyed by source path, token, and count: newly introduced or over-budget sites fail, and a whole-repository scan also fails when a listed count has fallen until the corresponding row is lowered or removed.",
+      "evidence": [
+        {
+          "resource": "repo://.github/ci/prose-numerals.txt#L1-L24",
+          "version": "repo-lines-v1:sha256:df9a61bebeadabf2ad0a2f3a77138d14394c0eded52ab465df3efaf6ede9af52:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZiYjU3MGFlYjdiNjZlZTNmYjgzOTZlOWQ4N2Y4NmYyMjg2ZTZiYzUwZTFkYTZjMzhlYjc1MGVmZGExNzZhNjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlZTI0ZjczMmI4Mzc3NDk4YTRjZWQ3Y2E0ZDY5YzY4ZDc4ZWRiYjUwY2MzMzU1YTcwNGMyNDYxYWE4ZmU4YzgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUzZDQ5NDAzYzk5MDBjOTQwMzJlNDU5YTEzZjEzMWQ3ODAwODZiYmUyNWUyYzdhMGUyOGU4MzVjZDg4Yjg0ZWQifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L221-L264",
+          "version": "repo-lines-v1:sha256:c8eb72d6c2a5f7fb3b7d0facfc1f14f19803d4046c2d4833717f2cb170cb7e53:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5YmFmODYzNmYxODVkNjQzOTY1MGFiNGRlOWYyYTU5NmVhYWFmYzE1ZmVlYjNiMDkxYTdjMzFiZTQ4ZTc4NTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY1MGIyYTU3NTJjNjg5OGFiZmJjOGY0MmJkMWU0ODUzZGI4MTdmMGJhODRmMDY1YWZjMDgyOWQ1NjBlMGFjZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIwM2Y0NmU2ODYxMjM1OTMyYTdjZmM3MzI3Mjk1YTkyZTdhOTVmYTYxMzUwNGVlNTkyZWNiOGI3OGRiMjAyYTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4a8f274ecead4389b88f653b6b8f41ea",
+      "statement": "CI runs the prose-numeral checker's self-test before its repository-wide scan; the self-test covers firing examples, exclusions, and the results-tag exemption in both directions.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L174-L219",
+          "version": "repo-lines-v1:sha256:452071f0f792f241bd9c829f8c10564f0b98008acc02657af795181658d819fd:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMDJmMmUyZmJiNTgxZWUwMmNhZDg0NWRiMDdmMzQyMjAwZmI0YzBkYTBhMjEwYjAzNzYzNzZmZmU3NGFkZTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2MjMzYjNmZmVhMzJhMjNkZjUzMDY1MzQzNDhmMmRlZTc3NmE1YTZmNzRmYjUzMzE3NWRkYzUzOWE4ZmU0NjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyZTY5NTk1ZThlZjg0ODIyNDE5OGE3OWI3ZjE4YjBjMzdjYjM0ZjZhMThiNzAxNWUwYmNkOGY2NWVjNjMzMTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0OGQ3NDgzZDA2MGYxNzIyZTI0NTM2ODg4MzM0MjU2YjU0OTBlOGJiZTg2OTgyMDY3NmNhOWVhZjM1MDljYzkifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L550-L570",
+          "version": "repo-lines-v1:sha256:f9dbf4e4b29c12b4341220d147fc480111a03af00cbc147e6a3809a382cbaa48:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlYzEyODhlNWQ3MzA5OTBmYTczZTZlOTU0MmU0ZjA3NmJiMzIxNGI0MDAzMmY4YjAwOTFmNDE3NDUyNGNjYTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzZGI5OGI3OGQ4NzM5MjQwYmQwNjJlOTExMzMyYmI0ZGViNDJkODgwNjA0ZWNhNGUyMTRjN2UxNmQ2NzgxMmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ4MmQ5MWFhNTQzMDY4ODQwZjZmNDc2ZGJiYmJlMTg5YzU0N2JlNjUzMGJjNDAyYjUwNTAyMzU3NWRlYTE5ZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2NGI2YWY5YjFmZjA3NDVmODliYzdjODUxMWYwOWFkMmExZjIyZWQ4MzdhMTc0MDA2ZDc3ZWE4NDdkYjIxMGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_59db796eccee49cf8763f15a382d7a4b",
+      "statement": "Passing the prose-numeral checker does not relax notebook synchronization or provenance requirements: a calculation change still requires truthful canonical replacement outputs and stamping, or cleared outputs and provenance when replacements are not committed.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/check_prose_numerals.py#L23-L40",
+          "version": "repo-lines-v1:sha256:540805d54a7bfaea476202261eda93865d801c5d67d8f3a555438b356ef024e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0YTE2ZjYzNzg5ZjE5Mjg3N2RhNzYxOGI3YTQ2YTAxNzM1MzdhMWQ2NzE4Yjg2NWY5MDc5NzgwOGM1ZDkzMmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDNlY2RkNGE0ZDEwZjE5YzczZmQ0MmZkMTI0MzdmZDMzNTRhODI2ODE2MDVkYTUyNTVhOTdhMzkwNjhkYmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNlMGVkNDQxNzNlYmQxODgyYTYzZDFjOTViYmEwMzIxMGVjOGE0OTE0N2RlODVjNjJhYjg0Nzk1ZDI1NWNmNjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU1YjZlODcwNmI0MzA0N2YyYTZkYjY3ZjEzMjYzODU5NTYwNGU2N2YzNjk2Njg3NmNlMDE1OGYwMDUzZTZiZDEifQ"
+        },
+        {
+          "resource": "repo://CONTRIBUTING.md#L58-L78",
+          "version": "repo-lines-v1:sha256:ddbe012e4599268a891ab75a7e63a499f0bc84f9c92979d746e4a4d4386b9b95:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlN2YzMDY1ZjhhMGM3NzBhYmUzNzNlMGNiMWM5YTFiZGE5MjEyNTVjMjFjMmNlYjM4NGM3Y2FjMjg3Y2E2OTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkNzE1MjkwOGQ5ZWQ3MzUzMmUxNDMxN2VmYjJjZmJmZmExMDFmYjU1ZjYzZjQ1ZGNiNGZlZTFmNTZhYzNjYmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ4ZmY3MTY5MzU0ODI0Y2U2OGRiYjQ0YTk1OWIwNzg5YzAzMzhlODEyODIzMGQ2ZjU3NmQ5M2QzN2E1ZTY3YWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3OTJiMDI0YTlkOGIxMzczZjFjY2RmODliYmI2YTcxNWNiM2YzMGI0NmI5ZjdmNDkzM2Y2ZTU0NzEwYTczMzUifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.9.0",
-    "at": "2026-11-10T03:38:57.275Z"
+    "at": "2026-11-10T04:21:32.609Z"
   }
 }

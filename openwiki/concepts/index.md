@@ -1,3 +1,3 @@
 # Files
 
-- [Research Integrity and Evidence Boundaries](research-integrity.md) - Temporal and governance invariants that keep case-study validation, selection, and holdout results auditable. Covers walk-forward geometry, leakage seals, coverage, declared populations, candidate-set lifecycle, and the one-time holdout boundary.
+- [Research Integrity and Evidence Boundaries](research-integrity.md) - Decision-time alignment and evidence-governance invariants that keep features, sequence windows, backtests, selection, and holdout results auditable. Covers information availability, walk-forward geometry, economic feasibility, coverage, candidate lifecycle, and the one-time holdout boundary.
