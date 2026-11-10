@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:90733759d545148954a1e4762e7d99856c1169c781001db7ad518727264a4558",
+  "claims": [
+    {
+      "id": "claim_48406ec1deba4e079d4c287cbb0ca17b",
+      "statement": "At interpreter startup, the repository's `sitecustomize` hook appends every numbered chapter directory to `sys.path` and anchors `ML4T_DATA_PATH` independently of the process working directory; the module is packaged as a top-level Python module so supported installs can auto-load it.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L270-L305",
+          "version": "repo-lines-v1:sha256:17be8e5063b680e91504ed0c5a87b765411c46ec889ca8362cb7aa5e36b1f33d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4YTJiM2FjZGQxMThmYzNhMjJhNzA4MDE4ZjY3YzRlYTgzODdjYTc1Y2M3YTYwYjkxOGQyZmYyZTNmMWMyNTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhZmE3ZmFmNDQ0OWQzZGUzNWZmMDk3ZDczZmFhMTQ1OWZhNzllZWQyMmU2NGJjOTRlY2JhYjljNjE4MGM2YzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYyMTYyYjQzMjZiYTY0NWM2YmYxY2UwMzJjMTQ5N2JkOGQxZjc0N2ZjNjIzZWNlMzQxOWMxODM4YjgwY2FmMzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzYTM2NjkzZTc0ZWRiZjk5NjNiOTUzNDE5NjgyNDRhYWJkYmE3MDcxNzJlOWJiYTY4NGRmOTc5MDdiYTM5NTQifQ"
+        },
+        {
+          "resource": "repo://sitecustomize.py#L1-L86",
+          "version": "repo-lines-v1:sha256:f261c22b1a6bb786050d24ba0c7326db50773d676b8248a80220dd9e6408f029:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjOTcxYThiOGY3MmRkOGM0NjRiOWRiZmNlNmY2OGVlMGU3M2RkMzk1YjMzNmQ0MDQ5NWI4YzIxMzljMzk1MTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjODI2ZWFiODU2NGQxZGU1M2QzNmViMzNiMWI1OGRmYjFmZGRiMzM0NzhjMTVlOTk0YjI1YmVlOTBmYzZhZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUyNDFmYTJkNDM2YWIzZTNlN2MzNDA0ZDY2OTg2NWZjZDg1NDI1MjYyNDg0MzQ0YzQ2OTJhYTM1MTI5ZGE1MTgifQ"
+        },
+        {
+          "resource": "repo://tests/test_chapter_imports.py#L1-L54",
+          "version": "repo-lines-v1:sha256:ddbadd4e2b6b8ed3a0052d6d5b2d33b0a73eaafeaca4028e7183714e39667239:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjMGMzNGRlOWI5ZGMzZjQ3NDkxOGZjZTNiMGNjMzE3NzE2YTg0YzJmMjYwYzc2YWFiOGQ5MjM4ZmQ3MDM5OTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_data_root_anchor.py#L1-L133",
+          "version": "repo-lines-v1:sha256:4161a2184db5b09381fc28cb5b56371a34fd62af1ddbe5f2bcdad2db97ff8214:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzYzY3ZjgxOWZjMjM4OGYzMWE4NDI4ODUyYWFhMmZjMzdmMGQ0MzNhNGU0MGY1ODA2ODQ0MjcxODEzZTBkYWY5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiNGE4NTgyOGU1N2NhYTVhZmZjMTNlMzU5YzE5MmEwNWJiOTA5ZGRiOWZkNTc3ZmEzMDE5Zjk3N2FiM2E0NzMzIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_6034320305304274a0de1beaab5a1e3f",
+      "statement": "Data-root startup precedence is an existing `ML4T_DATA_PATH`, then the repository `.env`, then `<repo>/data`; relative `.env` paths are repository-relative, and an unconfigured linked worktree with no parquet may fall back to a populated main worktree's data directory.",
+      "evidence": [
+        {
+          "resource": "repo://sitecustomize.py#L91-L195",
+          "version": "repo-lines-v1:sha256:884c4f1b8e58db10d2fab6f88a0c8a9510a96f6a81ce5d1605185ab2922a284c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1NDQ1ZTE3YWRlZDMwOTc0NWZmZGEzMjlmY2Q2NTg2MmQ1Mjk2YzRlZDdiMGZlY2ViMzMwNDc1ZjZlMjc0YzYxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyOWMxYmI4ODEzMzMxNzcxM2M4MTk4OTY5ZGUxYjZjNmE0YWExZTU4Y2M1ZTZlZGZiZTdiZmNmOTAyMmE5ZjE5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://tests/test_data_root_anchor.py#L135-L235",
+          "version": "repo-lines-v1:sha256:72210b3a8ccd9ff4c4e7d35c00785e091998d258b15a4b793422b1afb3fd6f96:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmMTNmMGZlNzhjNjYxY2NjNTQyYjE1MGI5NTFlOGNkODlmZmQ4NTllOTNiYmNiZDQwNjlhODAwOGVkZWYyODg1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxNWRlZmM4MDZjMjhkOWZlNDg4MjYyNDdkNjMzNGY0OWQzYjg0ZmQ4NWEzOTAzNGM4MjllY2IyMjk1NzI1MDVmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4NzJjOWY0NWYwOTUxMjE0MzRkN2FmOGU1NmVmY2I1ZjNkNTQ0MWMyZDVlZTJhNzgxNmY0YjFjMTcyMzJiYWEzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyZjZkYzJjMTYwYTNkZWNkMDcwNjQwMzQzNTliNjc2MzEwNjFmYTU0MGU0OTNkYzAzNTc5Y2Q3MTAzMTBiM2ViIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_306706d2140f42c6b5bd4c0c93939601",
+      "statement": "`ML4T_DATA_PATH_IS_DEFAULT=1` marks only a startup-selected default data root, allowing the test harness to ignore the tracked data skeleton in favor of populated test data while preserving explicitly chosen environment or `.env` roots.",
+      "evidence": [
+        {
+          "resource": "repo://sitecustomize.py#L159-L195",
+          "version": "repo-lines-v1:sha256:29d8f23bbbb06a1e993c0b71af415d3838977e026134255267dea62e6ead95fb:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNlNjdjM2MxMzFmMTE4NTc1NWQwM2NmYjRiM2YzMTY2NDVhMTJkNzk3NzExMDQ3MGRhOTFlMjRmZDhiZDFiMjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0NDVlMTdhZGVkMzA5NzQ1ZmZkYTMyOWZjZDY1ODYyZDUyOTZjNGVkN2IwZmVjZWIzMzA0NzVmNmUyNzRjNjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkZjI4YTBhMWIxZThiMzA5NGIyYjIzODEwMDZhYzQ3OGNlOTFiOGYwNDU3NmNiMTRiYjBiYWQ2ZTdjZmJiMWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/conftest.py#L143-L220",
+          "version": "repo-lines-v1:sha256:dcb400201c4845ce0f2ac3a5677cae134d9c660f7cb9d187035007091cd3433a:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAxYjczMTc3ZWYxZjI1ZDAzZTJmZTZhMjA2ZjU1Nzg2NjM4MjJhNzRjNTM5YWUyOWZmNmMwMGE1YTM3OWM5NTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdmMTZhZjY3YTg2YTQ3YWM0ODZmMTgwOWNlZmVjY2Y5MzYxZWUwM2ViNzU5ZjU4ODY0ZDZlMTI2YWIxODZjZDQifQ"
+        },
+        {
+          "resource": "repo://tests/test_data_root_anchor.py#L215-L285",
+          "version": "repo-lines-v1:sha256:eeb70b1a67b3c2a14938e92285e424166ace9e557ea15102e8c4e7266d84bbfd:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkYTFjMjk5NmIzYjcxMGFmYTc1NTU2Y2JhMzRlMmU3ZmE2MGM5OGZmYzg0M2EzYWI1MmJlOTY0ODQwOTYxOTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2Y2E1ZjYxYmQxNWZiZTAwYTEwZDcxZTMwNzI5OTQ5MjQ3NDk2NmM0ZTU5NDg2YTlmNmUyZTIwMGNiZjJmMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5ed8161d763c4059b2a3389fa2c38109",
+      "statement": "Download path resolution gives an explicit CLI path precedence over configured `ML4T_DATA_PATH` and the repository default, while `download_all.py` reports per-dataset results and returns a non-zero status when any requested acquisition fails.",
+      "evidence": [
+        {
+          "resource": "repo://data/download_all.py#L331-L398",
+          "version": "repo-lines-v1:sha256:64959640fa29cd6840c3588b53cb7cf9bee29a18a1661c3de7f0695cdf5abf56:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyZTMxMjU3ZGMwYWUxZDU5MzAzN2MyODBjOWFkNTA4MTliOGE2YzhjZjcyOGJlMDcxNmQwMGEzZWVjYzA0YmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyNWVkOWExYWNjOTM4MjI3ZGMyMmMzYzVjMDM5NzRiMGNhMWYxYWMwODhiNTU5YTI1YjIzNmQ1YjExOGI3NTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY5MGQ2YmM3Y2ExMWRlNzg0YTNhNTk5MjgyM2UwNjRiMDdkNDk5YjA2ZjU2NzVkZjgzNmM0NTJiNjQzNjk1ZGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBiZjE0ZGJiZjc3ZGVhZTJjNDZlMDAwYmY1OGYyN2JhYzM0Y2UxN2RkNDFhNjNiNGZhYzc0NmNhOWRjYWE2NjgifQ"
+        },
+        {
+          "resource": "repo://data/download_all.py#L401-L520",
+          "version": "repo-lines-v1:sha256:09863013098ea5692f02ef3d6aea9cac6f932275036c31d2f3cb8f28344a0871:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmZDUxN2U0ZjMwODliZTc0MzRhOGM3YzI0MTk0MjI4YzQxZjEwOTM0OTUwNTUwYTQ4YTk4MzY4Nzk3NTJjMjBjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5NjM3MjZiMDVkMzg5ZWIwOTczOTUwYTA5NDljM2UwOGIwOWFjZmY0YjY4ODcxMWMwNWMyMjIzMjA4NGIyYzRlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyMDY3NDA2ZTc4NmUwYTcxZDA5ZTEzYmFhMjczY2NjYjc3YmQ1YmI2NzJlZWI0NTg4ZTU2YTNjMDk0MTYyODEyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://utils/downloading.py#L28-L67",
+          "version": "repo-lines-v1:sha256:1b7ab36f1b7504fd0eda1ce275290fb5c443264a365e36def2ab6ea86cf3ee57:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhMGMyMWFlYzI4ZTY2MjBmZWMyMjQ1ODllOWEwMjQ2OTllZjNiZThlZmNhZGRhYTE2YjQzNTNiZWFiMmU1NWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk1NTY0YWZmMTcxODc3MGI3MjY1ZTE1YzI1MmNhYTJjZjg0OTIwMTUyOWEzZTVkZTI2YjQ0OGUyNDJkOGIzZjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxNjJkOThmYWI2ZmUzYzA5OTNhZjMzMWY4NGE3MjZjODM0ZDNmMzkxYmU3MzYxNGVlMzdjZWQ1OGUwYjdkZjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b87131919e69407bb21fd6c21fa29259",
+      "statement": "The public `data` facade exposes Polars-based dataset loaders and shared exceptions; representative loaders filter by symbol and date and raise an actionable `DataNotFoundError` when expected data is absent rather than returning empty data.",
+      "evidence": [
+        {
+          "resource": "repo://data/__init__.py#L1-L188",
+          "version": "repo-lines-v1:sha256:d50cd618befb3e8a4f753bc4189079de67af9bd195af8afccb11c2bb16097aa8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkNWViMzViZmM5OWE2OGRhMTcyYmQ0ZTQ5ZTc1MWUwZDlhNDA1YzQwMGUwZWJiZmY3N2UxOGYzMDA5YjRlODQzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmOTQxNmUwOWY3OGJhMzE2YzAzMjU2ODIxM2I4NTVlZTc1NmU0MTU2NWQ5MThmMDk1MTljODFmZDYyMGY0MDYwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://data/etfs/loader.py#L1-L149",
+          "version": "repo-lines-v1:sha256:c8c3b78a2c6e46aa4f12c4ba5183d74a3dc49b0839317984ee9a4af239a9a21c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3YTBkNjIxNzVjYTczMzg3YTFiNGNiZWMzYmI1NTdmYTM2NTc5MjZlY2RjNzg5NzU2M2NlYmU1YjBiOTBjY2QyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4ZmFkNzAzY2M2MDZlMTFmZmJjYmI5MDMwMmZkZjJkOWY4M2Q5NjdkZTBkY2ZiYzAzYTA1YWFhYjE4YThlYmJkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://data/exceptions.py#L1-L180",
+          "version": "repo-lines-v1:sha256:ada66256663b3e360deaf1ecd04231c152caad94f8ce980dcde264bf7c625f8e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIxNjg5YjZmZjg3N2FmMjQ2MTUzYjNkZjMwZmM0M2MzOGMzMDUwMWQzODFlNmZhOWY5Yzg1OWI2ZjA0NTJjMWU2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyZjI2YTk1ZTY0Y2M4YTZkYzAxODYyYjIxODRlMGM2YTM3YzA2MTI2NDA0Y2RiYTlmYWE2NjkzODU2NGYzMTZlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2M2EwNjU1ODhlZTMxYjBiZjUzZjI0NmZmOGQ0YjdhZjA3YWI5Nzk0ODllZTVmYTExNTllOTE3OGI5NTZmNjliIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_bc1dffd93aed4f0abd1f1a3dce737582",
+      "statement": "Downloaded data payloads are generally excluded from version control, with a narrow exception for repository-bundled AlgoSeek S&P 500 data redistributed by permission; paid, manual, converted, and other provider datasets remain subject to their acquisition and attribution boundaries.",
+      "evidence": [
+        {
+          "resource": "repo://.gitignore#L68-L100",
+          "version": "repo-lines-v1:sha256:bc1fc76df7eef2df0510430cbaab20527dd42639fe4937f75116ff58d788a68f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjZWRlZjE5MmE1ODhjZDRiZDBiYjE0NDQ5NTlmYmI5NGVmYzcxZTQ4NDE2MDU1ZTE0MWRkYmM4NGFiMjgwNmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4NTY5MDhkNjcyMTJlNWJiZjg2ZTFmYzU2YzJlNTk5MmQyNmM1ZTNhNzMyN2FlNTJlNjFiYzZkNGUxN2RkNGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2ZGE4NmYxZTExOTk4NDlhNWE5ZGIyOGJiMDgzMDIxZDBjNGU0ZDFkYjZiYjQ0MTEzZTg4Y2M5NTI2ZWE5NGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg0Y2ViOGZhZDIyNTVjYTFjZjc2ZTZmNWVkNDc4NWNiOGY1OGYzZDA0ZGZjYjkyMDkyMTNmNTE4NDFmZWMyN2EifQ"
+        },
+        {
+          "resource": "repo://data/README.md#L141-L246",
+          "version": "repo-lines-v1:sha256:7eea3351a92d7f88c1d4b0725c9f50e1b30ae7bcb27edeeb0d0ec0f3374af5e1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiMjk2ZGNiNWZkYzY5NDBkNTFiNDZmN2U5OWY3MmZhYjYwYmYyMDQ3MjZlNGFkMTNjNGRiOGQ0M2U1NWQ4YjAwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1NDNjMjZkZGU2NTY4NzA5MzFiYmM5NDRiOTJhNDc4NTBmYzI1OWM2Y2I2MmY5OWI5ZWQyNjA2ZDg0ZDFkYjYxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI3Y2JiZjQ4OGRiMGU4YTE0MTAzOTdlNTY0MWRmMjA1MThhNmU2OWRjNjQ0Mzg5NzMwNmEwZDRiZGQxN2Y2ZmE3In0"
+        },
+        {
+          "resource": "repo://data/README.md#L16-L89",
+          "version": "repo-lines-v1:sha256:148651a15772f43109067209c25a131bb4a07bf63bacc5874c79a49016713abd:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExMTVjYWUyNDAxMzA3OTNlOWE5NTFlYzczMDllN2VkNDE4MzNkNzJkMDQyYTQ3NDlmMWE5ZGRjMDUzNmI3NWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwMDU3YTY3Zjk1OTNhYjBiMjcxZTc4MzUxN2JhMGNlMjI1MjE0ZDBjMWY4NDJlNTY2YWI0NjJiZjY4YTY0ODEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhYTg4MmEwZWYwMjcxNjU2MmVhNTkzODMyZjkwM2E2ZmVhZDdjZWU0Y2JjM2I5NDAwYWY3OGI4YWJhZDIxODAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiYjQxYWZhODBmYTVlNmFjY2Y5NjMwYmZjN2Y5MTZiZmY1NzE4ZGE2ZTA3Mzk3OTVmYzhiN2NhZDYwZjBlNzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c3b9d061fb0d44cd8aee958966cf7338",
+      "statement": "Chapter output routing uses `ML4T_CHAPTER_OUTPUT_DIR` before `ML4T_OUTPUT_DIR` and otherwise writes below the chapter's `output` directory, while case-study routing uses `ML4T_OUTPUT_DIR` or the configured production case-study root.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_paths.py#L118-L208",
+          "version": "repo-lines-v1:sha256:5c8e2d60d9da526ff2571826ce393fc987db4b29492ce82fb6cd7c823791f96d:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkOTA3MmQxYmRkODllNjg2MzBhZTAxOTZmY2M0MjY2OGIxZmI4N2U0MTYxZmYxZGIyZWNhNmJiZjYwMWI0YWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2ODkxMGI0ZGEyMzM5NTI5ZWY0NDI4NDFmZDIyZGFmMzhhYzBhM2FkZjVmMTBmMWU4NWEyMzAyNTQzMTY0ODMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBjN2IyODI3YjVkODcxZTgxOGFmNmU3MmE1YmFkOWI5MzcyYTc4ZDM1NWYxNWEyYTNkZWE3MjA3MTExOGViYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkYzRlMzFlNDVmZjdhYTc4Y2M3ZDBiMWIwMTgzZTc4YWViOWFhNjNkMzJkY2IwMTRkYmFmMTMzMDBjZWI2ODQifQ"
+        },
+        {
+          "resource": "repo://utils/paths.py#L171-L259",
+          "version": "repo-lines-v1:sha256:0b81b390d7d6fadbd9e4ef269aabd9aed435f92681c47d285998e841ea08888a:eyJzZWxlY3RlZExpbmVDb3VudCI6ODksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjllNDFlY2Y4MTBhNDYxMzU1OGZiY2JmNjliMWM3YjA1YjQzZGM1Y2ZhMGFlY2EwNzNhZWE0ZGUyNmJkMTFjODAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE2OTZhMGY4MTllMTAwNDZlMGFmZTBjMjQ5ZmJmOWRlZTIyZTk4YjdjNGM3MDVmMTgyYzE0YTZiYTkyZjQ1MjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI3YzhhYTljMGY0NTRjOTlhZGM0ZjkxNjIwZmM1YTc2ODBmNTViZDA1Y2FkNGI2Zjc5ZDliMjU5NTViNTBkMGQifQ"
+        },
+        {
+          "resource": "repo://utils/paths.py#L294-L365",
+          "version": "repo-lines-v1:sha256:a13d26918a8b6ac9d9025b2117e8d225a9f326fc29adf2ebad92ea8d6f9e1d87:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiZTMxNTk4MDYwNjllN2UwZDA0YmQzOGFkNDVkNDg1ZDA3MDcyMTI2MmU3NTAzYTM2OWI0ZDliNzFmM2Q0MTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NTQxM2IzZDE3ZGU5ZTFiYWU5MzI4NjA5NjFkZDk3YTQxZDRiM2M0Nzg0ZjY1YmE5NzdhY2EzNjgxZjY2YzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVhOWIyYWI3NzM2ZjI5Y2FiNTdkYjZiMWUzMWVlNmJhMmUxYmNhMmQ0NzlmYjEwODE0NTdlZDE1MWUyNDgxZTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1e38c75c2df44b0492d9e9daf811c835",
+      "statement": "Case-study source assets and runtime state have separate resolution contracts: source lookup prefers a sibling development tree when present, runtime configs/artifacts follow case-study output routing, and canonical release reads use an explicit release root before `ML4T_RELEASE_ROOT` before the repository root.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/workspace.py#L28-L63",
+          "version": "repo-lines-v1:sha256:2f23955089037977e7ddb6f7ad272a7cd78085051296359639973c9af67006cf:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIwNGE1N2I2YjBkMGM1ZDUyMmQzYzUyOWYxNDc0MTc0NzczMTRkZmNmNjA3ODU3MmQxMTczYmYwYWQ0MjRiYjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzYjJhOWE2MTBhM2NiZWI2ZTA0MzliYWVlNjU0MTE3NmE4YWYzMGEzM2E3YWVmMjY4Yzc0ZWJhZDJjYTNmYzUifQ"
+        },
+        {
+          "resource": "repo://utils/paths.py#L294-L365",
+          "version": "repo-lines-v1:sha256:a13d26918a8b6ac9d9025b2117e8d225a9f326fc29adf2ebad92ea8d6f9e1d87:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiZTMxNTk4MDYwNjllN2UwZDA0YmQzOGFkNDVkNDg1ZDA3MDcyMTI2MmU3NTAzYTM2OWI0ZDliNzFmM2Q0MTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NTQxM2IzZDE3ZGU5ZTFiYWU5MzI4NjA5NjFkZDk3YTQxZDRiM2M0Nzg0ZjY1YmE5NzdhY2EzNjgxZjY2YzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVhOWIyYWI3NzM2ZjI5Y2FiNTdkYjZiMWUzMWVlNmJhMmUxYmNhMmQ0NzlmYjEwODE0NTdlZDE1MWUyNDgxZTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_afc543102c5c4dc1bc0a05af30251dcd",
+      "statement": "Creating a case-study experiment stages a writable copy of generated state, per-case configuration, and shared presets in a new output root and finalizes it with renames, preventing experimentation from modifying installed release artifacts.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/create_experiment.py#L1-L121",
+          "version": "repo-lines-v1:sha256:30a068d57c04e8b07b60bc6eae3494959e764ce1179db9383709aa163c25ee57:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkNjgyY2JkYjRjOGIwNzUxOGJmNDg2YzU4OTkwZmMzOTE3ODNhYTIwYTkxNmJmYjI3YWQyMTFlYjFkNWMzNjQyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxOGU5OTIzMmNkM2EzMDlmNTBjYmQ2ZjY2MjEyN2VlYWFmY2UxZjczNjI5MmRlZmIxMTNkOTgxYTIwYzdkODUyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_92a03bd9d9b34ea893c6dfa310598e97",
+      "statement": "A study's explicit entry point overrides `ML4T_ENTRY_POINT`; the selected value is normalized to a basename stem, and launcher-provided identity is necessary because Papermill execution cannot reliably infer the original notebook from `__file__` or frames.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/workspace.py#L64-L99",
+          "version": "repo-lines-v1:sha256:7989bf3d8b55677d6c52fbbc8a04fa8f49b6854a2a1dd5ad06fc6b0a4e430661:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlYWFmYjJiYmZhOTQyYTY4N2RiOTgxYTZhNzVkMDNkMjZjNzZiMjQxMjM2ZWJkMWJjZmZkODczMmQyMWJjNDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0YWQ0NjBiMDNlMzI0M2UzZjhjYTk1ODM1ZjA3NmE3N2E4MTgxMjRkZjk4YjBjZTI2YmY1NWI5MTZhZTU5NzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0ZmNlMTJhZWYzOGUzMDVjYWQ3MGVkY2M0OTdhYWM1OTI0YTExNDE5Y2MxMDVhYTY4OGFmZWNjYmU5ZGY3ZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxYzY2ZWRjOWZjZGVmOWEyNGIxY2IxNTBkYzMzN2Y3N2Y1MjA3ZWMwMGJjNjlkOTU1ZDQwMzExMWY4YzI4NTkifQ"
+        },
+        {
+          "resource": "repo://tests/test_entry_point_names_the_notebook.py",
+          "version": "repo-file-v1:sha256:f1f850a4855fd7e0ff43e44a0a80abcccde7f0106edb1c043565f1034d74536c"
+        }
+      ]
+    },
+    {
+      "id": "claim_1e6a2cb0bc834836b8d77990889c610b",
+      "statement": "Tests isolate both writes and canonical reads by setting temporary `ML4T_OUTPUT_DIR` and checkout-shaped `ML4T_RELEASE_ROOT` values, and regression tests require canonical case-study runs given a workspace to route storage into that workspace rather than published state.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/workspace.py#L390-L468",
+          "version": "repo-lines-v1:sha256:51d4e1745dcbda27967892884a10e4a51b515821ff635da0f9adcf9188d4dffa:eyJzZWxlY3RlZExpbmVDb3VudCI6NzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFlN2Y1YmNjMTY4NTAzYjIwZGU0NGVlZTBlODcxOWYyNjk4ZWNiYjUxMWM0ODBhZGRjMWMwMDYxMTMyYjM3OTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmMjIxOWIxNmY1ZjFmYTA3YjE2YTU2ODQ2N2Y4MjUxYzg2NGQxNmZlN2JlZjlhNzY5ODhjNGUxNzYwNjIyMmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlZDdlZGQzNjRkYjNjYjI5MmU4ZTU4YzJiMjJiMjNkYWUzMTRkNmYzODI0MmQyMGQxNzE3OWMxNzgwMTRhMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjZDQwNTkyN2NjMzE2YzIzODZiNDM5NDg5M2VlMjBmMjBmMDEwNjU4NTk2YjRhOGU1MGQ0ODYzNzFjNmJkYzcifQ"
+        },
+        {
+          "resource": "repo://tests/conftest.py#L286-L420",
+          "version": "repo-lines-v1:sha256:6838bb603ba693eeecb5d7d694c42d47e5d274605d9a2a365e7261833365bbb4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmZTYxNmExYzQ4ODE1N2Q4ZWZjMmFiMDYyMThmYmRkNDA1YjcxMzZjMDRkMmJiMGIzODUyZDk4ZjlhYjcxNmU5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0ZGRlNjgzZDA1Nzc5Y2M4NjQwMzFiOTBiNmMxN2Q2OTU5MzI2MzBkYTlhN2I1MjQyNDJmZTk3OTBiNDk4ZDBmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2NGU5YTVmNjdkOWEyOWU5MmU4NDEzODk3MjQ2MmFkYzA2NmMyYzY3MmZiZDRhZDRlNzgwYWE2NjY0ZDdjY2RkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzNWFhYTgxMmFhNzQ0YmY3NTQ4OWNkOWNkODk4MGFiNjgyYTNhM2QwNjhlZmFiMGEzNzQwNzk4NmJlYjZiYTY3In0"
+        },
+        {
+          "resource": "repo://tests/test_canonical_workspace_routes_writes.py#L1-L127",
+          "version": "repo-lines-v1:sha256:9c3a90ee6d22bbf5c8d3d7f5764c7d7357678a10dfb8c7808ef570e50c9f0b9d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5NDU4NjQyMWFmN2EzMjU1NmYzMTA5Njk0MDE0NGFiZGZhN2QyM2ZlMDg4MTEzY2U1ZWYyOTBiMDE5ZmVkMDllIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_2297252ff2a347439ed581565ac7e784",
+      "statement": "Missing chapter-produced inputs are treated as fatal and name their producing notebooks, preventing a fresh checkout from silently substituting defaults and committing incomplete outputs.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_paths.py#L211-L272",
+          "version": "repo-lines-v1:sha256:07388a28c4eec2451aea72d0b8b585f35d42e3cce99b4d81faa4629d3844b006:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1ZmEzNTM2ZGUxNjFhNTM2ZDZhMDVhZDM0ZjUzODc3NzBiZGU3MzkyYjE5NDZhNzJlZGUzNGUwYWVkNjUzYmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZiODlhNmE0YzA1MTBmNjA5MmNjOTJlODI4OWRiYWNjZWUwZGVlNmZmNGQ3ZTczYTk5YjgwZGMxOGQ5NGExMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhlYjNlZjg4OTU1NDVkYzkxMzVmYTlmMjIxZjBkMzVlNjAzMmFhNDBmMTY2YzBhOWU4NTk5YmEzMDhkNTdhOTIifQ"
+        },
+        {
+          "resource": "repo://utils/paths.py#L261-L292",
+          "version": "repo-lines-v1:sha256:3279032f4cb8faee3b54af94318150f828c3728261da95f86fe11d3fbdec1e1e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg5YjU3ZjMwZTg0MTcwMGRiZDY1ZjI4MGY4ZTE0Y2M1MGYwZTJhZDE4NzM0MjgxZWFiNTAyNTFiNDk3YWZmOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYmRiNzQ3MTczZjc1MmM4Y2E0Y2ZiMjc5NDNlNzY2NjU3YzZiNDQzYjU2NWMyN2Q5MzhhOTUwNzU3OTA4ZWUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:24550631db18f27bdf6b4fd7bc328e6a56655bb82d7e1d4438c3d8b9c5ea4c21",
+  "claims": [
+    {
+      "id": "claim_df5dd6f4c3c84c9d8c08905d2735ad2a",
+      "statement": "Case studies share a fixed phase order from feasibility and labels through model analysis, validation strategy construction, and final strategy analysis, while exact numbered stages and model families vary by case study.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/README.md#L23-L36",
+          "version": "repo-lines-v1:sha256:d9549524a8a717cd2c2ac33d3b3c67eebb9c0314e642b08a3e0f354bfee76d7b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkNTllYjFkMTk4ODEzZGFmNjk2OWI3N2VlYTZjMmZiODczZGJhMGJkY2QwYmIyMzRjOTc5NzEyYTdjYWM0Y2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgyYTBlMjVkM2NmMjBhZTBhYzZjMjJkZGNmNTQ1MGExOGY1YWU0OTQzOWQ0M2JlZGM5MGU3MTAzYTY3ODU1NDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxYmJkY2Y0NGY0ZTg2ZTI4ZWYyMTRhN2NiNjY4ZDNiYzgwY2M3NDgyM2ViOWMzZGY5N2RjMTUwZjFjNjRkMzQifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L198-L226",
+          "version": "repo-lines-v1:sha256:960902279f70619ef7dfefcbb3675c312d8ae3e3261ea500c1e4d182acef5681:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhNzk5ODA5NjQ0OTIwZWQzZDdjYWVmMmZkZWYxOWQ0ZGI1OTFlYmM0YWUzZTk4NjFmM2M4YTA4OGNkZWQzOTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMyMTY2YjUwMTIxMmFmYmEzOWMzZmI1ZDRkYWI2MWFlYzM4NTMxY2Q2NTExNTliNmJjNWM1MTY0MTg4YjYwN2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_395e58d95f664590bfe8d08242cb0ec7",
+      "statement": "Case-study configuration is layered: setup.yaml declares the trading and evaluation problem, per-label training YAML declares which named configurations run by family, and shared model-type presets declare the named configurations' hyperparameters.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/etfs/config/training/fwd_ret_21d.yaml#L1-L66",
+          "version": "repo-lines-v1:sha256:0082b2cba82befa1d2657c6bd247a021b0131ee694dc4b976f8f0c97e2188915:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhMzFjYTAwM2YzNjNjOTkyZGVjYjRiODY0ZTA5ZDI5MmZmMTcxMzhmYzczNTZiODljZjFkN2RjYTdhYmVhMjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYwOTQ2NjQxODMzNjBkYWNlM2RjOTY1ZDUwYmU4YjdhMDc5ZmJhMDM0NjVmYjUxNjI0MjI4MDEyZTYxMjIzYzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L274-L286",
+          "version": "repo-lines-v1:sha256:63c713ab1dee058b8bf885c84e9d20325075087e14bb743be4f048a20a5ecba5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5Mzk2MzcwMTUyMGRiNmRmOTJhNGExYTliMjI4NDA1ZmM2ZTkxOWViZGE1MzIwZGRiOTNlMmM5NDJjOTQwMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyMmZlNGZlODNmMzEzZTc5NjVjNTRiYjNkYThjN2UxMWE1Njk3ODZkMjAzZTc1MmQ5NzJlMGM5YmFlN2Q5YTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhhNDY2NTAxZjAzZWYwYmQzYWU4NDZlNGIwMDgxMTEwNWJiZGZhZjk0OWU0NjllMDA2MzQ2NWMzNjI1MzBiZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQwZWU5N2Q1Mjc5NDQyZTRmMzA2YWJjMjJhZGQxNDlkMmQzNTZjNTliYzU5ZGI0NGMzZDUwZWNhYzY5YzRjZjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7e8e2fc72bea4062b744bd93d56341c2",
+      "statement": "Several model stages override selected preset values or filter the menu: deep-learning and tabular stages own some epoch/batch/lookback values, DML owns its parameter-cell controls, CPU GBM applies a runtime seed, architecture stages filter by architecture, latent-factor stages request fixed models, and DML uses only the first listed preset.",
+      "evidence": [
+        {
+          "resource": "repo://docs/running-notebooks.md#L415-L452",
+          "version": "repo-lines-v1:sha256:306032248900d758bd595c246f83d51b0268a42c4cf07ac3ef84b6942da8ca5c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxOGExOWMzNWMzMDRhNzdiNzljZWI2NmUwZTRlMDY1OTQ5OWE1ODc2MjE4NWI3YTUzODY3OGM2ODlmZmUwZGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM5OWM2ZDhjNDJjNDNiYzc3YmI5MjgxZTA0N2QzYzhjNDExMzIxODVhYTg3OGYwZDRlOWRkMDYxN2IyZDk4MTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2MjYzNmE1Y2Q0NGRhODk1M2YxNTY4MjU5MzljM2Q5MDhkYmVmMGYwOGFmNmQ5ZmM5OTU5MDkyNzExNWNhN2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cc0f7af232e84a5d8d9d9c94bc34fc26",
+      "statement": "Four setup declarations are repository-pinned under experiment routing and are not ordinary experiment knobs; changing them in the repository requires a fresh run log because they are not covered by backtest_hash, while config/backtest/base.yaml is a distinct partially pinned exception.",
+      "evidence": [
+        {
+          "resource": "repo://docs/running-notebooks.md#L527-L558",
+          "version": "repo-lines-v1:sha256:c535a17d986e90a6b29ffbf2b70505740c2241a0f5c1fd987e46c55c06b68e1a:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjY2M1MGY4YmJiZDE0ZmU4OWUwOTA3MDY3Y2UwZTg5MDQ4ZTA1MzlkOWE4NjdmMDZkZmU5ZmNiOTkwMzQzN2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ5NThmYjM3N2Q4MjE3MmE1M2I4YzU1ZDA2N2YzMzdkZGQyNDI3Nzk0ZjU2YzA2NWMyMzI3ZmU5NDU3MWQ4ZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwYmNmZWEwNGM1YWZmNDk2ZjgzOGJmZGFkNDg1NzQyZmQyM2RjNTIzNzVjNjZhOTA2YWFlNTUzYjc0MDExOTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d1a83ae9781a48adb555ecaffc19cfd3",
+      "statement": "create_experiment creates an isolated writable case-study tree by copying available generated state and per-case-study config, seeding shared presets at the output root, converting release metadata to baseline metadata, and finalizing staged copies with atomic renames.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/create_experiment.py#L14-L101",
+          "version": "repo-lines-v1:sha256:57c3ad33a8a182cbd21c4beb6b8f359b2967b403bb48dce08ea0a1bd5cc1504b:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNkZTQwODg4Nzg5MGY4MmJhMWEwYjk2ZDYxYTc3ZWM2MThiMDQ4ODBiNzI2ZGE3NjQ2ZDQzYWE1MTI0MmMwODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4Y2I1MTZjN2Y5MjY1MDgzOTk1ZGNjMWYyMTM5ZDY0NjE1YzZiMTg5ODI2ODg5ZDI3MzlmYjhjYTE3NDgyZTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhM2E3MTViYjFjZDg4MzZlMzkxMDFmNjVkZmMzZTA1MmE2MTAzZGJkZWY3MjU0MGEzZGU5OTViYzQwZjg2YWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcyOTBkZjkxOTJlODBiN2JiYjgyZjM1OTg1MDQ3NGNiNzc5MDYzZjc3NWMzMTY1OThjNTRlNzdhMGI2ZGM3NmMifQ"
+        },
+        {
+          "resource": "repo://tests/test_create_experiment.py#L44-L101",
+          "version": "repo-lines-v1:sha256:b6338a80f22cf23124cae376dd8d73068163f9ce831109b899a5f80b0b6b73b1:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4YWIwZmMzMWFlNmM3ZTExYWNkYTU4NmU5ZDc2OTIwN2RjNjVkOWQ1ZDNlNGY1NzRlMzc3MjEyOWMxMjM1MDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyZmU0NzYyZWU1NjhlOWE4ZTRmYzA2MGFjN2EwYjZjNmFiNzQ2MTBjY2VlNDNiYWRjMzM0OWU5OWU2YzU4NDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE2ZmI0YjJmOGIxY2Y2OTMwNzgzM2ViN2YyMmQzODMzNTFkYzAzYmQ3MWRmNzMxMDQ2N2RhNTY1YWVkYTFhMjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmYjkwN2ZlOGI0ODgyZTdlNDU2ZTc0MTgxZTQ1MDZmYzQ0MjcwZjUxOTE1ZjdmMDg2NjQ1OTBmZDQxODBjMDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dc6dada5ab624e6fa301d7e18c293867",
+      "statement": "ML4T_OUTPUT_DIR routes both case-study outputs and model/sweep configuration reads, so a manual isolated run requires a seeded experiment containing config and modeling prerequisites rather than an empty directory.",
+      "evidence": [
+        {
+          "resource": "repo://docs/running-notebooks.md#L371-L391",
+          "version": "repo-lines-v1:sha256:f9015ee744c495dbf427fda463c5a2b4c512a6cbf99b8f14f5690da2331c91a2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3ZDIzYTRmYWQ2NDk3ZTQ2MWFhNDNlN2U2NmY3YjMyZjZhOWZmNGEzNTM2N2U2YzE4MmY1ZWRmZGIzY2NjOGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI5M2ZiZmEzYzYwNDQ3OGUxZTU5MjQzM2IwNjYzNzFiMGQ5OTY4ZTNlNjgxZWE0NTY5YWFlMDI4MWYyMzg0ZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI2YjM0ZDZjNGRmZWU5Zjg0MGY0NzgzYzVkMzNiMWFhNmIxZTFiOGE1YzIxODNiNTllMGFjNTk5ZGEwZjgyZjIifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L702-L706",
+          "version": "repo-lines-v1:sha256:9ce58faa8aa9f4d51bef9c32252f644dc71670a6d82d344246709a30f6467c45:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzM4ODkzY2EyZGM0ZTljOTAwMzdjMmIyMzdiMmYwMzQ4ODczZWRmMTQxNjU1MTJjODY1MTYzZDUzNDNlMDJmMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2YwYTNhZWU0MDM3OGE5NWU3YjUxMTJiZGMxZWFhMTE1MjM3NjkxOWE2NDg2MGYwMDgwNjFhODBiMTJlNWFiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDY3YjI1NWZjZWUzZDM2OTliMDY1YmRiOWFkNTQ1ODVlZjI0Nzc0YWRmZTJiODFiY2Q4MTVmMDA0NzA4OTFlYSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3e3a29dd4b264370aae7305bae098247",
+      "statement": "Resolved model specifications are content-addressed: unchanged reruns reuse stored work, changed configurations register under new hashes, completed configurations survive an interrupted population run, and narrowed populations require their own population name.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/etfs/06_linear.py#L222-L279",
+          "version": "repo-lines-v1:sha256:71597298718c0041e7f3691440234d676c2e854f1762950b93be6bd57e6e93ee:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwNWZkY2NlMTUyMTI2MDE5NTU1NTQwY2U3Y2U4MDhhNmIxN2JiNTQwNGYyNGEzNjE5NTRhY2RhZTM5MzRjYTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlZTNlOTUzOGMwNWNkMjI5ZDc2ODQ4M2MxYWYxODQ1MmVhMTFiMWY3YWI4ZWIyODAyYzhiNjg3MzcwNzkzMDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlN2U2OTEzMDliZWJkNDQ2N2FhYmE4NWI2ZmFlNTllMTg1NTIxODM1N2I1M2U4NjU5NDk5NWRmYjA4OTVlNTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3YjkwM2JlODA1NmI2Zjc5MzI0MTRhNGY3MGQ0NGE2YmZmMzJiMzhmMzcwOTMyZWQ2YTk4NDQ3YTkyY2EzZjMifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/06_linear.py#L282-L318",
+          "version": "repo-lines-v1:sha256:b3a6fa6987dc747d8cc1617748329ceb9527ef7f77174e338fc32d112ece4efa:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3OTlhMTdlN2E1YThlZGNmMWVkZmFlY2E4YTUyYjJkYzA2NDNiYmE4MDI3NzI2MjM4NmMxOWM0ZTM5NTMxMWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM5ODdiMWNjNTQ1ODMxOTIxMmVmYTdkMTQwZTZhZjRhMDMxNzMyNTc1YWI2MzA0N2FhZjQyNzY5YTMzMjcxNzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5NzU2MmIwNzE2NjhmNzdjZDBjOGRiYmQwODc2YTJhNmU0ZmU5YjJmYjQxNTgxMWViZDMwMmRlMzU4MTliNjEifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L467-L476",
+          "version": "repo-lines-v1:sha256:e84fda2ba2a1dcb81c767425b3d9635dcdc11e5a385e7bf49d2830f0f9ae340c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzNjBlY2MwZDUzZjFjM2M4MDQ0NGM5Y2IyMGZlMjBiYTY1NzY3OTNjODIzNTJlYmExODkyMGFlOWQ5YTZmY2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJmMGU5M2NiOTgyZDIxZTYyNzMzODkzNTkwYmZiZTI3MTJjMTJhNjliNDI1NDkwYjUxYmUxYThjMzc2N2FmMTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxZmY5N2IwM2M0MjlhNGNiYTU1ZDQ4YWYzYTU4NzRjNDQ2ODQ3ZDNhM2VjZDg1MTdhYmNjOTgxODM0NjllNDEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_01e2d1860e484fbba9a137d63b5c848e",
+      "statement": "The pre-run gate verifies canonical registry readiness, notebook and supersession prerequisites, configuration identity agreement, a real reduced end-to-end population run, runtime/resource recording, population completeness, and canonical cost before returning success; it exits nonzero on any failed check.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/pre_run_gate.py#L1-L17",
+          "version": "repo-lines-v1:sha256:d27673cb963a425721ce5f05e3b970b41d6a2073d3e2b1454cc490572e039696:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlYjU1NmQyOTA3OTQ2MzkxYmRlNWYwZjBjNWIxNGUzZjg5ZmE3NGE3Y2M4ZWVhMDVmNTE1ZmYyY2RhYzRjMjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4Njc4OGRjOTUzMWE3ZjkxOGVkOWYxZDY3ODY5NGFhYTNmZWYzN2UxNjE2MDdiYTQxOWUzZThkMWEwNmJjNzgifQ"
+        },
+        {
+          "resource": "repo://scripts/pre_run_gate.py#L173-L240",
+          "version": "repo-lines-v1:sha256:c7498caf11ddc591f3b3223a226ab1df97ed916804cddcafe3b480534b96cc9d:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY3YjhkYWQ1ZGQ5MWY5NDU2Yjc1NTI5YzhkNzU2Y2ZlNTgzN2M3YmIxYjM5MGViYWUxMmY5OTUxYmI0MzRjMDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0ZWUwYjgxYmVkNmM4MzMyZGRjNTExNzc3ZmViYzY3NTczOTAzNTM0NTRlNDM2Y2E0YzNkMjNlNTE0ZmQ3ZGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjNWFkZmMyZDVhMmY3NTJjYmI4MTRjNDY2YTQzY2I4NGJkMjE3ZDJmODgyNzdlOTlhYzkxNzZlZGViNDViZTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEzZWJhMWVmMmJmNjg5M2RkOWUzMWY5YzRiZTQ0ZmIxMWZiYmVlYjFjNmIyYWIyYjEzNDc4MmFiODI1NGJkOTUifQ"
+        },
+        {
+          "resource": "repo://scripts/pre_run_gate.py#L63-L105",
+          "version": "repo-lines-v1:sha256:97f45292af37b9aa0d511aac42c3c1059b2c377bb156efb566638b68d7d3244e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1NjQ3OTkzNDE1Y2QwMjZmOTEzNDQxZGY2NjQ1MWRlYjE1Zjk3OWM2MjVhYjcwNTFhYjQ2MTRhZmEwYjBkNTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg3ZGY1OGZkZmM3OThhODgwMDFjZDhmOTVmOTc2Mjk2ZTEwZWRkMjM4MDA2ZmM3NWIyOTU0ZDBiNTY0MTkxNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZjZjdjNWQ0MmIyYzZiOGNmZjk1MjQ2ZWQ3YjczMmJhMTc2ZDBjZGQ2MTkxYjBlZTM3MzJhNmRlYTFmZTIxOTQifQ"
+        },
+        {
+          "resource": "repo://scripts/pre_run_gate.py#L711-L765",
+          "version": "repo-lines-v1:sha256:e467f2488b21462af27727e50a440fff3c8a6dcf8bc36e18c4662d40ba4ae1cd:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkY2NjOGVkZGJkNDk2ODMzY2VkM2Q1MmE5YWRjMzQ5Yjc4MzY5OGQwZmVlZjhiNDc0ZmUyODQwZDZjMzQxY2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiNjRlOTIwMDBhMTljYTM4NTkzYTRlNmEwYmFjNzcwOTZkMWU5ODY5NDlhM2I2MjgyNmI3Y2VhNGY3M2Q5ZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyNTZkZGMwNWNlMjFlYjIyZmMxNmU4OWYxOWY4NjU1YzVlMjllMTQ4ZmZkMGIwZTBlODRlMmRkMjE1NWZjNDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2c29b3ddeed74c1f9e8ae69e0533fea4",
+      "statement": "The ETF validation backtest refuses a reduced MAX_SYMBOLS run on the canonical tier, runs a random-signal plumbing falsification, and stops when no current published validation prediction population is available.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/etfs/14_backtest.py#L151-L220",
+          "version": "repo-lines-v1:sha256:b449c84438c081907b281dda9a89a9e90aaf665ebfc80a5a62efc92a3d131092:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyYzQ4NThlMjJjYzJjOTY3YjQyMTUwZmE1NTA1NjJhMmM4MzljMmNlYmNhYWI5MWNhYmRmNmY0ZGEwMjAwMjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNiYzI2ZTkyMzZmYjgxYmExZGVjYzAyYTM0OTJjODQzNGIyNjIwYmM5ZjMwM2IzMTk5NzkxYzRmY2ZiODVkYjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM5NjU2MWU3ZWNmYjVmYjMwMDcyNmNlYmNiZWUzYzJmNThlNTNjZjg2MWZmMTJmNDk1MTBiYjljNmU0OTYzMjcifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/14_backtest.py#L285-L300",
+          "version": "repo-lines-v1:sha256:609733fe02da55c12898f9139054933c0e5197cc696e6ebd9fdae54c3115a86b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5ZmI0MzY4ZTVmMDdhZjFiMzliMWIwYWE0ZGI4N2ViZWE4YjI3MTI2MGQwYzE0NDRmMmM3MmM4YzY5MmY4MGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzYTRkNWNjMTUzN2JiZDk3ZWMyNDc1MzVmYjliY2Q1OTlhYTdkOGNiZjMzYWQ2MjAwMzZlMjMyNjhkOTY1ZTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY1MTkyYWQ0ODkxYjM4OGQ1NmJlN2MxOTdjODk4NWZkZTQyMmQ2M2M5ZTA2YWMxN2QzZjYxYWQ4MjM2OTRkMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMwZTNkMDUwNTlmZjk3ZWExYzlmMGJmNTdhNzc5NTdjZjQ4MjE5OTRhN2Y4Mzc0ZTAzZmJkNzc3NGI4MGVmMmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fae3b662df754c68a4603b09e6afb8b9",
+      "statement": "The ETF holdout workflow selects its carrier entirely from validation evidence, preserves the selected checkpoint, trains only through a label-buffered pre-holdout interval, permits idempotent reuse of the same generation, and refuses a different or unattributable prior holdout generation because replacing or deleting it cannot undo a second look.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/etfs/18_holdout_predictions.py#L107-L145",
+          "version": "repo-lines-v1:sha256:79bf9c0e1c45574776c1b8dacebaace2edd5215a51ef6b21f3862213d782b681:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzYWVlYjMxNDAwMzFjYTViZjk5NmY3ZDY1NTVhMmEyYjNhNTc2ODg5NzFiOWNmN2U0ZTM0ZGMyZjczMmZkOGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI0M2ZlZjhmOWNlYmNmMzg2ZGIwMjMyYTc4NDg3NzU4NjkzZDQ5ZjM0M2MzNGY4MmI4Y2JkOTU3MjIzYzUzZTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIxYjBjMTZmMjQ1ZTcwNWYwZTE2ZDE1MmViMDQyOWU2MDNkYTk3MTJmYmE4OTE5YjJkMmUzYjY0NjYyZTdmYjMifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/18_holdout_predictions.py#L147-L240",
+          "version": "repo-lines-v1:sha256:32ec088d53920d3e824a6d1291a7893beef31240fa995528729ee346a5a089ff:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1ODg3ODE2NzY5NGUwZGJmY2ZhMTAzYWQ5NGI3MmFlYjg5YzBiZWI1NmI2ZmY1NmU3OGViOTIzYTY1YjFmYzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjNmVhOWFiODVjNGIzYmM0MmIzODZjNTljOTgwMTY1MWM2NDVmNzcwZmExNTE0NGQxNDZkZmQyNWMwYWI2ZjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRjNWUyNWU1MzViNzI3OWEyNGE1NzBkNzJhOTYzYTQ1NzhhMzlhZTFjY2U0ZWM4Yzc1NTFhNzNiOTcxN2I1YWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMxNTY5ZTFiNWIyZDQxYTlmNzJmNDM4MTA1N2VmNGU2NGNkYTIwOTZkZTMzYjZhZWZjNTQyZDcwY2Y4MmZlMjUifQ"
+        },
+        {
+          "resource": "repo://case_studies/etfs/18_holdout_predictions.py#L73-L105",
+          "version": "repo-lines-v1:sha256:7e7c1db2eb47a4b8fa8f98111c3b717b41fb1824c8e1822ca6f91f86140786ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NGFjOGY4ZDlmZjRmMTNmNWVjODQ5MGM0MWRlMDFlNDAzMGNlMWM1MGVjZTU5NDFhMjIxZTY0M2I3OGZkMjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlM2QxYWRlYzQ1NTcyNjM4OGVjYzQwNjU4MDIzM2NiMDI4MDFlMDU0YjA2ZmFjMjdjNzI3NDdmZWZiMjJhYmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU1Yjg3MzQzOGYxYTljNmU1Y2M1Y2I2MTNjZjMyNGM1ODk4ZDEwYTJjYmVkNjE0NTQyZjc4MjE3NzBkYTE1YTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkMGMxNTkxOGI4NWQ1ZDhkYmRmZjViM2FlMzJiODE5Y2ZlOWQ2NGEwNmZlODg5YjAwNWM4NDdiYTY3NDYyMzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c77f1b30599c42cc838083f66937d4c6",
+      "statement": "ETF strategy synthesis restricts analysis to live validation prediction population members and fails when none are available, preventing retired model generations from silently winning downstream selection.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/etfs/20_strategy_analysis.py#L145-L178",
+          "version": "repo-lines-v1:sha256:e8529f4f149fec3ce76f43a092c7844190bb4d882087af91235af71854a352c3:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1OGYzODA2ZTg4ODI2ZDVlYjBiMTA5NjhlMzQzNjJhYzNhYjc4ZjFkYWY5YzNkZGIyODNjZTdjNjNkYmY0MGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI1ODUyZmJhMzliNmJmOWMxNDhiZmY2ZmFkNDhjYWQwNGQ1YzM1N2FmOTgzY2NmMzFjNWY4NDY2MmU2MzRhNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA3MWQ3NGU2YmY5YzYxMjQ0NzAxMGI4Y2NlNzc1MzJlYzZmYWQ0ZmQ2ZmJkYTgwYzFlZTE0N2ZiZWU2MTE3NWYifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}

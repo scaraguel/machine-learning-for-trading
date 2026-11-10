@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:040fe92166a20a70ee23fd1ea270e1472feb55701cbfb14ca650493e88461ac8",
+  "claims": [
+    {
+      "id": "claim_5b00f54bfb544d2b824eb1db9a4ce955",
+      "statement": "The repository is the maintained code base for 27 teaching chapters and nine longitudinal ML-trading case studies, and it is explicitly a teaching and demonstration repository rather than a turnkey research platform or production trading system.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L10",
+          "version": "repo-lines-v1:sha256:dc976482a0e904c56b1dc2707288d08b57e00eeb5a9369212d5eea2cb77a87c6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmOTUzMGI0NThjZWU0ZmZmODU3NjVkYTdmM2QwMjM2YzYwYjk0YWNhZGQ5ZDU4OWEwOWNlYjNmMzA5NWIwODkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkwNTkxNDAwMGMxODFjNjZiYjZlNzAwMDQyM2UwNzNlZjQyNzY4MmYxNTM1NTFjZWExNDk0ZmY4NGYwYmY5NDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ3NjdkMTU1OTYxMDg3NjcyMGFjY2IwOTBkZTI0YjYzNDU0NjAzYmUzOTNkN2EwMmJiZTg0YWQxMWU1Nzc3NDgifQ"
+        },
+        {
+          "resource": "repo://docs/what-this-is.md#L123-L133",
+          "version": "repo-lines-v1:sha256:41f73a7d3775ac550dd77fe00e5d5bbb9db411d09fed3fc7e95779f589feac3f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0YWFhZTdhOGI1NzZmNDljYmExZTY0ZDRlNTkwY2JiODI4NDM5M2I0MjQzMzcyNzFiNjAzZmU1OWViNGUyMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkwMzhhM2UyNzQxZDhlNWIwOGEyZWQ5MDAyNGZiZjg2YTZkNTMwMTY1NDExNmNjZjhiMDU5OTg0ZDAxOGUxZDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcxZDZjZDFiMzEyMTc2NjYxMWYxZDFhZjE2NDI5M2UzOWY4NWQwYWU1ODQ0OTQ0ZjY4ZmI1M2UxNGQwZjc2MDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzMjM3ZDM4OWM4ZDJmYjBmZTI3YjQxYjZlYjRkODA5ZjdjNzY0ZTJkOWI4MGFhYmIyNjU4OWFkNWRjNzFmYTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f7ff21edb0134546838cf0f474e034ea",
+      "statement": "Teaching notebooks use paired Jupytext files in which the `.py` file is the editable source and the `.ipynb` is a generated, provenance-stamped execution render; contributors must not hand-edit the `.ipynb`.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L54-L73",
+          "version": "repo-lines-v1:sha256:53acfb279c39ae331f1f16911361ff87219e51a1ecca9fa4e2db88cc38b658e8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiMTcwNThmNGYyMzVlMWFiOWJlZDA0NDAyODc2Njk3OGFlYmFkMGM0NjA1NTkxYTk1ZTJkNDY0ZDM5YzlmZDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzMjcwNTRiMGIzNTRlMmEzN2FiOGI0N2IxYTg4ZTIwODFhM2ZmNGExNzg3NzY1MGUzZjFlODI2OWE1NGUxN2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4NzE5MTM2ZmJhZmNjNmFhYWVhODk1ZDhjZWRjNzliNjk4MWViNWQ3NzQ1NTA1ZjQ0MDUxM2Y0NmY3NDlkMTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzOTdmNWNjOTYwNmVjZDI5NGViZDcyOGIxNGRjMTVmYTMzMzdmZmU4NmZmYjEyOThjNTAyN2RlZmJiMGFmNmYifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L140-L154",
+          "version": "repo-lines-v1:sha256:0dbf991cee1be77e157e1e7da0ec1698f0587f59d75b92bace23820426db64a5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5Mzc4ZWUyODIyODE2NjZiYmQ4ZmZjMWQ1MjkzYjQ1Yjg5YTJjOWRhN2M0MTA1MmE0YzE5N2I1OTQ3NzRlMzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZTJmNTMyOGVlNmU4MDUwZThhYWZkOGRjODY5YTA2OWNkOTU4NGVkYWFmNTRmZTU4OWQ3M2MzYjdkY2Q3OTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1YTAzMGEyZDdkYWY4YjIzODQxNmRkOGM3OThjMWFjMDJkODhkMzRjMDgxZDNiOWViYjUwNmUyYjNhYzk4MjkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7757fb187e0f44c0bc8d64a7ba343763",
+      "statement": "Each case study is an ordered pipeline whose stages produce labels, features, predictions, and backtests for downstream stages, while `run_log/registry.db` is the result and provenance source of truth and associated artifacts are stored by content-addressed identities.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/README.md#L25-L68",
+          "version": "repo-lines-v1:sha256:8fdab9c02daa88c4739cc2db885bfd927158e162db30e2335ea21b0a04545897:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc5OWE3NzhiNzc3ZWYwN2IyMThlZjBiZTViNjI1YmQxYTAzMTM5YjNkNGQ0NjAwYmM2Y2IzYWRlYmIzY2Q2ZjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgyZDI1MTM1ODliZWZhODcyZDg2MDJjMzFlZTZkYTdjYzkzZDY4ZDU0Yjg1NjM4ZDZmNGI0NWY4MDViNjMzYWIifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L181-L203",
+          "version": "repo-lines-v1:sha256:3febcc3706391c6e1d2b6014aa8fae121b992087baa938e36dca99db80b45191:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhODA1NDcwODczOGRiYmFjYzM5YjdkZDVjYjIzZmEyYmM4NTA0M2ExNDQzYjFhMDlhNTFkYjdlMGQyNzVkZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ0ZTk1NzI3ZjU2YTlhYzZjMTBiZjk3MDE0M2YzYmUwMjg4YjgyMGY5OTBhM2ZkZmNhOWNkODBmYzUzZWFiYzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhhNmU5NDc4ZjNjY2Y4OTZjMjdkNGMyMGIyYmYyNTBlODFhMTU4MmJiYzhiZWYxZDYxNDBkNzFhNDdlM2ZiMWMifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L280-L286",
+          "version": "repo-lines-v1:sha256:22a9c8d225bc84b9509da564b8c2c3464eab94fb0eb0879296e0e0da96a2f508:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmFhYjZkMjcwYWEyYTNiOTg5ODEwN2RhYjZhOGU4NGUzN2NhN2Y1NGIzNGExYTEzMzEwODZjNzg2MmRiMTdiNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzIyZmU0ZmU4M2YzMTNlNzk2NWM1NGJiM2RhOGM3ZTExYTU2OTc4NmQyMDNlNzUyZDk3MmUwYzliYWU3ZDlhOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmQzOTNjNTk3NzU5MmUzNmExN2JkNTRmMzQzYzY3YzhkMmQ2NzgwYWM0OWIxOGRkYTQ4ODg2YTE5MGY3M2FmMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDBlZTk3ZDUyNzk0NDJlNGYzMDZhYmMyMmFkZDE0OWQyZDM1NmM1OWJjNTlkYjQ0YzNkNTBlY2FjNjljNGNmMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_4f1dff2aefa84e4088dbd6f8d65f4cf4",
+      "statement": "The repository owns shared runtime and support code under `case_studies/research/`, `case_studies/utils/`, and `utils/`, but consumes the separately packaged `ml4t-data`, `ml4t-engineer`, `ml4t-models`, `ml4t-diagnostic`, `ml4t-backtest`, and `ml4t-live` libraries as PyPI dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L324-L351",
+          "version": "repo-lines-v1:sha256:d8ee784006d7fdb75124df5c8b8de41af8b6eeb9abcb83996f309c4a4d69771b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlN2Q1ZWZkOWFjYTJiZTNmZWQzMTFmNjkyMDRhMzcwMmNkY2JmN2QzNTEzZWEwNjEyMzMzYTZmNjU4ZmUxYmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5OTU3MmE0ODE4ZjcwMWE1OGQ3NTMxMjkxMjZkYjliNDMyODZmYjAxOGZiOGZmZDM4OTBhMGE0ZmYzMDI0NjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU5YTEyNWQ1NDI4MGRiZDgwNmVlMTM1Yjg2ODkxN2M4ZWQ0MTJlNDA3NDgxM2RjMjdjMmQzZTVkMzFiY2JjOTAifQ"
+        },
+        {
+          "resource": "repo://README.md#L368-L383",
+          "version": "repo-lines-v1:sha256:527626dccb3abff7d54f9931abb34c0fca3599650d2f5fa2bc0d56ac607c000a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2ZjFmYTdiNTczMzdhZmJiNjY3NTRmMmVkMWU3ZWI3YzFhZmI4MzBlOWVmZWY1MGIzMzgxMDViZjk0OGJhYzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImExNjJhZjc1MDNhM2E1OGIzYmYxYjdhN2QyMTZiMDAxN2Q3NjY2OGY1MmZjMjIxZDAxZjUyYWU0OGQ3Yjc5ZDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQzY2M2ZmNlMjJjYmUwY2Y2YjM4NWYzZGE5OGM5NWQxNTg3NWIyMjM4ZTQwZDNlOGM1YzcyZTc0OTIwOWVlZGQifQ"
+        },
+        {
+          "resource": "repo://pyproject.toml#L183-L193",
+          "version": "repo-lines-v1:sha256:ec64f9c83083e03c4ba4a94a7fd4dad36021074a93074e17d1791f6881e12135:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhNGZjMTdjNTNjNzNiN2Y1MzhkZjk3ZDJiN2U5ZDIzMDFlOTJmMmM4ZmM3OTk5YmQ2MDAzN2U2MDJjZGMxY2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcxYmE1YTI0NDUyNjgyODMzZjUwOWViNTE1MzZjZjE1MWNlY2U0YTU4NjQzMTdkZTdlODQ0OGFhNzQzMTc2YzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE2YmQ2OWY1ZmEyMGU1NGZiNmQwZDlhYzRjN2E4NGU0OTdhNjk2N2Y4ZmUxMjAzMTE5MmY5Yjg1NmFhZTU3ODEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhmZmFhY2M1YzdhN2FkNTdiNmMyNjU0ZTY3ZjhiNDdjZWEyNjYxODg0OTE2Mjk2ODVhM2U5NzEzZjAwMTMxM2EifQ"
+        },
+        {
+          "resource": "repo://pyproject.toml#L43-L64",
+          "version": "repo-lines-v1:sha256:88e527e9a1a0329f42e7f9ed90adbe6c55f3d39f5fc67e1a629ae3833102c162:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmZGU5YWRiZGI2ZTIxN2U5ZDE4ZjZkYWM3NTZhZGZmMzA5YTA0OTEwMTMxYzYxZWUzN2Q4ZDNlODQwZTFiMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlZDljOTc5Yjc1NDUwNzk0MTMxOTY0NDg4NWU4N2Y1Y2FjOTE2ZWJmYTE0NjU5N2E0YjBmYmRiMDJmZTg1YzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEyMGE1NjIzNzlmZDYyY2U3NzM4MzcwNjRmYzcxYWYyM2ZjMzVmNWY0ZmJlN2EyZGU4YTYwYmFhOTEyODEwYzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxODg4NTg2ZDlmMzkyMWQzNGRlZTE3MzNiZGY3MGQxMDNiZWVlZWE0MGU1N2YwZjAzNjNmZTQxMWRkMjAxMTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8b796a5df3c84094b8dea76d1b8044e9",
+      "statement": "Notebook and maintenance commands are expected to run from the repository root; relative data resolution otherwise searches the wrong directory, while an absolute `ML4T_DATA_PATH` removes that constraint and is therefore supplied by the documented local Jupyter command.",
+      "evidence": [
+        {
+          "resource": "repo://docs/running-notebooks.md#L156-L164",
+          "version": "repo-lines-v1:sha256:4640f84043f39d74df28de90f14845831cbb004be919dc65c91065e73e83f5aa:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjJmMDRjYjRhNTNkZTJmOTNmOGY4OWFmYjNhODQ4YzA0MjFmYTUyN2EwZDg3YzllMGEwOGY1OWU4ZGMwNmQ4NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODBjZTk1ZTBmYzc4MmQyYzkzMWRlZjg4MmUzNjJiZTIwOWY1MDQwOTYyMWIxYTU2ODM1ZGEyM2RkY2ZmMjlmYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmIzMDY1OTg1NTE3MWVlZmFmY2M0ODJkNTc4OGVkY2M3NzkyOWEyYmE0MjQzY2E0MTljMjk1MTVmNWI2YTg3NSJ9"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L65-L102",
+          "version": "repo-lines-v1:sha256:573aa004c57df9426e44c3054feb12cca0e5a6b5666d2e14b6aa046c36277451:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczM2Y1NjAzMDJhMDEzZjRiODEwNmM3ZDk2NDJkMjNmYTM3OWM0ZTY1ODdiMDkwNWVlNDc1NzI0MGQzM2YwNjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkyNzUxZDI2NjY2Njg2MGI1ZGZhN2UzZGE0NjBjODcxZDQ1ZGMxZTVkNTEzOWMxZjBlY2Q3NDllYjYyZTU4NjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFiNTE0YmVkYzNjMTc4ZmI1NThjMjAwNDJjMDIyZjNjOTk5M2I4ZTdlYWMwNzAyNWI2NTY4NmVlOTM1YzFhMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA0YzdhYWRmMDQzOGIyNDg5ZmI5YzkzZTk0YzI4MjhiMTM4MDBhZGE3OWMyNmI0YTQ0ODVlZmZlMzIzNDAyZjMifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L7-L12",
+          "version": "repo-lines-v1:sha256:5be7e6e6b68fc1560ef0ad57a2347724459b76c177b4e310546f5a9039d93551:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDAxNzg4MTBmNTk0YWU0MGMzZTE2ODQxZDgxNzNjODczM2Q5NjgxMjE5NjBiOTQ4NWFlYmZhYTg2N2JjZmRjNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzhjMmNkM2E0Y2FiOWYzMWVlMTUxNDE0ZTQ5YzRjNDQwOTY1ZjBlNTFiOTk5YmViMDE0MTA0YjFlNWFiNTg4MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDAxZjJlYzE3NTkzYzEwNTRlYjQ2MzY3ZDg0NTNlZjI0YTE3M2NlOTZiNzExN2Q5MWY5YTY4ZDQ0ZmVmOGIwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmU4OTMyMWY1ZTI1ZTVmZmI1MmEyNjI2ZWQ5ZTM2ZDVmYzJmYmU1NThhY2M3YWE1MWZkZGU5OWNlNWM5NWE0NCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a3cd2b04f16e4022ba94dddb0c9a3abf",
+      "statement": "The minimum supported startup paths copy `.env.example` to `.env`, then either install with `uv sync` and start local Jupyter or pull and run the default `ml4t` Compose service; native Windows Python is unsupported and Windows execution belongs inside WSL2.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L225-L267",
+          "version": "repo-lines-v1:sha256:15e1349f566ffd3a1eed9301b63b1c29a56ead1f540fc0c2fd6fd20c83a38ef1:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwYTdjMDJlYTAwMjUyNWYxNDA4MTExOTk2MWVjYWE1YjdhMGQ5MzllYWUzZjJlMTg2MjRhOGNlNzlhNDdiNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZTJmNTMyOGVlNmU4MDUwZThhYWZkOGRjODY5YTA2OWNkOTU4NGVkYWFmNTRmZTU4OWQ3M2MzYjdkY2Q3OTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg5ZDgwZTJlNDAxMjYwNGNmMjJiNTBiMWMwZjQ1NjdlZjYyM2I4YjJiMWZkMWFjMDMwNDJjMTQ0OGRmODkwYTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViNmM3NGYzNDc2YWI2ODc4ZjQ0MjM4M2VmZDE2MzUzNzliODcxNTM0MzVlOGRkMjczNTU1OGQ5NWE2NjUxZWIifQ"
+        },
+        {
+          "resource": "repo://README.md#L296-L313",
+          "version": "repo-lines-v1:sha256:cc6d71b2dfebc7d1e081e67e98bb40caf6c1cf945bbe68f41f843321e6af8c65:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhM2EwODBiM2M4NmZhMWFiZjllNjRjZDcyMGYyODcwNjkwODkwYzIzZjE5ZTVjMDZmNzIxYzdkNzA1Y2VlNDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4MjI0YjEwMTQyMGE4ZjEzYzI4NGVlYmZhYmEzMTRhMGE5MzQ0ZDM2NWY2ZGMwMDI0NzZkNWI5ZWI3Y2IxNjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM5ZTdlODMxNjFhMWYxNjI4MmQwYzFmNDA3NzRmZGNlZDAwNTkyZjFlNmMwZTg4Njk5MTM4NTBkOTQ1MmNiYWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmN2I4NmQ5ZTc1MzA3ZjJhYzY2MDVjYjkxZDlmMGUwMGJmYmM0MzMzMzkzMzgxN2FmOTUyMDUyYjkxYTUxN2UifQ"
+        },
+        {
+          "resource": "repo://docs/installation.md#L109-L123",
+          "version": "repo-lines-v1:sha256:f3ec43821b60aa6ba7af0f266caa170052d703815fd3209eaf200c705866d4e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4ZTllNjM4Y2YzNGRmYjVjOGVmNzMzMDE4ZjFhMWQwNzM0MDYyZTU5MDliMjQxMzJhNGY0M2Y3M2E3ODczOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4Zjk0ZjcwMmYxZmY2ZDUzMmI1MDIzODI5ODMyZDAwNjQyODI0NmM5MDg5Y2VjNzNlYWRmNmFiMWQ5ZDQ0Y2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQxN2IxOGUwNjc4NmQ0Y2E3NGVkYmY5OTZlYzQ1ODAyYWVmNDQ2OThmM2ZlZWZlZWFjNDA4Y2NlYmRkZTYzMGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk4OGEwMzE4MWZkYzQwMTA0OTI2MTM3NDYzNTI0ZThhYTdjYjQ4N2FkYjBmNTUwMjE5ODJmN2ZmNzZkNjdlMWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_da8d2f62b32840c5b90169b3143da4cc",
+      "statement": "Installation is checked by `scripts/verify_installation.py` through either `uv run` or Docker Compose; it reports per-component PASS/FAIL status and exits nonzero when a required component fails.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L283-L295",
+          "version": "repo-lines-v1:sha256:82063b77595cecc8c5ee28e757c47ca69cec277619f3ce099191c079536da67b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1YjZiODI4NTE3M2QzYzgyZGI3OWQ3YTUxNjkwYzRiZjBhMGJmNzQwODFkOWRhNDhmN2MzNTgxZDcxOTU3OGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZTJmNTMyOGVlNmU4MDUwZThhYWZkOGRjODY5YTA2OWNkOTU4NGVkYWFmNTRmZTU4OWQ3M2MzYjdkY2Q3OTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlM2ZjMzM0MjU2OGEwNWFiNWUyNDIyNzllNTk1ZTI5ZDk1ZDUyZTA3YjExM2Q2YzEzNmY4YzIwNjhhODRkMTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyMWIwZDE2OGE4NTZlMzM1MDhmZGU0NDk0YTIyYzU4ZDkxNWNiZTU0NjIzMTNkOTNkMTgwYThiMTA4ODhmZDQifQ"
+        },
+        {
+          "resource": "repo://docs/installation.md#L174-L190",
+          "version": "repo-lines-v1:sha256:8717c1815ce1ff8d7f3f76052142a183700a17f5bfe720e0df8597afaa063924:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0NjA1ZDlhN2VlZmUxMTIxNWIyNTYwYmM3OGVlMTBlZDgyNjM1OTI3ZDA4ZDBlOTcxNTMyMzMyODBkYTI5ZmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyMzczMWY1YTJmZDAzZWFiMzc0NTRiYzBjOGZkOGVjZGE4ZGU4N2VlYTJhZDdjMTFiNDY3NmQ5YWE1NTgxZGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiMmI0YTM0ZGQyYzdmZmQ1NjJhNGFiZjE2ZTczMThkNTljOWM1ZDBlNDgxNDYyNGJmOWIxMDA0MjEzMWUwZmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7664672fba0941ef94c456edefb8ef3e",
+      "statement": "Most notebooks require datasets that dependency installation does not provide; free datasets can be fetched with `data/download_all.py --free-only`, ETF data has a smaller no-key download path, and Docker users run these commands without `uv run` in the Jupyter terminal.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L269-L281",
+          "version": "repo-lines-v1:sha256:4bf1a2cf33cae4a177b5a37df2b23563e565252ad0d0123992b65bfd47a8a53f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxMDA0MzZhZTYwM2ZkYjE1MjM3MjJjMDU1NmMzODZmN2RjMDE5ZTE1MmFlMjc4N2E5MDE3ODUxZjkzOGJiYWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY0OWU3Y2I3N2VmZDBjZTE1NzkyYWUxN2IwMDg5NmM2YzFhYTFjNWZjNjE5YmY3ODZlZWUxODYwYjY1ZTIwMmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYwZDZiNzg0YzJhYzZiMTRiYTFlNGIxOTgwZjgwNmQzNTk5MDZkOWNjYTU3ZWY2MzA1ZmIzZDc3YmUxNzEwNWQifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L132-L136",
+          "version": "repo-lines-v1:sha256:da427c19aeb72685d7cd158b77aed18d2e81f10f4446a637ed9cf4cbf959ea29:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzc0Y2I2ZjUzNzZmMzJkZTk4ZjFiNWEyMTU5NmE5YjRkZTI2MmY4YjU1ZjE0N2Y1MzFkNDIyYzc5YzVlNjI3YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDVlYjkyZjJkNjhhMGRkYjE4Mjc5M2VlNDY4ZDA1MDUwMzUzYmE3YWJiNmZkMTQzYTYxMTYxOTIwY2VhY2U1YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDg0NjM0YWI0MDQyMzM0YzY2YmFhY2NhMzhkYmI1MmU1Nzk4ODU1OWE1YWI1NTdlMTk5YWYwYTQ0Yzc5YzEwOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDAxZjJlYzE3NTkzYzEwNTRlYjQ2MzY3ZDg0NTNlZjI0YTE3M2NlOTZiNzExN2Q5MWY5YTY4ZDQ0ZmVmOGIwMSJ9"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L538-L559",
+          "version": "repo-lines-v1:sha256:93d31573cbcae6db7778eae2f41e7c405878cf85e566bb004f14cf87bb013b5f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0ZGZjYzFjOTRlNzdlODFmMjFjYTUzOTk4YzY3OGZhYmI1ZTNjMTQ4ZGZjZGNmYmQ1NDRiMjRmMjUzMjFhMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0NWY3NGE3MGY3MzFjMWQyMTUwNjAwNWMzMGMyMDNmZmMxMTY4MjI1YzYxOThmZTA3NjM3YzlmNjQxMjk5ZGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMTc1ZDNkYjhmMzFjNGFiNjU0OWExMTBjNzk2MTU3NTI3MmUwZTg3NjJlZWFmZDc4NTQ1OTcxNjIwMDRkZmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1c884ced18ce447792f3742def6e36bc",
+      "statement": "Released case-study run logs can be downloaded to inspect registered results without retraining, and the installed baseline contains the registry plus referenced training, prediction, backtest, and release metadata artifacts.",
+      "evidence": [
+        {
+          "resource": "repo://docs/running-notebooks.md#L289-L329",
+          "version": "repo-lines-v1:sha256:85eaa5a6f538eb38824aead4e0fb93040ed6950456f89c45fb5f0d579e916890:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhMTM0ZTlmMTZjNTdlNGQyYzgxZGI5ZDQwYjdlMjFmNWZjMTM0MDM1NDdhYmQ0ZWJmYjdhOWJjOTAxMWU0YzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4MTFhMzQxMDgzNDk2YmUyODRhZDllMWRmZGRhNGQ2ZjEwMjI0YjZkYjM3MzA1NWE0MzZjNDY0NTM5N2M0OTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUxY2E5YzcyYjYxNWY0MTFlOTk0YWMxNzk4NTQwODNiZjk1NDI3OGE1Mjc1YzNhMmJhNjNhMGZiOWNkMjRjOTAifQ"
+        },
+        {
+          "resource": "repo://docs/what-this-is.md#L12-L42",
+          "version": "repo-lines-v1:sha256:dba30c959003bd31f1d574f19fb40a9b902c2048ac6b658bff9ba5af4a9683ef:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFhYTUyMzYzMzkzM2Q4MmE1ZGFmMTI2ZGExNGUxYjhiMDA0MDA5MmFlNTgyMzYxOWRjMDdkZmQyNjZiMTM1MjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkZWFkYjIxNWM4YjNjYjBkYTAyMWU1ZWRjOTQ1MDdkMGIzMzAwM2UyZDhhYWQ1OGUzYTJhZTQyNDhhMWFkMDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e420f6bbaba64434bf63f10e02910df8",
+      "statement": "Case-study behavior is configured through three layers—per-case-study setup, per-label training menus, and shared model presets—and new work should occur in a writable experiment so the downloaded release baseline is not modified.",
+      "evidence": [
+        {
+          "resource": "repo://docs/running-notebooks.md#L256-L276",
+          "version": "repo-lines-v1:sha256:9be6ff935d3de017013e3b7f1ce68be19ba5ab4bd940d22a249d844681a75953:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1NjA2MWU3OGZmMzcyMjI4OTM1MjQ0ZWIxNWZmNWVjZDNkYTA5MGQyMDZiZTVlNTIwMmQzNDQ2NGMzNDcyMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljOTkxNWEwMDM5MGQwODQxNjJiOTUwYzA0NjU4MjZlMDEyZDZiY2RiOWZjM2I0YjNmODkwNzk1Y2FmNmUyYWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkNmUxMzc2MTU5YTFkYjAwOGY2ODQ4NzJiYWY1Zjg5N2RiM2E0NGZiZTE0ZDI5ZTZmZDBjMWQ0NzQxZWVmMGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkMzkzYzU5Nzc1OTJlMzZhMTdiZDU0ZjM0M2M2N2M4ZDJkNjc4MGFjNDliMThkZGE0ODg4NmExOTBmNzNhZjEifQ"
+        },
+        {
+          "resource": "repo://docs/what-this-is.md#L44-L66",
+          "version": "repo-lines-v1:sha256:4ae1b9bcb78b8819f90f3d0d77e33874e3da28e779a7763ab32c43fe1a584044:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjYjQwYzQ1NGFjZDc3MmIxMWY1YTIyMDQ4ZDVkNjBhZTM5YTJjYmY4ZDMwMTgxMTRjMDk0YTEyODlkMDdlYTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxMGJiMTJlOWEwYzA4YWM0ODRiMGZlODczMjI4MTkwN2ZmMGExNjcyNmJlZDI1MDc1ZjBjMTk0MmQ4M2Y3NGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxZGE1MTcxOTZhNGRkMGM4OTEwOGYwNjJiOTIwYTAzYjgwNzA2ZmFjODI1ZTM3ZTg2ZjU4NjI1ZmRkNzhkNTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFhNDJlNGZiZjUyZjBiZTYwZWEzNzQ4YzgzZWUwMzAzMDAwZDEzOGZjOGVkNzdlNjEzYWM3ZWQ5OGZhOWE4ZmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_31ad6f5cd3a24de28a838b418b437cc0",
+      "statement": "The test system executes notebooks through Papermill parameter injection on the production code path, redirects outputs to `ML4T_OUTPUT_DIR`, and uses seeded schema-correct intermediates so focused notebook tests do not overwrite production artifacts or require every upstream stage to run.",
+      "evidence": [
+        {
+          "resource": "repo://tests/README.md#L1-L55",
+          "version": "repo-lines-v1:sha256:69ad755f87cd66466a6e09241b15125812871ffa24f81cc9a7dadce885eac40c:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUzMTUzNGQyZmRmODFlMDczN2QyNjA4MTg5ZjgxNDNmOWYyZWZmNDgzZmRmZDhjNzVmODdiM2ZmZGZmM2RkY2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhkMjczNDM3ZTc3NWQzZjc1MGJkOTVkZDk3NTZiMTM0YTA4ODg0YTVlZWYwNGQ0OWY1N2I2YjFiMWFkYTIyMWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI1ODE1MWY5ZTczNjExNmMxODdmMmY5MjVhMDNlYjdmMTI0NzlhMDkwODM5NTU3MWY1NDE2YjAxNGUzNGMyNTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6ce3ad67be2345d0a1a986b8176ffbf1",
+      "statement": "Contribution policy requires a demonstrated defect, one issue and pull request per problem, and a test verified to fail before and pass after; additions such as new chapters, notebooks, models, features, or datasets are outside the repository's fixed scope.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L46-L52",
+          "version": "repo-lines-v1:sha256:7c7a70d2c35d51209fcfd12a4f7eb418578ae515504c405483a8476b3ffe28ae:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDdiMjIwN2YyMTA3MTRmZmZjY2QyYjc1YmQ5MzJiOWYxMDNlMmUyMmJmNzk3ODcyMWU5MDIwY2ZlNjdmN2FmYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGNiMzc4YzgyZWViZjI0NzQ3YzFhZDA4NDZlNTk5ZmE4YTVkMTNjYjk4NmY3ZTkxNGY5YzQyMGQwMjZmMjJkYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODU5OWI0ZDZiMjc2OWIyOTQ4NmNiMjZiYzMwZGEzMzVkYzE4NjZiZTNjMGU0YTQ1MDY3MjcwZWU3NWE3NmY3OSJ9"
+        },
+        {
+          "resource": "repo://CONTRIBUTING.md#L7-L45",
+          "version": "repo-lines-v1:sha256:5989817fbc40e45e44724c578fbb5afe71ff27fac071dc230a72c3f7bc7d2bac:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1YTM5ODYyMDA0ZTk4NzQ3NTc5NzNiZjdiMmY5ZjA4NDY0NGQ0ZWQyMmM2MDVmZWFmNzdmYzQ2ODNjMTNhYjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYxNGRlMDIzMmRhZTQ5OGE2MzUyOTVmNTZlOTdjZGQyODc3NzU3NTI4ZGFmMGM0Njc0YmY1NWUxNjY5MjI2MjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMzZDczNjJjY2Q0YWYyYWM1ODA0ZTAwZDUxMjE0Y2MxYjE3OGY4OTEyNjE1MDVhYjg1ODNlOWY2YjA1ODhjZWIifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}

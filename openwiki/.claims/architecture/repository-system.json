@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:2ecd4e312e4fdc2f96339f244a92629f3ea119e6047df365a0de695e087cbd06",
+  "claims": [
+    {
+      "id": "claim_2e86aa345af14bfeaaed46484e3448aa",
+      "statement": "The repository is the integration and teaching home for 27 chapter implementations and nine longitudinal case studies, while the six reusable workflow libraries are separately distributed packages consumed as dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L1-L3",
+          "version": "repo-lines-v1:sha256:766a1618200bbd5becd6818c1a324c8c5a282a80d369adcef5af3b0e41eaaa86:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGY5NTMwYjQ1OGNlZTRmZmY4NTc2NWRhN2YzZDAyMzZjNjBiOTRhY2FkZDlkNTg5YTA5Y2ViM2YzMDk1YjA4OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDE2OTY3ZWY1Zjg2Nzk2MDlhNWMzNzJiNWRjMzY1MDNmOWUxYTZlOTM4ZGFmZTQ1MzAyMmIzZGFiMTA4YjE1ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzhiZjA5ZGRlNGIyMWI5NTAyODk1NDNiZDY5NTBkNzA1NTA1Y2M3OTU1MTllNGRiZmIwMGM0NWM4YmY0NjM1NSJ9"
+        },
+        {
+          "resource": "repo://README.md#L351-L370",
+          "version": "repo-lines-v1:sha256:b20b2e4ff528feed13524a827ec9aca53a164ca493e415e1b570425e23e7b6cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlN2Q1ZWZkOWFjYTJiZTNmZWQzMTFmNjkyMDRhMzcwMmNkY2JmN2QzNTEzZWEwNjEyMzMzYTZmNjU4ZmUxYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhmYjdmMDEyZDA3MWQyM2IzMDRkNTc3MmY4ZjdlMzcyY2NiNzAwNWZkM2E1MzdhOWZjNTZmNjdmYjA2MGQyNDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgzM2ZmMmJiYWY2OTgyYjdkY2YxNGYxNzFhMjMxYjgyODcxN2RlOWRhZDhkOWNmODJlNzNjM2FhZjk5OWRiN2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUxOWI1M2E1NDc4OTczYjY5YzBkMTAwODc2ZDNhMWE5OTU5ZWYzOTg3OTVjMzkwMjQ2ZTA5YjBjYzk1YjNjNzUifQ"
+        },
+        {
+          "resource": "repo://pyproject.toml#L166-L169",
+          "version": "repo-lines-v1:sha256:7f31866f11555912248f9872b602d02002831050fbadd3cb0cc750a8f1004b57:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGRmZmEzM2E4NGNhZjFhYzNhNzhkOGQyZjJmMGE4N2U1YzIwMmIzZjFiMWViOTA0MTRkODA2YjhhZjllNTMzNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDU0Yzc2MmQ4Zjc1Y2RmYTlhNDUyZjZkOTUwODk4YmM3YzIzMzMxZWE4M2RmZjgzYjYwN2I5NGVjZWJmNTZkZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDYyYzVkNGEzMzE4NDFlMDRmMTNmOGJjZGJkMWRjNzI0ZGI0OWJlYmU5Nzk5NjNiNjkwYzE2MDNkZmI0YmRlNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGU5MWI0OTRhYTljNDUzMmUxYmEyZmVlMDg1OTJhYmQ2YzkxMWEwMzYzOTc0YzU5OWYwMGNjODBmMTk3ODc2ZSJ9"
+        },
+        {
+          "resource": "repo://pyproject.toml#L44-L60",
+          "version": "repo-lines-v1:sha256:808eccde7e7d58d49efbd487a0393a3fc1c56f151e826a8bf2b3d6d56c45869e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZiZWFhNjkyZmVlNGQzNjg3ODYyYmQ1OGZhOTJkM2JlODNlMmM4OGM2MjI1YzQzOGI2MWIwZDU4OGI1YWQwYmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI0ODE4NTk5OWMzMjRkYTdjMTliYWU4YTkzZjk1YTJlZWVlNjhiMGQ5YTkzMjAyZTM1MTY1YjI5YzQyYjQ0Y2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE2ZTJhMDljZjUyNmNhNTk4ZmJmZWI1ZTg4NGIwNzdiMGYxZmI3YWVlYjA4ZTVjOTIxMjU5YWFlZTVkMjk0MjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMWE0NWMwM2EyMWJhZTIyZTkwNjQ2MmYwN2UzMDRhZjQzNTViMDEyODM2MzQ3NTVlMjQzNzlhYWRiMTA5ZGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cb9a924672604097a4d3ed32acc56460",
+      "statement": "Repository packaging installs the local `utils`, `data`, `case_studies`, and `scripts` packages plus the top-level `sitecustomize` module; numbered chapter directories are not installed as packages.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L292-L301",
+          "version": "repo-lines-v1:sha256:c2b5274efcb434d33ab9ed52695c0e6f7e1b79823304a05c445b56f895510643:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiYjc0OTliMWNlMWM0ZjRiMjUyN2YzYTMyODRjYWM2YjZhMWUzYmY0OTg4YjU2Nzk4MmMzZGM4ZTlhMTdmMjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhMzBmY2JiM2Q2Yjg4MDFlZTcxZjNlNjljYjdlODU5MGFkYjc5MTAzM2NjNjI1M2JlNWJlYzYxOWY2NzVhN2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQzYzVkM2U3MWE0ZjI3ZjYxMjA5Mjc4ZmVkYjFmNTk5YTBjMThiZDE0OWE3Y2IwNmViMzA0ZjM4ZjQyNGJiODAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkODVlNGI4NTliMmI5OWQxYjRhNmE3ZmYxMTNjZmZkMjFlMjU3YmU5ODg5MzQzODU5Nzg4ODllMjI2M2JkOGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cffd44c45bbb4667bc08a394e599ade1",
+      "statement": "At Python startup, `sitecustomize` appends numbered chapter directories to `sys.path` and establishes a repository-anchored data root with environment, `.env`, repository default, and populated-main-worktree fallback behavior, while suppressing startup failures rather than breaking the interpreter.",
+      "evidence": [
+        {
+          "resource": "repo://sitecustomize.py#L1-L49",
+          "version": "repo-lines-v1:sha256:2b2a806584961c8edff9ce5dcb5ab06082aaf163fc66fc7ad4784cf01034a508:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjOTcxYThiOGY3MmRkOGM0NjRiOWRiZmNlNmY2OGVlMGU3M2RkMzk1YjMzNmQ0MDQ5NWI4YzIxMzljMzk1MTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3MjdhZGZmNTI0ZTA2MTYwMjJlYWRkOGY0YWYyMWEwNzc4YjI5ZmM0Yzc3YmRmZWZkMWFmY2UyY2JmNWU0YjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM0YmIxOTBjYjA0ODllZjAwM2Q2Y2VhOTZkZmRkNTljMGY4N2ZkMjQ4YTVjMDNkMWQ2MDAzZjE1Y2M0YjU4NjUifQ"
+        },
+        {
+          "resource": "repo://sitecustomize.py#L144-L195",
+          "version": "repo-lines-v1:sha256:f7d20ea04d28aff64ae5ed34d404622c9be0fd5369118fe5635029deff4529d7:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzN2JiMzU5ZjA1MWI4OTNiYzBiZjBlZmViNGIyMzMzNTM0MGE0OTQ5MmY5YmJjMDIzODcyYWRmODY3ZDlkNzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0NDVlMTdhZGVkMzA5NzQ1ZmZkYTMyOWZjZDY1ODYyZDUyOTZjNGVkN2IwZmVjZWIzMzA0NzVmNmUyNzRjNjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3MmFmN2E4MDcwMTkyYzJhMTMyYTNiMDE5Y2E1OGY1MWI5ZGFkNjU2NjkyZTFjYjdiZjE0OTEwYjNhOGNlZDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://sitecustomize.py#L74-L82",
+          "version": "repo-lines-v1:sha256:82b2273b3433647d86ef07e0365bce765895529d2c11c208139e99b9c51b83c0:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjM1NzczYWRlYjViZDhiNGIyZWNjYWI5YjZlZjM0MTY3N2UwNzkyNTY4YmY3MTcyNDE0ZjJlMjI3OTBkYmMyNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjJhMTA3YjQwNGY3NmZlY2IxODg0N2E3YThkOGRhNTFiNmJmYjE1YTFmNDUyODhmYzU3OGM3YmU4MTVlMjdlYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDQxYmQ3YjEwYTYyZjFlNmM0NzYwYzA0ZGFmNjYzNTFkNmZjOWIxZGU1ZWU0MTUwNWZiNDBiMDQ0NmM4Y2YxYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmUwOTMxN2RhZjYyYTRiOTk1N2JmODFhNzc2MmYzNWJhMzdhOWRkMjEzYjU0ODgyM2VlYjFhNWJkZjQxYjA1YiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d1199abbaa2f4fd4bf2c6185cd4fad72",
+      "statement": "Jupytext `.py` files are the notebook authoring source of truth and paired `.ipynb` files are generated viewing and output surfaces; synchronization detects code and prose drift by content, syncs forward by default, and refuses automatic overwrite when the `.ipynb` is newer.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_notebooks.py#L1-L16",
+          "version": "repo-lines-v1:sha256:63381dd862ab78c3d60331fd59401ece0f4b2db9ee173ad23df32884ae759257:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwNTZmZmEyMTdhOTg2ZjMyZjk4MGExNTkxMzRjODhkZWQ4YjlkY2EyNGM1ZjUzZDNiYWNiYTE5NDBkMTkwNTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3NTM1ZWVjZTM3MWIwOTg2MjU5ZGEzOTM1MTgwMTc3NjczOGI2YmE0OGE5ZWFmNjYzYTE1ZWE5ZTBlNTE1NmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFhYWY3NjM3Y2I2ZTdlNWRiODVkNjM0Mjc0NjAxNGRmMDQxY2NkNTU4YTkyMGIyOWViNmFjNzE5ZDdiYWY1YzIifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_notebooks.py#L128-L183",
+          "version": "repo-lines-v1:sha256:ac9039bf2af89eb595308734aab6619646a51113c407839833f0d66efa6ef70b:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNjZGUyZDdhZTExMDE4NjllYjYzOTZlYmU2YTk3M2ZjY2YyOWViODI0NjViNjRhZDUxN2Y5ZjRkOGM0YTMxNjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYxNjE2MmE4MTVjYTVkMmRhZTcxZTkyYmQ5OTE5MWRlZjEyYzRlNzFiZDY0YjZjNTUwOTMwZTAyYWFjZWQ4NjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk0YTcyZWQ2NGEwMWRiY2UyOTRhZWNiNjZlM2U1ZjAxZjljM2I0OTUzZWMzMmViMWZhMjZmZjE0NzA2OGJlZTYifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_notebooks.py#L301-L359",
+          "version": "repo-lines-v1:sha256:629de96927e18effb22996bf366ffd386e937e0af7b5d4e54a4ed382ed7b6e03:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0ODZmZjVjZjkzNjNiNDQyOTMzNjgwM2IyYzk2MGU3M2RhOGM0N2ZhMGM2ZjY3NjU4ZDE0YjMyM2NkMjJkMzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI4MTkxNTk5NzllY2JhNzJiYmZlNjViMjUyNzMxYWY5ZGM3ODhkM2QxOWRlMmQ3YmM1OGNiOTM0YmI4YjY2N2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk2MzcyNmIwNWQzODllYjA5NzM5NTBhMDk0OWMzZTA4YjA5YWNmZjRiNjg4NzExYzA1YzIyMjMyMDg0YjJjNGUifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_notebooks.py#L49-L73",
+          "version": "repo-lines-v1:sha256:08d09ae33a762932635512c7d7c2e5af8348b00668299ae3e8509444d8b53a19:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwMWYyNjI5OWVhYjZjODQzNTc0ZGMzYTBhZDBmZTFjZGU4Njk0Y2E1ZTFlODQ1OTE1MmZiMzc4NDk4ODRmYmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2YWQwNTJjNDRiOTUzZjBkODMyODZhMmRkZGVjMjE4NWU3ZjE4OWRiMGU0ZjUwMmM2ZjA2ZjM0NzU4NDU0YTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI3ZGJiNjhmY2E4ZjgyZGU2NzBjOWIxYzc5ZWVlZmY2NDQ4MTRhNDVlNGZiYzE5ZjQ1OTY4NzQ1MWNiMmIzYTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBiMDZlODFhMjllMWE2NmFkOTJhM2Q2NThhZDVmZTkwODc1ZmRmNjFjMDU5ZWI0OWIzOTFmZDE4MjhjNzQ3OGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8eaa219525d94d7d977302725ae9bdcf",
+      "statement": "All nine case studies follow the same ordered research phases but may have different numbered stages and model-family coverage; each stage emits artifacts consumed by later stages.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/README.md#L1-L31",
+          "version": "repo-lines-v1:sha256:a2b3707eb3d20193a4bfdd5bfa1469147889ffafca19afca53369ec5ec62bdab:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4ZjRhNjU2ZmQ3YWY1MDExZWE2OTU1YTEwOWEyN2E1MmFlOTU2Mjc3YTcxODI4ZGE3N2NjNmZkN2NlOWU5YzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM4MmNjMTVjMmRmMTdiZjQzOGNlOTUxZjI3YjQ0NzUzYjZhOTkxNWJmYWY0ZDQ4YjE5MDlkZTI3ZDcxZmMwZTMifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L205-L234",
+          "version": "repo-lines-v1:sha256:7909debff223083ed8f0142a7238305b1ca52254e4265bd1047117a3be5d2048:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlNzBlYTk0YTgxODk5NjE4YzFjOWFhNmUzODk3MjIyN2Q4YjFiMWM3ZGYxNTU2MGFlYThhZjI3NWJjM2I3OTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZkMjAxZGZmNDlhMTU1ZGNlYjk5NjQ2YTlhM2QxY2RiNTE2OGE4MTY1YzNjZmRjNDEwMDJiZjkzZWZiMGVlNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkMWY2M2I5NzJmMWQ4ODBmZTJmNjg3NzYzM2NlOTg5N2M1OGNlMjgzMTE0NmE0MzRkOTE3NTA0OTNiYjRhOWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_60f344cddec7468b842bf7de559cb175",
+      "statement": "Case-study configuration has three declarative layers: a study `setup.yaml`, per-label training menus, and shared named model presets; request resolution then binds those declarations to concrete labels, features, folds, eligible rows, and data-relative parameters before execution.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/RUN_LOG.md#L129-L203",
+          "version": "repo-lines-v1:sha256:a7edc3e9b139ce2c4f50d81db52f249d405822d80c25c958137ac92f18d1dae3:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4N2Y5OGI0NTFhNzNiZmVlOWZlNDdkNjJhNGQ1NGViZmFlOWE0MTliMGE5MjlkNDg5NDJlOGE4YWY0ODdjZTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI3ZDA5YmNjMDUwZDRhNjJhYjkyOTYyODkxMmY4OGYyYjFkZjQ0OTYxMDMxNmNhZmY3MWQ3ODkzN2MyYTIyMWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNjN2Y2NDliMzE4Njc5ZTAxYmUzZDU5MGQ0NjU4ZjNmNWJhMTRiMWNhZThlZjRlYzJkZWNkNzM4MDM3ZTQwMzQifQ"
+        },
+        {
+          "resource": "repo://case_studies/RUN_LOG.md#L38-L70",
+          "version": "repo-lines-v1:sha256:0ae4db846478ece8ae2cf70ba86c91f7df53c9a7657b26e8ccabb85dee01beb0:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZGIwMDIzNzAwOTExNzg5Yjg4MGNjZDk4MTIzMmYyOTU4Nzc4MjdhMjQ2Nzk5MDBhYzY5YjQ2NDc2YTRkNTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2YWRhNjhlM2YyY2M1Yzg2ZmY4MTM4NDE3M2QxNWU1MTExNTk0MzVmZDQ3ODhmOTg5YzRiYWVkMzdlZDUwZGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZmZGFhZmVjMDU5NjJjN2Q2ZmI1YWY5ZDJhOTgxMDE2MzA1ZjVjNTk5OTFhMzE2NmUyZTRmYTFlYzVmMjg5MjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3MGY3ZmYyMWI5ZWU0ZjlmNWZkM2FiNWI3NmVjZWRmZWQzMDY0ZGViN2E4NWQ1NTZhZmU2Y2M1OWYyMjM0NDgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6c712de311334dc1943f0b8f1a8c7d91",
+      "statement": "Each case-study run log uses a SQLite registry as the accepted result catalog and content-addressed filesystem artifacts for training, predictions, and backtests, with identities linking training to one or more prediction sets and each prediction set to one or more backtests.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/README.md#L64-L74",
+          "version": "repo-lines-v1:sha256:5a6241d9806ab18e37d977a86f38424a8721fd337dd2b27b61abf041c75e97da:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlMTVlMThkMTViZmI1MTNkYjQ0MWNhZWUyZjFkMjY1ZmI5ZTQ5MDRmYWRlMzVlZTYwNjNkMzA1OTI5YTg2NmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRlN2IzN2FhODNmNmUxZjY5NmExYjQ5OTNmYmNlYTFkYWM3MjQ0ZTNhMGE3YzIxYjU4ZmFkN2E4YTNmN2RlMmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI4Y2U5MmMwOWU2MzNkNjljMjAyZWJjNGEyNGI0MTI3NmU4ZTJiZjE4NmU2NzEwNDFkMjQzY2IwNjRjYzU2ZTEifQ"
+        },
+        {
+          "resource": "repo://case_studies/RUN_LOG.md#L1-L17",
+          "version": "repo-lines-v1:sha256:702df33bc52e568345ba840804e2384b71fa6d2452153e41ab40fef6acf43881:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1YjVlOWU1NDBkOThhM2VjZWZkNjY5MWM1ZGYwOTBiOGQzYzM4ZGU3NjM5NTNjNjgwNGM0ZThkNDQ3YTEyNDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlZTc2ODk1YzA0YzFlYzk2YTEyYjNmZjY1MThmNGRjOGMyOWIxMzI2MDU3ZWY3ZGM1OTNhN2NiNjE0ZmRiZTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdiYjgzODYwNjA2ZGYxNjVjNWU2OTNkYzljZDIyNDlmZmU0YzQ5Nzc1MjA0NzNmMDFiMjQwMWYxNDY1Nzk2ZTcifQ"
+        },
+        {
+          "resource": "repo://case_studies/RUN_LOG.md#L326-L366",
+          "version": "repo-lines-v1:sha256:811cf42d2efcd5618ab0f2a0782ba2edc97a71bc3cc1a22030b68fd65323429b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjMmE5ZWExOTJmZjQ3MTQ5ZTlkNmMxNzdiZTM2ZTRiNmY1YTUwYjJmNDAxMDlkOGU1M2UxOTQ1YjAxMmUwNWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5ZTgwZjRmZjYwNGU5OWYwNjdjNmVkMmI2YTI4NjFmNWM4N2M2ZGFhYzMwZGE5MTNmMWViODIwODI3NTk4MDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkNTUzMGZmZDMwMzFhOTBhMDBjODY0OWRmYjcxYTBhZDRmOGMyNTYxMGJiYjhlMDE1ZmE2ZGQ4OTM4ODg3ODEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjljNTRhMmIyY2EzNWM2ZDQ5MTdkYWQ2MTg3NDJlZDc0MzQxZDEwNzRkOTc4NjI0ZTdmODQ2YjE2NTQ2MTE2YzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9c6a28c7a1924121842052f2df7955cb",
+      "statement": "Model populations are immutable named lists of expected prediction identities that are written before fitting and published only after every expected prediction is complete; failed runs preserve completed configurations but do not publish an incomplete population.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/RUN_LOG.md#L663-L685",
+          "version": "repo-lines-v1:sha256:6bb266c5015a9d43fad0fa0aa3d6e04921dd607dec2dff533d8d1ccb3c089248:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwYjczMTg0OGE1MWIzNzI5OTY2NGM2NmQxNTY2YzM3NzdmNWY0YzI1YThkMmQ5MTk1ZjY4NzQ4MzcyOTMyODEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5OGE3MjQ4OTkwMmYyNjA3YmZiNGNjMDdhODM0MTdiNTFhNDYzMzFkNDgwYTViOTBhMTJhM2FhZmI0MGU3YmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwNjAyZTUyNjg2OTM2YTVjNDA3MjM5NjE2NGJlODZlN2ZiOTk0MDJhNmU1ZWFhNzJjNmY1ZTc1MTUxMGU1NjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyOTQzMjQxNmE0NmQzNTgyMDUxODIxZGJiMDZkNzE0NWQ2Y2RmNjgzYTkxYWYwNDE4ZDVmMGFmYmVhZjI3MmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b1964572cc1542ddb7fd64f6c9cea649",
+      "statement": "Downloaded artifact bundles are verified at both archive and internal-file levels, constrained to the expected run-log path, checked for SQLite integrity and foreign-key validity, rejected if they contain an uncheckpointed WAL, and atomically installed as read-only state.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/download_artifacts.py#L226-L294",
+          "version": "repo-lines-v1:sha256:94a115b7d0b04e3ee5318b5ba5f41afeb9b97ea1d7d69097153d836a38a19bf8:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3MGRhMDMyZmJmZGJkMWI0MjRlODE0YzIxMmFlNTg0ODRlNzZmNTdkYzU2ZGJmZDEzYmY4MDM3MzZkMzI0YjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1YWUwNGRjOWRhMTFhYjY0ZTNkYjBhMThmYjQ0N2FhOWQyZjIxNGY3OWZlNzgzODg4NzlkMGFjYWQ0YzliODkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg0NWZkZmZjMDVlYTA4NzJlYzhhYTRjZDUyNDI4YmNhYzBkZGYxNWVlM2E5ODg3OTQzYzRkNzBkZDZkZDUyN2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4OWU4ZDYxNWI2NGQwOTI4YTQwNGFmYjdhOWI3ZGZjMjg1NzJlNzU0NjFlOWZkOGIxMjk5NjYwYWY1Y2Q1NjkifQ"
+        },
+        {
+          "resource": "repo://scripts/download_artifacts.py#L304-L349",
+          "version": "repo-lines-v1:sha256:fabf9302a300947d835ca80212dfe6e75d5154071132b97573435dc7ada446cc:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkNDQ2ZTIxZWMxMzBmMjJkOTU4ZGZjMjM4ODMwMWRmODE4ZmY1ZjA0ZDk1NDdjMWE5YjczM2FjZGU1YjNiM2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVjZTYyNjk5NjQ2NWRlY2I5NzJhN2RlZTYxYTZmYWM1Yzc2ZDE3MTYxNDAxYzVmZmY2MDQzYTYyZjE5ZDg1YmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdiMDYzMzI2OTBiNDYyOWI3N2Q1YWM1M2FmNDZjMWJiNWE3ODlhYmRhMTA5M2M4YzYwYjBkZTEwYzA3YjlhODcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cf9b547c74f74fd5abdc9200b082c459",
+      "statement": "Writable experiments are isolated under a new output root, copy generated prerequisites and case-study configuration, rename release metadata to baseline metadata, and are finalized by atomic renames so the downloaded release baseline remains untouched.",
+      "evidence": [
+        {
+          "resource": "repo://docs/running-notebooks.md#L373-L396",
+          "version": "repo-lines-v1:sha256:883b659783e8943d4fe35a40592472664699a50cb8a9ed813b461e2249dd540f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczYzhmYzZkYjYyN2UwZDE5OGE4NmIxZDFjOWY3YWRjYjZmODY3OWM1OWQ4ODBlNjkxNTRkYzFlZjI3YTdjNjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhZDNjODZhZmRmMWZiNTM0ZjNjODRlZWFjMDNjMGYzOWQzZjJmNzRkZDJmNDkwYjc1M2FmZDU1NjBkOTNlNTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiMmNlYjI2NDE5YjNkNDIzNWEwODUxNDgxYzRjYzhkMmNjYmJlMmEyY2UzM2E1OGMyMjEwYWMwOWM4Y2JjNjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEzZGU2OWU4YzE2NDk5MjMyNzg4ZDUwMTFhYzYwMjJhNWY5NDNjYmJhY2YzMWU1OGE1NjNiZDk4OTE1ZGEyZmYifQ"
+        },
+        {
+          "resource": "repo://scripts/create_experiment.py#L15-L92",
+          "version": "repo-lines-v1:sha256:a53acd9b179595b2a05aba993789bba8b36984717e09cfa4628a86d74393ea06:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MzVlNGI2NzU1OTE0NTI3YjI1NmU4ZDM1NWUxMjAwMGI1Y2VjOWY1Nzg2ODhiMGJiYjlhZTIwZjA3NTUxNWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhmMjIzZTdlMmZjOGZlYjQ3MjE3MzNlZmZjNDcwZWEzMDM0YmU0Nzc4NDA1NDFmMjQ2ZGQ2MzZmY2M1ODM5MmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcyYjhmZmE2ODljMzliMTk4ZDc3MDliNDRhNTBjM2VhMGRmZjQyYTg5MTA3ZjBiM2EwNDNjNWMzNWNjNDdlOWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_61c9b1986c444b9caed0ff57e3bca476",
+      "statement": "A study opened without a workspace is read-only, while a workspace is created or validated with a manifest and routed to its own registry; attempts to write through a read-only study raise a permission error.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/workspace.py#L261-L351",
+          "version": "repo-lines-v1:sha256:e9ab9f5ab40264b315c0a4edf15668da6b15a8645e4c1480a38322743ab3fc0f:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljY2I3NWNkYmU0ZWExMWRmMzVkN2ZjYzk2OGFlOTNhMTQzMTMwNDU4MjgyZTgwNjZiMDM0NjIxNDc1MWEwNDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyMGI0NTNmNWUwYzkyZDVmNmMyNTFhNWVhMTk2MGQ3MmYzYmQwNzk1NmFlODU3ZGEyMGUzMWE4OGM1NTk2OWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIxZDBjNDk5YTA5YmJmMTBkNzFjMmQwYjZlMmE4MTBkNGNmMzQyM2JmYjE0OTVmYjNiN2ZhODg2Y2JiYzFlYjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxYmQ1ZTM5NDU0ZGQ4NmNjNWE0ZTQ1MTY1MWM3ZmM5MGNhMTRjM2I1Y2E5YmFhNzRkMTg2NDViZDFkN2JmZGQifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/workspace.py#L467-L471",
+          "version": "repo-lines-v1:sha256:289ae0789ab615d428a8ef3b87fef546ef44d5f7c9c32d83eac52261e0ebb6a0:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzFjY2E4YTNhYTc2ZjM3MWVjOWM0NTdhMDcxOTBlN2U0ZTQ0YjFkZjdjN2Q3YzFjYWE1MzQzYTk5MTIxNjc4OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmI3YWFkNjg1Mzk4ZGVhODZhNGFmNDMzNWUzMWVlOWE0OTg4MTI5ZjVjZDI5Y2MwZDM1OThlODhhMGY5ODI3NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjU5YTIwYzYyNGQ2MTc1YjY2MWM0OGY2ZDgyMzJhNGE4NzQxYzRkZGYzMThmYmNjOGRlNzkyZDJkMTdlMjZkMiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_7c60ef4e396e4b4994b8bf095e2e2612",
+      "statement": "The repository's `data` tree owns dataset-specific acquisition, conversion, loader, configuration, and documentation surfaces, but most downloaded parquet payloads are external generated state, so the tracked directory skeleton alone does not establish that a dataset is installed.",
+      "evidence": [
+        {
+          "resource": "repo://data/README.md#L1-L15",
+          "version": "repo-lines-v1:sha256:cca1e150755b4e560704d800306dafb0dc6740a3a87909eb92ce2e0fbbef29d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2ZDQ3ZjgxZTliYTA3ZGY3OWZmYjgxOTU2OTJmMWY2NWU5NzhmOWFiMjNkMjI1NmM0ZWRmMjE5MWE0ZmRkZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0OTRiYzAxYjFhMTExYjhiNWUwN2UxNzhjZTMwOGFmMzM5ZGMwZWM5ODRlNWFlMmEzMTllNWJiMWRmNjk5YTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg1ZWE3Mzc5YTc1MGQzYzgwOTNhNmUxMTAxNzg3NDJkYjYwMDc0MGQ2NzBjMDFiZTA0MmI1ZThlZWFjMDk0YWMifQ"
+        },
+        {
+          "resource": "repo://data/README.md#L266-L295",
+          "version": "repo-lines-v1:sha256:8c1a8be292b98c9337642fdb96172c7ad0e17cee13720fd6689fb43c2163f65d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0NDdkMDRkZTE4ZDRmZGM1MWY0ZDMwYmYxMTY1NWY5OTFkNjQwMmY4ODAxMWQ0NDkyZTJkNDVmZjYyNDlmNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzMTE0ZGZlZWU4ZTNiMjQyM2Y4MWJiOGNjMTA0OTg3NTFiOGM4Y2NiMDAzMjM5OGE5NTM4Zjg3ZDkzNTQ3ZTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE2YjVkNjcxNWM1YmUxMWY1YWJlMDEzMjQ0OWQzZWNjODY3Njc1ZDRkMTI2MjQzNTA4NWFmMjQzYTI0MmZjMmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkNDBjMDY5OWVjZDZmMmJlNjA1MjAzNTBmYjE5ZTlmNTBkOGNmZGM1MDQ0NzI1Y2Q4NjgwODdkMDUyODZkMWEifQ"
+        },
+        {
+          "resource": "repo://sitecustomize.py#L105-L114",
+          "version": "repo-lines-v1:sha256:74808d2c91427d2d371f8220566a5837636087a4bad2fc9d9093a550692b3ac6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmYzE3Y2YwNWM0NWI4NzM2MDQ1NjdjYmU0YjY0NTQ5YjkyNGMzOWM1OTdmNTIwZTBiN2QyOTViYmUwYjcyMWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJkOWJkMTEzZmViYzZiNDU3YTZlODQzYWEzZDdiYzM1M2M4MWEwMzc4NjYzYWZlYTE4YjhlOTdhMTA5NGVkMWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJkY2Y4NmMwNzY2MTE1MzMwYWY4YjY1MjQ3MzVhYmI4OTI2MzVlYWRmMzE3NWI1OTE0ZTQ1ZGUyOWUzNjJjN2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_269569d580d4487bbe56311b13610efe",
+      "statement": "Repository `utils` is shared importable library code, whereas `scripts` is intentionally a small command-line surface for reader operations; CI repair tools and private registry-maintenance tooling are outside that reader script surface.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/README.md#L1-L42",
+          "version": "repo-lines-v1:sha256:ec2195b10894e366e7baffdfadd4f24b0391a50d1a4ef888cc040586443081c4:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0MTM1YzY2ODQ5MjQ0OTFmMTU1ZDMzYjcxZjRlYjU1MWEzODE5OTFiMzZiNjVmNTlkNmM5MWM3ZWI5ZTEwMmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkZGM4NTIyNTkyZTljOGU0ODAxYWU4MzliNjc0ZTZlNjg0Y2NlMDNlYTY3NzhmZTE0NGUxZTU0MWNkYzc1ZjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://utils/README.md#L1-L29",
+          "version": "repo-lines-v1:sha256:825dcaed5da63a0e699e76fc4923573ba907cda63792d0429a5b2f17971ff52f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkMzQyNmE0MzIxNjI1ODVhZDA3MDBmNDg5YzUzY2E3ODQxMDk2ZGUzZGZjOTYxMWIyMjVhYjdjNTM2YTk3MGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxODAyY2Y5ZWUyMjdlMGY4ZjNlMDk0YzI4NmIxMTI3MjNkNTMxOTBmNjFjMDFmM2ZjOGZkMGZkMGVlN2M5MDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMzNzEzZDM1Y2MzZjYyNzRjYzBlYTljYmIxM2I5OTM0MTc0MDNiODhiZmY4NjFjMjE4ZTY5ZGRlZmU2YTdmNTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c7f743dcb3504a149e78eba95fbff1c4",
+      "statement": "Repository examples and adapters consume public APIs from the separately owned ML4T packages, including `ml4t.engineer` feature functions, `ml4t.models` latent-factor implementations, `ml4t.diagnostic` metrics, and `ml4t.backtest` and `ml4t.live` execution APIs.",
+      "evidence": [
+        {
+          "resource": "repo://12_gradient_boosting/02_gbm_comparison.py#L60-L60",
+          "version": "repo-lines-v1:sha256:fbe08d9bcfecb4c0ba4da41175be0c946c9e1e9866db324b781efc2482f452ab:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmJlMDhkOWJjZmVjYjRjMGJhNGRhNDExNzViZTBjOTQ2YzllMWU5ODY2ZGIzMjRiNzgxZWZjMjQ4MmY0NTJhYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmJlMDhkOWJjZmVjYjRjMGJhNGRhNDExNzViZTBjOTQ2YzllMWU5ODY2ZGIzMjRiNzgxZWZjMjQ4MmY0NTJhYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDAzNjk4OTgyOGNhMDFhNGFjZGNiOWEzMzgzZDYzMmMyZDk4YTM3OGE1ODY5ZmUxYjg5MjI3NDYxNDhjMmRhNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmI3YjFlZGRjNzRhZmM0YmQxZjYxY2RhMDhlODQzNjRlNDg0ZGY4Mjg1MTIzMmYyYTFhZTY2M2ZhYjU0YWFmMiJ9"
+        },
+        {
+          "resource": "repo://25_live_trading/01_unified_framework_demo.py#L71-L73",
+          "version": "repo-lines-v1:sha256:0c6e29e38985ebb4cb83c099afc9a04804555d9aba36dafca524b588633ceeb4:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdhMjZiZWQ0NTRhNWIwOTI3MTAxN2Y1YWMzNWMzNzQzODA1NDMwYmI2YWUwMzQwY2JlYWY1NGNhODEwNDI4OSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzE3MWQ3MzBkM2YzOTAyMmFkNmEzNWFlNjg5ZDAxNjI0NzkxYTA4YjE1OGM4NzllOWIxNWViZDVjNmFkMmI5ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWY5MDBhZTc4NmRjMGFkMjdjYzBkNjNiY2IxZDNjOGMyMjI0ZTcyYTk2Y2I2ZTY5OGYyZGU5Y2E0YzlmOTE3ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjFhMDJlZTkxZjRjODI5NjY0OTE4ZTM2NGEwNDI1NjkxOTgxZWEzNGNhYmMzOGRhMDM1NWE5N2QxZDkxZWVkMSJ9"
+        },
+        {
+          "resource": "repo://25_live_trading/_etfs_features.py#L22-L26",
+          "version": "repo-lines-v1:sha256:9afad138c93aa8004b326365086860e533406e6430f9c98e1c11708f187d8382:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGY4NzQ0OTg5M2NkYzk3MzNjYWE2MjZkN2EzZmE2NjA3MDA0MjBmZTU2NWZlOTk2ZjgwN2I0ZmRmZTkzMTI2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTJjZjM2NjYzNzNlN2E0ZjVlMDhkYTY2MzhmZjkxMWZhZTRmZjQ2ODg2NGE2YTAxODg2YThmZTAwNGRlZDMyOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTI1MDU2ZTI2NzVlM2YyZGY5YzZkYjQ2N2QwNDBjYzNjNTEwYjg1NjdmNjZjMmM2MGZmMjA5ODA1N2Q3YjVmMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWY5MTAzMmEwNjRkYzc5ZDEwNjgyYjZhNDBhMGMwNDk5MDY2OTRkYTMxYTNlMDdlYjIzOTE2YmVjYTZkODQ1ZSJ9"
+        },
+        {
+          "resource": "repo://case_studies/utils/latent_factors/library_bridge.py#L12-L28",
+          "version": "repo-lines-v1:sha256:2d53f4943e155a21b877328560ff64a85179873fe8aae62db7e2791977575eb5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhYjgyYWE2ZWVjNzM1NzU1NzYzMzRhODZiNGNkODY4MWE5MDg2NTRhYTAyODVmY2MwZmQ3MGUzMjVhZmI5N2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIyOGUyMGQ2Y2M0YWNkNmEzZWI0YTI5ZWQ0YTQ0Y2U3OGQ0MDk2YjViNTNjMmQ2NzE0YmY0NWI3ZmNiOWRhMWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNiMWZlYjk0YTU2YjdkMTUzYjMxNzc2MzY2OTRjY2FkMGMzM2JlYzlmMjZhYmFiODI0MGIzNDVkNjg1OTc3OGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5ODYwMDNlNGY0ZmExYmJkZGY5YWRhOGVkMmFkNDlhZGRjZDU3ZDk1ZWM5ZTdhMDI0NGNmZmU4ODVjY2Y4YzIifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}

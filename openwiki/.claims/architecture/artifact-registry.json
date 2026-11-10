@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:19a383c416f18d5c4c79cabe7333ef4856110189eb6f89d3f109aa1a1847a741",
+  "claims": [
+    {
+      "id": "claim_592ed46901b14efdba892c8d99c7be69",
+      "statement": "Each case study run log splits responsibility between a SQLite catalog of identities, relationships, metrics, lineage, and execution state and content-addressed filesystem directories holding training, prediction, backtest, and decision payloads.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/decisions.py#L167-L182",
+          "version": "repo-lines-v1:sha256:51c0f2eff25b9125fa7631c9f7c310ea2174019980b0955544f3a142e9718a7e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY4OTliYmE2ZDFiYmY1ZmFlNTZmN2MwYTUxMWNhODkzYjQ1NzA2NzU2MDM4M2JmMzI0YmFhNjYzYjg2OTkzYjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhMWQzODcwODA3ZjY5Zjg4MzFmOGJmYTllOTE0ZjZmODVmYTVhMzkyNjQyNzQ1ODAyYTJjZmEyODQ2NjdjNWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwY2UzZjI0YWI0N2MyZjVhOWQzMzdmMzc3ZWQ4NTczZmE1NjU4NDA3NjQwMmYxYWYwNTRhM2RlZDYxOTQ2MmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmZDk5MjQ0ZmI2Y2Q3OWI3MTJiMzY3YWI3Yzk4NjA2NzM4Y2YxMTdjYjQyMWNlMjlhNjFjMWE4N2IwZGIxMjAifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/store.py#L32-L449",
+          "version": "repo-lines-v1:sha256:d20734eb9ca92c4cf93164b026c6c4a622c69cab4472d3406be42b2dc24d8c96:eyJzZWxlY3RlZExpbmVDb3VudCI6NDE4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzNDM1NmE3ZTU2MWI0ODljYjNkMzQwMGFhNTJjZGQ4MjRhYjU2NGUxNjA4MDE3MDdiY2VkNjRlNWFkYWViYjlmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkNTBkMGZkYmFmYjA0ODlmZTdiOTZmY2I0NzYyNTY1MTdkZTk1YTUzNTAzOTU1MjczZGFkZmYyZTQ1NWI2NGY5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIzZTdiZmE2MGNhYzE2YmRjNmM2MmM1YWViM2E4MWZiYzZlZjgyODk5ODliM2NiNmE1NjdkZDZmNDI0ZDY3MWEwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlNmM2NGNlMGY4MzlhNTAzNWFmMGE5MWE0NjY3YjEzNjUzY2U5OGVmOTNiYmEwZjcwMDA0OTRkN2MwNWVjMmU1In0"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/store.py#L553-L594",
+          "version": "repo-lines-v1:sha256:3c29801cc6a867025d941ccc819160726a0e2c0d8ec7bb61ab9b7ed5750b2aaf:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkODk0NDllOTBkZWQ2MWI2NDk4MWFjZWVmM2ZkMjE1OGRiYzcwN2U3MmIzNmJlMDA3MzIzMmQ0MGUxNGI0YzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMwMTYyODA0ZjRkMzI4OGFlODYxYzIyMmMxZmZhYzA1NzhmNDQzYzI1MzJjODhkODAyMjU3MDVmODU3ODBjYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhODQwZDAxMDk4NDRiNzBkMDgxNjYxNTk0ZmIzMTQ4ZTUwZDU0OTViYzI5NjM3YTViYTQ4NmJkZTUwODA2NmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e4a7ffba0a6a4efebd626c2e301afc61",
+      "statement": "Current version-3 training identity hashes the resolved semantic projection—identity/schema version, family, label, seed, execution tier, and computation—while excluding the separate provenance block.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/identity.py#L14-L85",
+          "version": "repo-lines-v1:sha256:122c95f2c535bc7afacdcde2ccd0da65c7071796434972a80305725c202406bd:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2OWExMzk3NWMyNTZlYzgzMjBlMjAxNjA4M2M5NmRmNjM3Y2EzZDM1YmViZGUyMzE0YmVlM2E0NzExYjU2Y2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE5OGIwNjNkOWI0N2U2NTM3OTYyNTU3MmNjZTE5NzY2OWQ1NzY3ZTEyYzE4YmUwNzU2NTJiOGNkOTgxY2U4ZDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/specs.py#L112-L157",
+          "version": "repo-lines-v1:sha256:4e23c946c2f8e27351cfc381045af68836346a0955d65dff755f411c754e5159:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjNTY1NjEyYjM1ZWVhM2NlMzkzZDE1ODlkMjU1MzdjNGI4MTg1MDE4MjkyNjI0NThkZTNhZGQ3ZTcwOTEzM2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4YmMxNjE1ZDdiNzdjNmJlMjgzNDRkZmM3N2E2YjU0YzQ3NmIyZGQzNWU3MTAxZGI3N2FlZDE0ZmY4MmJiYTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE1NDM1MGQ3ZjY2MzNiZGVmZDI2YzQ1M2U1ZWYyODRkOWU0ZWE1NzBkMWQ5NTc0MjJiNDE5NDUzMDA3OTAzMjIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3772c8489fa74c7fad972f28597e627f",
+      "statement": "A versioned prediction identity is derived from training hash, checkpoint kind and value, split, and identity version; a versioned backtest identity is derived from prediction hash, identity version, and a reduced strategy specification that removes only declared non-semantic provenance and equivalent defaults.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/registry/specs.py#L160-L184",
+          "version": "repo-lines-v1:sha256:da732beaea11557022fa23194e3d3c3d6bfb853a856f6adfdb391bb2531a091e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY4MzllYjQ2NDM3NzM2MWE2MDYxNzBmODBmNjc5OTNjYTBkZTJiNTAxMjAxMzUyZjYyYTJhN2E0OTVjOTFhZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjZmE4ZDJmYmQ4ODFkMGVmOTE3ZDU3OGVjYTcyZDhjYjJjNTQzNjEyNmMwZjJlYWQ3MmUxNGFiZThhNmRiYTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY0MGQyOTgwODIzOGFmZGRhYjgzYTRhZGE2NWNmNTljM2FjMTBjYzVmM2JhNDNlZjA1ZmYxMTUyYzU4OThmMjkifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/specs.py#L187-L310",
+          "version": "repo-lines-v1:sha256:a161b86d06764d1c644f444ffdd46dc972d570f15df8127a9cfe2d433b20eff3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3Njc1MTg4YjcwMjQ2ZjY0OGQyZDcxOTAwYjc5NjJkMzYwYTRjNmFkMWIyNjUwZDlmYTM4YzFjYmM1M2Q3YjdmIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4YWYxNzY5NDU4YjY0ZmQ2ODdmMWFhY2E2MDRlMmVhOGM4ZDZhNDI3NDUwMzkyZjVmMGU3YjU2YzI4YmZkMmI0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxYTAwZWRhODBmMjNiNjRmOTExNWQ5NDVmMGJlZTQ5YzUxMTg5ODllYjMyZWNhNGNiN2Y0N2JhZDczZTdmOGRkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiZWVkZDhjNjFhNTNiNTYxM2NmMjNhZjRhNGQ5YzgxNmUxOTgxNzE2ZjI4NTJmNDJiNzNmYTgyYmE5NDgwZmI5In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_32f40b570a3c4c44830cbf24c71c9c8b",
+      "statement": "Causal runs use the resolved training-spec hash as their causal hash and include a scoped causal runner declaration, while source-version tests establish that changing a scoped declaration moves the training identity.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/causal.py#L1923-L1934",
+          "version": "repo-lines-v1:sha256:87d1ddacb5cfaeba08e389ffdfe1be431398bc59f1b46940dbd3944e209fce1b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiY2E4MzQ4YjQ0MTg4ZTM0ODA0ZDY5OTMzMTI1MzQwMmU4NGVkNjg5MzMyYmYyMzNjMDY1NDA5M2M2ZmYxY2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5ZWExMjFhYmU5MjE4MWQzZjYyYWJlMGUwZWM2ZjcyNjM1ODgzMmMzYmQwZTY0MmI3NTM1ODdmMTY4ZDMyOWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYxYmNmZTE1ZWIxOThiNzFmZWEyMzYzZTg3MDVmZTI3MDhlOGUwNDc1NzkxNzVjODUzNzdlNmVlNmJlYWQxNzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2MzNmMDBmZGVlZjhmZTZiOWMyZmU4YzdhYTI3NjlhMTUyMmUzODNiMjE5MjE1YmY0M2VjZGMxMjg5NjVmOWEifQ"
+        },
+        {
+          "resource": "repo://tests/test_model_source_identity_versions.py#L116-L158",
+          "version": "repo-lines-v1:sha256:9262c154696da4fc97cb14867fefed023126bdd9fbcfdf2e6e8139e185575641:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEyODc5YjhkNDBiOWYyMzRiZjUxZjE0Zjk4OWIzMDc2MDM3NDJiOTY1MDJmYzNkNjQ1OWYzMzYwZjM0ZDJmMjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_63b0edd4346240569bb0f8321258538d",
+      "statement": "The writable registry connection enables WAL and foreign keys, applies long driver and busy timeouts for concurrent writers, and performs schema migration/creation; immutable reads are reserved for released files that cannot change, not live registries that may require WAL recovery.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/catalog.py#L201-L217",
+          "version": "repo-lines-v1:sha256:7a37e69cef208bfe23ce901b6c1d1bbc14aa789652c9d4591e84a98611b8213a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1MGJkMTE2Njc4ZDNlNThhMThkMTQyMDEyNTJlNTcwMWJhMmFmOTBkODk3YjA3MjViM2FiM2EzNjAyNDQzNDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNhMWIwODUyOGJlMWNhMmI5NjdmMzFjMGJkMWZlMGFjMmY0MjM0YzBhNzk4NmYwNzM3MmVmMjliMmE2MGFlNDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdhZmU0MmNhMzEwYjcxYzcyM2I3OTYwMWMwMjcyZTAwMjI3YjA1OTk0MjRkZjk1YTUwNTIyY2ZlZTE3NWYyMTkifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/store.py#L596-L613",
+          "version": "repo-lines-v1:sha256:087ac9c47f6afea6839fa0eb16f762e5626e2f72a5bffc42a06c6356be4eb161:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0ZDE4MWMwMjEzNTk1NWEzY2ZmZTliMDViNjYyZWEwYjM4ZTRkNTU2MGYyYzkxOWIwZTZmMmYzMGQ0ZmI3ZTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBmZWM4YTYzNTZjNGY4NjQxZWJjNDEzNWE5YzVjN2MxYzVjNGMyZDg1MzYxYjc4NjRhNjgwMzBmYWU3MTM3NzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5NmUyOGJiZmYwODdiZjE3Y2VhOTVlNTE4YjU1OWEzNGM5OGZiMDRiNjUyZWYzNWVlYmExN2ZlN2VkZjkzNDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg2ODI2NGY3Y2E0ZmEzM2Q1Njc2MmFhY2UxOWExNWRkZDA3ZDFmNTVhODkyMTg0ZDhjMjhjMTFlMzI3MTljNGQifQ"
+        },
+        {
+          "resource": "repo://scripts/download_artifacts.py#L261-L276",
+          "version": "repo-lines-v1:sha256:0a6e6c1da136729824babc6a3ad50bd3dd6914f096ae4ed14d75f65c6359dfcd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyMGFhODAxOTZkZjgyNDJlNWJjNDBmZTQ0OTk5N2Q1YzAwMWI5YWJmN2E0MTY0YTg4ZmYyNTc3ODIxYTU4NGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0MmYxMGJhM2JiOTA0YjkzNmJlODFjNTBjMzA5ZjkxNmU0NWZjNjUyZjM1OWI0NjM3ZTlmOWU1MzFlNGUxNGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNhMGFlOTE3M2M3ZDA4M2EwMmI2Y2ZkN2E2ZTk5MDA4MTBiNWFlYTIyNzlhZmM5N2I1N2I5MDVmMWI5ZjZhN2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUwMTU3Y2UxZDFjNTU0MGFiZGMzMmU5YWZhOTc4MDU3NTIyMzIwODZhMzJkMTYyOTZmZThhZDRmZTYzMGU3NjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_16dba143a68b4caf8022b3f197a1ce60",
+      "statement": "Prediction coverage compares exact canonical entity/timestamp/fold keys and rejects duplicates, missing or extra keys, null or non-finite scores, and digest disagreement; versioned prediction registration refuses partial coverage by default, and versioned backtests require complete coverage with matching execution tier.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/registry/completeness.py#L279-L335",
+          "version": "repo-lines-v1:sha256:ae88c52cd46b23b14d3004a3ac7f7498699c1bd9e331a40af9cffbea543d50af:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM4OWVmNjA5MjMyOTIwYzRlNTBkMDUzNWNiYWJmNzU3NDQ0ZDEzNTY1NTUwYTUwMTNmY2M5MDRlMDMzMWZhZGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiZjhlNjA3OGEyNjhhN2I2YWY2YmU1Njc4YTFmYmM1Y2IxM2Q4YTM5MTBmYzYyOTZlZTVmMjc5MDQzMmE0OGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzZGYyYWNmMDZlOGMzZjAzYzcxMzVjNmU4YWM1YTljYTU0MzJhYmUwNmE3NGFjYTBmZGQ5YTUzYTAwOGY5ODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA4MjY3NmM4ODhjMWE0ZDlmYTc3MmZjZGMzMDJmNzczYmM3MjkwZWViZmY5ZGEzNmEzOWY0NGMzMjExOTgzODUifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/registration.py#L1357-L1406",
+          "version": "repo-lines-v1:sha256:ec80dad60165ea2224f770254a957660fb5fccb112daafb0bb59e7ba232ad34e:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMTBhODQ1ZWNkNTc3NTFhYTI4NWIzN2UwOGI1YjZhOWY5MTg5YmY3NzMyNTY0OWVlNTE5NjYwMjNjOWQ1MGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY3ZGZkMDIzN2RjNzA1M2JhNTFmOGJlNjc1ZmVhNjUxZGNmYmEzMDA2ZGFhMDBkZTkyMDk3YzhjOTVkOWQ0ZDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgzMmM5YzEwMjEyN2QwNTc2NzU2OWFjNDY2ZGM3YzkzZDZlY2Y2MDNlY2M0MTY2MDJkOTVlYzU2ZDg2M2U5NzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxM2U4NjM5YzZkZTM4YzY0OTc5Y2Q0MDNjYWVjOWRmY2ZlYmM4YzFmOTU5NmRjMDllNDAxOTJjNWU4NDY1MWMifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/registration.py#L1751-L1775",
+          "version": "repo-lines-v1:sha256:1b95f40a8e4b11dd9fd697dc27b55268672cdbe2ea057a0baada2e4ce76115c6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5MDRjNjkwMzg3Mjc5YTNhZmM5ZDQ3YWI2MWVjYzVkZjU1MTFjYWI2YjA0ZjM3MDU2OGRmNzQ5NjU2Yzg1OTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiZjk0MzIzZTE2N2Y3ZDNjNjg0ZmI1MTI4ZTA4OWIxNzgzYWEwNDM1OTNmNTZkM2Y2NWJkMDkxOGUyZDM1M2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1Yjg2ZGZhOGYwZDcyNDYyZDg2M2ExMGM5ODgyZTExNzhjY2U3N2ViZDZhNzI1MjNmOWExOThlMmY4M2M1YzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA0ZTI1MTc3NTRkNjUzNGY0ZjM4YzM0OGRlYTI4NmIzYWUwY2M3OGZhM2IxNThlNmI3ZWRkODQyMmU4YmQ1OGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fc7139e174d94f82915171c7a7b31765",
+      "statement": "Coarse reuse checks classify training as complete only when its row, predictions, required prediction artifact, and required metric exist, and classify backtests by their row, daily returns artifact, and measured metrics, treating intentionally null Sharpe on ruin as measured.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/registry/completeness.py#L417-L517",
+          "version": "repo-lines-v1:sha256:e82a4a51d8317ad27bf40af4427a25bd440a469b3c0c21749a17667dd32ab3f0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1Y2EwOTBiY2NmNGVjMjBmYjhmNjBkYzJjYTAyOGQ3MjQxZjM3NTJmNjczMDlhOGQ0OTBlNGU5OGZmN2YzN2MzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwODI2NzZjODg4YzFhNGQ5ZmE3NzJmY2RjMzAyZjc3M2JjNzI5MGVlYmZmOWRhMzZhMzlmNDRjMzIxMTk4Mzg1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1YmNiOTdiZmUxYzNiOTQyYzhjY2NlZjZiZWM1MmMzNzkwZTBkYjIwMGNkZDM5ZGI3NTQyMjQ2MWUzMDM3OGUyIn0"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/completeness.py#L557-L625",
+          "version": "repo-lines-v1:sha256:b54cd2db8df6c85ca1a34065f061595964d6eaa17e0fb75181dc587aa60c357a:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyNDQzNDc3ZDE4NGFkZjg3ZjNkODA5ZjY2ZmQxNzk1NTcxNGIwOTVlZDYzZmNmOGYyNjdiN2Q3MTY5YmRhYmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MjY3NmM4ODhjMWE0ZDlmYTc3MmZjZGMzMDJmNzczYmM3MjkwZWViZmY5ZGEzNmEzOWY0NGMzMjExOTgzODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjZjNiM2I0MzZhMTFkZDU0MTlmOTc2NGM1NmMzNDIzZDU2OTU0MDY4MmMzNmY2YjkxMmY5MTFhZjRlNDY4MTIifQ"
+        },
+        {
+          "resource": "repo://tests/test_registry_completeness.py#L94-L190",
+          "version": "repo-lines-v1:sha256:f88c15982f22ed0494907745524d57a582a0c0d8443c3e53cdeb3af48f295dbe:eyJzZWxlY3RlZExpbmVDb3VudCI6OTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkNzdjNWM4NjE4ODc1Y2JjMjc0Zjk5NmRiMGZjMjdhODRkOTlhOWY5MjUzN2RmM2FiYzU3NjBjODM3MDI0ODciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiYTkxYjFkNzNiZWU1NzIyMTE1OTE1N2NiY2NlYWFiYTZjOWQwODU2MzY2NDYxYjhiMjY4Mzc0NGUyMjQxZjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU1NzkxMGEzZWFhYjQwYTEzOTc4ZjMyOGUwYzlkYzI2NjkyOWEzNzIzNWExMDE2MzdlMjg3ZTI4MzY4ZTk2NzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ4YjRlOTM3YjE1ZmZjNzIxZmQ4MDNlNDcxYjA0MzgwZmIxNTE3N2FiZjY4YjE4MjU3Y2UyNzNjOWRmOGJmMWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_69adf71bdc744fcbbb4fbf0414091168",
+      "statement": "Artifact digest sidecars describe content, row count, columns, keys, producer, declared inputs, optional metadata, and optional fold digests; content digests are insensitive to row and column ordering, while sidecar verification refuses present-but-stale or malformed evidence and can make full value hashing optional.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/artifact_digest.py#L1-L26",
+          "version": "repo-lines-v1:sha256:d62c5c2f668e582abf452ce449aa3e4956ae7b79167706f21a6ce9ca6a4d1afa:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJlOWZmNzM4OTAyNzNkOTA3MGUzZGU5NjI4OTMwODhjMDhkNWMzOGI3MTY2NmUzN2IyMjY5MGZiYjkxMDJmNWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0NjY5MjUyNGVkMzAyMGI5Y2I1MjVjNzIyYmY5MjhiOGQ1OWNkODJlODk2M2E2MzljMjFjMmE5YTMwYTdhZDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI1NTI5NDQ1YjBkYmJiOTljZmM4ZmExZDE5YzcwOTJmNmVlY2M2NmZhNTY1MjMzOTE3MzhiMjU5ODZhZTMzM2UifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/artifact_digest.py#L133-L218",
+          "version": "repo-lines-v1:sha256:87f32fd6fd1ac9e86d994a298470ac89df44244478cc253e09422a1cd6e36085:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3MTk4MjExNTg3ZTc1MmVkYTg5NTk1MGQyODJjOWMzODk0YTczN2VlNDkwMTA1OTBiZWUwMWNmMTAzMTA4MWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3MGE1NmI5MmExMzg0ZDNiNzcxMTg4YTA3Zjk2ZmE1ZjVjOTUyMTA3MTQ0OTM2YTA2MzcwMzM0Yjk4Nzc0ZmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMyNGQwNWEzNTQwZjczMzFkYzkzMGJiN2ZjMDQwYTE2Njc3YjczNDIwZjM3ODcxMzNlOTU3MGY2MzJkNjYxYmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3YTcxZWI2ZjVjZGY0YjY5ZjVkNmExMDcxY2Q5NGUxNWM1YWNkOWIxN2MwNjI2ZjMyNWRiZmU5OTk3NDkzM2MifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/artifact_digest.py#L53-L72",
+          "version": "repo-lines-v1:sha256:761d58b649838a320f7acd6b06c89876072b2710339d10ea7f7009c775e04dad:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFjNTViMjQyMGZlNmRlNjUyMTU4OGMwNThlYTU1ZmQxNTAyZmUzMTViN2ZjNDQ4ZGJkNzIzNzIyYjAwOTdhOTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJlNGY2NDI5YzM2Y2IyZGYzNTUxYTllNGNjZDUwYzVkZTY4ZTc5OTAwN2RjYjA1NWM5MTBkY2Q4ZGU1OThlM2UifQ"
+        },
+        {
+          "resource": "repo://tests/test_artifact_sidecar_verification.py#L30-L127",
+          "version": "repo-lines-v1:sha256:0b93ba98ab5b0e5409f5697b31987d8f572b5a8d07fbbe7e3669e54efbb29fcb:eyJzZWxlY3RlZExpbmVDb3VudCI6OTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmNWJiODJlNDE5ZmFiZDJjNzFkYjc5MTI1ODFiZTQzMDY3OGM1MjJmNzMxNGE0ZTc5OTFlZDhiNTY2MzRhNzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxZGQ1NGM5ZTg4NGJhNjg5MTQ3YTY4MWJlMDgxODQ3NWE1YmUxMWZhMjg1NTkzNDJjZDAxOGU3YTliZTQ3NmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUxYTkxY2NhYWYwMTA0Njk0ZDE2NTljYzhhOGMzYWM3Yjk2MjRkMTk2MTBlNThiNTJlYTQ5MGFmM2E3ZDBhNTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b7ae721bab91496e948f4a357c8fcb58",
+      "statement": "Versioned prediction and decision publication stage payloads in temporary files and coordinate rename with database transactions, rolling back database changes and removing payloads created by a failed attempt; official population and candidate-set member/name insertion are likewise transactional.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/comparison.py#L280-L340",
+          "version": "repo-lines-v1:sha256:7c6cce8e293ddf96beabe5b3bca4df608ae9e8bc02adda7bd074faadc97b27ec:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmMjg0MmZmZGU3OWQxZDhjOTBkZGQ5MmQyM2Y1OWY0MDE3ZDViYTdkMjM2MTAyMDU0ODRmN2QyYmE0ZjlkOTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkMjNkYjQ0NTQzNTg5MmZhZDFmNzRhY2VjYjE1YjQxNzhmZTMyNTUwYTcwNDkxNTk4ODc1ZjVlNzgxMTNjMjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3ZDViNjg0NThmZmJhZDk2ODFlYzQ2NTY0MmI4N2Y5NTA2ZmRkOGM1ZDU5ZGEyZmU3MzFhZDkwYzk4Nzc2MGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmNjc4NTE5OGVkMTgyM2FmZmFlOGNlOTg0ODI2YzIwOGI3OTZlZWMzNWRmNmMwYmYwYWM3NDM2N2EyMGQ4YTEifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/decisions.py#L232-L279",
+          "version": "repo-lines-v1:sha256:a826ceddedee0b7a15ca46b175cdc33ada30995d5adf54331ac9c220111bf092:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlM2JmMmRmMWM5OThlMzRmMTRiODA1ZTVjMDVmNmM5ZGE1NjczNTYyMGMwMjY4MzdiNGM3YTMyMTljOTJiZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5ZWEzNjc3NDQ0OGI4MzI3NGY5ZDJiMmVjZWYxZTk1YWY4NWQyNjgwMGY2YzFlM2NkYmIyYmY0YjRjYzgwYzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA5NGM0NzFiMWRhNmEyNmVjZWRmYzAzYjdmYjkyMWI2Y2Y2ZTBlMmYyNGQ1MzE5MjcwZmI5ZmQ4OWU0MThmNDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImViNGVlYTNjZTg4ZmI4NzQ3NjFjYTkyNWE0MzgzYmI2MGRjODM3ZWIwZTM2ZGE0ZmQ1ZTk0NWRiZjU4OGRjMjcifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/population.py#L303-L339",
+          "version": "repo-lines-v1:sha256:c72772b84c0906e3df17b8b040fc24049800d0aebef6ffc8e24d71bad26a5b8f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5OGExZjg3MjNiMWFhZGQ5OTMzOTMzYTc3MWQ1ODc3YTBhOWQ2MWU2Mzk1ZTVlZjdlZTU0ODQwYWI4ZTJmY2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk0OTJhZDEzNTFjMDAzNmRmNDA5ZGNmYjNhNjljYjllZjJhZTUxMjMyMjdlOGQ3NDlkOTJmZmY3MWY0NTBiMWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzMDdhMmM1YjRlZmVmNWM4NzQ0MGQ3MDcyMDcyNWY5MjZhMWI2NTUxNzBiYWQwMDlhMjg2YzVlYmViYzM2ZjEifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/registration.py#L1430-L1521",
+          "version": "repo-lines-v1:sha256:a7610d3095d91fe0922133feb2f659484fec9cc623b30022d48267b436015c74:eyJzZWxlY3RlZExpbmVDb3VudCI6OTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmOTlhOGRiZDk3N2Q0NmNmMmEyYTAyOWQ4YzllMjFmYzUyMmRjMTIzYmQxZmJlZWJlYWQ5MTczOGU5Y2MxMjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2ZjkzZmMzOTVmYTdhZjZlNGIyNWI4OGNjZWI5NjBjNzM3YWEwMmNmYjBhM2U1ZDc1YjRmZWI3ZmQ2Zjk0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhNzJkOTc0MTI1NWEwMTcxMmMyMjBiMTM2YWYzMzhjMTJjYjMyMjQwMjljNzllNGJlYzAxMTEwMmE0OTY5MmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiYzJlYWQ4ZDc3ZTYzZGVkYWY1YjY0MjZmNzIzNGMyZTQ4YWFlOTY5MzFkZTU1NWQ4NDE2ZjQyMDIyY2I5M2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_396c3680ceeb4fefa9cd0750fd7f8436",
+      "statement": "Existing content-addressed identities are immutable and idempotent: equal re-registration is reused, while disagreement between a hash and its database identity, spec file, payload, or recorded digest is refused rather than overwritten.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/registry/registration.py#L1441-L1478",
+          "version": "repo-lines-v1:sha256:d2fcfd50210189a02069b67389618d403fd42a3ab7e7f1e987843e08f55b84ae:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxYzIyZmM4MWM3NTNhNWNlNDAzNjhiMDQ3ODdiZTc4NTNiMWU1NjYyYTZjZWQyOGY4Mjc4ZDg1NGE4Y2ZjM2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM1YTAzMTdiMmZhYTQzNjEyZmVlMjY0YjJkZTE5ODE2ZjE1YjRhZTEzNDg3ZTFhMjdmNDljZGY0MDJiZDA3ZjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1MGI3YTdmZjhiMDM5NjFhM2ZmMTEyOTI2ZTg1Y2JjZWRkNDBmMWJmZTZiMTBjODlhNDNhOWEwMjQ2ZDQyYzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ1YmU1ZmE0NWNlY2ZhODllOWEzNzk2YmMzYTg0ZDVjMjg3YTJlOWI5MTUxMDU1NzZjMTZhNDRmMGI1YzdlMzIifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/registration.py#L1810-L1875",
+          "version": "repo-lines-v1:sha256:4f594f21b197ccf57a82e7c528966d345c81c52ad454f56d30d8b0f9df27f25a:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1NzgwNWMzZmU3YWM2MzA3NGY2OWNkYjI1YjlhY2Q3YTg2NzkyZGZlNTQwODE4YWM0Zjg3NjRiNDllN2QxNGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0MjU5MTFhY2VhODIxM2I5YzMyN2FlZDYzNzNkZjdjZDBkYmE2MmZjY2I1NmQzYWMyN2E1YWI1NGYzMGMwZTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg3YzBlNDQwZjJjNGQ4N2NkMWU4MGRkNDkzNDJlMjU1ZmY0NDRlZjlmMjIyNTk5YTU3MTExZDU0MTE4MDI1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIxMmIyNzMyOTk5MjVjOTRjNjkzZjkyM2VjZTQ3MmZhOTNkMzAwZmMyMWYwNGJkN2JmMzQ5OGM0MTRmNWNiNjIifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/registration.py#L789-L874",
+          "version": "repo-lines-v1:sha256:92d0e37412809271c3dab903ab19f08dd14b1f92b08dc596e97d760087f723b7:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwNzRlNjVhM2ZiYWQ4ZmM5YzgwMjc1ZGZjNmE0NWM5OTA0MzYxMTQ2YTkyYTRiY2NiYzI2MzU5ZWYwM2EzZDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmMzIzYmJhNDAwNmRkZDcxZDhlMTNmMWRiNjgyYmZhOWFjNjVmMjJiZTNjNTA0YmI2MGUyMTUyZTFjZTAzNDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1ODBkNTMzMDI4ZjNlZDVmZmQ5NDQ3MmViNWJjNTA4ODY2ZWNlNTMzNmM1NDU2ZDgwNDRiNGJhOTg4OGUxM2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE5ZjEyOWJmYjBjMmJhZTVhNGVmNTc1M2VjNDVkNjIwNDEyMTQ1NDgwZThjOTk5ZjE5YzJiY2I0ODY0NzllYzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7ad3687c825e41b0a1969ac534052f79",
+      "statement": "Official populations are named immutable snapshots of unique training, prediction, or backtest hashes; changed membership must explicitly supersede the current generation, unchanged membership is a no-op, preview results are barred, and name resolution requires exactly one unsuperseded head.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/population.py#L242-L365",
+          "version": "repo-lines-v1:sha256:85625ce6dc9d2fd85541eb2a7a689eb8bd0cd3bc8e0ad281bbdc44e55e1200f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyOGUzZjI1ZmU0NjJmZTllYTFjZDZhYjVhN2E1ODRjNmY4MTk1MTg5MzJmOGU0MWRkOGRkODhmOGFhYTgwOTE3IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkMjc1M2Q2Y2RjYjQyMDU2MmVhODIyYjkyNTYwNjRjNmY5OTUxODAyMTBjZmZhOTRkM2EzYTViZDQ5YjZhODE3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmMzM2MmM1OGE5NTYwNDM5MWQ2YmY5YjFhOTE3ZjcxMDcwMDMyYmY3ZDFhM2JmNjdlZGQ0NmNmYzViMjQ5MmVmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2MmEwZmMzZTNkNTc0YmIwNmQwMmM4YzU0OTU1OTZlMmJkMzQ4MmE4YjFkNzdlMTE4NTVkNjUxMGM5NWQ4MDgyIn0"
+        },
+        {
+          "resource": "repo://case_studies/research/population.py#L367-L415",
+          "version": "repo-lines-v1:sha256:9dbe6b8ad0b81192d9c039eb0e1239c8a92ba36f78af0ea0defed0a4b01e429b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE1YzU2MWE0N2FlMjliYWI5MTMxOWM3MDk3YWQwODA0YWJlZTVjMWUzOWFjZGM0YmY2MzI1YWQ0MDE5MDFjMDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiNjliZjQ1ZjgwOGI5MzRjOGY2OWUwOGQ2YWU4MzE5MjdiYjQxOGUwODJkNGUxYzU4NGU2ZjVkNWQ3M2UzNTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBmMzE2ZTViMDA0YzY3YjEyZDI0ZGZjMzAwOGJiMTQ4Y2YyOTIyYTYzODQ0NmU2MzE0YzBiMjUwZGIzZjg3ZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2MTI2Mzk0NzU4M2VmMDA1MmE2ZTIyZDJiZGNlODM1ZWU5MDBmODkyMzMyYTZmODZkMjdmYjNkZjY1OTY5NmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6a4ab37bf6894ed4adec791a2a6b8b4f",
+      "statement": "Prediction retirement is derived per population-name lineage rather than by deleting old rows or choosing the newest timestamp, allowing one named snapshot to retain an identity that another named lineage has superseded.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/population.py#L27-L99",
+          "version": "repo-lines-v1:sha256:9565fb5aecbc240d683f7bf8d1dd5d6e4f614f4ec556f61f87a8f9c3ab643acc:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhZWM4OGU5YmE2YjJhNDViYWRkMWJkZGY0MjZkNmIwYjJjOTBhNGZhNDM5MTdlZWE0ZDViNTY3YTU5NjAxYzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkMzg4ZDM5MmZkNTBmMmQxYWY4YmRkYzI5OTA1NTEwYWYyOWYxYmE5YWRmMWNiYWY1NzFjYWQ5YWUyZThhMTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhOGYwMTRkNDZmMjk4YjZmODI5YmU4MDIyMmUxNTkxNDM2ZDliNWQ5NzUyMzlhNzI5MTE4OGY5ODdjMTMwMGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiNTIxYjgyNTBhNGNjN2RkYjE5YWZkZmVkMGJjYTQxOTJmNTk1MDc1NGJhN2JmZTI2MjBlOGFlNWUzMDYxZTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_703a33ee2e7a4e0286bbc12edc94bca8",
+      "statement": "The execution ledger records independent running/completed/failed attempts and permits fold reuse only when fitted-state and prediction-shard paths, SHA-256 digests, and resolved settings match the recorded fold completion.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/recovery.py#L51-L97",
+          "version": "repo-lines-v1:sha256:213788e65169ab41ea0284ec09b618246c5ad78aaeb52b93b1d329128861338b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdhZWQzZDUzMzljZmM0OTdlMjI0MmUxNTI2YzQ5ODczOGY0MTc4ZTJiOTliNTdiNDQ1NWVjNTg2OTQzOTFkYmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5N2VlNzA4ZDBjMDM4YmNhZTdkYmJjNTQ1YjExNDQ3ZjkyZGFhNzdjYWJmNzA1MDMwNjE5MmZjZWRiYjVmMjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkNWVkNDM1Y2MxMDM5ODVhNmFkNjY2NGNlY2U0ODkwNzI5MjhmM2FlZDhmNjdiYjM4YjU5NTRmYWE5ZWZmOGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM0YTA4ZTJjYjVmYzIxMjcyM2ZhMjdmMmMxMmI5NWEyNmU5YjdlNzYzZWE4Y2FkOTAzNWQxZTNlY2NhZTM1NTUifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/recovery.py#L99-L186",
+          "version": "repo-lines-v1:sha256:8f530cea66f840b3871ba8a4f2f6215104f81b48366e2183128163ee0fd48636:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2ODA5MzFmYjgxMjk2YjcxNWNlMDU5MWZjYmMxNjEyM2MxMDE5YWZkMDdiYWYzZWFkMGFlYjg4Mzk4MjYxZDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5ZWEzNjc3NDQ0OGI4MzI3NGY5ZDJiMmVjZWYxZTk1YWY4NWQyNjgwMGY2YzFlM2NkYmIyYmY0YjRjYzgwYzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU4MWE3ZWM2NGZhM2EyYjY0YmYxNTVkM2UzZjE4M2UzNDAwZjQ2Nzc3YmQ4MjAyOTJjNTM5MjFmODg4NGU5ZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f2cbb4a865fa484896c1c57f7d0eba90",
+      "statement": "Candidate sets freeze complete canonical validation results together with a comparison contract, reject undeclared protocol incompatibilities and exploratory decision backtests, and separate set identity from per-name supersession bindings.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/comparison.py#L163-L267",
+          "version": "repo-lines-v1:sha256:ed68deec532a6026bdd7fdc403f02ff1a2e9998dba6d0f0923b17bb9edd1f1b5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjZTZiZGEwN2VmMzUyZTQ3MThlNjU5YTIzNmMwNjNmN2JjYmM0Y2M5ZTliOWM1OTY5YjE5YWU0MWIzODUzY2ViIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiM2JkZTEyYjQyODQ5NjM1MjlkNmFlNmI1ZTI2YzBmMWM3MDExMzM0MTgzYmY1NzMzNzhhMGY1OTAwOWFiNGFlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3MGNlM2YyNGFiNDdjMmY1YTlkMzM3ZjM3N2VkODU3M2ZhNTY1ODQwNzY0MDJmMWFmMDU0YTNkZWQ2MTk0NjJmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2Mzc5YzJmMTI1ZDQ3ZDU2ZjY3MjI3YWI4NTFjM2MyNGU0Y2M5YzljNjMzOTY1ODRmOWUyNGVlODgyNTZlMWRhIn0"
+        },
+        {
+          "resource": "repo://case_studies/research/comparison.py#L268-L367",
+          "version": "repo-lines-v1:sha256:8e6db049399aa84b3680ccf3b3ea82ef8655eb23908d30d989482b6d1dbbd595:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlYmZkZTY5NmMxMDZjZTZkYmFlZGY5NmNkZjY5MmZjOTM4OGJlOTc0MTU1N2FkYjU0ZDJhY2IyZWZlNGVjN2Y5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyNGM4NjkxZTNjMWMzNjUyYmUzY2MzZDM1NDA1MmEyMWYwYzUwNDBiZDFlOWM2YjljYzc4Y2VhOTkyMzcyZjJhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkN2MzNmFjMGQwN2RiMGRjZTUyYmQxMDlkMzgwOGY0Nzg5MWE5YjgzOWUzOWQzMWE0NjkxZDhiOTA4NjJkOTc4In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_527498abd8ba4923a0f30daae4329fdb",
+      "statement": "Canonical decision artifacts bind normalized decisions to exact prediction lineage and an artifact digest, require current complete canonical inputs plus deterministic or seeded clean replay, and atomically publish immutable metadata and Parquet content.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/decisions.py#L151-L166",
+          "version": "repo-lines-v1:sha256:1568c52cdcd1a4f78935d37be95d02db60ff4a4f6d4395650224d1b88c3404f6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwOTM5YTY4MzIzYTM3M2YwOTNhMDgzNmFhN2MxZGJhYTdmYzMyNWUyYTY2ZjY3YWVmYzI4NzdiMDNjMTY3NzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2OWExMzk3NWMyNTZlYzgzMjBlMjAxNjA4M2M5NmRmNjM3Y2EzZDM1YmViZGUyMzE0YmVlM2E0NzExYjU2Y2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM4ZTI2OTA4NzdiOGUzYTFjNWI2OWU1MDk5YjA4YzkwZWVkZjRjYTcwNGZjMmE5ZDE4M2IyNTA4NWIxN2I1NDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY4NDQ5MjYwYWE2YjM4NmI3MWVlMTE2OGY2NWQzNGFjYTFiNjM2NGFjMTM4MTcxZDIwZjBmOWJjNjNjZWIxYzkifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/decisions.py#L183-L279",
+          "version": "repo-lines-v1:sha256:e0df88a809cac77abcda3f4e0cde4c68ca5dd52613bbdb12e0ddf87a29115fdf:eyJzZWxlY3RlZExpbmVDb3VudCI6OTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjODcyYzgzMmZhZjQ1N2UwMGVjODYyODZkOWI2OTU3OWZiMDc5ZWU0N2I3ZmU2Mjg0ZTNjNTI2YjA2OTRjYTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5ZWEzNjc3NDQ0OGI4MzI3NGY5ZDJiMmVjZWYxZTk1YWY4NWQyNjgwMGY2YzFlM2NkYmIyYmY0YjRjYzgwYzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM4NzUyYjBmYTYwMWFiMzcxNjM3NTUzMTk4NjNlNDAzNWMwZjNiZmRiOTM1YjMwYjBmMGNmNWFkYzU2N2MwNzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImViNGVlYTNjZTg4ZmI4NzQ3NjFjYTkyNWE0MzgzYmI2MGRjODM3ZWIwZTM2ZGE0ZmQ1ZTk0NWRiZjU4OGRjMjcifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/decisions.py#L283-L320",
+          "version": "repo-lines-v1:sha256:f0ed3d10e6ca3ce04f41a239766fcafa5e739e0c8fc089886046563639534278:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5ZDM4OGY4YWNhOGUxYjQyNDdjZjA0ODNlOWNjZjQyZjlmYjI5NTRjMTNiNjQyNDhiYzU1NzNiZmEzZTBhOTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzYjE1Nzg0YjBkNjM5MzA5MDZlNTI3MWY1NWVhM2JiNmI5MDM1NWYzYjNhN2MzODllNzEzMTU2N2U2NjE5YTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImViNGVlYTNjZTg4ZmI4NzQ3NjFjYTkyNWE0MzgzYmI2MGRjODM3ZWIwZTM2ZGE0ZmQ1ZTk0NWRiZjU4OGRjMjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1ece71257c1d471196da6a8f4a28f2d1",
+      "statement": "Release installation verifies archive and internal checksums, constrains extraction paths, rejects an uncheckpointed WAL, runs SQLite integrity and foreign-key checks, then installs a read-only staged tree by rename and restores the prior tree if replacement fails.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/download_artifacts.py#L230-L289",
+          "version": "repo-lines-v1:sha256:8e05cf0174a889496d581ce74d44a4519e686535f2c949975f819109468b4df9:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5N2I0N2JiODFjZTkzY2JhNjdhZmMwODY5OGE4MGNmYTA5M2E4NjY3ZTljOWY5NjUzMzc4MThkNjU3OGQxODUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJhMzhmZWNiMGM1MjA3MTk2YzdlMWFhOGIyNWJjNDg3NDQyZjBkNTM3MTcwOWYxYjI0OGFkYjYzYjcxMjkyM2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjY2VmNWIzYTBhMTE3YWU0ZDc0YjRmYjRhNTFmNTc0MzVlMDAyMjg4NjYyZDgwOWFkN2NiZWZlMTIwMDkxN2IifQ"
+        },
+        {
+          "resource": "repo://scripts/download_artifacts.py#L292-L363",
+          "version": "repo-lines-v1:sha256:edeab7966893e7ea1d56ae9b14f8e3758a3f5d7afec0b4defc89109bb0fe36f1:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU3MGFjYTUyZGJmMDdlMDQzZjM2M2YzM2Q3ZDQ2NjM1ODFkMWE4M2UzMmM5YTg1ZjAwMjA2Mzk0YzM0ZGNiNTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM3OWM4OGI3YWFlNzVjZjIyZTcwMTdhOWU4YTNlYjc1ZmYzODM0YzVjNjBlZWJmMTNiMzU1M2NlZGI4N2Y4NWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhYjAyMDllODEzMjBkM2Y1MTM5ZmYzNmIwZmFjMzA4ZGQ5MzJlMDM5NzIzNjJmZjdmZDE0OGRmZGNkYTkwYmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9786e27c6bd64b649c50a8ab09400a25",
+      "statement": "A writable experiment can transactionally import released prediction metadata while retaining payloads in the release tree through overlay references, avoiding wholesale artifact copying.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/execution.py#L228-L273",
+          "version": "repo-lines-v1:sha256:12e0639e7f534b2403efc1e1c7b11fbd30cea0c6d7afedafda55a9cc589f1a92:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwMWJjOTliODgwN2UyYTZhM2UyNTkzNDNlMjVhYmFkZTFmOWIxNTkyM2JhMTZjNjQ0OGI0MmZmMDA0OGU4MWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEwNzRjODljYzAyNjI1YTc1MjMxZmU4MmU1NTI3OTJjZjBhZTdiMGU5ODI0ZjRkZmFkMDliZTc1ZmI3MWI1YWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA5MjRmZWZkYThhNGJjZTA3MGIzZDlkMjJkNDQ2ZmY2OTk4NWIwZWY1MGE0MTAxNmZiZGM1NjgyZjkzNWM5NWYifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}

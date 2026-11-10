@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:2248065f8afb9099b6f59e7066f7944afc928b26b0456d60fe14a3150a1d8a6f",
+  "claims": [
+    {
+      "id": "claim_392d90125511426da15f81e99869f72c",
+      "statement": "Walk-forward cross-validation is generated from sorted unique panel timestamps with calendar-aware rolling or expanding windows, returns folds oldest first, and rejects chronology or fold-ID ordering drift.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/cv.py#L240-L374",
+          "version": "repo-lines-v1:sha256:c0f1c548b824f0f1be93df7928e91a474a3b4a8dc62a6d2f3d59f7906ca61375:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4MDBjZWUyY2E3NDZkZGVkYWQ4ZDU4NDkwNjQ5MjY5ZTNlOWE0NTNlZDI1MzRlNGUyOWFjYzc1ZjkxYzQ3MGUyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5NTE4ZWVkN2I1MGQ1ZGNkYTc4YjEyYmRjNTZjODRkYjBiYWQ0ZTU1OGEzMDY0MTAzNzEyYTE5NWY2MzA1MmZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3ZWZhZWQ5MDk0MzczZjkyMjYwNDM0Njc2NWUwNDQwZjI2OWUwN2JkOTRjNzAxYTJmM2U0NjdhOGYzN2UyYjM3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://utils/cv_splits.py#L258-L479",
+          "version": "repo-lines-v1:sha256:c4c924935e4171dff00c75bce7ac62394dd2af8a195d16fe0dce3690eefeae98:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5ZDg5ZDQ3NzI1OTEyMjFhMjdmMmUzMWZlOWZjN2RhZjdhZGMyNTU2NWE3MTA2NDNlYTc4OGUwYmFmMDIxODZlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5ODMxOGY4NDRjMWUwMTU2NDU3ODQ1MmI4NDUyOWE4ZWRiY2FlYjUyMjA2Y2JhOTliN2NiMmMwMTY1MTA1ZTBkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjM2E2ZTBiOTQ4ZjU5Mjg0Mzc2M2EzODE3MDgxYzdkYWU3NmYyNjkwNjdlNmU3NTkwMDNiOGY1N2M5YTNlN2IzIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_913e086245774a008e7254b6d6792b4e",
+      "statement": "The temporal leakage seal distinguishes the training-to-validation label buffer from the outcome-horizon purge at the holdout boundary, and session-unit day buffers are counted as market sessions when a calendar exists.",
+      "evidence": [
+        {
+          "resource": "repo://utils/cv_splits.py#L258-L479",
+          "version": "repo-lines-v1:sha256:c4c924935e4171dff00c75bce7ac62394dd2af8a195d16fe0dce3690eefeae98:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5ZDg5ZDQ3NzI1OTEyMjFhMjdmMmUzMWZlOWZjN2RhZjdhZGMyNTU2NWE3MTA2NDNlYTc4OGUwYmFmMDIxODZlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5ODMxOGY4NDRjMWUwMTU2NDU3ODQ1MmI4NDUyOWE4ZWRiY2FlYjUyMjA2Y2JhOTliN2NiMmMwMTY1MTA1ZTBkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjM2E2ZTBiOTQ4ZjU5Mjg0Mzc2M2EzODE3MDgxYzdkYWU3NmYyNjkwNjdlNmU3NTkwMDNiOGY1N2M5YTNlN2IzIn0"
+        },
+        {
+          "resource": "repo://utils/cv_splits.py#L80-L145",
+          "version": "repo-lines-v1:sha256:74987ed10cf24785255e09eeda8faa67907b834f6706b074a7000dbb3266c6e1:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI0NGQ4NGE0NTljNzY3MGRmYThjMzA3Mzc3ZDJjNDhlNGEwYjEzODE5NjgzYWRiMjJiNjM3YzM1ZGE4MmIzZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkY2YyYjNlZGYwYzRjYWQ0YTYwNDQwNDQ4YWNiYzc1ZjZmOWM5MzFkNDUyYjNlYzNkNTExYmFjN2YxZTM4NmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmNzI1OTBmZGZmMzc1ZWNlM2IyMGM2MGQ4ZGViZjkzMjA3Y2M1Zjg5N2YzNmFlNzFhZTdjMjA5NGU5Y2ZlYmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhY2E5MDcyZDZlODdiOTZlNTQwNDU3YmVmY2NlNGMyNGU4Nzk2ODc3YjNjMDUwYTM3NTZhNGE1NWRiNDNjZjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_785a359021dc4e34ae588dc0d9b9225a",
+      "statement": "Holdout CV is one derived fold whose configured evaluation window is separate from validation, whose training boundary is stepped back on the panel's observed cadence, and whose shared geometry uses the widest declared label buffer so it is safe for every label using fold-scoped temporal artifacts.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/holdout.py#L130-L330",
+          "version": "repo-lines-v1:sha256:d39b2e05dc41be1fccf668c9039525b38f4d546fa4d7891961daebf5ea62a7e0:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjZWRlYTgwNTc3YTQxNDdhODU0M2U5YWJmNmM3YWY4YTBkMTUyNTNkYjBhMGEwMDA5Yzc3Y2FlMmU2MWUxZDE0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxMmYzNjU4YThiYzU0ZmVjZjZmNGU1YmI2Y2RjOTU5MjAyMzJjYzIyOTFjODUyZmQxZThkNmNiZGIwMzExYzM2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxMzExMzVhYmY0MmUyMDQ5ZTRiYzE4YzY0NDk3ZWMxMTY4MWU1MTRmMDc1Nzg0NmZjYTI1OTkyMWMzOWVhYjllIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlMjQ3YjYwMTY1ODQ4NjA5NWU4YTU0ZDcwMTJmMDZjYTgwY2E3ZmYxYTgxZDY4NDc1MTVlMjZiYjkxZjA0YjUxIn0"
+        },
+        {
+          "resource": "repo://case_studies/research/holdout.py#L26-L86",
+          "version": "repo-lines-v1:sha256:853e82c4fc3463a3e01d75f00e840a3acdbee647118e5f9bb4d1246a324196e7:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzNTVjOGQ3NTM1MTg5ZDk5NmMxNjZiYjY1YzhkNzQ5MTZlMWM1NGI3ODczYjE0MjBjMmUyN2QwMDIyNzJjZGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3MGQwYjg4OGU5MmIwMzAxYzNjNWZkNWZiNjViOTAyNDljZDQzMTIyN2NmOTg0NDQxYWMyZDQxZWJlZTAyOTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU2ZWY2ZGJhOTA3M2M4MjA2NWU2ZTQ3YWNlMmI5MjJlMjBmZWQxNGJiN2Q0YmQ0MzE0ODZjMDc1MGYyM2VmY2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5ZjIwMzBhYmZhN2M4NjdmYjJiMGQ2OGE5YzY5ZGYxZDBmZDYxYzQ4ZGZiZmZmNGQyMzM1MDg3MWU2NTM1OTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_110204fa063c464dacc971c53c4c218d",
+      "statement": "Fold-scoped temporal artifacts must match requested validation geometry, while holdout reuse requires actual training and evaluation coverage through the evaluation endpoint and refuses producer metadata showing that feature fitting reached the holdout evaluation window.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/cv.py#L20-L137",
+          "version": "repo-lines-v1:sha256:3c74691f1cfce1e78bb019b204fe8a78357deb92a63973cff4b3145f9e5381ab:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmZjVlNDAwNzAzZjA1NzcyNDViNGJlZjQ1ZTcyYWM1ZDg4MTVkNTg3YWNiN2NhMmUwYmVkNGZiNDg2YmMyYWYwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0NzJhZmFiYWZkNWVmZTc4ZThjODI3OGQ5OTE3NWQ3NTFiNzI3NmY5MmY4NmQzOTBhMzExNWQ3YjM5NTM0OGI5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwZjk4Nzg1NWJjMWFkNjE0OGExMDE0NDgzMTExY2ZkZDJjMzIwNDAwODNkZjhlYmRjMWYzNDJlNmMyOWNjMjBhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhMmE4Zjk5MTkyYTg4NmVjMmQxODdjNWQ0YzQzNWY5OGQwYTliOWNhYTY3NDNlNzU2NDEwMzAzNDIxZmRkMzdiIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_7bc1939c5af24786912f89d07d0a7ac6",
+      "statement": "Coverage is measured against declared folds and the non-null label session axis rather than only against peers; missing declarations, required columns, artifacts, or observations are errors rather than passing empty reports.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/coverage.py#L1-L50",
+          "version": "repo-lines-v1:sha256:73bf50417975534a07453d9d5cd8663033842468dc8b65931505cdc0156af738:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNmMTdjZDFiZGFlMjRkNzIyNmVkOTY2MmYxODcxZTRhMjBlYTdiM2JmZTRjNDYyNjA3ZGIyOGFkYTYwMGQyYTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkNGQ3N2EwYTU0MzZiZjIyYjBkOGM3ZmYyMGY3ZmY3N2M0ZjFjYjMyYzZhOGM5MWQ1MDJkODJjYTY2Njc2YjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFjODU0OTYwZWZlNDRjZTZlOWVjZTAyZTBlZjA1YzQ5M2E1MzQ5NjRmMGMxNmVmZTAwN2I4MThmNTZiNDUzYjQifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/coverage.py#L267-L360",
+          "version": "repo-lines-v1:sha256:70085a84f1bed481a4cdae158271b9dd7f2fe4b4cd474bb363360f1d97d290ef:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjNjZhZjk4MGYxZmIyMjMxMzA0MGM5ZTNlNDdiY2UwZjY1MzU0MTI5ZGIzNTViOTY5NjBkNWI3MDQzMDQyNzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2ZDYwNjg4YTZhNDA2NzcwM2NjZmZlNjdiODZiMWI3OWY5ZDZlZTI5MDdlZTY5ODJkYWY4NWMzNGNmMGI3ODgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxYWJjYzk4YzdmY2YxOTZmZDAzZDNlOGNmM2JkODg1NjFlN2EyOWQ2ZWE5Njk5NjVmNDhmYjk1ZmFkNmU3NDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQzNzM0ZTQ0NjNiZDMwY2NmYjU2YTE5ODZkYTVhYzAyM2VkODYwNTdmNDJmNTI5MTRiZTQyOWZkNDVmNDNhNGUifQ"
+        },
+        {
+          "resource": "repo://case_studies/utils/coverage.py#L463-L600",
+          "version": "repo-lines-v1:sha256:f3512cb12f30e1f353e633669aa8ad70f3bcfe9e31e1e5fcbcab6cdb646bc17d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4OTQ2MDQ5OGIwYTI1Mjk1ZDIyZGUzNjkwMTQ4NTY0NWNhN2FmNDVmNDNjZTU1NzBlYmQ0YTBlYTljMTFhNThiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkNmZiODViMDAyMjE0ODk4ODIxY2MwZjIzZDExMWUwMjBkYWFkMDhmNDE0NTJiOTQ2ZDliZDBhMDBhZmRiMjNlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI3OTdiMzMwMjRjNGY3MzQyZWIyNTk4YjBkNWY0YzRjMGExMTJiZDVlODE5NjE5OTlkNTNhMGQzN2IyZTQyZmJhIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_17dba54a8b2b485cb39d5e2bd3204970",
+      "statement": "Official populations are immutable named snapshots with explicit supersession for changed membership; current resolution expects one unsuperseded head, and retirement is reduced per population name and per member so historical evidence remains addressable without remaining eligible.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/population.py#L207-L357",
+          "version": "repo-lines-v1:sha256:98270a00a0c8a398697f4087d9b74c4287e7dbb4e630ec330e6372a974c78079:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1YjFmZWRkNjZhYjlmODgyMzZmMzFkMTQ4OTRmYjdmZmNlNzBlNDk3ZTlkOGFhNjc0Yjk4YmI4Nzc5YjA1YjgxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4YzU1YTkxMGU1MDU5ZWM0MTM5MTk0N2M3YWI3OGI1YTU5ZmJiYjM1N2YwZWVlZTc2MjgzZGY1MjQ3NzBlNjcyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiOTY4NmIyYzZhZWQ1Y2YzOTlkNjQ3YjI3YzQ4ZjRkMDI3NDBhZDQ4YzUzMTcwYWY3ZDYzNTQ0MGNhNTIwZDEzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmYTYxYmMyMWEzMjkzOTI0MTBhYjZkMTViNThkNTlkNzkyNWY3YjEzOWI2MzIxMTQ5YmVmM2U5ZTc1M2FmZmQ0In0"
+        },
+        {
+          "resource": "repo://case_studies/research/population.py#L668-L784",
+          "version": "repo-lines-v1:sha256:95dedc5bb8abf76bed7e065c8912c9ebb56b3be012c516f997bc2bdbe3a74e87:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiNmVmZGU0NGQ3MDM3NTE2ZGQwM2M3ZTU3M2M5YTA4ODk3M2VlZTc3ODFmYjNlYmQwMjgxNzgwOTdkNjQzMjY0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2NTFlNWU5MGNlZTY1OTI2ZTNjZmMzMTFiNzkyY2I3ZTQ2MzYwZDk1ZDAyMmMxMzkzMDVhZWQ1NWRjYjgxOGM1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiZDBlMzM2YTBjNjMwNTJmYTY5YjcxM2ViNzFhMjU1YmQ3MDk2YTI4MGVmNjdmMTU0MDM0Zjg0ZjM5NDNjNTIxIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_9f056285b7f14d4ba1dcd2ca504f6b3d",
+      "statement": "Sweep plans define expected backtest membership before execution, attempts make interrupted runs visible, and readers require a latest-attempt attestation tied to the plan and its upstream plan generation before the grid may enter selection.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/selection_field.py#L300-L427",
+          "version": "repo-lines-v1:sha256:2a2927f6cd739da4588e04402470ec8a10e7208a98728a1c0947b8e4f6c3145d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI0MTJjYTM0NWNjZjc1YmY5YzA4MDZiY2U2OTViZThkZTgwOGI3OTk4NDI1MWE3YTU0ZDIwMmNmNjEwMWRkNDUxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkMWJhN2VkYjQyNzMwZmVjY2ZjMjdlNGI4ZTJhZDIyN2JlNzZjMTUxZmE5MDExNjdmZGYzN2EwOWRhZmQxMmQ1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwZjA3YjkyYzg0MjA4YzY0NTUzMjM3YTdhMGI5ZjAyNmYzNDk3ZWM5MTZlOWY4MWE4NjUwNzEyYWE2OGQyZWZlIn0"
+        },
+        {
+          "resource": "repo://case_studies/research/selection_field.py#L500-L667",
+          "version": "repo-lines-v1:sha256:6d722100635128a45ffbe724dc4a30d4895d3d2f491d9b25d0ed314a2935e54e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTY4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxZGIzNTI2YTM3ODMwNTQ3NGRiMmI5YzZmNmFmMDVmMjg1MWE2ZTdjMTI3Mjc4MzlkMjhjMjNhN2YzOTE4ZDA3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxMWIwNzRhYjcyZWVmMTdlOWU0Mjc3NWQ4ZDQ2OGU3MGJiYzRlMDY4NTE4YzhmMjEwYzMxY2IwMWZlZjc2ZTliIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0YjUyY2EzYTUzYjBhM2E3OWFjMWEwYjllNWJkNGRmMTBmMGUxYjhiYmFlNzQzMzY3OGU3NTI4NTg3MGVlZDY2In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_c928a3128add495e815437b2d6c3eb44",
+      "statement": "The selection field spans signal, allocation, and risk-overlay validation stages across every declared label, requires baseline coverage and complete planned membership, and carries the winning result's own label into downstream processing.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/selection_field.py#L31-L59",
+          "version": "repo-lines-v1:sha256:403dd6818e6e82878fc92071b77be94e9939bcfe3e09930f83ef4883ce1fb3b2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4NTk5ZjNiNDk3NmY1ZmY2ZGZhMjc0YmZmY2Y5YmYxY2M3ZWIwZTk0MmRlNDhiNzIwODI4YTRhZDNhMDc2ZjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNiZWE1MzQ2ZDBlM2E2YzA0YjlmZGUyOTk1ZTZiNmQ2ZmFmOWMxNjM1ODAzMmU2ZjFiYjlkNmM3Y2IwZDQ4MmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEzYzZkODlhOTA3ZWQ5NGRlNmE4NmY4ZjE0ZjU0MDRlMmE3N2NiMDYxY2Y5YjEwY2RjNzM4NGI3NmE1NWY0NzEifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/selection_field.py#L800-L968",
+          "version": "repo-lines-v1:sha256:cd65146e22eb6553db3528d7fbd90e5eee10d74b5c4ddb8be2c8873b39726725:eyJzZWxlY3RlZExpbmVDb3VudCI6MTY5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI2ZjhiNDBmZDM4MDRjYThhNGY5YjZmZDg2ZWRhODljMTRhYjQ3ZDQ4NTY4OWU1Nzk0Y2M4N2JjMjA1YjRjNjFjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxMmZiMGE0NjIwZWQ4YzQ2ODRmZWY1YWNhYzY2NjQ1YmY5NTk5MjhlYzM3ZTAzNzY3NzcyZThiMDMzZWZmMGY2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxYTc3MTI5MzcxOTJkZGY2ZjUxMmY3OWViNDA2NTZmNDY4NWU0YjRjYTVmZWQ1NTE5NjY1NWVhOTc4YjY1NzA5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2NkYzA5YWIxNDRiZTlmNjBmYjcxNzM4NGJjM2U4Njk2MDM5M2Q5YmJhZTkyYTVmYjVjZGQwYTU3YjBkM2E5In0"
+        },
+        {
+          "resource": "repo://case_studies/research/selection_field.py#L969-L1039",
+          "version": "repo-lines-v1:sha256:0d213db43e841af434cde2d998df1e89521a2d40b4cdc8989af17a71cf135fab:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxZjFiN2YyYWM0NTBmNDNjZDhhMTllOTU1N2RhZTdhMmI1OTJkMDdkYTE0NGJiZjZjZDYxNWQ2NTdjOTY4MDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg2MmJmMTI5MDExMzc5OTY4MDM2NjAyMWQ4YzMxMzI0MmY3ZDAyYTEwYzdkZTU5ZDZmODVhOGQyYzljMmVkZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6977b1d067dd4819b581d8ec7b0b46bf",
+      "statement": "Canonical candidate sets admit only complete canonical validation results of one kind, enforce protocol compatibility except for explicitly declared comparable fields, require explicit supersession for changed named sets, and rank validation Sharpe deterministically within frozen membership.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/comparison.py#L163-L350",
+          "version": "repo-lines-v1:sha256:a8cee14747156ae2e326be06352d873825108a83f50c5359e2c1e1abc620f950:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjZTZiZGEwN2VmMzUyZTQ3MThlNjU5YTIzNmMwNjNmN2JjYmM0Y2M5ZTliOWM1OTY5YjE5YWU0MWIzODUzY2ViIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5YTliNjE5MTFjMTAxNGNhNmM0ODdlZjRlNjhiNTM0Y2ZmMGE1Yzc4ZWRjZTIyMTc0OTgxNGQ4ODJkNDk3NzBhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3MGNlM2YyNGFiNDdjMmY1YTlkMzM3ZjM3N2VkODU3M2ZhNTY1ODQwNzY0MDJmMWFmMDU0YTNkZWQ2MTk0NjJmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzMzVkMzUxZGNlOTU2YjhlZDc4NzExNzk4N2UyZjNkMjYxOTgzN2FkMDQxMWMyNDViODEyYWNjMjY2MjU4MTFjIn0"
+        },
+        {
+          "resource": "repo://case_studies/research/comparison.py#L410-L484",
+          "version": "repo-lines-v1:sha256:771e815cd082b46bbfaf9ff9faf0b74337986e4474a14019e0aa20beba83d060:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4MTA5ZmVkMzhmZTk2NWNkODYwOTFlMTc2ZjM1YzA4NWYwNTY4MmQyYTQ3NDI0NjUzYzI2OTEwZDlhYjE4ZDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4MDg4NTMyMDUyN2QxNGIzNDVkMGUzMTZhMDk0Y2E5NGUxMjExZGI4NzkxNTE3MDZiZDhiMDMxYjgzNjk2MDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc3NzEyM2MwNTdlZTM5ZTAxYTU2ZWJhMDg5ZDZjODQ1MTc1MjZhZjYxNjkxZWFjMTBlMDI2MGQ4MGJmZDIzNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_af7d66624a084140bac1c02ea8b8e4cf",
+      "statement": "Decision artifacts record exact prediction lineage and require explicit fold-boundary and temporal-gap state policies for target positions or orders; canonical promotion additionally requires current complete canonical predictions, declared exact inputs, deterministic or seeded execution, and a matching clean-replay digest.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/decisions.py#L127-L243",
+          "version": "repo-lines-v1:sha256:32a07fab0485ee9dda606ecb6f764f2cecc8778d9cc60f25e3facae2e075005f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwOTMxZTFmZWE4MmQxZmVjOWJjNDNkZGExZWYyOWI3YjFhZDIwY2QwNjg1N2MyODYwYzkyOGRmODU1YWYxMjlhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkYTc4MGFkMGI1OGVhNTA4N2FkZTY0NjMzMTU2ZTdmNGJkODM3ZjljMjA3NGYyMjgzOTBhNzMzNDk0ZDAwNzBkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIzZTQ0MjNkZjcxNzhmOWRhNDg3MzBhMDBiZWVmYmUwNTVlMWUyZTI1NjA3NDYzOTZkNzA5ODYxN2ZmNTJiZTU4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1ZjFkMDljY2ZlMDYzMGQ5YTcwMWNlMTYwZWU2NTM0MDIyNTkyNjdmM2EzNzZlOWZiMDVhZTg2ZWUwMzhiZGU2In0"
+        },
+        {
+          "resource": "repo://case_studies/research/decisions.py#L24-L48",
+          "version": "repo-lines-v1:sha256:fc6e042bbf36ac63c48b73851afc8037b2644faca173ddc50321aa3474cf0fa5:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyM2E4MjJmMjc4YmRiOGZmYjY0YmY5MjA5NzkwYzM5YzEzMjk4YTYwMTZmZjJkZDhhZWJlNzljNzNkNGExNDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3NDJmNGFlOTY2YzUwZDAyMGIwZmIwMzE5OWFhYjZkNTNiYWRlOTg0YjRjODkzYjYwM2MzYmQyMzhhMjFkMTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ0Mzg3ZDA0ZmI5OGJmY2Y2NThjY2MyNzU1ZTI0NWVhZWQ3NzA3NGI5ZmZkNDYzZjg4YjYwMDkyMDIyYjkyNmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7cd579010b5e4dfdbb31d0407e1b3860",
+      "statement": "A holdout training specification is derived by replacing validation CV with exactly one holdout fold and recomputing family-specific fold-derived eligibility and parameter fields; families without a re-keying hook are refused.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/holdout.py#L332-L476",
+          "version": "repo-lines-v1:sha256:229c99f29f2626524597955eba0f8a03fc7ea64943ed42d8f019a3ae55f6bf72:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1MTAzNDgxYzU3ZDBmMGRjMGY3NmNkMmNjOGIzNjA0YzRlODI5NmRhNDEyMmFkZDE5ZTgxNzQ1ZGM3ZTMzMWE2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5YTI2OGI1NGY4MGM2MjZiNGQ4MWVmMTBkYTU3MWYxM2I2NWYyYjMyZjg2Y2EyZjY1ZjA1MTRiMmY3YzRkM2M4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_5987177d8cd4487985ccddf0121a9d43",
+      "statement": "The second-look guard refuses another configuration on a spent holdout window by default, permits only exact named retirement of already registered superseded refits with visible disclosure, and never permits overrides for unattributable or non-holdout training records.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/strategy_analysis.py#L359-L505",
+          "version": "repo-lines-v1:sha256:36a86d80c7152fc4842288eb66fbcfdb54092424633c8c6e168de1ff1b1d5a08:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4ZmU4OTFhMmVhYmQzMzlkYjEyYTk1YzU3N2I5ZTM4MWM4ZjFjZDZmZTA4ZGU4NjVjY2ZjZDRiZWEzZDc1NjAxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4OTk1ZTZhOTU4ODFiY2UzNmVlZjc1NjgxNDY2MmI5NzEwODdlZWJkZWMwZTRmNDI5ZjUzN2VjMjczODI1NGVhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiZDMyZWNkM2ZhMTRjOWQyZWFlNGRjNDBhNzVmYTNjY2U0MzJjNmRkYjcxZWQwMDkyYzUwM2ZkY2I0ZDAyNGNlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjOTk0NzJkOTBmYWI2NGVlMmNlNDk0MjdmNDQxMjNlYmZkZDk1M2I4NmUzN2YyNzdjOGYzMDVmZGRkMDRmMTdhIn0"
+        },
+        {
+          "resource": "repo://tests/test_holdout_second_look_refusal.py#L40-L142",
+          "version": "repo-lines-v1:sha256:0a9b98b6db406e8a24a681b2fe0aacd11783aaffb18022e0ec2c79b5ef7a985e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzYWJjZjQwNTQxZjFkMDE4YjY2Mjg2YzRmNDg1NDk4ODAyN2YwMDYwYWIzMjE1ZDhkNzRiOWZjNWM3M2I5ODQzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1MDZhOGQ3YzM5YTA4M2UyZmQ2OWIzNGM5Y2E2MjA3M2RkZmJjODM3NzhlZDY3YTNjNDRkOTgzMzI1YzExNTEzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0ZmJkMDA5MzE0YmMyNzA4NDE2NzM0YTAyYWU1ZmYzOWExZTQ4YTA1MGJlOTFmNDNiMmZhYTkyMDAyYzYyYmZjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_8a286b4a22d5476d9f0e7d6927b68f07",
+      "statement": "Training hashes are canonical identities derived from resolved specification projections, so they identify declared computation and cache/lineage equivalence but do not by themselves attest that runtime code applied an override to the estimator.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/models.py#L265-L364",
+          "version": "repo-lines-v1:sha256:c4cedbbbf879df5021e7f15339c6b81f9fdc8e990af359d014db7d1e1ad5ee1b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5YWIyMjRhZmVkNjFjMDJhNWIwZGViNDk0NTQxYzA2N2Y0MWFkMmJmMjNkNDM4YzlmMjliZTY0OThlNDFiYTNhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyNTdmMzQ4MWM1NjM0OTJiMjRhNDQ0NDA2YzdhNjdkMmQzOGQ2MDU5ZWEwMTgxZGY1Y2Y4NzI2NzE3YzM0M2U0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1YTgwNzgyMTNjMTkyNjcwMjRmY2Q4NjdiMWRjYjgwZWQ3Y2NiYTg3NGFmZjgwNjc1YTc2MjdjZjU2NTA1MmM3In0"
+        },
+        {
+          "resource": "repo://case_studies/utils/registry/specs.py#L91-L167",
+          "version": "repo-lines-v1:sha256:899993f4bbc39938aa4bb1a5cc48b32151a3baeee9f8bf3b08c77e4e0e906ce2:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA3NmFhYzAyNjIwMWJjNTFmZjA2YzgyYzMyNTU2YjZlODA1NmIwMzE3YjdhZDY3MGM4YTM1ZjE3NWJkMDQ2ZWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRhZTk4NTBmMzI3NjdmNTFhNDE1YTVkM2JkNzZhM2EwNDE2OTdlMTFlNDcwNDFiNGQ0OWMxODRjYmM3OTkwZDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1304055683084b9fbef03b2e88e881f6",
+      "statement": "Leakage governance uses default-deny executable-code detectors for future-aware transformations and randomized temporal splits, while holdout-boundary tests require development analysis to apply configured boundaries before selection statistics and to purge forward labels by their outcome endpoint.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_holdout_boundary.py#L1-L111",
+          "version": "repo-lines-v1:sha256:42c8fb08dc49d5b2dec94a93a87cc7cf24d28a1acee482e965e48f6efd12c6a9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTExLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmZTcyZjE2MzBiM2FkOWM3ZDRiZGY4ZTMwMDI1ODQxZjQ3NzVjNTQyZTY3MzdmNjVlNGY0YTFjOGUxYTA3OTZkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmNjA2YWYyMWMwNmYzOTU1MDU5OTdlZWE0MDA5YjBjYjg3ZjYzOGI0YjJmYjhmZmYwNjJkYzEwYTJjYzYzZjA5In0"
+        },
+        {
+          "resource": "repo://tests/test_holdout_boundary.py#L119-L393",
+          "version": "repo-lines-v1:sha256:467aff125341e75ab4f452969208a52c597616ecc64ae48123516f6125b36992:eyJzZWxlY3RlZExpbmVDb3VudCI6Mjc1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5YzI0YmE0MmYxNzMyNjczNWVmOTZiMGM5ZmU4ZDI1ZmFmZTg0MjlmZmIwYjVmNTZiODE3NDZlYjQ0NWFkOThhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjNjIxYTUwMjg2MTYwYzI0MTQxZWZjYjBhMmJmNTdjZmFjNGViNmZlY2FjOGU1NGY1Nzk5YmYyZjJhZDI5MGZmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxY2YyMjZkMDRkMTEzMTRiNWFhNDI0ZTU0NzBiOGQ3ZWE3ZTkyZjFjYWYxYzE3N2U2MDEwMTAxZGFlNTMzZWFiIn0"
+        },
+        {
+          "resource": "repo://tests/test_leakage_detectors.py#L1-L66",
+          "version": "repo-lines-v1:sha256:69b7c25b5a6cec44f9cd780e0bd678a95dbcb615d9535bfb86602eb0c0b1ba5c:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhNmNjNWQyNGZhOGVkODMwMTIwMTZjZjU0ZWNiZTczNzQ0MDlkODkwZmNjNDBiOWFlMGZmOTlmMDg2ZGNjNGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEyYzkzZDdkM2RkMTVjNTZmYzE2OTU2NGEyOGYxMmJlZjgyMWFmZDFhMDU3MTAxMzA1YmFiMDBlNjJmZGVhZjMifQ"
+        },
+        {
+          "resource": "repo://tests/test_leakage_detectors.py#L247-L374",
+          "version": "repo-lines-v1:sha256:76fac2ff9ba2050ca8bb4474528c755e72ba0104ff4c1181e94ce6b0a6a25748:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhNjcwNjk4OTg2M2EwOGVlMjM5MzE4NTQ5ZmI4YzU0YmQ5MmRlNjc1NjZjYTBmMTFmZDQ0ZjY4MjlkMGRhNzZhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlYTg2NDU3NDczNTYzN2ZkZTdhMjA0MTQyYWI0M2U3Y2Y2Y2ViYjY4NTJkZDhiYTZkYmJhZTUzYTc3NzRmYTBiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxNzBhMWJmYzRmZDdkNGYwMWMyN2VlN2UxNWZhZGQwYzM0MjE2MTk2ZDk3M2Q4MTQyYTJhNTMyMGY3YThhY2NkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}

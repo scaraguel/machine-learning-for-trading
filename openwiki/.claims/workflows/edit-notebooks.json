@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:231d698e685be0443b1acf4167a881a55299c247e49f460b400db3567e251f78",
+  "claims": [
+    {
+      "id": "claim_c808bd7739644cfcbefb5f43afddce7e",
+      "statement": "Paired notebooks have asymmetric ownership: the Jupytext percent-format `.py` file is the authorial source, while the `.ipynb` is a generated, viewable artifact whose committed outputs must come from a real execution rather than hand editing.",
+      "evidence": [
+        {
+          "resource": "repo://CONTRIBUTING.md#L63-L80",
+          "version": "repo-lines-v1:sha256:c3b5844ec8bc57d446e69d20b3887d1b3d5314a55d4bde951c63fff6fbb72fee:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0OWExMDM4YTI5NWIyMGI3NGYxNDUyMjcxOGFmYzk5YWIzYTViMTBjOGZiNzcyMDJiNTU0YzIzYzZlMzM2ZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2MWNjMTc2Nzk4ZDkxMmQ0OTEwZDZkZGU1N2U2ZDI2NWFhZmQ0Njg2NzNiYTljMTEwN2QxMjZkMDAyNzE3YjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjczODRiNWVlOTQxOWUxZDE2OWM0MDZmNjQzMDdjMDVlOGQ1Y2FiNjA3ODAyNGJiZmUxMTg0ODQ1NjJlZDQ5N2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA0YzllYWQ5N2MyYjJlOGQ4OWIwZGFjNTBmNzkyMWJkZTBmMzM5NGFlZjdmNzE0YjNjNGQ3OTA3MWNlMGM1YWIifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L139-L159",
+          "version": "repo-lines-v1:sha256:74c93ddb32659950372e295e2dc965bce53c0b0c43e0c2a7708fd9738ccf2b10:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3MmZiZWMzYTg1ZmRiZTYwYzYwYjJiNGMzZmVjZGYzMzE1M2NhMDIyODA4NWIxMmUyNGNiZTUyZjZkOTc3NGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdmOTYzMDNiOGI4ZGFlMmI1MTgxNzg1M2U3ZDQ5MDQ3NTEwYTFiNDIwNTAzODY0MTA4NzcyMWNjZmU0ZTlhNGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8fbdc01f62a14f4db3b3b09139385664",
+      "statement": "Notebook parameter cells carry production defaults, and Papermill accelerates tests by inserting an `injected-parameters` cell after them so reduced and production runs use the same code path; override validation rejects parameters that are not read below injection or are rebound before use.",
+      "evidence": [
+        {
+          "resource": "repo://docs/running-notebooks.md#L598-L624",
+          "version": "repo-lines-v1:sha256:3a580375183606f25be0ae28c7d8893fd0361b92e09a759c1e1991f664db1cec:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5NzU2MDUxODlhNDE4MTQ3MTJlYWVhYTE3ZTEyOTA0OWE5YWNhZWRhN2ViM2I4MWVkNzkyN2MzYzFkZWZlN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkZmY4YTZhNWE1M2RhYjJhZGI5YzlkOTU5YjA0ZTEzYTA0OTZlMzVjOWFkNDc0MDAxOTI2ZmFjNTVmMWMzMWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU3NjVkZjA5ZDk3ZWFlOWMyZTQ1YTM5MGJjNGM5M2QxYWRjZWVmMDBkN2QwNjBmMWI1YTgxNzM1ODFmMzMzZGIifQ"
+        },
+        {
+          "resource": "repo://docs/running-notebooks.md#L642-L682",
+          "version": "repo-lines-v1:sha256:9b1bde29f37100fb85397584f257b3c828271230510e3614c805412e131b9abf:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkNTU1YjA3ZDMxN2NmNmI2NzNkNDQ3Y2RlNDRlOTUzM2U2ZDg4NTFkNGY2NDkxNTlmZjA0MzFmMjU1YjY4OTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNhYTQwNmMyOGNkZmVlNmQwMDdjOTU0ODRiNzRmYTYzYmZiMGU2OTRhMmFhNjI3NDk2YTc1ZGExOWU2MjI4MzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc0ODFkNWI3ODlkYjc4M2Q2NDMyYTQ3MDY3OTI2ZjllMzg2NDM3OTljYWUwNGY5YWVkNTE1MjkwYzI0ZGFiZGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE3MGFiN2EyN2RkNTA5ODljZWIyOWIxNjMyZjAwMzlmZjViZmIyMmI2MGNmMGJiYTJiZGUxMTYwNDY2MmFjOWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4bd3805293ae4592b27cb2b6836295fd",
+      "statement": "Provenance stamping requires the executor to declare either no overrides or the actual override JSON because Papermill notebook metadata can be stale; when an injected cell exists, the stamper cross-checks it, and only explicitly allowed full-surface overrides qualify as production.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/notebook_provenance.py#L187-L264",
+          "version": "repo-lines-v1:sha256:f76b5a516265ef81d0897308dd142128b0601abddf2f5456f948247684afb647:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwMDdjZDgwZTY4NWVjNmUwYzZhZWZmYjczYjgyNDI4YmU2NTM5NzEyMzRmNGYwZGE3MmE4Yzk0ODMxNWRlMTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjZDVlZmJmMGRiMTZjMTEyYmVjYzExYmYwODU3Y2M3MDc1Njg2OTI4OTEyNDUyNjYyOGUwYjkxNjQxYzc1YTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjljMDk2YTk1YTYyNmIyZTEzNDAyMzliMGYwZjczMTE4NTA0YzQ4ZmNmMzFmMmI4NDM3MDZlYmIxMWI2ZTVhOTEifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/notebook_provenance.py#L25-L51",
+          "version": "repo-lines-v1:sha256:b125ae0f56fe90014b732d2ff6f2b8b2b7a298ea3b1ad6b74768ae7e775fcfad:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3MjIwMDMwMGQyOThjYWViZmFhNWQ3OTQ0YjU3MDQxNGI5YTZmMGMzOGJiNTAyOTdjZGE0Yzk0YjVjZWViYTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYwMzQyOGRjM2Y5MDNjZTNlOTcyNzhkN2I3MzRkNThhYTNkMmYwYjcyZjBhNGRkYzBlY2ZjYmU2ODQ2ZGNmNzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5YTk4M2Y5MTU1YWU1OTc1OWNkOGVhMWJlYjA1MzlkNzliYWFkZjUxNDMzYTliNGM2N2I2M2Q4YWNjZGY0NzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM0ODkzOWZmNDU5NDkyOTM4NjgxMTNhMmNmOThiYjRjZWM5NDMzYzY2YTNhNTAyNjJjN2M4ZjBiOWEyMzYyNjcifQ"
+        },
+        {
+          "resource": "repo://tests/test_notebook_sync.py#L230-L280",
+          "version": "repo-lines-v1:sha256:d51a67a0c297694a65df4fefd4a03ac6f80273337e82c70109a2c6aa1f07a722:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwN2U5NzRkMWRjODE5NmQzZTc4NGFjYjA1MzdiNGUxNDA5ZTYzOTg3MWE5OTM3Y2Y1ZjA1NWFkMWEyYzFkMzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyNTVmOTQ3ODJhMmVmMDBjZGEwMWY4ODkyNzdlOGQwYjM2ZjRmNDUxZDgzMTMxOGIxMGI5YjQ2MWMxOGU2ZjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJmYjMxMGQ2YTg4NmU4YzY0NzE0Zjg2ZjRkNzFjN2MwYTA1ZDEwZDkwMTQwNGM1OGQyNDAzYTU2NTMyYWE3ZWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM4MTc4MzVhN2VkNDkyMmUyMjZmZDk1Njk0OTU1NzIzN2Y5NGFjNTBlOTBhYWNlNWIxNDYwZDg0ZDU5YjE1OGMifQ"
+        },
+        {
+          "resource": "repo://tests/test_notebook_sync.py#L69-L79",
+          "version": "repo-lines-v1:sha256:e43299c7c112f26325d3c6810542950d664cd4ca2b8e532ab220c1b803bd3a1f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkZGU1MWU1ZTEwNzFhMTI5YzM2MzRkYmRkMmYzYmQ5MDQ5ZmZiYTMzOWU4ZjUzZDViNWY3NDEzOWJlN2VhNTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRmYmQwMDkzMTRiYzI3MDg0MTY3MzRhMDJhZTVmZjM5YTFlNDhhMDUwYmU5MWY0M2IyZmFhOTIwMDJjNjJiZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJhN2RkOWI5MWNkMGEwMDRjODBiMDVkNjEyYzVkMzZhMzlmMTdkNGE5YTRlODcwMzNlMGYyYjU4MTA5YjBjZmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_72e161e8690949ada1cac859010adb37",
+      "statement": "`sync-prose` preserves an existing execution only after verifying that every code cell still matches the stamped source; it updates prose through Jupytext, verifies per-cell output counts, retains the original execution time and executor, and advances the source blob with a synchronization note.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/notebook_provenance.py#L1757-L1870",
+          "version": "repo-lines-v1:sha256:62f30610b9c747593574f2ce5c94719bb7755bd27713de2e7809a94d8dbb0289:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmNjk0NDkwOWQ0MTJjMjE2MWY2ZWVjMjM3ZTUwNWY0NDBhMDFlYWRiMWZiZGYyYzE5Y2JmN2EwMjFmZmI1OThjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiZDllYTRiYjM2NmJjNTRkZjE5ZTI3ZThiN2RjNTUxZDdmNGUxM2M5N2ZhNTFkMzY1YTE5ZTNlZGNmODg0N2JkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiMTE5N2JlMzgxZDBlMjc1ZjRhZmU5N2Q2YTlmYWNiZmE3ZTUxMzdkOTA1ZDg4MzlkMDM4NTc2NDE0YWFkZjVkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhOGY2MjA5Zjg2MTEzODNhMmY5ZTM4YjU3ZWU4YmM5MDFmN2Y4NDhjYmM4NDc4YTE2YWVkNWZhMjEzMzljYTdjIn0"
+        },
+        {
+          "resource": "repo://tests/test_notebook_prose_sync.py#L1-L14",
+          "version": "repo-lines-v1:sha256:1f233196847484f3eee5ea8793511e3a9667d067d289bc5845e5caa2b5b3433a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhYmViNDk5ZGFlZDk0MWMzODI3M2VhMTMyZDQyZWM1NTc1N2JiOGIxNjE5NjA0MzAwYjE3NjMxMWJmMWNlNzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwYzRiZmIwZTFlYzNjZTk2ODgwY2M0ZDhmNmEzZjMyNzJiMGRmYzBiN2Q3ZGE0MzViODJjNGQyNDU0ZmY2YTYifQ"
+        },
+        {
+          "resource": "repo://tests/test_notebook_prose_sync.py#L107-L169",
+          "version": "repo-lines-v1:sha256:5747a33f140162db54ee42fecfa501104005f0f39412bde7283274e7533e306e:eyJzZWxlY3RlZExpbmVDb3VudCI6NjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiN2I2ZDgzODQ2YmZiMGMwMjkyNDg0ODhjZTI4MjIzYWNkYmQ5OGViOGM5NGRhOTI2YWU1MWM4YzY0NGIxOGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjNzEzMDg1NDU5ODhhMzc4MzIwMTdiMWRlOTQxNDdkNThkNTY0MTk4NTljZTY5OWY2ZDkzODMxMjAzMTA3YTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2MDRjYTk3ZGI4NmQ1Nzk0NzgyMzI5ODk0NzY4NDBjZjM1N2I4NmY3ODBhM2E3OWFjNTAxM2Y3YmM3NjE3OGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBlODg2MDQ2ZDQzYjg4NWM5ZDUxZTM5ZjdjZTY3NTQwMTNjYzI0NzA4YjI0ZDNjODQzYTk4M2M5YjliYzBlOTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f36b463a3fb44ab8b4b663bea6475480",
+      "statement": "An executable source change may be committed without replacement outputs only in the cleared state, where both outputs and provenance stamp are absent; retaining old outputs under changed code or stamping a notebook with no execution evidence is rejected by the provenance model.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/notebook_provenance.py#L102-L126",
+          "version": "repo-lines-v1:sha256:5f6f3a0753ca4cc5c5aaad4caa030a734db59a545d04b62326d56e8e5b41664b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3YTU0Yzg1YjY4ODYyZDRjZTk2ODEwOWQyNDIwM2M2Mzc0NWZmZWI1NjkxMWE3YTViZDA5ZWE2OTMwNDhiMGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlMjAxYTBjNjc2ZjA4MTBkODI1OGM4YjllYTQ3MTc4OWYxNWFhYWExNTRlNTRlM2JiNzJiMmM5MTk3YWI4ZTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmNDljODBlOTRjNDI3NmE3NzY4ZjJmZWZmMGY4NjlhNGE3OTc2ZTJkNjQ0ZWNiNTdlYTIyOGY0MTg5YTM3MTcifQ"
+        },
+        {
+          "resource": "repo://CONTRIBUTING.md#L74-L80",
+          "version": "repo-lines-v1:sha256:875d22ce320af03cf5e9e11055056161a5c8f7f8f478e080c3fe2a9113c9e8f6:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmQ5ZTBjYjIyMzkxYzFhMWNmNDgzMWEzMzE2YzhlMmIxNDIzYTRmMDUyM2FiODkyOWY5Y2I2NmI4MzMwMjVkNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODYxY2MxNzY3OThkOTEyZDQ5MTBkNmRkZTU3ZTZkMjY1YWFmZDQ2ODY3M2JhOWMxMTA3ZDEyNmQwMDI3MTdiNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTk2YzU3N2UwOGMwNDI4ZjQxYTlkZDFjMjcxZjJkMjg5YTJkMGVmNjVkMmQ4ZmYwMmRhMjA2YzgwN2FmOTg4NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDRjOWVhZDk3YzJiMmU4ZDg5YjBkYWM1MGY3OTIxYmRlMGYzMzk0YWVmN2Y3MTRiM2M0ZDc5MDcxY2UwYzVhYiJ9"
+        },
+        {
+          "resource": "repo://tests/test_notebook_sync.py#L831-L913",
+          "version": "repo-lines-v1:sha256:90f153a012c94f08530a5f5d730d3002eaf989e38685f9baa1e2b2a690c7361c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxNjUxZDYwYmY1M2U0OWZkNTk4NzMzNTExMmNlMDBiNzM1ZmM5MDE0Y2M1OTcyYzllY2Q2ZWJhNDY3YjhiYTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1MjYyNTQ0NGQ1ZWE2NTUyYzQ2MjJkZTY0NTZmY2VkNDUzNjQ3ZDZlNDIwNzFmODY0OTY5MTM1ZjQ0NWNhNWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFkY2FiMWMzMTI4Mzc3ZDgxOTM4NGIxMjk3MjI1MjdjNzQyM2ExMGI1ZmQ1YTJlNTNiZTk1YWYyNDIwZTkwNDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM1Y2Y5Njc0OTQyOGQ3ZDY3MGQzOGZiOTIyNTQ5OTE5NTQyNDA5NTFhNTk0YjY4M2QwNjJiNDBiMDdiYzEzMjEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_23ebc6f9ae454d348f130739042f2dba",
+      "statement": "`scripts/sync_notebooks.py` detects code and prose drift from cell content rather than mtimes, excludes Papermill-injected cells from authorial comparison, distinguishes doc-only and code-with/without-output drift, and refuses to overwrite reverse drift without manual review.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_notebooks.py#L1-L17",
+          "version": "repo-lines-v1:sha256:7d3d80f96b0a587c8c833c5347c98f3f2c3f8297e5f9e5b06e8ab0c1f6add462:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwNTZmZmEyMTdhOTg2ZjMyZjk4MGExNTkxMzRjODhkZWQ4YjlkY2EyNGM1ZjUzZDNiYWNiYTE5NDBkMTkwNTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDNlY2RkNGE0ZDEwZjE5YzczZmQ0MmZkMTI0MzdmZDMzNTRhODI2ODE2MDVkYTUyNTVhOTdhMzkwNjhkYmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU1YjZlODcwNmI0MzA0N2YyYTZkYjY3ZjEzMjYzODU5NTYwNGU2N2YzNjk2Njg3NmNlMDE1OGYwMDUzZTZiZDEifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_notebooks.py#L126-L212",
+          "version": "repo-lines-v1:sha256:e88784f1a9883ff3fe656d130fd2fdcb100c1f99df4f5aa4199397d7d1e87900:eyJzZWxlY3RlZExpbmVDb3VudCI6ODcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyOTk5NTVhOTI1ZTk1ODUxMzIzYmU2ZWU1NTFmYmMyMDE1OWZlMWNlZGU4ODA1OWVhNmY0ZjQwYTY1OTNlMmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0Yzc4ODM1ZTdjODBlMDA3ODQ0NWU3NmQ2OWFlYjkwMDM2MTE0Y2Y0Y2ViMjY4ZDNmNGE4OGQxNDEyNTI0ZmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmNDU4MmYyY2ZiYzM2MGRhNDg2Zjc0ODY4OWM0MWUwYWQxMTkyMTc5YjFiOTkwZTQ3OGFmYTM0ZjRiYjcxNjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU3NGM5NGUzMzU4YzJlYjA2ZDk3N2E5OWQxY2MyMTU0MTY3OGVjYmQ2YzEzNjQxNTRlMTg4MzZkMGJiM2M4YTQifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_notebooks.py#L272-L345",
+          "version": "repo-lines-v1:sha256:57fa2ed10b586935c04bc12e6c235780b27301f923c0d2d47e6753fa3a62ac13:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmOGY4ZmQ4Yjg2M2JkOGJhNDJlZTgwNGUxOTE5MDg3Njc4NzIxY2EyNzVkMGVjMTQ2NTkyNGNlMDA1MDIxZjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiY2FkZjhlOTkwYzI0NTk4ZGQyNzBjNTIyMjFjOTFjOTFmOWZhZDNjYjAyNmI0MjBiOTA4NjJiMTQ5YTU5M2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxMmI3Nzc3NWJkYTE2Njk3ZDliZGNmODdhYzgyZGE1ZjE1N2RiMWU2OTU2M2FkMjYzN2EwMDIyMjkzZGFkNzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM1M2EzMTYwNTI4NmJmNjZkMGMwYWFhYWRhZmJlMjBkNjc3ZDE1ZjM3M2NkMDVkZjhjMjI0ZTE1NGQwOGE3NTMifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_notebooks.py#L51-L70",
+          "version": "repo-lines-v1:sha256:a436145b383c7aab3235dd2938ac7c6a2b0b6c419f03a33965fc8434dbc4b1b7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkOGE5ZTljMzI1MjgyMGM2NWE4MTY1MjBiOGRiNDkzMjI4MDg0OWVjOGM3ZDJlYjYyNzJhZmRmZWJlMDU5YzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxODBkYTU0ZWNiYzJjNGIyMDg3NGI4MmIzMGU3NGMyMjA4M2Q3NzgwYzI3YjQyNGFkZmI0ODJlM2Q3ZjM4YTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcxYTcwZDVhYzY4ODkxZGNhZDI3MDdhZTg0NzdlYWEyNjQxNGZhOTdhNzgzYWNiNzE0NWY5NjJjZDA4MWFiODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5ZTkyZDJkOWQ1MGU1MWI5YzkwMTlhZWY5NzIzNDViOTFlZTA2ZjBkZTliZTNjNzIzNzU4NGNjNTQzMzQ0YzYifQ"
+        },
+        {
+          "resource": "repo://tests/test_sync_notebooks_prose_drift.py#L1-L14",
+          "version": "repo-lines-v1:sha256:a1dde2c477f8eca4b738fae6ba944b51acd08ab59a62e189c699e6383ea3d7b1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZmZDU2NzY0YzZlMmMzNDkxZTk5OGQ3MGNlNjYwMTFlOGNjN2I2OTEzM2M5MDEyYjRjMDA5YmZlNWFhY2EyZjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4NmFjNTJlOTQyYzBkZDYxMjYyMjViZjQ3N2U0NTM2ZjY4ZWM2YzdkZGIyYWFjMGYyODlhOTZiNWIxYzkwZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlkODE3YmZmYjBmY2VhN2M5NDc3NzVmYWRkZmRkMTg0Y2Y0ZmM4MjgwZWZhYzNmZjYyODNhYzRiYmZkMTNmN2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9e9f65c987884433a8e2f0badb97d11d",
+      "statement": "A provenance stamp binds the rendered notebook to the paired source, its parsed outputs, and transitively imported repository code; the gate fails stale source, changed outputs, non-production or contradicted runs, and hollow execution claims, while library drift is advisory.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/notebook_provenance.py#L53-L126",
+          "version": "repo-lines-v1:sha256:3ba62cec602dbea884bdbdc28e621a2f403fd699f9d776ec704450f4454c71ad:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyYTJkNzFiMzRkODU0OWMzZTNmM2FiNThiNTBhZjBkNzE1ZmZjNWVhM2I5MGJiMDViNmVkZGFkY2NjNjU2YTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3YTU0Yzg1YjY4ODYyZDRjZTk2ODEwOWQyNDIwM2M2Mzc0NWZmZWI1NjkxMWE3YTViZDA5ZWE2OTMwNDhiMGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZjYzUyZGQzY2U4NTRkZGU4MDNlYTcxNjQ3Y2EyOTFiZTcwZGVkM2I5NWUxNzA0YWI4OTQ4ZjMyMTUxN2RkODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmNDljODBlOTRjNDI3NmE3NzY4ZjJmZWZmMGY4NjlhNGE3OTc2ZTJkNjQ0ZWNiNTdlYTIyOGY0MTg5YTM3MTcifQ"
+        },
+        {
+          "resource": "repo://tests/test_notebook_provenance_digests.py#L1-L32",
+          "version": "repo-lines-v1:sha256:27251f5d0105589183959919ebf75de393f094481897381b58066b0d5724ffc4:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMzU3NWMyYjIzZDNiODA0MDJmYjhkM2RmNDU2NWFjMWU5NmI1ZDQ0NDc0ODU5ZmFkODhiNWUzZjg4ZmM2MDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjYjlmZmNjYmE1MTQ2YjJkZDE3N2EzMGMzMDU3YTQzOTVlYmQ1Yzc0NWQwNzg5ZDJlZDk1ZDBjZjRhZmUyNzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmNjljNDA0MGQ4NDZhZWEzODhlYTU2NGIzYjI3NTAzMGU1OTg3MTMwMDE1YzUzOTg5MDM4MGNjNDNjODI0YmQifQ"
+        },
+        {
+          "resource": "repo://tests/test_notebook_provenance_digests.py#L60-L158",
+          "version": "repo-lines-v1:sha256:7ca7b193f65be558f30be62627cb169d4215f48a24e6b5db57429548a5b472d9:eyJzZWxlY3RlZExpbmVDb3VudCI6OTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk4YzU5ODFjNzYxNmU3ZTY4ZTk5MWRmNmVhZDYyMmUwOWYzOTgyNDJkYTA2OGI1YTlkNzhkZjRlNWU1ODI1ODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjczZWZjOWE5ODhhZWExNjU3OTY4Mzg1MDFmOGRlMzg0ZTc2NjJiMTdlYTU1NzIwMDM5MTg3ZDg0YmZlMGI5ZTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_91f5064c9bb04027982407eaca452d56",
+      "statement": "The machine-path sanitizer rewrites only metadata and textual outputs, not cell source or binary MIME payloads; it produces generic or repository-relative paths and refuses ambiguous strings that also occur in source.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/sanitize_notebook_paths.py#L1-L53",
+          "version": "repo-lines-v1:sha256:7e80444617b4d4443fbe9fb26af5de1e3892321fcbfa7e9c6d8e93dce0f8fb27:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxZTI0NDJmOThmOGZkYzdkYjk3NGFkYTU1MTUxMGU2MDVjYjc0ODMwOGY4ZjA4NzhlMDVlM2EyMzY1MDU1NjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ3MGI4YmI2NDBkY2QyZTA0ODhiYjAyNzQ2MzNiNGE0MWQwY2FmOTE1NGY1MmUwODRmNzhjNzM1YjViNjNkNjUifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/sanitize_notebook_paths.py#L248-L352",
+          "version": "repo-lines-v1:sha256:c911fcb1b6ace70e7e2351beb2851aee507f25aa02ff1829fb025f831648314a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJjNTBhYmU2NDliMTVmOTI1ZTY0NjU1Mzg4NTU3ZWNlMGM0OGVhNjk4NDM3YWJjMWFiZDdiZjE5MTA3ODA3OWIyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiOTYzZmJmNTNiZDFjZjk4ZTVhNWY3MmJmYWRiYTMzZTgwNWEzMzAyODU1ZGMwODBjYTg4NjAzMjY2YWY0ZDUxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0Y2YxNmQ1Y2I3NDI4ZDA3Njg2NTk3MTM3ZDY0MzI3YTdlZThmZTBkYzM4Mjc5YmUyYmNlZDQxYjU0MzM5ODEzIn0"
+        },
+        {
+          "resource": "repo://.github/scripts/sanitize_notebook_paths.py#L67-L132",
+          "version": "repo-lines-v1:sha256:8f8023dc0340e21e0a27d25632773995d47df4c496c5f99f35540c3febd312e6:eyJzZWxlY3RlZExpbmVDb3VudCI6NjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2MTBkM2ZiMmY0OTAxMDlmM2Q1YzhhNDFjZTRiYjA4YWU0OGViNmM2MzJjYWEyZTU5YTQ2N2Q2ZTU0MjNhZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0YmIxOTBjYjA0ODllZjAwM2Q2Y2VhOTZkZmRkNTljMGY4N2ZkMjQ4YTVjMDNkMWQ2MDAzZjE1Y2M0YjU4NjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY0MDdmNTA5ZDU0OTk0NWJlZGY2NDU3NzQ0YjZhNWFhYWYzMjE2NWE1ZjA1YzM0ZDdkNzIwOGY4NjBiN2UxZTAifQ"
+        },
+        {
+          "resource": "repo://tests/test_notebook_output_hygiene.py#L162-L246",
+          "version": "repo-lines-v1:sha256:3ba827e8967fba655fc823cc4ef7d7f1244e5e5a36ff70563143d0378a5fa9d5:eyJzZWxlY3RlZExpbmVDb3VudCI6ODUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyYmYzZjZkYzY0ZTAyMzg0OGJhYTIyNDRjYTFlZTc5YjI2OWMxYzYwNjM1ODQxNDQ2MmFkMDViMTdlNDA3NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1YmRlZTJhZGJmYzhhNmJkYmVkYThkZjE2ZTQ2MWRhYmRkNGMyYzlhOTI1NGRjNjI5Mjg3NjQ1ZTFhZjliMTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiM2U2NzA3MTNmNWUyMjczOTBiNzhkZjE0OGI4ZjQ0ZTc1MDhjYjI4ODI0ZDBlYjRlMTQwNTMyNmZiYTg3ZWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUzMzdlNWQ1ZWI5NTRmYjE4MDIwNTQ4MTE2YzQ2YzgxZmM0NmZhODc3OTFmOWVhMmZiMzQxYmM4MGFlZDYzZmIifQ"
+        },
+        {
+          "resource": "repo://tests/test_notebook_output_hygiene.py#L49-L67",
+          "version": "repo-lines-v1:sha256:10d5dfebce2042b11cb88feccc4a50ec582c4e9b111dfe99758098133cd9de7b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwMGRlZTM0ZTY0MDNjZjlkN2NmNGMxYmFjZDI0M2Q5NjczYmJmMjgwYjEyYjlkNjkyYTU3YzEzOWI1NWNiYmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYWNhMTllMjYwNTY1ZjljZjE1NDljMWU1ZWY5ODEzM2M0NjBlOTFlZGZjYjZhZTVkMTMxNTM5NzRjNjNjNGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJhMWMxY2JhZGRmMTY4NmQwZWVmZTUxMWJhOWY1MzVlMjg3ZDEyY2UxZTczODk2ODFhMDMwZjJhNDYzODMxZGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b4c58dc86fc54782a2478fee8429940c",
+      "statement": "Papermill's empty `tags: []` metadata can desynchronize a paired notebook and prevent JupyterLab from opening it; the cleanup removes only empty notebook-side lists, preserves non-empty load-bearing tags, and skips pairs whose `.py` carries the same marker because pair agreement is the invariant.",
+      "evidence": [
+        {
+          "resource": "repo://.github/scripts/strip_empty_cell_tags.py#L1-L35",
+          "version": "repo-lines-v1:sha256:c6d1bb697082a33ac1bf38668364c8ad10dec1f89dd39a4faacbd9e9fe15d152:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2ZDc1NmQxMjAxNWExOGRmNGRhNmMyZjQyZWFmOWVlZDM0YmYzNjkwNDllMzJhMjAzYzZkMzc4ZTAwM2JhNTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhZjQ0NTdmMWU3ZWVkYzFmNDZjMzQzNTA3NTNmYzk2OGU1MmYwYjc3MmI3NTE0ZWQ2OTRlNDc1Y2ViZWRlMzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3OGY1NWIyYjM1MDBiYzIyZDZjYjBlNTZiNTc0YmY0MGIxMWY4YmIzOTY3OGE4ZTMyNDRjNGRiZmEzYjkyNTAifQ"
+        },
+        {
+          "resource": "repo://.github/scripts/strip_empty_cell_tags.py#L47-L116",
+          "version": "repo-lines-v1:sha256:281fe9f10b6e6b65f2345df7398952a0f7d03b8607d998e6e4c87f9b49e5074c:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1ZGIyYmI5ZGFlNjBiYTE1MzRiZWY0ZGVjOGY3ZWM0ZDZkMjQ1ZjI4OTljOWM0YTA3N2JjYjM0MDBmNTk2ZjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU5NDI5NmI1OWJkOTk1MmExN2M5ZDJkMGUzNzVjYjkwYjY5ZGRhMDIzYmMyZTg3YmI5ZGM4OWZjOGQwMDQ4YWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM4ZGRiZTM0NjcxMGM3NmI2ODQ3NTJlNWI5OGM0MTA1MGNkZTk0NDMzMTkxM2I3NDgwMDAzOGE5Yzg1ZTY0Y2MifQ"
+        },
+        {
+          "resource": "repo://tests/test_notebook_output_hygiene.py#L331-L350",
+          "version": "repo-lines-v1:sha256:47fb360eefb0f4633c935ad81b214b03e24f666d1c71313786bd55141c24e3ed:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4N2QwODBhN2M5YzEzNDE5MzNjNmEwMDliZWNlMmYxMjNmNzRlOWQ0ODA0NDRiYmQxOTI5OWM3ZmUxMTljNGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiOWZiMmYyNmQ3ZjAyMDAzNWJmMTcxYmMyMGRlMTk3ODFkYWVmYTdmNWMwNGFjMzA2ZDQxODYxM2I1ZWU1YTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzYTQ4YzE4YWI5NWE2NDQ3NjdiNmFhZWVjMDlhMWQ2Y2E1MDM2ZWM4ZTEzNDdhZmVmNWRjZWYxZjI2ZTU0NGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_186c8ac833be436487d399a1345bca98",
+      "statement": "Ruff excludes `**/_reference/**` because it is vendored upstream reference code, so routine notebook formatting and fixes must not modify that tree.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L307-L311",
+          "version": "repo-lines-v1:sha256:926dd593e1b6a9c70e2d02ee80d95d92585c1e68c13a309cd044ceb7e477e842:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzc0NWZhYjg2YjEyMWRjODViNGY3ODY3MzM5YTEzZmVlODA0YzhhMDJmNDcxMDY1NzJmMmJmMDY2NGQ1OTUxZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjMwNzU1NTk5NDIwYTM4YTk5YjM1MmFiYTIxYTg2YWU4Yzc3NzRlMWQ3Njk2YjQyZTg4NDUxNGNjNWM3NzE4ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGMyOTA5OGI0MWE1NzQxMTQxNTk5NmY0ZWVmY2YyZjA3ZjllNjNjODE2NTdjMjYzNmQ5NzkzNmFlZDQ3YjY3MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzA1YjNjOGMyZTMxMGJkOTgxZDg5OWU5OWNjZTVhM2M5YTBiMWUxYjc1NDAzMDAzNTAzMjhjOTBmMzgzMjA3NiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}

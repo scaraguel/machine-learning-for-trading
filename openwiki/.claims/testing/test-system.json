@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:9ea28c0001b26a80b4db878a799fb4b4d93916b1a62224b3380b23e67f1e7b4c",
+  "claims": [
+    {
+      "id": "claim_c5aa20360d1449a8868c45d815276296",
+      "statement": "Notebook integration tests execute the normal notebook code through Jupytext and Papermill with parameter reductions, while the launcher removes the legacy TEST and QUICK_TEST variables so test-only branches are not enabled.",
+      "evidence": [
+        {
+          "resource": "repo://tests/pm_helpers.py#L1417-L1492",
+          "version": "repo-lines-v1:sha256:b86587cef52f0c4b364910d4183c77ed20c787102f90d49b2e159155e87dac2c:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyNjk1YmE5NGU3NTliYmEzMTE0MzYwY2I3NmFhNWNmZGFjNzU4NDFlNTExYTE0OWU2Zjc5MzA0NWFlYTJjOWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY3ODZkY2Y1MmUzYmVkOWY0M2M5ZDMzYWQ5YjNmMDBkYWQwZTI5MDVjOTkzMjE0ODkwOTU1MmQwZTc3MjJmMmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0NDE5N2VhMGE1NGJjMzViMDVjMDRjMzRhYjA2NjJmZjdhNmExNTQxMDU1M2IyYjY3ZGI5MmZiZmRmMTJhOGIifQ"
+        },
+        {
+          "resource": "repo://tests/pm_helpers.py#L1521-L1729",
+          "version": "repo-lines-v1:sha256:64073e33bb6bfb0b0ee927d19d1d9472c3b6a06c5503c5457bc62b9753bab3fa:eyJzZWxlY3RlZExpbmVDb3VudCI6MjA5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyN2JhOTRhM2RkNGZmMGFiMzkzZDUxMTJhYTU0MmNiMGZmYzkzOWU0MzE0ZmMxNmMxODZlYmMzZDI3NWVjNjhlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3NWRlMTUwZjJkMmYzOTBkMDMzZjIwZGVkMzM1NTA5N2NiYzJkYmJhZTFmM2QxNjU2YWYzNzFiOTJlYTc2MWFjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkMWZiZGU3ZTNkYTVhYWFhOWZiMTkxZGMyZDM4NzZmODQzYTRmMTIyMmQzZWMzMjc0ZGQxN2VhZTE4ZGQwMzExIn0"
+        },
+        {
+          "resource": "repo://tests/test_chapter_notebooks.py#L1-L18",
+          "version": "repo-lines-v1:sha256:9434288aafe2d1ea1dc6397ba290c0563cf2e2fecb3db017ea7ccdb64cf9a5f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkY2MzMzU1MTIxYTNhNzc2ODUxMzY3YTY4OWZjZDljNzk4ZDI5M2VlODE1YTg3ODA5OWI2ZjAzMjRmYzk3NzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3NTZmN2MxZjk2YTQyMmExODAwNzVlNjczZmE1ZDUzYTg3ZTM1MzQzYTE4Mjc0YTU3NzliNTA1ZGY0NTVjZTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_08ded406ca7d48c588c37254da6c0b8b",
+      "statement": "The override validation checks that override keys name real notebooks and that every declared parameter is visible to Papermill and remains reachable on both preview and canonical injection paths.",
+      "evidence": [
+        {
+          "resource": "repo://tests/pm_helpers.py#L742-L984",
+          "version": "repo-lines-v1:sha256:afd9e1d64b58ad0195a7d7125a31db3d8b42884368c7c6d69c116561ed1862bc:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyNzU4OGExMDViMGI4YTJmMDlmZDg4NTFhNjhjN2IxMTgzM2NkZTgzN2MyM2RkMDZhYTQzODA1ZWYyYzNiZjQzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3NzBkYjQ3ODAwMWJmZDRlODNiNWYyNDZmZmQ3MmVkMDIwMDY2OWYwOTBkNjcyMmI0Y2VlNzFkZDZkNDAzNzQ4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmYzg2ZmZkZjMxZTViMWNjNDM4NjIzZDVjNmVhYzZiM2ZkMTE5ZTFlZmFhYzY1MWQwNmU4NjA3NWY0YzJjMjRiIn0"
+        },
+        {
+          "resource": "repo://tests/test_pm_helpers.py#L363-L409",
+          "version": "repo-lines-v1:sha256:b82c50d05f64c133cad4f2d4a6d72ddd2ebb3e20b6087b9cd32b0b3299f3031a:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1NTEyMzMyOWU3YTZkMGQzNWM2ZDVkMzI4MTliM2NjMDUyOWMzNzcxNDljNGQ2ZmI4M2VjNTZiM2ZmNWE4YTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIzZTZiZjAzODQyMWZlYzI0MmMzYzk3ZDhmM2M3NzI1Nzg4NTBhZDllNWI3NWRiZjUyZTllZGRiZTA4NjBlYzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxMzcyZDVkZTllZGI4ZDk5NDNkNjFkNGE0MGVjYzBiOTQyZjhkZDVjN2IzYzY1OWM2YWE5YTUwNmJkZGEyNmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e5c1e69496164fc8b12fc8aea5c84a22",
+      "statement": "Chapter tests discover notebook-like Python sources from numbered chapter directories and dataset cards, while case-study tests discover numbered stages, expand multi-invocation entries into separate pytest cases, and retain stage-major ordering.",
+      "evidence": [
+        {
+          "resource": "repo://tests/pm_helpers.py#L1731-L1792",
+          "version": "repo-lines-v1:sha256:4a69dbd6acacf1bfa6e320ecbc5ce983e356f730efbd34f351a1596474aa105a:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFlNzdmNzIwODFkYmVkNDQwZmM3OGQzODg5ZWJmOGIxNjA2YjgyODM4MzQwZTVhY2VlMzIwNzdiMzRjY2U3M2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE5ZTljMjJmNzQzOGQwMzZkODdhYTMwYjM1OGY0ODQ2ZGVkMTA4ODc0NzVlYzhmZTQ5MWI2NjdjMjU1NGQ4YzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiOGYyMGQ2M2MxNTllYTM2N2NkYjk2NTFjMWQ1MmMyMTIwM2UwMjdhY2IwNDgxNzIwZWNjYTRkMTU4ZGQ1NGMifQ"
+        },
+        {
+          "resource": "repo://tests/test_case_studies.py#L61-L125",
+          "version": "repo-lines-v1:sha256:3c61a412dcd229098596fd4a28940f66d8a2d94eab3fc02d4659329b99610056:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3NDc5YWM4NjA1ZjRiZTFlZTFiODBjZWY4MWZjMzAzN2ViZThiNDk2MmY3OWZjOTJiN2RhZTRlOTA4YmM4YzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiN2YzOGFlODIxYWVjMzQ5NzU0ZDUzOWMwOWFhNzVhZjI0YTRjMThlZjkxYmMwOTM2ZTJjNGQ0OTlmMjE1MzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJjMWQ1ZjdmMGM0NjdhNDUxZDUwNTIzMjJjNTk0NmFmODU5Y2RkMWI3MTUxMjQ4YjkxZmVhOGYxYjVmOGUzOWIifQ"
+        },
+        {
+          "resource": "repo://tests/test_chapter_notebooks.py#L38-L53",
+          "version": "repo-lines-v1:sha256:4c9f55f52e9ca140c4d5df257893fed7675afb5e304ef182e46ae46a4e513409:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3MTg2ZTVmYmY3MTViYjFiOTM2ZjQwYWFkODgyN2Y5OTIxNjZkYWNkMDI2MzI3NjczMDI2NjZmOWVhYjc5NmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIyMzkyMjM4MWU2YWQ0YTNiMzMxNDhmZjI4Yjc4N2YzYzE5MzNjYzJjZDUzOGJkNzNkMWQyZDY5YTI3MmFiMWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ3MjExN2E3ZGUyZGIyOWZkNDUxOWQzMjlmZWExMjIxYjk2ODhlZGI3MzIzZTdmNmQxMzc1OGU5Y2FjMDRhZWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4fac3b15d7584d34947e61471bcbc8c1",
+      "statement": "The notebook runner converts source to a temporary notebook, executes into a transient output notebook with per-cell saves and progress logging, reports the failing Papermill cell, restores the process environment, and removes temporary notebooks and kernelspecs.",
+      "evidence": [
+        {
+          "resource": "repo://tests/pm_helpers.py#L1007-L1058",
+          "version": "repo-lines-v1:sha256:61c4d6dc37da34936a1a07e7c79c63dc22e8df436233bea99ea2445b2698968b:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5N2EzNmQ5YTE3ZmE0ZTg2ZDkyYTljMmViZjNkZmFlNjMxZjgwMzA1NjMxYjMwMmQyYjRhODY2NDMyMjFlZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzN2YxNTMwOTA4MTJhOGVmN2M4YTAwNzUzMTY3NjkzNDdmYjQ4YmUyZWE5NjBlNDI0NDM2Y2Q0YTRmYTc2NDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2YzE2Yzg0NDU0NDMzZmRhZmUxYTEzZjQ2NjUxYWVlYThhM2ZjNWJjOWJiOGJmMjA3M2ZhMDNiNDhjNTU2MDgifQ"
+        },
+        {
+          "resource": "repo://tests/pm_helpers.py#L1494-L1729",
+          "version": "repo-lines-v1:sha256:d70b8b61c33b37dc00e59fce4e375a90cef84b150d6b2c46a1d233b35307bfc6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjM2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyZTVmODUzMTE2ZjE3M2M3OWQ5MGM0OGM5MTA5YjZiOGYyMDc3ZjJhOTQyY2MxMTBjM2JlYzlhYTg0MTg3Mzg1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmMjcyMmNkNzBjNWI2NWE0ZDMwMDVkMjZjMmM5MjA2ZDlmZjI4MWI0ODA2YzQyM2FmMWZhMTlhNTY2YmY1MDIwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkMWZiZGU3ZTNkYTVhYWFhOWZiMTkxZGMyZDM4NzZmODQzYTRmMTIyMmQzZWMzMjc0ZGQxN2VhZTE4ZGQwMzExIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_9a8d7d100fc44d79bdb88f6650da49cd",
+      "statement": "The notebook harness isolates writes in a session- or xdist-worker-specific ML4T_OUTPUT_DIR and supplies a checkout-shaped ML4T_RELEASE_ROOT without production run logs, preventing local published registries from participating in canonical reads or being mutated.",
+      "evidence": [
+        {
+          "resource": "repo://tests/conftest.py#L311-L357",
+          "version": "repo-lines-v1:sha256:3a6af73419f3386e89b9e5df14b313d8fa4f530a0f6270b88746a40888149c2b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhhOWI4ZGMzYWY1ZTU5ZTdjYTM0ZGI1ZTYzZDUzZjYwMDZiN2VjMTA4NWJiMmUxNTA2NTJhMzQ5ZDE0ZGEwOTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNjNGE1NGJjYmQzN2M4MGIzNTE0ZTI2YzA0YjMwYTk4NDJiNTJkMmY0M2Q1NTI4YjUzNzYzYzhjZThjNDk5MmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE3YmI5MDMwY2QxNmI4MDYyZjcyZjIwY2FmZWRiNGUwMWZhNWViNDRlMWQ3M2M1NzVkYzFjMGVkZjViYzc5MGEifQ"
+        },
+        {
+          "resource": "repo://tests/conftest.py#L359-L429",
+          "version": "repo-lines-v1:sha256:b5d1e17933a986b5a056ae7f9bc31eeab9d8e2cc934bb165538b58a6e8881adf:eyJzZWxlY3RlZExpbmVDb3VudCI6NzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwYTk2NWQwZjVkYTNlZWY5OWQ3MjBmMzZiZTFkMzhkODM4ODMyYTlmYzBjYzljNmI4ZmMwMTE0M2QxMjNkZTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5OGQ3Y2RhMjlmNmIzMDkzYTZjYzQxY2MwNjAzYWNlM2ViN2M2NmJhN2Q2NDBlOTM0MmZhOGFkZGYxY2I0YjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcyMzc1ZjdjZDVkMWMzYWI1YzFlMjE1N2ViNjFhNjRhMDRlOTZiZDA1YTg1NThkYmY0MWRmZWUxMTE4YjcxMDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmZmMzNzQ0NzUyOTUwZTYzMTQ0OWY3YmIxN2YxMDU4MWNlYTJkN2IxZDQzOGM5OTlkYTEwMzUwMjQ2MTdmYmEifQ"
+        },
+        {
+          "resource": "repo://tests/pm_helpers.py#L1455-L1492",
+          "version": "repo-lines-v1:sha256:5698b291ea4f8706104ae992228655c1f38070b24d35a3bf40e2551f6ede2234:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3YmE2M2FhMjdmNmE3YTA3MzZkNjE4MDQwNGY3MTFjZDdjZmI2ZjgxMTg4ZjQ2MWM4ZjI3M2IxNzVjODk1NzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUwYzFhYzQ4OTM5NDY4OGRmZDM3ODgxM2YyNTNmZGI3NzU2ZTNhNDMyOGRkN2FmMjYwOWE4ZTUyYjA0ZmMzMzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0NDE5N2VhMGE1NGJjMzViMDVjMDRjMzRhYjA2NjJmZjdhNmExNTQxMDU1M2IyYjY3ZGI5MmZiZmRmMTJhOGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_186cd5f058c44217bf674a6c3adaf4ed",
+      "statement": "Raw reduced data is resolved separately from precomputed intermediates; session setup replaces seeded artifact subdirectories, copies chapter and case-study intermediates, reconciles legacy prediction columns, and then seeds only additional result gaps.",
+      "evidence": [
+        {
+          "resource": "repo://tests/conftest.py#L145-L274",
+          "version": "repo-lines-v1:sha256:2d2520319bc0da4854b5f2c86771a0d088530965363761d7b4945e35438ebe33:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlZjAxNmU5ZTg4MzJmZTVlMzk1NDJlMGU2NzIxYmIyZGY4YzI5YjBjNmI0MTNkODk2MGUzOTg3OGRiYTIxNDE5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5MWM4Y2EyYmI0YzIwMTQ2YjYxZDgyYzcwYmEyYTdmZmZhZWY3M2YzMzBlZWE0ZmFmN2ZlYmY5NTVjMjRiOWE5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmOWFkNmVhNjdhNjJlMTE0ZmE4YWRhNjllNTk1ZjEzZDc5M2RiMGIyOGFjMzk0YzRlNTQzZWExZDhiMmViZDdjIn0"
+        },
+        {
+          "resource": "repo://tests/conftest.py#L276-L309",
+          "version": "repo-lines-v1:sha256:aeefb47a723ff382520a72e6f6df36d7e33ec0e76af5997870fa1187f8cc38f7:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiYTE0MDg1M2U5NDA3NzdhZmYwOWQxYjNkODM3MTFlNGVmZmZmM2VkOTMzYWEzYzJhN2M4ZWNjMGYzYzNjZGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBjNDQ1NWYyYzZlNTlkZmI1ZmM1MjQ3ZjFkZjg2OTZmNTk5NmQyY2E5MmFmMzdhOTRhZTEyNTg5ODdhYWNmODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAxZmRlOGViNzI4MjAzNjYxYjM5YzU0MmEyNjhiZDJmYzNkYjZkYzI3N2Y4NDRlMTRjMmE1Nzk5NGVhNmQ3ZWEifQ"
+        },
+        {
+          "resource": "repo://tests/conftest.py#L431-L476",
+          "version": "repo-lines-v1:sha256:246bd5392268dd6de15f476fdcddfcf15e575bcf7c7bbf68f147802b196490e0:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3YTc4MGZkODM5NzM1OWMzNzE2ZmI2MjU1ZmU2MDRiN2IzODQyM2ZkY2Q2ZmU3MjRkZjY1MmEyMmNmMGU1MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlZjdjMTFlODMzY2ExN2Y0NGQwYTUwN2M2YjYzZTVhNTc1ZGM5NTliOGRhZmE3MjFmYzA4ZTg4YzYyODYzOTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAyMjZjN2E2YzIxYTRmMWZhODA3YjY3NDIzNzk2MzZhNjU1ZTU3ZjA4ZmJiMTNmMmFmOGE1YmIwZTA0Nzc1ZDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRiMmFiMWM0ZGMzMjk3ZTY4NGYwOTBiOTNjZmNkMTkyMjEwNzY3MjA1OGYwY2JkOGQ5Y2MyNDllN2M4MDVhNTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cc565aef7bc947f58078d2e265e4bec5",
+      "statement": "Reduced raw fixtures enforce producer ownership: production-derived Dataset declarations and the synthetic microstructure generator must not overlap, and fixture files without a declared producer are limited to an explicit shrinking ratchet.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_every_fixture_file_has_a_producer.py#L29-L38",
+          "version": "repo-lines-v1:sha256:0de7de92c8b07b6b42ad286e1f3d4df6ed983cceb945401c5300c101bd1e18f7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDNlY2RkNGE0ZDEwZjE5YzczZmQ0MmZkMTI0MzdmZDMzNTRhODI2ODE2MDVkYTUyNTVhOTdhMzkwNjhkYmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk4NzFiZjEwYTEyNWY5Y2FkM2ViOGIwZDA4N2JkMGEwODI2ZGQ2ODUyOTVjYWNlNGNhNDdjNTlmZWYzYThiNWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhmODc5NDY1MmYzMjdkZDBiMGRlMTliMTQ4ZmQyZmE2MGUzZDZjMGQ4NWI1YjYxOGE3YTI3MzMyODhjOWEyMTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjZTBiOGY1YWM2ZDczODc0ZGUxN2U2OTZlNGZjNTU4OGFiMWFmOWI2YjNiMjZkOGUwNDM3ZDcwYTRjZDRjZjUifQ"
+        },
+        {
+          "resource": "repo://tests/test_every_fixture_file_has_a_producer.py#L92-L149",
+          "version": "repo-lines-v1:sha256:6a283c7b3f4db8482a5853b7bd37b94ee38607b7bed6152118826bd95984b413:eyJzZWxlY3RlZExpbmVDb3VudCI6NTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NmMxMzdjNGZiMzk4YmRiYWRlM2MzNzIxYTUxMGVmNjczYmQ1YzY0NTk5MzQ5YjNiYzRjNmM5MmI1ODgzNmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE2ZTkyNGRkZWZjNWU4NDY2YmE0YTMwYjA3NGQwMjg1OGU2NDk3MTY3OTE0NzU0OWE3MmE0NTg3YmYxNTdlZWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_one_producer_per_fixture_file.py#L37-L82",
+          "version": "repo-lines-v1:sha256:e8469fad8cffecccebe8322e49d38329c0a7c4f4578c434053da1f94bc7901b4:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlOTIyMzljM2IzNjhmZjU3NTQzZDcxNDg2MDE1NGRlYmQ5YjdlMWU0MTk3NzllMWYwY2JjNjkxNWEwMmZiZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg5OGU0OGVjM2U3ZTA4OWRlNmE2YmQxZDg4NzYyMmJiM2U2Mzg5OTk5NjkwOTQ2ZWU2OWM4ZTNlY2YxNTg1MjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhOTk2ODc0NjE0MmM1MjE5NWMyYzhhM2Y2NDRkZGMyNjQ0YTA2NGZlYTVmYzNhMDY3YjA4OWI0MTZlMjVkOTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_16360c7e85b94eaab931abdad7af8712",
+      "statement": "The raw fixture manifest is checked bidirectionally against builder declarations and disk contents, including declared entity counts and important timestamp representations.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_fixture_manifest_matches_builders.py#L166-L235",
+          "version": "repo-lines-v1:sha256:e6c93cd7c445a602cc881ba05cba2102f879c22fe23708133616c2b0ceed62ad:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4OTNlZWUyM2NlMzE1ODYwNGQ0OWI1Njg0NzRjMWFiZjExYjZlMTVhNTM4YTAzMzY1ZTAwODQ1MGFkMGJjY2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmMzQ1ODNhNTk4NzY3YmY1NmFlZmViNjVlMjAzM2ExNjUxY2M0YzhkN2U2ZjBhZjNlNWNmZDMyOTNmOTMzYjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVkOWFmNjc5MzExMTE5OTA0ZjNjMzJhY2VlYTBlODRmNjI5ZGY0MWE2ZDk4NTlmNDE4N2RhODQ0MjUxNTYxZTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRiYzIwYzI3ODFkZTJlYjljOWJmZTA2ZTYzZmM0MDIyZjljNWI1NjU1MzJhMmI3OTFkODBkMDY2ZGVlYTJiZjIifQ"
+        },
+        {
+          "resource": "repo://tests/test_fixture_manifest_matches_builders.py#L91-L149",
+          "version": "repo-lines-v1:sha256:7761cb9d3d8619c5e80b142079a5ccde12a22aad9e30bb4d025cda068e7c0d4a:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4MmU0OGI5ZWE3NDVmYjAxZDc1YjhhMjFhYjdhZWI2ZmZlMTBlZjc0YjNmNGRkMDM2YmYzNmE0OTAyMzYyMGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRiMDk1ZTQzNDc2NWUyNjU2MTk1OTIyNzEzZTQ2ZjI3ZmJmZTk1YjkzYTQ4NzY0ZWI3ODdkNTg3ZDdhOWQ1NjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRlY2E5YWJiMDdiYzAwZTAyZjVhMzEzMTMzODdkMGMxNjA5MjA4NjhmOGFkNGM4YjY3ZjkxMDgwZWJhNzg5YjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ddd487310f4b4bc8910e5be32d9fbb89",
+      "statement": "Fixture registry maintenance treats pinned artifact bytes as authoritative: training rows whose feature or label digests are absent are stale and are deleted leaf-first together with dependent predictions, metrics, populations, and backtests.",
+      "evidence": [
+        {
+          "resource": "repo://tests/fixture_registry.py#L139-L227",
+          "version": "repo-lines-v1:sha256:c442667d50ea9951feb58b18606bc48c9dd981a170dc8fee79f3655dcb0b3827:eyJzZWxlY3RlZExpbmVDb3VudCI6ODksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRlODk5ZDE1Y2MyMmZhYWEzNmNiZTI4NTc1NGNjMjliOGQ2YTI5Yjg0MDFiMGQ1MjM3M2UyYTkxZTZkODU5NjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlNGU1MDc2OTYyZGMyN2FhZWUxZTk1NmQ4YmE0MTI0ODZlZDI2MjU0NTdiN2IzYWRiZjc3MTEzYzk0NGUxZTQifQ"
+        },
+        {
+          "resource": "repo://tests/fixture_registry.py#L21-L47",
+          "version": "repo-lines-v1:sha256:029a4ffec0172e9f517ce716bacb2af61ebe4f123738773115a490172f9943a7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiNWIyNDVhODE5OGMxM2IzMWNmNDdhNWUzZmQ4MjdhNWQ3ZDNlNDc3MTVhYTdlMjQ4N2E5MjQwNWI3MmVmYWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2OWExOTdiNWFhZGYxNzc5OWRkNjg5YWI3MTRjOTE4ZTMyNWEwMzNjZmQ0NDI3OTRmYzM3MWVlNTc1MTNhNGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgwYzJhODY3ODA5YzQyMDllNzI1Y2RlMzQ1ZTk3MmJiMGZjZTFjMWMyMTMzN2E0NjA4MWNiMmI0MmUzNWFkNTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ4MWZjNGJhMjViNDdjNzNmOTMwNGQxYzZlNmRmYWY0OGFlY2Y2ZWM0ZjBlMTY5OWEyMjNkZmZmOGQxMDEyOWUifQ"
+        },
+        {
+          "resource": "repo://tests/fixture_registry.py#L55-L116",
+          "version": "repo-lines-v1:sha256:4a53e850b9f989a01911dd5fc16644c349395e5a1329df8e615cdd6c8636e8d3:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmZjk2ZTRkOTVjMmU1ZGRjOTdkZWNhNDE1YTc5OWYxMThhYTk1NjEwM2RjNjdmOWQyNTZkNzM2ZTA2ZDMyYzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVhMzgyMThkMzZhZmE4OTUwODRjZDllODBiNGZjNGFkODIwMzFiMDIwNjQwM2JlOGMzODdmMGI5ZDQ5ODI1YzciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwOGQwNWY2Nzc3NTc0NjdkNDUwNDNkNDY2MTYyNzM1Nzg3NmMyMzMyOTlhMzg0NGIwZDIzYmNiNTZkYTQwMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmYWZjZTFlOGNmNjYzZWJhZWRmMzM3M2YwZmY1M2UwZDNlYzhhN2EyNDg0Nzc3MDUyMWVlMDQwM2RmM2M0N2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_30adf090ce1f47ba8d15071fadf0a830",
+      "statement": "Registry sampling rejects destinations that resolve into a case-study production tree, preserves rows backed by shipped prediction artifacts across resampling, and samples complete downstream backtest structures rather than arbitrary isolated rows.",
+      "evidence": [
+        {
+          "resource": "repo://tests/sample_registry_for_tests.py#L1-L21",
+          "version": "repo-lines-v1:sha256:9b045c0746f771918f35cb262187ecc4255ce5d43b04b34017e64f112de9d444:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzOGFmMTE1NzFmMDMwZjE4NGFkYjlmYmFhNmEyMGU4ODQzYmZiM2I4Yjc5MmJkYWMxOWVmMjEwNThjNzFhZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVmMzY1ZWE5ZDYzMmQ2OTg5ZmFhODNmNWQzYmE1MDMxYjc2Yzk4ZjIyZjQ5YmE4ZDgyODMxNzY2MGUzM2FhZmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4N2M5YjliZmRmOWQ1ZjgzZDU4MGU0NjJiOTBiYmMwOGEzNDAwNWQxMDFhNTQ3Nzk1MTg2MTM5YTI0ZWM2M2YifQ"
+        },
+        {
+          "resource": "repo://tests/sample_registry_for_tests.py#L173-L260",
+          "version": "repo-lines-v1:sha256:14b7150cc2500fc16df712786143b397a7bd9c9df0551fde99afb6ead3c589d8:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjYWFkZWI4NjU5ZDI2NzQzMzg1MDk3ZjA2MTE5ZjQzNmRiMmI3MDc1M2E1MWMxYmZjNWQ3MDc0OWI5NGJlNjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3NDI4Zjc1NWM1ZmIyYWExMzM0MWViMmIxOTdiZmNiZTM3NTYwM2E2NjM5MTM0YThmMDU2NTI1YWUxYzI4M2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgxZjY0NmFiZjAzMmZlMThhMzFhYzUzZDYxOTU4NTc2Y2EyMjFkMTNiYzc5NjIzYjAxMmJjMWQ4N2ExMjU4ZmEifQ"
+        },
+        {
+          "resource": "repo://tests/sample_registry_for_tests.py#L262-L380",
+          "version": "repo-lines-v1:sha256:65f436ec0b1d63ad4badf55fa48566dea4927558fa4049fbb9a292e7d82a87dd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3MWU1MjhlMDRlMmEyMzQwNWU4NzgwZmQxMGI1NzgwMjMzZWNhYzA0NDQxNTNlZjM4YjE3MmU1ODE1M2ViZDBiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlMTc3N2E0Mjg5ZGQxZjE0ZTU2OGViYjI4OGQ0NzZmY2YwODQwZmM2YTRjNGUwZWI1NDkyMzY2ZTJiY2JkNjMyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlYWRkZmYxYTE0Y2QzMThiMjExYWM3YzM1OWMxYjIzYmY4MWI1MjExYWZmNmIwYWExNmIyOGM1YjM1MDc0MzQ5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjNGI4YjdiYzE0YWE5NDY5NDg2NzgyNDAyY2YzYzFhMjhlMTlmNTBhMDBkYWQ2Y2NiMTNjOWI5YmZkZmRlZWU5In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_800724605234451a8b387ae38b0ca883",
+      "statement": "Notebook skips can carry machine-checkable fixture or registry blockers; once a decidable blocker disappears, honoured_skip_reason stops applying the skip, while an unavailable fixture is not misread as evidence that the blocker expired.",
+      "evidence": [
+        {
+          "resource": "repo://tests/skip_blockers.py#L1-L44",
+          "version": "repo-lines-v1:sha256:82bcb3d2bce4fd2765503c5f95323ac00cd6794bb0175a79114780b17b946912:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwOTQ4NDYyZGQ5NWJlZDgwZWY0ZWM2MWM1Njk5NmY5OGVkYjJmNTQyZWU5MDdhM2U3MjZkYTM2Y2NlY2RmM2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzMzFhZDdmYTNjMTA2ZGI0Nzk3YjYzMTkwNjFkYzRjOGJhOTkwODgzMThiNGVhYjExYWU3YjZiN2NhOTFjMjkifQ"
+        },
+        {
+          "resource": "repo://tests/skip_blockers.py#L173-L266",
+          "version": "repo-lines-v1:sha256:7a5b35a06c7a778b6f395e66f2e23ab46fdef8448c22ce751f95ca5a14b04d4e:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyMDc4MzkyZmZlOTM1MTNhNGNlYzA2MjQ2ODZhOTcyM2Y4MzgxYjM4YTNjNjBmYWQ0NmYzYjEwYTc2NjVlN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjZjU3MmVjY2I0ZjNmOWEzMDcyNmE0ODJlZGFlNTcwNjUzOTBmNWNkZGEyZWE5Y2U0NWE5ZDdjZTMwNDUwMjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImExNGZjYWZjMTZhODBhOTNmYzA4OTc0YmJkZGIzMTUyOTFiZGUyN2EzOTVhMGEwZDE0NmE5NzhkMDk5NGZhZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY0MjJiZTRhYzg2MDgyMTczNDc5ODMwYjMzODgwNGRjODczNjk4ZmRmNTUzMmIzMDIxMDRmNDI4MjdjY2E4OTgifQ"
+        },
+        {
+          "resource": "repo://tests/skip_blockers.py#L294-L316",
+          "version": "repo-lines-v1:sha256:691d6f20826c285e4b2c713b4d2e600563b2be5e8020f704308b34b99a6fa39e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4MzA2NTkyM2U2M2UyNDFiYTMzYjBkZGQ3YWEyOWVhYTE0MDE0MzNiMzE5MzFhYzRmOTA4MWJhNTIxZTQ3YWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExZjJhNzgxYmU5ZTljZTMyZWE4ODgzNGI1M2U1MjcwOGE4ZTcxOTJiYTI3Mzc5NTg1ZjU1YTZiY2MwOWExMGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRkM2VjNzUzZDQyNDA2YjRkMTY0MjRmMWU4MmUzZDUxNGYzNzI2MmFkYmIyZTMwMmVkMzBlMjliOTMxZDBhNmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9bef48f2e70342bab765629010848e4a",
+      "statement": "Case-study notebook cases normally run independently against seeded intermediates, but a stage may declare requires_stage when it needs preview-tier rows produced in the same workspace; focused or sharded runs then skip with the missing prerequisite named.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_case_studies.py#L1-L14",
+          "version": "repo-lines-v1:sha256:6d1a7100c2339cb02fe8bf6fd9413cc37b83f791b90960e3e76f2fbd146ca3a3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIyNTUwNzhmYWY5MTkxZDhhMGExYWFmZGZkYzQ5YTRmNzU4NTViZTY2MmJmNzE1Y2EzNTI1ZDhkZGRjMDBkN2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1NWU0MGVjZmUwYzE2OWU1ZDVlODUzYjkwMjgzZWQ1NTc3NzY0MGNmYTA4MmJlNzQ1MDc1ZWQ0Y2E0YjliNGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwZjNhZTdmMzhjZTVkY2FkN2ZjMGU1NmIwOTg1MjNjODY3YTIwNThjMjgxOGI1ZWQ2ZDBhZGRlOWMzYjhhOWQifQ"
+        },
+        {
+          "resource": "repo://tests/test_case_studies.py#L135-L208",
+          "version": "repo-lines-v1:sha256:5f3cdf97ff2e81355abaa62f983fc624a2584372a65457d3409595feb7ab5c49:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg5MzBjMDhkMDhkYTRiMjRlZTgwOTc0NDhjNzFhNmZhYWI1ZjM3ZDgwMzYzNGFhMmU0N2ExOTViYTJmYmRhOGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiNDQ4MTI2MGVhMTlkNjQ3YzVjYmY2MTQ1NzE2OWUzZjhkYWQxNDA0MTVkYzI3ZDZlNTk4YzczMTc4NDY1OTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMxYWY5ZGE2MzBlY2EwNGRhMjNlMDRmNDk3N2I5MzlmODQyZmEzMTQ4NmQ3MmMyYTBjNTVkZjcxYzNkZTE3Y2MifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9b2a94933c8a4a28ae3d1274ec28b488",
+      "statement": "Pytest appends each completed test or setup skip to a flushed JSONL results file so partial results survive process termination.",
+      "evidence": [
+        {
+          "resource": "repo://tests/conftest.py#L601-L656",
+          "version": "repo-lines-v1:sha256:1e01ac6f9074a936efdd96a82a7358bc10de0f1c6489f1b1b32c9b2abc4bb3d5:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5MWY2MTZjNzMwNTI2ZTJkZTBjNDM0NGFiYjVkMDEzMjhhNTM2OGRlOWQ0ZGE4NWNkNGIzNmYyZGFkYWE2OTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2OGZlNTJlNWI3MDdjMDMxNWVmYmM5NWM5YzBiYjBhNTg5YjhmMWY5NzRjNjg5YzliZjg3Y2FhOGRiNWFkMzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJmNTk3Zjk5NzUwYmJjMzI4NTgzNTY5NjI3NWNiODdjZjY4ZDlhMjU0YmI4MzNlODVkNGRjODkyOGE2NmUyMmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d7ab8881abfe4351bece5c0bac144bf5",
+      "statement": "The primary CI workflow uses path filtering to build incremental chapter and case-study matrices for pull requests, but shared changes and pushes to main, schedules, post-image runs, or manual run_all requests expand to the full shipped matrix.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/test.yml#L116-L206",
+          "version": "repo-lines-v1:sha256:6d048293b89ab983da0e9a2fa7417fe085cc014941d8d0cb2d476a4f645c2e26:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExMDVhNGY4MTY4ZTg5YjAxN2UxZGFiMDEwYWI2Zjk3ZjAzZDhjYmUzZjNlZTEwZmJhMjM4MzRhNzkyYjExYTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlNTdiY2YwZGU1M2Q0ODQwZDY5MGQ4MWJmYTNiYjkzMWQ3ZTRmYWQ4MWZhMTIyYmNjYTNhZGI2ZDg1ZGU1MTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU4NWQ3ZjBkNmJhNGNjZjAyNWM2NTNmOGJmODAwZDMxOWI1MDA4ZTczZmUxMWY3MjMwNmQxMWVjNzIyODM2OTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA5MWI3MmFkYzU3OTFhODQyYjYxYzVjNTY5YTE2NjM2ZWMxZjJkZjExOTM0NzBmZmRlYmQzMzJkZmUyMTQ1YTcifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L226-L271",
+          "version": "repo-lines-v1:sha256:f97e297c2ea58c7c93ced54320e33ade1e8149c61067135b942e140f7dbce349:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwMGI1ZmE2Y2RmMzY4NGU4MzM2Y2EzODZjMGQ2OTQ3NzU2Y2EyMmMwYmQzNDZjZmRkYWJkNmZmZjk3ODBkYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE0YjMyY2RlNWFlZGYzZWVlOWJlNmE3ZGM1MzEzMzgyOTIwMGM1NzFmZjk2MjAwMmY3ZDY5NjA0MDE3Y2ViNTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdlZmIwMTI4ZTcyMmJkNDYwMzMwYThhYzNhMzM3MGJmZDQ4ZGQwYmY1MmIxOTFkMzc0MjgzMDk4YTkwZWQyMDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM2YTcwNmI2N2FmZTg5YmExNTQzOTg3ODViNGUyNDhjM2ZlY2RiMmVlZTdmNzg1MmJkZTY3NWM4Y2FjYWU2YmMifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L67-L104",
+          "version": "repo-lines-v1:sha256:8d2f70ebd2b533ecd5dd3540462e1c0cc550f619b418c099bb3784190270c179:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiMDEyMGZhMGI3YjUzYTdkNWNiZjkwYzM0OWFmMzgzYTIyNjFiZWNmZWMwOGNmZmM3ZWM1MWIyZDRlYjcyYTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZjNGQ5YjgyNGJmMzI1MTNjMTMxN2E3MDY0ZWUzYmQ4NWFjMzU2MjJlM2QxMDFkODVmOWM0ZTUzN2YzNzJhZTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYwNjQwMzNjMWNiYjgxNmFjZGNlYTExZTM2MDg5ZjdjNTI2NWY4MjExNzNkMjBkYjc0OTBkYTNhYTFhMWNmNTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU5OTg4YjE1NGJhNTA0ZTYxYmIxMTM1YmY4NTM2MWQ0MzJlY2Q1YTJhNjMyMGU3YzZlODQ2ZGQ1MDU1NmE4YTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c13321d3f5f1491dbab0bbe03553975a",
+      "statement": "Normal notebook lanes execute in the resolved ml4t image, special Python 3.12 notebooks run from an explicit list in ml4t-py312, and Neo4j notebooks run in dependency order against a service container.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/test.yml#L1483-L1668",
+          "version": "repo-lines-v1:sha256:e98595071b4a33b43f38b9d0d90ade1dfa3f127058f0842ca6c0c1e3b9781113:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhZGE4OTg5YzA4ZGQwYjhlZGVmN2Q0ZDdkMzk1MTQyYTgzNGU2NTg5ZDg0NGJlNTFmZGNjYjM1NzQ3NTVmNWU2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0OTVkMWQwMDNhOWNkYzJkZDFhMzg4NjMwN2ZlMDA2NmVmM2Y1YTUxNzA3NzViMmM0YzRlOTc5ZjMxMWJjNjhjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1N2ExOGQwYzA5YjQ5ZTY1ZWExZDEyMWQ5YzlhMWY4NDZiYTc2YWNjMzllMWZlZjBiNmFiZmFjNmI0ZDkzM2Q2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1NjljMTFlMTk1YTIwYzI5YjRiNDA3NmI1OWEwMGRlMzQ3MDQzNjc5Y2EwMmJkMDhlNGNjYTMyODEzNmQ5ZDU3In0"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L1844-L1937",
+          "version": "repo-lines-v1:sha256:8013c27c4f5d10e20eb445fddb4077ca07788b02498290dbf35be84100e48008:eyJzZWxlY3RlZExpbmVDb3VudCI6OTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5M2EwZGI5MDMxMDY4NDFlODdlNjQyMWYzNmFmZGZlMDk4MjRhNWJjMjFkY2I3NWFhNjEyNTE3MTk2NWFiNmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEzZmU3MDhkNWVhNWFiYmQxMDU2ZTI3YzdlMWQwMjA0ZWJjMTYwNDM4NTY0YWY0MjIwYWQyMzg2NzhmNTJmY2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc3YTJlN2ZiM2FkZGVjNjA4NGI2YzNjMTczMzJiOWUxOWUwYmU2OGJkM2I0NTZkYWUyYTExMTk4MGFmYjdiOTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjllNjdiZDE4ODY4YTIxMmM1OGExMjNiYmM5ZTQ5ZGJkYzE1YzU4NzMxNDQ1MWU0OTIwM2RmYjBjZGI4OWZhZDMifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L1939-L2070",
+          "version": "repo-lines-v1:sha256:eac32e5f65f11fddfb35307b938ff2b8f69fb7f8636a24dadff891f47e02fba6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhOGQxZTY0MmM2OGFmNjg2NTczNzY0NTExMGQ1NzVkYmE2ZWM5MDE3ZGM4OGUxMDBmMzc2ZjgwZGYyZDA2YmViIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2MTRmYWM0YmMxZWIyMWY4ODE2NzRjMDM0YTlmMTE4NDJlYzE2OWVhMDkxNDc5OTMxMTM3ZmE3MzE3ZmY4NWNmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2OTM2ZDY3Y2I4ZjI3MTA5MmY1Zjg3ZDEwMDRlYWU0ZDNlZmM4ZDBiODZkYzU5MWNjMGVkMjI2MWQ4NjNkNTRkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4MDU5NjQ3YzIyNWMzNGZhYmZjM2Q0MWYzYzc4ZThmYTIwM2ExNTA5MmI4OTlkZjAwMjE3NDM3ZDFmYjUwMGVmIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_4de40383a0754a539fc4398a9c9a4059",
+      "statement": "When image inputs change, notebook CI resolves a candidate image from the same commit and checks its installed distributions against uv.lock before execution.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/test.yml#L1576-L1603",
+          "version": "repo-lines-v1:sha256:578c55c24c2016acb5e1a3bf3f862dc48806a58b46deaed6a0cb807289a5b8b4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiMDgzZDlmMjIzNmY5MWUwOTkxOTM5ODc3OTQ1MTdkNzkwMDc0MmQxOTQyODI5MmNhYjRiMmNlYTc2N2YyODIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBiMzJiOTg3MjYzZGYyMTYzZTcyNmQ0OGI5MmY2Zjk2NTE0OGNiNmI2ZDI4MzE3OTE1MTRjOTM5ZjgzN2ExNDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhM2YyY2FkODcwODBjZjlmMjVhMDM3MzgzNTM4ODhlZDA3MzYxNjc2NmE0ZDI4OTg4NTgzNjI0NTE5ZGJkOWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5MDk4MTc5ZTRmNWU4ZjAwZDQ3OWI5YjFiYjA4NDA4ZWY0ZGQ4OWRmMTYxYTEzNDA1MmQyOTlmMzFhNjYwMDIifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L168-L176",
+          "version": "repo-lines-v1:sha256:21a890eebf57e1106fc79441de522f21632d32651a2eb5b0c7901b1b91af3757:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODk1MWJlNjUyNmZmMjI4YzMyYzIxYWI2ZDhkMGQ1MjhjYjJlMTFjOWUyNTdlOWFlMWZjOWY4YzFhZTFkNDk5NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzE1YmNjNGNlNzFkODg5N2ZlOGExMzIyYTgwYzRlYmM3NzQ4ODdmN2I2YTRmYTViMTJiMTc1ZDk5NTFmNmY2OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTk5OWYwMzc4MTkyZDkwMzc4MWJjNDc5M2VmZjIwMGEyNTAxNWQ2OTcxZDMwY2NhNDJhNWMxYmZlNzEyZDFlNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWU4OTdmZDBkMTBjOWUyOTM1Y2JjMTM4YzYyMGFkZDRhZTc5YzY5OTdjNzk2ZmZmNzc0YWU0NGM2Mzk3NzBhMyJ9"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L1790-L1817",
+          "version": "repo-lines-v1:sha256:21b2d7a30267dd1a47fa6726bb3734f44bc1d6bdf6bf16bcfc2002954147a2e2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyOWMwMTVlNTY5NTVmNTMzNGFhODMwNDQzODYyNDM5MTVkNjVhMWFlNGJiODEyNTY2NThmOTQ2ZmZhNjZlZDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MjEyMDQzMTZmODgzZTIxNTU5Yjk0ZjdmNmUyOWFiODliM2Y2YmFmNjk4ZDM3YjJmMTNiNzViMTAwNGUyY2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzZjdmODNmNzgzMDUxMzQ0NTdkYzg2ZjZkYjAzOTJiNWQxMTU3ZjBjNTJkN2EwMWMwMjA0YmFhYjBmMzA2NzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_81850b402c5e4168889c941542465b53",
+      "statement": "Data-dependent required CI jobs gate fixture checkout and notebook execution at the step level when a fork lacks the deploy key, preserving a satisfiable check context while explicitly reporting that no data-dependent assertion ran.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/test.yml#L1070-L1110",
+          "version": "repo-lines-v1:sha256:24cd0c21ea383e52a4aaa1bc8b6d99a8c6b425da5410ba985eb5b049de442d96:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmY2UzYjM0MmQzMGRlODVkZWY5OTk0YzQ2ZDJmZjZiYjk5ODU1MTMxYmU2MmE5ZWRlN2IwODBlMmJkYjJkM2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjZmIwODg2NzEwYmE3ZDY2NmEzYmYzYzYyMDhkOWFmOGM2NjMwYjIwZjJmODViNjIyOWY4MWZjOWMwYmVjZTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg4MjA1MGQyYThkMjE5YTk5MGMxMDEwZjEwNmIzYzM0YzZkMjMwNDNiZTU1MDJjNzA0OWU2ODg4NGM1NWQ1NzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhmNWZmYjIwNjA1ODIxNjRmMGNiN2NhNzZjZmU1MGI1YjRhNjhiZmFiYWJlMWY2ZTJjMTc2Yjc1NDNjODY0ZTEifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/test.yml#L1506-L1541",
+          "version": "repo-lines-v1:sha256:27c42ca63710e491a0e425a6245df8b1d223c68679f920a560b229194a4715f9:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjOGJhYmRlYTIyNjVhODRlMTAyNmQwMjRhODdkYjc5ZmQ5YTMyYzc2YzA2NTExOWU2ZmFlNGYwZDlkY2ZkOGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczMDk5NTFmODc0ODRkODNjMTFlZGQxNjk5MTU2MWExMmQ1MmM1YWExYWRlYmYyMDEwNjllYzEwNGRmNDlhMjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg5ZDM0YzY3ZDg1ZDI0OGJjNThjN2Y0MWY1MzBkNGQ1YTZlNzcwMjMyZGZmN2Q2NjQzOTFhMTY1ZDU2N2UwM2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlmN2MyYjQzZmI0NTBiZjQwZDAzZjNlMjdmNGQ3ZGI2MDIwMzljM2UxODIyMTM3NTczYzNmNWJmZTM4MDFjZWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7ab9d4ffe6fa4212a31f0b884b26ed5d",
+      "statement": "The manual full-test workflow supports all, chapters-only, and case-studies-only scopes and ends with an aggregate summary that fails when any required lane fails.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/full-test.yml#L1-L20",
+          "version": "repo-lines-v1:sha256:289e89bf563d8fe3b325dac6d63e73362fd6579e346975e949df8db8a71fcb4f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlZTM1ZThlMjBiMjE2MGE1MmRjOGY0ODVhYjJlZjEyNzk2ODEyNWY4ZTc2YWMzNTA3MmUzZGMzZTY1MGE4NTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExYjAxZTk1ZGE2Nzk2NzFjYzUxYTU1YjBhYWEwZWVkMzE4YTIwNjYxODg1Mzk0NzkzYTU0YjBiYWE1MmJiMWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMzYTFlOWJkZGU3NWUzMmU0MWIwZTkyZDQ0MzUxYzk5MjJlNGZiMDM2NzFlMjMwMWUwOTI2ODlkM2I1N2E4YWIifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/full-test.yml#L218-L259",
+          "version": "repo-lines-v1:sha256:700b7ac799c0d134369f027b407ca386b4a120cf83e8a2b56f629c169a487e34:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzNzA2ZDk3NDA4MWRlZjYzYWZkYWZjODE4N2U0ZWQwYjQ2ODEwYTgwZjZlYThmYWYxMGU4YTdjOTA0ZGM2ZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmNTU5NzljZTczMDIwMzNlNmIyZmQ3ZDg4ZjUzN2EzYjhlMDkxZWEzMDVjODExZmZhMTI3NGJmNTc2NGVhNWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3NjQ2ZGI3MjJlZTlkZDk5NTk1ZDc5MTVhZWZiNTg4MzM2NmE0MDFiMGY2ZjE2YjU5YTRiZmE2YWNiZTA2N2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_84bb9acfa36a4258a1682b7adc9bb3e6",
+      "statement": "Paired case-study notebooks must set Jupytext cell_metadata_filter to tags,-all and must not carry inline Papermill metadata, preventing execution metadata from desynchronizing the committed Python and ipynb pair.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_notebook_pair_metadata_filter.py#L1-L67",
+          "version": "repo-lines-v1:sha256:5fc41a11cf3e76ceb356c18ca0f577e99c9df1f85cb5eeb448b4082d234a71b0:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkMWE0ZTJiZjk0NWJjNmI2NjhmMjk4NGZiNWU2MDZkOWM3NGRkN2U2YmNmOTlkNGNmYWVlZGI0YzQxOTgyOTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_faade8a4ab2f4fe5936ed755b282b25f",
+      "statement": "The SQLite notebook catalog and single-notebook worker form a managed campaign path separate from ordinary parametrized pytest: the catalog inventories and classifies notebooks, and the worker can execute either reduced mode through run_notebook or full mode without reductions.",
+      "evidence": [
+        {
+          "resource": "repo://tests/notebook_catalog.py#L227-L363",
+          "version": "repo-lines-v1:sha256:af8f050b1875d794d74a551aa9f6b536b9aaa77165d88e3d25df43ef794bf90e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5MWYxNDU4NzgzODIyOTNiODljOGI1NWRiODVhNTJjMzMxZGViMjY5ZWRiNThkMTM2ZTEyZWVhYzJiYjA3MjJjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2ZjgzNTYzMGRiYjhkZDg4YzkzM2FmNmNmZDhhM2ZmZjAxZjkxNDI4ZDA4ODRjMjc3ZTQ5ZjgwYTI1MDg4OTMwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyMTZmMWU5Zjg0MWM0MjljNjM1YjZhNTA3NmQ0N2E3NjkzMjQ4MGU5MWExZTFjYWI1YmE4NGZiZmI5Njk2YzFmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzMjEwYzNmYzJmZGRmY2M0N2JhNDM4N2E0ZTFlMmNmYWQ1YzZlODc3YTMxZDg1ZWMzZWJlODU2NDlkMTAxMTA2In0"
+        },
+        {
+          "resource": "repo://tests/notebook_worker.py#L134-L202",
+          "version": "repo-lines-v1:sha256:b3ca0e898f8dcede0d351b649f45e9b12253e86b332b54fa438d862ab3c6aa96:eyJzZWxlY3RlZExpbmVDb3VudCI6NjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkMGE5MDA5NzFkMGQxOTY5ZDE4ZmJmNTY2NzFkMzQ4ZmJlNzdjMGNlOWYyOWRiY2UzMThjYWVhNjg0OTcxOTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4ZTk5MjMyY2QzYTMwOWY1MGNiZDZmNjYyMTI3ZWVhYWZjZTFmNzM2MjkyZGVmYjExM2Q5ODFhMjBjN2Q4NTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBhYzkyZmIxNmY5M2Q0YjA5NDVjZDA5ZTY2YzIxZDI5OGQwYWJkYjI5YmQ5OWRiNTBlY2RkZjhjMjcyNDlmNTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/notebook_worker.py#L18-L131",
+          "version": "repo-lines-v1:sha256:7a06f2d699085614acf036b4a107d90b9a0bea1bb1c8ccbae789f3b297fec36c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTE0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4ZmRjNzE5OGViMDEzNjI3NzkwZDliZmYwMDNhOGNhNzZmNzAwNmZjNThiZWE0YjY3ODUxNTBhM2U0NTFmOWEyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmNDZiMTdiYWFmYzI3YjVhZjBhNDk5NTUyOTU5NzdkYmM4YjY4YTI0MmNhM2Q3NmJkMTQ3YzJjZTdkNDYwY2FhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjY2UyZGUyNjM3ZjgxMjRiMzFjYTI0Y2ViMjQ4MTE5MzgwZWI4NGExM2E4Zjc2ZmUyNTExZWQ1OTAxYThkZDQwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0ZGE2NzU2Yjc4NGUzZTcwZjkyYjhmNjcyNTNmMTE5ODliMWQ2ODA2MzJmYjNjODM1NGYyNGU5N2Y1OTY3ZGUwIn0"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}

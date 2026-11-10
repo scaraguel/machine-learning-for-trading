@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4550ac6e72637b64ad2878b0ffcdda2c7ec5b21727edd6db211cde0f2e511d33",
+  "claims": [
+    {
+      "id": "claim_b9d74dabd33a4714863cd1aac4435496",
+      "statement": "The public research API exposes workspace opening, configuration catalogs, model requests and plans, execution functions, strategies, and typed results as one notebook-facing runtime surface.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/__init__.py#L1-L182",
+          "version": "repo-lines-v1:sha256:74c9240dbc8b0f5c0e67a181e6c06affcd033537dd9f4ef9bab94b458dd552eb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjMTk0Njk1NmZiMzYzYjA1Nzk2MGNmNDJhNDVmZThkZDljZDhmYmUxYjM2NmViOGUwMGE4Y2ZmZGU5YzMyY2EzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmOTQxNmUwOWY3OGJhMzE2YzAzMjU2ODIxM2I4NTVlZTc1NmU0MTU2NWQ5MThmMDk1MTljODFmZDYyMGY0MDYwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MCwicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_9f5516ca01e2446f8eae2621ff49db2f",
+      "statement": "Model configuration is layered from setup label declarations through per-label training menus and shared presets; catalog filtering rejects unknown configuration names rather than silently shrinking the requested population.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/configs.py#L28-L168",
+          "version": "repo-lines-v1:sha256:cbe9644c5bf01c8dbdc8230a173d921c52926f2fbdb614e8fc35ab6bf8cf1cfe:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyZmM0ODg2NmZlNzQ1ZjgwMmY2MGRlZDNkMmQzMjlkYTQ2NzliYmUzNmU4YjdmOTNiOWMxYjBkZTEyM2I3YmUwIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyMGQ3YzM4NzQ5NjQxMDdiYjY3MGZmMGFiNDkzMjRiMmRiODZmMjU1MjM0NDU5NmJkNTFhZDJkZTUyYTcyM2JlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkOWU4ZDJkZGE4OWE3ZGY4OThmZTAyYTRiZTQ0NjQwYzdjZTgyM2U5M2MwZDBkNzA1NDlkYWUwMWIzMGRiM2M4In0"
+        },
+        {
+          "resource": "repo://utils/modeling.py#L1601-L1678",
+          "version": "repo-lines-v1:sha256:b0965f1694678d2d2f067090ccbf536f4eb5dac94ee55bcbc3aa50a360a79df3:eyJzZWxlY3RlZExpbmVDb3VudCI6NzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNkYThmOGY2MTkyY2EyNmY3NTYxMzdhYWQxMjM0ZTU1YjA1MWJmZTAyNTUzOGY5Yjg2MzI1N2E2OWE5NjBjZTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0YjVjMWZhMTM0MDZkN2RlNjRiYTJhOGMwZWE0M2JjYjA3NTliMzc2NTBjOGQ3M2Q4MmU0NDMyNDY5YjM1MGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFiOGNkYWRlMzhkZTFjMGMyYmQzMzc2NjlkMWJkNGQ3M2IwYTZmYjBlNmIzNDA0N2I4YmIxZTdiMzcwZmUxZmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1YmUwZDQzYzgwYzUwYThkZWFkNDRjMzE1NTk5MThhZTQ3ZGVjYTQzYjhmNjBkMjIzMzg4MGI3MGFiZjU4NmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0d30bea98c0c44b08b46c58da4ba73c9",
+      "statement": "ModelRequest enforces supported adapters and tier rules, requiring declared reductions for preview requests and forbidding them for canonical requests; resolution then verifies identity schema and prevents an adapter from changing family, label, or tier.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/models.py#L249-L361",
+          "version": "repo-lines-v1:sha256:75aa1dfacb5bba06e2218b20d3844f51c266a41c190d6a9636f6cab905bfa6b8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxODA5ODI1ZGUyOTZhZGI5ZTNiNzgxNzljYzM2MGVmN2NmOWQ5N2U4ZDMzZGVhMmE5ZjdlZmZiYjcxNTIxZDg3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmOWFlYjI1ZTkzYjYwYmViODgyNjJiNDI1ZTNkNzAyYzJkOTQzMjk3YzRjNmQ0ODcxZGVjMDRjODJiOTQ1MGY1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJkYzc2MzEwNTdlNGVhODVkYWIwZjViNzA3YzE4NjU4N2ZlOGI1YjE4OGNhZGI1NTlkNjkwYjJmMTU4M2JiM2QyIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_d24e772ecdad4112ac9e33235153d82b",
+      "statement": "Model planning groups requests by family, derives training and checkpoint prediction identities before fitting, forbids mixed tiers and duplicate identities, and preserves submitted order across adapter-specific plans.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/model_planning.py#L137-L242",
+          "version": "repo-lines-v1:sha256:82dd75442e28b90a0cd1f31470769e796b7000162abaccef92e77184f0b940a7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyY2ZjOTZhZTRkMWE1N2Y0ZjU4OTZlNWEwZjdkNTZhMzY0Njg5OWM4YTdiODQyNjI4MzVlYmRiZDA3MjA4N2YzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1ZTIxNjFmZWMwNDkwMGE4NjBmYTIxNDI0ZjMzZmI0ZGU2ODk4MGNjZGVhZTM3ZjM5MWU4ZTZmOGViNzkyMmZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlOGNjNGIzY2E5OTg3ZjQ4NWE0ZTQ3ZmU0MDhiZWMxYjU4MDE2MDcwOTExZDI0NGFhODQ3NmVmODQ4ODIxYTNiIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjMDQxMjAzYzRlNTAxYWE4N2FiNDM3NzZiZDU1OWM1ZWZjYjA1NDJkZDRhN2VkOGM3NTA4ZWY1MzhhNzNmNzYyIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_1081b621b3d54f45b7bd5f7f49e4a78e",
+      "statement": "A planned model execution supports family batch runners, validates result counts, restores original request order, and fails if actual training or prediction identities differ from the plan.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/model_planning.py#L55-L113",
+          "version": "repo-lines-v1:sha256:5b4420ce3237a492dae80029dd7452f883dba76341bc9d08489d176c7ec09246:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxNjM1ZjIwN2M3OWNjNDk0YWQ1NGQ2YWVhZmMxZDRkMzlhNTIxMTk2NzA5OTUxNWZhMzY2OTI0MDE2ZDZiM2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4ZjdlNDFjOTYxMDNmNzEwZmE4MDRhZGZiNGEwYzM0ZDMzYzVjNjRkZDBkNTAwOWZlMmUxMGRkNjMwYjM4ZDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc5MjEyODNlZDQ0YjQzZGNkN2YwNTljNmEzZGQ3NjVlN2NkYmZiNzc4NDAyNzkzMTI1OGQ2NmIyZDBjOGY2ZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY1YjA5NzQ1YTdhNTMzYzEzMzZhNzFlMjY4MjdhNDc2OGU0MTY0MTRjYTc4MTBjMDMzM2UwMjNmYmJlMzQ4MmMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_03add87220f048f6972bef83c1c16840",
+      "statement": "run_model_population declares and verifies the expected prediction set in both tiers, but only canonical runs persist an official population; preview runs require an isolated workspace and reductions and cannot supersede an official snapshot.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/execution.py#L613-L696",
+          "version": "repo-lines-v1:sha256:942ceeec93dcb1fdccfb2be2b40964a1202f4b962ad2ad79c176cf598d130697:eyJzZWxlY3RlZExpbmVDb3VudCI6ODQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJjNzY1YTZiN2NkZDZkODgxOTAwOWQ3MzIwNjUxZmFmOTI3ZmQzODNiOTc0NjAxZGIzZjA0MzY4MTRiNmMyMmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3MDViMTE0MGYyNDM2N2M1ZWU0YjYwYjg3OGJjMjE1MWY2NmFiNzE4MzljNzEzMWU5ZWM3YzYxMTU5ZTBmNTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzMGVmMDUxOTg0OGNhZWQ5Y2Q3MzBmMWE4NmM1ZmU0ODI0OWY5YmRkMDg2NjM1ZDQ1ZmVlNmEzOTNiNjM0MWUifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/execution.py#L697-L798",
+          "version": "repo-lines-v1:sha256:082c4e5a1683b27c4cf205256d89506809e11e1c4ee5e6a354e6f550edbea197:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4YTMzM2VjY2M3ZTE2MGEwODYxZDZiMDliOWQ3Zjc2YWNjZGRkZjhjNTI0MzYxMGI2OWYyN2FhMzdlMTU0ZWQxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MjJlZDFlYjc1ZWI1NDI0MGI4NzYyN2QzNDFlYjEyMThhYzkwYzllNmMwYTIxY2RhMDUxZWQ3ZDBjMTNhNzQyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4Y2M0YTdkMWNjNzk2YWJhM2U0NjcyMzMyN2Y1MTdlOWY4MTE5ODJkMjUwZjA3MDI5ODZlNGI1NzY0YWQ5NTg5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_95d46e54376d434f98c5a931829c6699",
+      "statement": "Backtest planning resolves authoritative prediction selections and strategy identities before execution; run_backtests validates writability, creates eligible official populations before writes, reuses complete results by hash, and rejects execution identities that differ from the plan.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/execution.py#L273-L459",
+          "version": "repo-lines-v1:sha256:18eff8aeb33c87c32bd98ab874876eda877d9aa6a732de85e902babec9603079:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1MDFiYzk5Yjg4MDdlMmE2YTNlMjU5MzQzZTI1YWJhZGUxZjliMTU5MjNiYTE2YzY0NDhiNDJmZjAwNDhlODFiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjMWFiMzJlZjQxMDZkZjY4NWY0YTY3NjBiODFhMGE3NzIxOWE0NDUxZWUyMWY0NTQwYzVjZThhYWJhYzgxOTVjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhNTFmMmE5N2EyN2MzMDBlNmJiYmZmOWI0MzQzNjk4N2I5ODZiMGY5MjE3NjY2MTQ1MDAwNzVhMjc2OGM1NjhlIn0"
+        },
+        {
+          "resource": "repo://case_studies/research/strategy.py#L216-L374",
+          "version": "repo-lines-v1:sha256:7966ea992c93ff9f73180af58ec6c5d12921372acf218cbf010d592c7198f2bd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTU5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4YjcyYmVmM2EwNjZkNzU3ZWE4NmQwZWY2OTRhMDY0OGVmZWQ5YWYzNmRkOThlMDQzMGNiZTYzZDJjMTI1N2Q2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0NDExYTEzYTJiYzdhZGNmZGYwYzkwMDljZjA5ZGU0ODE0NDM2MWYzMzk2NTUwZDRkMWNhOWE5MDVhN2IwYWYzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3MGNlM2YyNGFiNDdjMmY1YTlkMzM3ZjM3N2VkODU3M2ZhNTY1ODQwNzY0MDJmMWFmMDU0YTNkZWQ2MTk0NjJmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwZDkxNGZmMWRmZjA0NGUwZGVmNjJlOThhZDI0OGQ5YmFhZTUyNTU1OGZmZmJkNTAwNzgwMzRlMGM5Yzk1YjU2In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_da1552ea0fac48f083b28f2287e4b576",
+      "statement": "open_study distinguishes canonical regeneration, isolated full-scale canonical workspaces, and explicit reduced preview workspaces; preview storage is rooted at a .preview subtree and canonical regeneration requires generated-artifact directory symlinks.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/workspace.py#L352-L455",
+          "version": "repo-lines-v1:sha256:9624ae4a3d5194dcfdad5eb7dbdc5d9576995242ddaa099de2feb24668949240:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhNTJjYzhhN2VlNTkxNDI5YTNhMWJmZDJmNDdkYjM0ZDM0YzU1MDA1OGJlNmQ3ZmUzNGEzODU4NWIxNjI3NjM2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiMzIzMThhMDU2YjM2OGMzZGQ2MWJlMzdjMTgwMGQ4ZTlhYzI0MDhlNDYxZjIzMDhkMDA4OWI5ODRmOTFhZThlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzNDQ0ZTkyZmY2ZWNlZmQzNmU0YzgwZGZmZTdhODAyOGZlMjJjMmExZGViNGU2ODk5ZDc1YjhkYzlhYTljYzdjIn0"
+        },
+        {
+          "resource": "repo://case_studies/research/workspace.py#L628-L710",
+          "version": "repo-lines-v1:sha256:c8f34a5fe133851c14addf67366977e4016c569d8162dc77c5798c36441af2e2:eyJzZWxlY3RlZExpbmVDb3VudCI6ODMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2MzBiZjViZjhmYmY1NDVmYjMzNGE4YTMwNzhlZDFjOWI4ZmEwYTc1OWNmZjNjMDdjOTQyZDgzNDY2MzkzZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwM2VlNjQyMTUzNzFjZjM0YjgxMGM5Mzc0OGQ4MmNiNzJjNTNhMjJkYzlmOTJiMDIwYzk5MDE4OTRmYTk3NmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhkM2QxZmQ4ODVhZDU2NmI2NTVlNTliODY5NDhmZjU2N2YzNWYxMDhiNjA4N2ExZGQ4OGMyMDM0YzZhNWFhNGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b6fef3243eaa4e56abf8542304fff65b",
+      "statement": "Study activation mutates process-global ML4T_OUTPUT_DIR routing and clears root-sensitive configuration, CV, and backtest caches, so the last activated study controls name-based helpers and root switches must invalidate cached answers.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/workspace.py#L116-L134",
+          "version": "repo-lines-v1:sha256:694de56fbd5e9e94a6eb102d23884febbf48dcfb4efe9739e2c6bfb8203ca1c6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0MTFmOTA1N2MyZDEzYzI4OTZhNWI3MzQ2MzVlNjIzMjEyMTkyYjUxMTU5NTE0YmMwODI4Y2E5OWVmMGEwYmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJhMDQ5NWU3MmU3ZDcwZjcyMjFhYzUyY2QzMDI0NGZmNzNmZjA0ODNhODc0MTdhYjNiYjExYTFkNWQ1NmFiYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEwMWU2MDA3ZDU4YTVlOTVmMzA1ZjEzMWQ2NDkyOWY2YTdkY2IzYzc3NDQ0ZjBlOTY2Y2NmYzgxZWU4N2M5NWUifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/workspace.py#L390-L445",
+          "version": "repo-lines-v1:sha256:c6ede781e6c45ada67e3c6ec2060420f41204256ac80d81a4718d88537e6326e:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFlN2Y1YmNjMTY4NTAzYjIwZGU0NGVlZTBlODcxOWYyNjk4ZWNiYjUxMWM0ODBhZGRjMWMwMDYxMTMyYjM3OTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3NWJhY2RhNjdlODM1M2Q3ZDNiNDU3YjUzNjliNjg1M2Q4Y2Q0MjEwMzk0ZjM4ZjMxODQ1MDU2ZjM5MjA5YWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlZDdlZGQzNjRkYjNjYjI5MmU4ZTU4YzJiMjJiMjNkYWUzMTRkNmYzODI0MmQyMGQxNzE3OWMxNzgwMTRhMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYwMWIxOTcwZjg1NzUyZTZlMzllNDRjNzI2ZjQyZWVhNjE1ZmE3ZjYzZWM3NTBjYmJkMDYyMDhhY2Y0ZGQ1MzYifQ"
+        },
+        {
+          "resource": "repo://tests/test_research_workspace.py#L599-L628",
+          "version": "repo-lines-v1:sha256:344b5457675593e6439e10b134c979ca1264210a2bbcdd2686bf335f936c7d85:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyZmE2NzljODlkYmZiOThiZjQ5NTk2NDE4MzQ2MGUyMGZkYjExOTc2Zjc1Nzc3ZjE5OTM5NzIzNmIyOGZjNzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzZGYyYWNmMDZlOGMzZjAzYzcxMzVjNmU4YWM1YTljYTU0MzJhYmUwNmE3NGFjYTBmZGQ5YTUzYTAwOGY5ODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAyYjdhMDYxZTA0MjRjMWJmY2RiZWFkMTgyYTA3MWM2MWVkZWQyZmQ1NTA5NDA4NGUxOGI4YzVlMThlZTcyMDMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a3a662a62e4345c988e902b3221e5324",
+      "statement": "Read-only studies prohibit publication while read_only_study resolves either canonical or preview registry roots and activates name-based path helpers against the selected root.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/workspace.py#L220-L256",
+          "version": "repo-lines-v1:sha256:b0c47b6c02d0fbdaa966079bbc0b7c67ece3dc99b509955f00c04b996625a0fa:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxY2QyMzBhODJjNzVmYTgzMGRhMDhmZDBhNGM5MmNlY2UwMjA3ODdiMjQzMDVkM2RkZjdhMWE0NjczZTRlZDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0OGRmY2ZkZDRhNjhjNzBiZDg3N2MzZDU3Y2Y5MDYzNzFlNGI2NDVjOTU2MmMzNmYwMmFhNzFjZjU5YTczM2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2ZWEyN2JmZTAyNzM1MzdhMTYwZjdkNWQ2ODJkODdmMTMzZThiMmFkOWVjZmQxZTQ3N2ZkYWFhODhiOWUxYmUifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/workspace.py#L447-L459",
+          "version": "repo-lines-v1:sha256:6fb8111e55471cf75ec4fa850a4fd88383cd4753053e96740cde796617687227:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4OGZkYTk2Y2RlOTY3ZDY2N2ZmMjRiZWQ3NjI5M2I0MDE0MjJjZjA2YjRjYjNmZmU1Y2VjZTUyNzAxOTAyZDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4ZDUwZTU5YWQyM2ZiNWQyZTBmMDNkYjc3ODRlZTJhZDk2MWVkMDg3ZmQyY2UzNDhhNTIwNmE5ZmFlYTRkYTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEzMWI3ZWM5N2Q2NzQ4NGZmZjk4NjNiODI0MDAwNTJiNGIyMDBmZjVhOTc1NzM4MGQwNzI5Yzg1NDdiMjg0NTUifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/workspace.py#L576-L626",
+          "version": "repo-lines-v1:sha256:8ea2ae4aa46c31b217ae41282d8cc9069ffa84ca80e30392ebc7238a8b67f3b6:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg5NjA4ZjdjMWQ2N2RlNWM4MmZkMDIwOTRlYmNjYzBhMmVlZTI0Nzc4ZTEyMmEzMjVmOGJjNTkxZDk4NTVjYjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNmZjE1N2MxM2EwMDkyNjI5YTZlYzc5ZWFjYTU2ZDc0ZmM3Y2Y0OGMxYTg0OTgxMDI3ZTViYTVhZTg4YTEyYjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhMTEwZTU2ZWJiNmZlY2M4M2MzYmU0MGI4NzVhZGU5ZjViNjI5MzFmY2UzNWM0ZmY1OWI1NTQ3Yjc3OGVkY2QifQ"
+        },
+        {
+          "resource": "repo://tests/test_research_workspace.py#L580-L597",
+          "version": "repo-lines-v1:sha256:ba0b13d007ef4bbe8c0d21aca843ee83258b5874a9395cea06b413418a5b6d95:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxMDZlOTVjMjVmZmMxYjYxMGMxZGNmMjBkNTRhYjlhNGQ0OGRhYjljY2QwMjA5NjFjOWUyZmE2ZDlhMTUzOTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgyNjU4MGZmMzY1NmQ2NzFlNGM4YzI5YTAwMGJmMmQxNDJjNjVhZTYyYTM3NDY3MmVmOGVhNDg2NDNlNjE0NGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhlNWEwOGVhNjU1ZGFjMTU0YmNkOTk2Nzk2MzY5MTAwODVkMWM4OThhM2U1NDliODczMjg4YWNlMGMxNGIzMGIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_880c5e64581141348e3b95ad0d183fc0",
+      "statement": "Result.open overlays workspace and released canonical registries and optionally preview storage, returning typed training, prediction, or backtest results whose APIs expose registry records, specs, artifacts, lineage, protocol, and completeness.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/results.py#L107-L248",
+          "version": "repo-lines-v1:sha256:1c036d40653b5074c58c30a03dc688b97fa6034b5a84820e8d4618007681ad30:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmMzM2MzRhNzNhYzVkYzg5YmI1NzI2NTVjNDdjZjg1YjA4OWY3MTdjM2FlMjFkOGRiODMzODVjMzA2ODQyYmQ5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4YWE3M2RjM2IxZWU1OTZiYzI2YzkzYjhjYTQzODM0OTUwYTNmNDlhYWFkM2MwNjg5MmI2ODcwNjZhNzg3OGE2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3MGNlM2YyNGFiNDdjMmY1YTlkMzM3ZjM3N2VkODU3M2ZhNTY1ODQwNzY0MDJmMWFmMDU0YTNkZWQ2MTk0NjJmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI1ZWM1NTI5MWI5OTYxMjM1M2MyY2U2MGNhYzdiNzlkMTBhMWE0ZjUwZWMyNTZkYmI2ZDdlMWZlYTAwYjdjNmM2In0"
+        },
+        {
+          "resource": "repo://case_studies/research/results.py#L250-L349",
+          "version": "repo-lines-v1:sha256:c5063044e44cf88d9ac250fd4e21b1b3ee59af7f32fb6ed64fcb4c129616c93a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlZjNmMWQ5MDg3OWQ3NDlkM2Q5YTQ2MzgxZTlmMGQxNjA5ODg3ZmJkOGEwZWQwMGQ1OWM4ZTdjMDg4ZWFiZTEzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5MTk0Y2QzOWNkNjkzZTEwMjIzYmI1ZDc1NDQzYTRmNTNmZGM3Y2JhMDU4ZGQyNjdiNmI1N2E2NmZhYWRkOTg4IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjOTIwZGFkN2I1MjBiYjNiZWQ3NjE2YzM5ZjVmMTRiZTYyMmVlMjNkMzA0ZDI3ZTA2ZTM5N2MzNGNjZGU0ZGI4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiZGM5NjJkNzgyNmU1N2Q2NjJkZmEyNjhjMGYyNDE4NDAzM2M5ZGE4MGM4ZjlhOTA4NjZhYTJiOGU1M2M3NDFjIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_b9d0202bf59c44b9a1cf3729665ab9e6",
+      "statement": "When a workspace backtests a released prediction, execution imports the relevant released registry rows into the workspace and records overlay source references rather than copying the entire released run log.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/execution.py#L199-L271",
+          "version": "repo-lines-v1:sha256:111ad7c3077854eea27b80f76581e20f302dab5fe13f4f9afbbed6aef6bd161a:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyNTY0YzFhYjQ5ZmE1ZDg0YmE2ZWViYzBkNjBlMDljNGRiYWMwMzZlYTJlYjgyNWJjMDVhMDEzOTNjNWNhYzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjczNTVlYjhmYjE5NzEyZDhjZjEzMTIwMWViOWE0NTlhMWUwMjAzMmViMmU0ZTIyMGViZDJiZDcyMjE0NWNjMmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUxMTYwM2Y0ZjEzYWU4MmRiNjFiZDVlOGM4Y2RiNjQxODE4NWM5ODI5N2FmMjU3ZWNlNjQ0YjhmOWY5Zjk5ZjMifQ"
+        },
+        {
+          "resource": "repo://case_studies/research/execution.py#L408-L459",
+          "version": "repo-lines-v1:sha256:2bb4c952b3228918ac7d4c3edb1aa4e787179762a990242702e66aea7fb95168:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMxMjgwZDIzN2I3MTBiNTczMDIxNzJjYTJiMjQ5MDI2ZjE5YmM2NDhjNTkzY2JjODc4ZWY4ZWNlZTA2M2I2ZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjczYmY4NzIzMDY3ODg4ZGUzNjg3MzcwZmM3YmU5ZjlkMWI1MWM3NzRiMThhODBjY2E5YjYzYTZkODA2ZWNiMjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE1MWYyYTk3YTI3YzMwMGU2YmJiZmY5YjQzNDM2OTg3Yjk4NmIwZjkyMTc2NjYxNDUwMDA3NWEyNzY4YzU2OGUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9ca6e59b41eb483b87b79087b3a424db",
+      "statement": "Notebook-level selection contracts distinguish incomplete prediction registration from missing historical coverage and exclude degenerate constant-prediction folds from downstream selection.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/utils/notebook_contracts.py#L179-L316",
+          "version": "repo-lines-v1:sha256:ea078c359efe328d2ffc86c126844f9c88afafb3976add978a6b321841c9a0ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3M2VkODA4ZjE5YjBmY2Y2YjA0OTI1NTNmNDJiNjE5MjNmOGQ1ODRiMjA3ZWZkOTZkYTdiYjA0ZDZlOWEwYTgyIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2M2QxZGQ0OTliOGM5MDNhM2Q5YzFhMWNjNGNhNzA4ZmY2ZTNlNjcwNGU2MmM1ZTU3ZmRjY2IxYTA5NDQzYTc5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwZjFiYjBiMWUxMjA0ZTE3ODQ0M2VkNjQ2ZjliMTE5YTQzYjM3ZTY4MGViNzEwNmFmY2MzYjZjMDk2OGEzNzJlIn0"
+        },
+        {
+          "resource": "repo://case_studies/utils/notebook_contracts.py#L85-L177",
+          "version": "repo-lines-v1:sha256:0875b1c237e66817f791382badfcc1552688fa3a2f26fd7b441e93d4d2a65900:eyJzZWxlY3RlZExpbmVDb3VudCI6OTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxMTgzNDc4YzE3OTM3NzY3YWFlNTc5MDk3MjU5NjRkNzBhY2M3NjhiNzMxZTgxM2RjYjVhODU3YjA0MmMzYTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY3MmMxNWQ4ZjI1Y2ZkM2YwOWQyMjM0MjkwODQ0YzNkY2UzNzRkODA3NmNlNGQzNTY2NTk3MmYzZDAxMGJkYmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjViOGE4ZWExYzAyNmRmODg1MTQ5MzVlNTMyZmE0MzEzZjRjYWJkMGJmOThjZmE4ZDk1YWViOTg1NWU0MmRmOGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9a0cd9dde4ca4eb4a94c6f5f7281f513",
+      "statement": "The adapter registry lazily maps supported model and causal names to implementation modules and prevents conflicting registrations unless replacement is explicit.",
+      "evidence": [
+        {
+          "resource": "repo://case_studies/research/adapters.py#L1-L67",
+          "version": "repo-lines-v1:sha256:1f3da9c9339cdd959ba18000c17f38af7440fea12a1bfc1216197ed47694b599:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUzODRiZmRiMmRmMzgwYjY1NTdjYzdhNzFkMTY4OTE0MTViY2NhYTg3Njk5NDA2ZTIzNmY3NTJjNjQxNTM4OWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzMzY2YmZjZTY1MDM4MWIwN2E3ZmM1NGM1YjY0M2FmNzYzOTM2YTgzNzFkZDFkM2MxYmYwOTg3YjRkZTY3YmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:38:57.275Z"
+  }
+}
